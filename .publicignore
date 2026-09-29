@@ -1,0 +1,4 @@
+# Padrões rsync que ficam no repo privado mas NÃO vão para o portfólio público (lido por publicar.sh).
+# Transcrições de material do AVA/Moodle (texto do professor, não autoral).
+fundamentos-e-panorama-da-ciencia-de-dados.md
+*.ava.md

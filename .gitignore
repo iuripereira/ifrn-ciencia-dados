@@ -1,0 +1,14 @@
+# Dotfiles na raiz ficam fora (inclui .claude/ e .vscode/ locais); só os de controle do repo entram.
+/.*
+!/.gitignore
+!/.publicignore
+
+# Material do professor (slides, apostilas) e pacotes de entrega — não são autorais.
+*.pdf
+*.zip
+
+# Python / Jupyter
+.ipynb_checkpoints/
+__pycache__/
+.venv/
+*.pyc
