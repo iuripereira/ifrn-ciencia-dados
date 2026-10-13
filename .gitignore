@@ -12,3 +12,7 @@
 __pycache__/
 .venv/
 *.pyc
+
+# LaTeX (latexmk out_dir) e lixo de download do Windows
+build/
+*:Zone.Identifier

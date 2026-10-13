@@ -1,0 +1,227 @@
+% Versão breve (5-8 páginas) – compilar com XeLaTeX (xelatex artigo_breve.tex, duas vezes)
+\documentclass[12pt,a4paper]{article}
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Termes}
+\usepackage{polyglossia}
+\makeatletter
+\ifcsname l@portuges\endcsname\else\expandafter\let\csname l@portuges\endcsname\l@english\fi
+\ifcsname l@portuguese\endcsname\else\expandafter\let\csname l@portuguese\endcsname\l@english\fi
+\makeatother
+\setdefaultlanguage[variant=brazilian]{portuguese}
+\usepackage[top=3cm,left=3cm,bottom=2cm,right=2cm]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{indentfirst}
+\setlength{\parindent}{1.25cm}
+\setlength{\parskip}{0pt}
+\emergencystretch=1.5em
+\usepackage{amsmath}
+\usepackage{graphicx}
+\graphicspath{{figuras/}}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{caption}
+\captionsetup{font=small,labelsep=endash,justification=centering,skip=4pt}
+\usepackage{titlesec}
+\titleformat{\section}{\normalsize\bfseries}{\thesection}{1em}{\MakeUppercase}
+\titleformat{\subsection}{\normalsize}{\thesubsection}{1em}{\MakeUppercase}
+\titlespacing*{\section}{0pt}{12pt}{8pt}
+\titlespacing*{\subsection}{0pt}{8pt}{8pt}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\small\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\usepackage[hidelinks]{hyperref}
+\urlstyle{same}
+\newcommand{\fonte}[1]{\par\vspace{2pt}{\centering\small #1\par}\vspace{2pt}}
+\newenvironment{referencias}{\begin{singlespace}\setlength{\parindent}{0pt}\setlength{\parskip}{4pt}\raggedright\footnotesize}{\end{singlespace}}
+
+\begin{document}
+\thispagestyle{empty}
+\begin{singlespace}
+\begin{center}
+\textbf{ALTO VALOR ADICIONADO NA INDÚSTRIA, NOS SERVIÇOS E NA ADMINISTRAÇÃO PÚBLICA: GUAMARÉ, NATAL E CEARÁ-MIRIM À LUZ DA LITERATURA SOBRE DESENVOLVIMENTO SOCIOECONÔMICO}\footnote{Artigo apresentado à disciplina Estatística Aplicada à Ciência de Dados (POS.1035), Especialização em Ciência de Dados, IFRN, Prof. João Maria Filgueira, outubro de 2026.}
+\end{center}
+\vspace{8pt}
+\begin{flushright}
+Iuri Guerra de Freitas Pereira\footnote{Pós-graduando em Ciência de Dados pelo Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte (IFRN). Engenheiro de Computação, Mestre em Tecnologia da Informação. E-mail: iuri.pereira@escolar.ifrn.edu.br.}
+\end{flushright}
+\vspace{8pt}
+\noindent\textbf{RESUMO}
+
+\noindent O artigo identifica fatores associados ao alto Valor Adicionado Bruto (VAB) da indústria, dos serviços e da administração pública nos municípios do Rio Grande do Norte em 2021, último ano com abertura setorial do VAB municipal, e dialoga com a literatura sobre desenvolvimento socioeconômico. Com dados do IBGE, do IpeaData e do Observatório Sebrae para os 167 municípios, aplicam-se média, desvio padrão, percentis 10 e 90 e a reta $Y = a + bX$; a correlação é apresentada como a inclinação dessa reta entre variáveis medidas em desvios padrão. Os casos são Guamaré, Natal e Ceará-Mirim, escolhidos por VAB absoluto, participação, população e literatura disponível; Pau dos Ferros, João Dias e São Bento do Norte são avaliados como alternativas. Os municípios abaixo do percentil 10 do PIB per capita têm a administração pública como maior setor e os acima do percentil 90 têm a indústria, mas o IDHM mediano dos dois grupos é quase o mesmo. O diálogo com Mendes \textit{et al.} (2018) e Fernandes, Tavares e Azevedo (2018) confirma que VAB e PIB caminham juntos e contesta, para o caso potiguar, que a indústria seja o setor mais ligado ao desenvolvimento humano.
+
+\vspace{4pt}
+\noindent\textbf{Palavras-chave:} valor adicionado bruto; correlação; desenvolvimento socioeconômico; Rio Grande do Norte.
+\end{singlespace}
+
+\section{Introdução}
+
+Em 2021 o Rio Grande do Norte gerou um Valor Adicionado Bruto de R\$ 71,06 bilhões, dos quais 45,5\% nos serviços, 29,4\% na administração pública, 20,7\% na indústria e 4,4\% na agropecuária (IBGE, 2023). Quando se analisa município a município, o retrato é outro: a administração pública é o setor de maior VAB em 122 dos 167 municípios (73,1\%), e Natal, Mossoró e Parnamirim concentram 48,8\% do PIB e 63,7\% do VAB dos serviços. A indústria de maior peso está no litoral norte, em municípios pequenos ligados ao petróleo, ao gás, ao sal e à energia eólica (IBGE, 2023).
+
+Este artigo aplica estatística descritiva qualitativa e quantitativa aos 167 municípios do RN no ano de 2021 (último ano com VAB municipal aberto por setor), seleciona um município com alto VAB em cada setor e dialoga com o estado da arte (Mendes et al., 2018; Fernandes, Tavares e Azevedo, 2018) para concordar ou divergir de seus achados sobre a relação entre estrutura produtiva e desenvolvimento socioeconômico.
+
+O texto se divide em cinco seções: a seção 1 apresenta a introdução; a seção 2 apresenta os dados e as ferramentas utilizadas para a análise; a seção 3 resume os resultados, justificando a escolha de Guamaré, Natal e Ceará-Mirim para os setores Industrial, dos Serviços e da Administração Pública, respectivamente, e avalia Pau dos Ferros, João Dias e São Bento do Norte como alternativas; a seção 4 confronta os resultados com dois artigos; a seção 5 conclui, trazendo as contribuiçoes deste artigo para a literatura sobre desenvolvimento socioeconômico no Rio Grande do Norte.
+
+\section{Dados e ferramentas}
+
+A base reúne, para os 167 municípios, o PIB e o VAB por setor de 2002 a 2021 (IBGE, tabela 5938 do SIDRA), a população anual, os indicadores sociais e as receitas municipais do IBGE Cidades, o pessoal ocupado do Cadastro Central de Empresas e os estabelecimentos ativos do Observatório Sebrae; os valores a preços de 2010 vêm do IpeaData. O VAB é a diferença entre o valor da produção de uma atividade e o consumo intermediário; o PIB municipal é a soma do VAB das atividades mais os impostos sobre produtos. O IBGE estima o VAB de cada atividade no estado e o reparte entre os municípios por indicadores como a produção de petróleo, as saídas de mercadorias e a folha das prefeituras (IBGE, 2016). Por isso o grupo ``Indústria'' inclui petróleo, refino, sal e energia elétrica, e o VAB da administração pública dos municípios pequenos reflete a folha da prefeitura, financiada em grande parte pelo FPM.
+
+As ferramentas são as da disciplina. A média $\bar{x}$ e o desvio padrão $s$ descrevem o centro e a variação dos dados; como visto em sala, a soma dos quadrados dos desvios é mínima em relação à média, e $s$ é a raiz dessa soma dividida por $n-1$. Os percentis 10 (P10) e 90 (P90) do PIB per capita isolam os 10\% mais pobres e os 10\% mais ricos. A função afim $Y = a + bX$ relaciona duas variáveis em um gráfico de pontos; seus parâmetros minimizam a soma dos quadrados das distâncias verticais $y_i - (a + b x_i)$ entre cada ponto e a reta, o que resulta em
+\begin{equation}
+b = \frac{\sum (x_i - \bar{x})(y_i - \bar{y})}{\sum (x_i - \bar{x})^2}, \qquad a = \bar{y} - b\,\bar{x}.
+\end{equation}
+
+\subsection{Correlação a partir da média, do desvio padrão e da reta}
+
+O coeficiente de correlação de Pearson pode ser entendido sem nenhum conceito além dos já vistos. Primeiro, mede-se cada variável em desvios padrão a partir da sua média: $z_x = (x - \bar{x})/s_x$ e $z_y = (y - \bar{y})/s_y$. Segundo, ajusta-se a reta $Y = a + bX$ a esses valores padronizados. Como as médias de $z_x$ e $z_y$ são zero, a reta passa pela origem ($a = 0$) e sua inclinação é
+\begin{equation}
+r = \frac{\sum z_{x,i}\, z_{y,i}}{n - 1},
+\end{equation}
+isto é, a média dos produtos dos valores padronizados. Esse é o coeficiente de correlação, que fica entre $-1$ e $+1$: quando todos os municípios estão do mesmo lado da média nas duas variáveis (ambos acima ou ambos abaixo), os produtos são positivos e $r$ se aproxima de $+1$; quando estão em lados opostos, os produtos são negativos e $r$ se aproxima de $-1$; quando os sinais se misturam, os produtos se cancelam e $r$ fica perto de zero. Nas unidades originais, $b = r \cdot s_y / s_x$: correlação é a inclinação da reta $Y = a + bX$ quando $X$ e $Y$ são medidos em desvios padrão.
+
+A Tabela \ref{tab:z} aplica a ideia a seis municípios, com $X$ = participação dos serviços no VAB (\%) e $Y$ = IDHM (médias 42,89 e 0,654; desvios padrão 22,39 e 0,082). Natal está 0,95 desvio padrão acima da média em $X$ e 1,34 acima em $Y$ (produto 1,278); João Dias está 1,05 abaixo em $X$ e 1,52 abaixo em $Y$ (produto 1,589). Todos os produtos são positivos, a soma é 4,067 e $r = 4{,}067/5 = 0{,}81$. Com os 167 municípios o valor cai para $r = 0{,}61$, porque os pontos se espalham mais, mas o sinal se mantém. Valores muito afastados da média pesam muito no produto; e correlação não é causa.
+
+\begin{table}[!htb]
+\centering
+\caption{Correlação como média dos produtos dos valores padronizados: seis municípios ($X$ = participação dos serviços no VAB em 2021, \%; $Y$ = IDHM 2010)}
+\label{tab:z}
+\footnotesize
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+Município & $x_i$ & $y_i$ & $z_x = (x_i - \bar{x})/s_x$ & $z_y = (y_i - \bar{y})/s_y$ & $z_x \cdot z_y$ \\
+\midrule
+Natal & 64,25 & 0,763 & 0,95 & 1,34 & 1,278 \\
+Caicó & 56,57 & 0,710 & 0,61 & 0,69 & 0,421 \\
+Pau dos Ferros & 63,51 & 0,678 & 0,92 & 0,30 & 0,273 \\
+Ceará-Mirim & 40,38 & 0,616 & $-$0,11 & $-$0,46 & 0,052 \\
+Guamaré & 13,17 & 0,626 & $-$1,33 & $-$0,34 & 0,454 \\
+João Dias & 19,48 & 0,530 & $-$1,05 & $-$1,52 & 1,589 \\
+\midrule
+Média / desvio padrão & 42,89 / 22,39 & 0,654 / 0,082 & 0 / 1 & 0 / 1 & Soma = 4,067 \\
+\multicolumn{6}{r}{$r = 4{,}067 / (6 - 1) = 0{,}81$} \\
+\bottomrule
+\end{tabular}
+\fonte{Fonte: elaborada pelo autor (2026) com dados do IBGE (2023) e IBGE Cidades.}
+\end{table}
+
+\section{Resultados}
+
+A Tabela \ref{tab:p} resume o padrão mais claro dos dados. Os 17 municípios com PIB per capita até o P10 (R\$ 10.039) têm, todos, a administração pública como maior setor, com mediana de 67,1\% do VAB, 6,7\% da população em emprego formal e 93,3\% da receita vinda de transferências. Os 17 a partir do P90 (R\$ 29.137) são, em 15 casos, municípios de indústria. O IDHM mediano, porém, é 0,587 no grupo pobre, 0,608 no grupo do meio e 0,605 no grupo rico: ser muito rico em PIB per capita está associado a ter indústria, não a ter melhor desenvolvimento humano.
+
+\begin{table}[!htb]
+\centering
+\caption{Medianas dos grupos definidos pelos percentis 10 e 90 do PIB per capita, 2021}
+\label{tab:p}
+\footnotesize
+\begin{tabular}{@{}p{6.2cm}>{\centering\arraybackslash}p{2.4cm}>{\centering\arraybackslash}p{2.9cm}>{\centering\arraybackslash}p{2.6cm}@{}}
+\toprule
+Indicador (mediana do grupo) & Até P10 \newline (n = 17) & Entre P10 e P90 \newline (n = 133) & A partir de P90 \newline (n = 17) \\
+\midrule
+PIB per capita 2021 (R\$) & 9.545 & 13.469 & 47.183 \\
+Part. Adm. pública no VAB (\%) & 67,1 & 51,7 & 17,1 \\
+Part. Indústria no VAB (\%) & 4,2 & 5,1 & 59,4 \\
+Part. Serviços no VAB (\%) & 22,8 & 27,5 & 13,9 \\
+Transferências na receita 2025 (\%) & 93,3 & 91,2 & 89,3 \\
+\% pop. em emprego formal 2024 & 6,7 & 11,1 & 17,7 \\
+IDHM 2010 & 0,587 & 0,608 & 0,605 \\
+\bottomrule
+\end{tabular}
+\fonte{Fonte: elaborada pelo autor (2026) com dados do IBGE (2023), IBGE Cidades e CEMPRE.}
+\end{table}
+
+As retas $Y = a + bX$ ajustadas aos 167 municípios resumem as associações em um número cada. A participação da indústria tem correlação $r = +0{,}81$ com o PIB per capita (cada ponto percentual de indústria corresponde a R\$ 968 a mais de PIB per capita), mas $r = -0{,}01$ com o IDHM: a reta é horizontal. A participação dos serviços tem $r = +0{,}61$ com o IDHM ($b = 0{,}00208$) e a da administração pública, $r = -0{,}57$ com a proporção da população em emprego formal ($b = -0{,}245$).
+
+\subsection{Por que Guamaré, Natal e Ceará-Mirim}
+
+``Alto VAB'' pode ser lido de três maneiras: VAB absoluto do setor (tamanho), participação do setor no VAB municipal (especialização) e VAB do setor por habitante. Os três municípios foram escolhidos por satisfazerem ao mesmo tempo quatro critérios: (i) estar entre os maiores do estado no VAB absoluto do setor; (ii) ter participação alta o bastante para caracterizar especialização; (iii) ter população suficiente para que os indicadores por habitante sejam estáveis; e (iv) dispor de literatura que permita identificar os fatores. A Tabela \ref{tab:c} compara os escolhidos com o candidato mais forte de cada setor pelo critério de participação.
+
+\textbf{Guamaré} é o segundo maior VAB industrial do estado (R\$ 1,47 bilhão, 10,0\% do total potiguar), com 75,0\% do VAB no setor, 16.261 habitantes e literatura própria (Silva; Aquino, 2016); São Bento do Norte tem participação maior (88,7\%), mas VAB absoluto quatro vezes menor, 2.687 habitantes e nenhum estudo publicado. \textbf{Natal} é o primeiro em VAB de serviços (R\$ 13,35 bilhões, 41,3\% do estado) e o primeiro em participação (64,2\%), o que dispensa alternativa; Pau dos Ferros é o segundo em participação (63,5\%), mas o nono em VAB absoluto. \textbf{Ceará-Mirim} é o maior VAB da administração pública (R\$ 419 milhões, sexto do estado) entre os 122 municípios em que esse setor domina, com 46,3\% de participação e 74.268 habitantes; João Dias tem a maior participação (72,7\%), mas VAB vinte vezes menor e 2.653 habitantes. Ceará-Mirim foi preferido também por ser típico (PIB per capita e IDHM a menos de 0,3 desvio padrão da média estadual): o que se diz dele vale para a maioria dos 122. Os fatores de cada caso vêm da literatura e dos dados. Guamaré: polo de refino e processamento de gás da Bacia Potiguar, operado pela Petrobras até a venda à 3R Petroleum em 2023 (Silva; Aquino, 2016; 3R Petroleum, 2023), regra do IBGE que aloca o VAB do petróleo nos municípios produtores e preço do petróleo, que tornou o VAB industrial negativo entre 2011 e 2014, quando o custo do insumo superou o valor da produção no refino (IBGE, 2015); PIB per capita 4,6 desvios padrão acima da média, IDHM apenas 0,4. Natal: função de capital, densidade e concentração do comércio, da saúde, da educação e da administração pública, no topo da rede urbana potiguar (Dantas; Clementino, 2014); IDHM 4,0 desvios padrão acima da média, PIB per capita só 0,3. Ceará-Mirim: declínio da agroindústria canavieira a partir da década de 1970, sem substituição industrial (Andrade, 2023), e população grande o bastante para que a folha pública seja a maior parcela da economia.
+
+\begin{table}[!htb]
+\centering
+\caption{Municípios escolhidos e candidatos alternativos por setor, 2021 (posição entre os 167 municípios entre parênteses)}
+\label{tab:c}
+\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}p{3.3cm}>{\centering\arraybackslash}p{1.4cm}>{\centering\arraybackslash}p{1.9cm}>{\centering\arraybackslash}p{1.6cm}>{\centering\arraybackslash}p{2.1cm}>{\centering\arraybackslash}p{2.0cm}>{\centering\arraybackslash}p{2.0cm}@{}}
+\toprule
+Município (setor) & População & VAB do setor (R\$ milhões) & Part. do setor no VAB (\%) & VAB do setor por habitante (R\$) & PIB per capita (R\$) & IDHM 2010 \\
+\midrule
+\textbf{Guamaré} (Ind.) & 16.261 & 1.471 (2º) & 75,0 (5º) & 90.463 (4º) & 125.585 (3º) & 0,626 (43º) \\
+São Bento do Norte (Ind.) & 2.687 & 452 (11º) & 88,7 (1º) & 168.285 (1º) & 204.407 (1º) & 0,555 (162º) \\
+\textbf{Natal} (Serv.) & 896.708 & 13.348 (1º) & 64,2 (1º) & 14.885 (3º) & 26.972 (21º) & 0,763 (2º) \\
+Pau dos Ferros (Serv.) & 30.802 & 389 (9º) & 63,5 (2º) & 12.631 (6º) & 23.029 (32º) & 0,678 (10º) \\
+\textbf{Ceará-Mirim} (Adm.) & 74.268 & 419 (6º) & 46,3 (101º) & 5.645 (152º) & 13.494 (83º) & 0,616 (63º) \\
+João Dias (Adm.) & 2.653 & 20 (165º) & 72,7 (1º) & 7.473 (27º) & 10.551 (135º) & 0,530 (167º) \\
+\midrule
+Mediana dos 167 & 8.297 & --- & --- & --- & 13.469 & 0,606 \\
+\bottomrule
+\end{tabular}
+\fonte{Fonte: elaborada pelo autor (2026) com dados do IBGE (2023) e IBGE Cidades. Nota: em negrito, os escolhidos; VAB por habitante = VAB do setor / população de 2021.}
+\end{table}
+
+\subsection{Vale a pena explorar Pau dos Ferros, João Dias e São Bento do Norte?}
+
+Participação no VAB e VAB por habitante não contam a mesma história. A participação da indústria tem correlação $r = +0{,}81$ com o PIB per capita; a dos serviços, $r = -0{,}33$; a da administração pública, $r = -0{,}67$. Só a especialização industrial eleva o PIB per capita; a especialização em serviços é levemente negativa, porque os municípios mais ricos são enclaves industriais com poucos serviços, e a especialização em administração pública marca os mais pobres. Já o VAB do setor por habitante cresce com o PIB per capita nos três setores, na administração pública porque os municípios pequenos recebem mais FPM por habitante e os petrolíferos financiam folhas maiores com royalties: Guamaré é o segundo do estado em VAB da administração pública por habitante (R\$ 11.731) e Ceará-Mirim, o 152º (R\$ 5.645).
+
+Os três candidatos valem a pena, cada um por uma razão. \textbf{São Bento do Norte} é o caso-limite da indústria: primeiro em participação, em VAB industrial por habitante e em PIB per capita, e 162º em IDHM, o que torna o paradoxo de Guamaré ainda mais nítido; com 2.687 habitantes e sem literatura própria, porém, serve para ilustrar, não para explicar. \textbf{Pau dos Ferros} é o contraponto mais útil a Natal: serviços sem função de capital, sustentados pelo comércio regional e por três instituições públicas de ensino superior, com VAB de serviços por habitante (R\$ 12.631) próximo ao da capital, PIB per capita na média estadual e IDHM entre os dez melhores (Dantas; Clementino, 2014); mostra que a associação entre serviços e IDHM não depende do tamanho da cidade. \textbf{João Dias} é o arquétipo da participação (72,7\%), mas a leitura por habitante o reposiciona: seu VAB da administração pública por habitante (R\$ 7.473) supera o de Ceará-Mirim e o de Natal, porque a cota do FPM por habitante é maior nos municípios pequenos; ainda assim, tem o pior IDHM do estado. Em síntese, a exploração é recomendável, desde que o VAB do setor por habitante acompanhe a participação e os municípios com menos de 5 mil habitantes (50 dos 167) sejam tratados como casos ilustrativos.
+
+\section{Diálogo com a literatura}
+
+\subsection{Os dois artigos}
+
+Mendes \textit{et al.} (2018), na Revista de Administração Pública, investigaram a influência da capacidade econômica e das receitas públicas sobre o desenvolvimento humano dos municípios brasileiros entre 2007 e 2013, com regressão logística em painel: a variável resposta indica se o município alcança Índice Firjan de Desenvolvimento Municipal (IFDM) de pelo menos 0,600, e as explicativas são o PIB da agropecuária, da indústria e dos serviços, as receitas próprias e as transferências da União e dos estados. O PIB da indústria teve o maior efeito positivo (razão de chances de 2,55); o PIB dos serviços foi ``a única variável aplicada ao modelo que apresentou efeito negativo''; e as transferências da União foram as variáveis mais relevantes, o que ``pode indicar dependência financeira desses recursos'' (Mendes \textit{et al.}, 2018, p. 930-931). A conclusão é que ``o porte industrial, mensurado pelo PIB indústria, foi o de maior relevância para o desenvolvimento humano'' (Mendes \textit{et al.}, 2018, p. 929).
+
+Fernandes, Tavares e Azevedo (2018), na RACE, estudaram os próprios municípios potiguares: com 166 municípios entre 2010 e 2013, explicaram o PIB municipal pelo VAB dos quatro setores, pelo IFDM e pela população. Os quatro VAB tiveram efeito positivo e significativo (coeficientes de 1,39; 1,02; 1,08 e 1,38) e o IFDM, sinal negativo; os autores concluem que o PIB mede crescimento, não qualidade de vida.
+
+\subsection{O que os dados de 2021 comprovam}
+
+O resultado de Fernandes, Tavares e Azevedo (2018) é comprovado de forma direta e com as ferramentas mais simples. A participação da indústria tem correlação de $+0{,}81$ com o PIB per capita, os 17 municípios acima do P90 são quase todos industriais e Natal, Mossoró e Parnamirim continuam somando quase metade do PIB estadual. Parte dessa relação é contábil, porque o PIB é a soma dos VAB mais os impostos; o que os dados acrescentam é a magnitude, com a indústria elevando o PIB per capita muito mais do que os outros setores. O sinal negativo que os autores encontraram para o IFDM também é coerente com a Tabela \ref{tab:p}: os municípios mais ricos em PIB per capita não têm IDHM maior que os demais. A aparente contradição entre VAB alto e desenvolvimento humano baixo, que os autores registram sem explicar, ganha aqui um mecanismo: nos municípios de enclave, o VAB é contabilizado no território, mas o lucro, os salários mais altos e os impostos federais são apropriados fora dele. Silva e Aquino (2016) já haviam mostrado, com dados de 2000 a 2011, que Guamaré tinha o maior PIB per capita do estado, mas IDHM abaixo da média estadual: o ``paradoxo do subdesenvolvimento com abundância de divisas''. Os dados de 2021 mostram que o paradoxo persiste e se estendeu aos municípios eólicos: Parazinho e São Bento do Norte, com 88,7\% do VAB na indústria, têm IDHM entre os seis piores do estado.
+
+O resultado de Mendes \textit{et al.} (2018) sobre as transferências também é comprovado, desde que se distinga volume de dependência: as transferências sustentam as prefeituras de quase todos os municípios potiguares (mediana de 91\% da receita), mas a dependência mais alta está no grupo abaixo do P10 (93,3\%), onde o emprego formal é menor (6,7\%) e o IDHM é o pior (0,587). É o retrato que Gomes e Mac Dowell (2000) anteciparam ao mostrar que as transferências pós-1988 beneficiaram os pequenos municípios sem estimular sua atividade produtiva, e que Araújo e Lima (2009) chamaram de ``economia sem produção'': renda formada por salários públicos, aposentadorias e transferências, não por produção. Ceará-Mirim e os 122 municípios do mesmo perfil são a expressão potiguar desse diagnóstico.
+
+\subsection{O que os dados de 2021 contestam}
+
+A conclusão de Mendes \textit{et al.} (2018) de que a indústria é o setor mais relevante para o desenvolvimento humano não se sustenta no Rio Grande do Norte, e a razão aparece nas separatrizes. No Brasil como um todo, PIB industrial alto costuma significar indústria de transformação em cidades grandes, com empregos, fornecedores locais e serviços associados (encadeamentos). No Rio Grande do Norte, a participação industrial extrema ocorre em municípios pequenos com uma única planta de petróleo, sal ou energia eólica: o grupo acima do P90 tem mediana de 10.441 habitantes, 59,4\% do VAB na indústria e IDHM mediano de 0,605, igual ao do meio da distribuição. Parte da diferença é de medida: os autores usam o PIB setorial em nível, que cresce com o tamanho do município, enquanto este trabalho usa a participação de cada setor, que mede especialização. A outra parte é de conteúdo: a indústria potiguar de maior VAB é extrativa e energética, sem os encadeamentos que o resultado nacional pressupõe.
+
+O sinal negativo dos serviços encontrado por Mendes \textit{et al.} (2018) também é contestado. Os autores o atribuem à presença de serviços de baixo valor agregado em todos os municípios. Nos dados potiguares, a participação dos serviços é a variável mais associada ao IDHM ($r = +0{,}61$), e Natal, com 64\% do VAB em serviços, tem o segundo melhor IDHM do estado. A explicação provável está na classificação: no Rio Grande do Norte, o terciário de baixo valor agregado dos municípios pequenos aparece como administração pública, que o IBGE separa dos serviços. Tratada à parte, o sinal dos serviços se inverte; somada aos serviços, como em muitos estudos nacionais, o peso dos municípios pequenos puxa o coeficiente para baixo.
+
+Em resumo, o que acontece em um município pode ser referenciado em outro de mesmo tipo, mas não entre tipos diferentes, distinção que um modelo nacional com todos os municípios não capta.
+
+\section{Considerações finais}
+
+Com média, desvio padrão, percentis e a reta $Y = a + bX$, foi possível identificar os fatores do alto VAB de Guamaré (polo de petróleo e gás, regra de alocação do VAB e preço do petróleo), de Natal (função de capital, densidade e concentração de serviços) e de Ceará-Mirim (declínio da cana e folha pública como base da economia), justificar sua escolha frente a São Bento do Norte, Pau dos Ferros e João Dias, e confrontá-los com a literatura. A correlação, apresentada como a inclinação da reta entre variáveis medidas em desvios padrão, resumiu as relações: indústria e PIB per capita sobem juntos ($+0{,}81$), indústria e IDHM não ($-0{,}01$), serviços e IDHM sobem juntos ($+0{,}61$), administração pública e emprego formal caminham em sentidos opostos ($-0{,}57$). O diálogo com Fernandes, Tavares e Azevedo (2018) e Mendes \textit{et al.} (2018) confirmou que VAB e PIB caminham juntos e contestou, para o caso potiguar, que a indústria seja o setor mais ligado ao desenvolvimento humano e que os serviços o prejudiquem: a medida (nível ou participação) e a classificação dos setores mudam o sinal das conclusões, o que recomenda cautela ao transferir resultados nacionais para um estado cuja indústria é de enclave.
+
+\section*{REFERÊNCIAS}
+\begin{referencias}
+
+3R PETROLEUM ÓLEO E GÁS S.A. \textbf{Fato relevante}: conclusão da aquisição do Polo Potiguar. Rio de Janeiro: 3R Petroleum, 7 jun. 2023. Disponível em: \url{https://api.mziq.com/mzfilemanager/v2/d/55b913af-cd4c-48d5-bc19-48c63916b8a5/56bf8b8b-7ebd-c7dd-e0a9-f31d07f5c7da}. Acesso em: 10 out. 2026.
+
+ANDRADE, Manuel Correia de. As usinas de açúcar e as destilarias de álcool do Rio Grande do Norte. \textbf{Revista GeoInterações}, Assú, v. 7, e11, p. 175-185, 2023. Disponível em: \url{https://periodicos.apps.uern.br/index.php/RGI/article/view/5500}. Acesso em: 10 out. 2026.
+
+ARAÚJO, Leonardo Alves de; LIMA, João Policarpo Rodrigues. Transferências de renda e empregos públicos na economia sem produção do semiárido nordestino. \textbf{Planejamento e Políticas Públicas}, Brasília, n. 33, p. 45-77, jul./dez. 2009. Disponível em: \url{https://repositorio.ipea.gov.br/bitstream/11058/3993/2/PPP_n33_Transferencias.pdf}. Acesso em: 10 out. 2026.
+
+
+DANTAS, Joseney Rodrigues de Queiroz; CLEMENTINO, Maria do Livramento Miranda. Desenvolvimento e urbanização: a rede urbana potiguar sob a ótica dos ``REGICs''. \textbf{Geotemas}, Pau dos Ferros, v. 4, n. 1, p. 71-82, jan./jun. 2014. Disponível em: \url{https://periodicos.apps.uern.br/index.php/GEOTemas/article/view/606}. Acesso em: 10 out. 2026.
+
+FERNANDES, Ruhama Bezerra; TAVARES, Adilson de Lima; AZEVEDO, Yuri Gomes Paiva. Relação entre o valor adicionado das atividades econômicas e o Produto Interno Bruto do Rio Grande do Norte. \textbf{RACE: Revista de Administração, Contabilidade e Economia}, Joaçaba, v. 17, n. 2, p. 757-782, maio/ago. 2018. DOI: 10.18593/race.v17i2.17238.
+
+GOMES, Gustavo Maia; MAC DOWELL, Maria Cristina. \textbf{Descentralização política, federalismo fiscal e criação de municípios}: o que é mau para o econômico nem sempre é bom para o social. Brasília: IPEA, 2000. (Texto para Discussão, n. 706). Disponível em: \url{http://repositorio.ipea.gov.br/handle/11058/2339}. Acesso em: 10 out. 2026.
+
+IBGE. \textbf{Produto interno bruto dos municípios 2013}: apresentação da divulgação. Rio de Janeiro: IBGE, Coordenação de Contas Nacionais, 18 dez. 2015. Disponível em: \url{https://anda.ibge.gov.br/media/com_mediaibge/arquivos/d7449516f181496dbff2a68cfdd9c349.pdf}. Acesso em: 10 out. 2026.
+
+IBGE. \textbf{Produto interno bruto dos municípios}: ano de referência 2010. 3. ed. Rio de Janeiro: IBGE, 2016. (Relatórios Metodológicos, v. 29). Disponível em: \url{https://biblioteca.ibge.gov.br/visualizacao/livros/liv97483.pdf}. Acesso em: 10 out. 2026.
+
+IBGE. \textbf{Produto interno bruto dos municípios 2021}: notas técnicas. Rio de Janeiro: IBGE, 2023. (Contas Nacionais, n. 96). Disponível em: \url{https://biblioteca.ibge.gov.br/visualizacao/livros/liv102057_notas_tecnicas.pdf}. Acesso em: 10 out. 2026.
+
+IBGE. \textbf{Produto interno bruto dos municípios}: Brasil: 2022-2023: notas técnicas. Rio de Janeiro: IBGE, 2025. (Contas Nacionais, n. 104). Disponível em: \url{https://biblioteca.ibge.gov.br/visualizacao/livros/liv102250_notas_tecnicas.pdf}. Acesso em: 10 out. 2026.
+
+MENDES, Wesley de Almeida; FERREIRA, Marco Aurélio Marques; ABRANTES, Luiz Antônio; FARIA, Evandro Rodrigues de. A influência da capacidade econômica e da formação de receitas públicas no desenvolvimento humano. \textbf{Revista de Administração Pública}, Rio de Janeiro, v. 52, n. 5, p. 918-934, set./out. 2018. DOI: 10.1590/0034-761220170004.
+
+
+SILVA, Maria Russilânya Costa Santos da; AQUINO, Joacir Rufino de. Subdesenvolvimento humano com abundância de riqueza: o caso dos ``municípios petrorrentistas'' do Rio Grande do Norte. \textbf{Revista GeoNordeste}, São Cristóvão, ano 27, n. 1, p. 71-91, jan./jul. 2016. Disponível em: \url{https://periodicos.ufs.br/geonordeste/article/view/4572}. Acesso em: 10 out. 2026.
+
+\end{referencias}
+\end{document}
