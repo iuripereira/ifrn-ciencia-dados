@@ -5,7 +5,7 @@ Repo **privado** de trabalho do curso. Não é produto de software: sem ciclo de
 ## Convenções
 
 - Uma pasta por disciplina: `POS.NNNN-slug/` (código do SUAP). Dentro, `aula-NN/` para material de aula e `atividade-NN/` para entregas.
-- Código em Python; notebooks `.ipynb` rodam no Jupyter local ou no Google Colab. O cwd do notebook é a pasta dele: use caminhos relativos a ela.
+- Código em Python; notebooks `.ipynb` rodam no Jupyter local (`conda env create -f environment.yml`, env `ifrn-cd`) ou no Google Colab. O cwd do notebook é a pasta dele: use caminhos relativos a ela.
 - Dataset público entra junto da atividade, com a fonte citada no notebook ou num README da pasta.
 
 ## O que não entra no git
@@ -15,4 +15,4 @@ Repo **privado** de trabalho do curso. Não é produto de software: sem ciclo de
 
 ## Publicação
 
-Repo público: `iuripereira/ifrn-ciencia-dados-portfolio`, clonado ao lado deste (`../ifrn-ciencia-dados-portfolio`). Uma disciplina só é publicada **depois da nota final**, via `./publicar.sh POS.NNNN` — nunca antes do prazo (integridade acadêmica).
+Repo público: `iuripereira/ifrn-ciencia-dados-portfolio`, clonado em `.public/` (ignorado pelo git daqui via `/.*`). Uma disciplina só é publicada **depois da nota final**, via `./publicar.sh POS.NNNN` — nunca antes do prazo (integridade acadêmica).

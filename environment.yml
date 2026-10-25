@@ -1,0 +1,19 @@
+# Ambiente local (Anaconda/Miniconda) para rodar os notebooks da especialização.
+#   conda env create -f environment.yml && conda activate ifrn-cd && jupyter lab
+# No Google Colab nada disso é necessário: os pacotes abaixo já vêm instalados.
+name: ifrn-cd
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - jupyterlab
+  - ipykernel
+  - pandas
+  - numpy
+  - matplotlib
+  - plotly
+  - scikit-learn
+  - beautifulsoup4
+  - requests
+  - lxml
+  - openpyxl

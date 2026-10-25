@@ -13,3 +13,13 @@ Repositório de trabalho da Pós-Graduação Lato Sensu em Ciência de Dados do 
 | POS.1036 | Introdução ao Aprendizado de Máquina | Alexandre Lima | Ambiente Virtual | [POS.1036-machine-learning](POS.1036-machine-learning/) |
 
 Local de aula: Laboratório 06 — DIATINF — Informática (CNAT).
+
+## Ambiente
+
+Colab: abra o `.ipynb` direto em <https://colab.research.google.com>, nada a instalar. Local (Anaconda):
+
+```bash
+conda env create -f environment.yml
+conda activate ifrn-cd
+jupyter lab
+```
