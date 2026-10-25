@@ -1,6 +1,6 @@
 # Especialização em Ciência de Dados — IFRN
 
-Repositório de trabalho (privado) da Pós-Graduação Lato Sensu em Ciência de Dados do IFRN, Campus Natal-Central (DIATINF). Atividades em Python, via Jupyter/Google Colab, com enunciados no Moodle/AVA. A vitrine pública é o [ifrn-ciencia-dados-portfolio](https://github.com/iuripereira/ifrn-ciencia-dados-portfolio), que recebe cada disciplina depois de encerrada.
+Repositório de trabalho da Pós-Graduação Lato Sensu em Ciência de Dados do IFRN, Campus Natal-Central (DIATINF). Atividades em Python, via Jupyter/Google Colab, com enunciados no Moodle/AVA.
 
 ## Disciplinas — 2026.2
 
@@ -13,7 +13,3 @@ Repositório de trabalho (privado) da Pós-Graduação Lato Sensu em Ciência de
 | POS.1036 | Introdução ao Aprendizado de Máquina | Alexandre Lima | Ambiente Virtual | [POS.1036-machine-learning](POS.1036-machine-learning/) |
 
 Local de aula: Laboratório 06 — DIATINF — Informática (CNAT).
-
-## Publicar uma disciplina no portfólio
-
-Depois da nota final, rode `./publicar.sh POS.NNNN`: primeiro sai uma simulação, e o comando pede confirmação antes de copiar e commitar no clone do portfólio.
