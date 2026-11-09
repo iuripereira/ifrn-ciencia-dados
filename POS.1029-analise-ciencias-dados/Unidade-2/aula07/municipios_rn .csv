@@ -1,0 +1,174 @@
+# fonte: IBGE — API de Localidades (servicodados.ibge.gov.br)
+# endpoint: https://servicodados.ibge.gov.br/api/v1/localidades/estados/rn/municipios
+# coletado_em: 2026-10-21T13:20:45+00:00
+# licenca: Sem licença formal no endpoint; dado público do IBGE, reutilizável com citação da fonte (IBGE)
+# total_registros: 167
+# requisicao: {'status': 200, 'motivo': 'OK', 'url_final': 'https://servicodados.ibge.gov.br/api/v1/localidades/estados/rn/municipios', 'tempo_resposta_s': 0.801269, 'encoding': 'utf-8', 'content_type': 'application/json; charset=utf-8', 'data_servidor': 'Wed, 21 Oct 2026 13:20:45 GMT', 'tamanho_bytes': 76383}
+id,nome,microrregiao.id,microrregiao.nome,microrregiao.mesorregiao.id,microrregiao.mesorregiao.nome,microrregiao.mesorregiao.UF.id,microrregiao.mesorregiao.UF.sigla,microrregiao.mesorregiao.UF.nome,microrregiao.mesorregiao.UF.regiao.id,microrregiao.mesorregiao.UF.regiao.sigla,microrregiao.mesorregiao.UF.regiao.nome,regiao-imediata.id,regiao-imediata.nome,regiao-imediata.regiao-intermediaria.id,regiao-imediata.regiao-intermediaria.nome,regiao-imediata.regiao-intermediaria.UF.id,regiao-imediata.regiao-intermediaria.UF.sigla,regiao-imediata.regiao-intermediaria.UF.nome,regiao-imediata.regiao-intermediaria.UF.regiao.id,regiao-imediata.regiao-intermediaria.UF.regiao.sigla,regiao-imediata.regiao-intermediaria.UF.regiao.nome
+2400109,Acari,24012,Seridó Oriental,2402,Central Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240008,Currais Novos,2402,Caicó,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2400208,Assú,24004,Vale do Açu,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240011,Açu,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2400307,Afonso Bezerra,24009,Angicos,2402,Central Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240011,Açu,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2400406,Água Nova,24005,Serra de São Miguel,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240010,Pau dos Ferros,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2400505,Alexandria,24006,Pau dos Ferros,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240010,Pau dos Ferros,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2400604,Almino Afonso,24007,Umarizal,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240010,Pau dos Ferros,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2400703,Alto do Rodrigues,24004,Vale do Açu,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240011,Açu,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2400802,Angicos,24009,Angicos,2402,Central Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240011,Açu,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2400901,Antônio Martins,24007,Umarizal,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240010,Pau dos Ferros,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2401008,Apodi,24002,Chapada do Apodi,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240009,Mossoró,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2401107,Areia Branca,24001,Mossoró,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240009,Mossoró,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2401206,Arez,24019,Litoral Sul,2404,Leste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240003,Canguaretama,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2401305,Campo Grande,24003,Médio Oeste,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240009,Mossoró,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2401404,Baía Formosa,24019,Litoral Sul,2404,Leste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240003,Canguaretama,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2401453,Baraúna,24001,Mossoró,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240009,Mossoró,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2401503,Barcelona,24014,Borborema Potiguar,2403,Agreste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240006,São Paulo do Potengi,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2401602,Bento Fernandes,24013,Baixa Verde,2403,Agreste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240001,Natal,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2401651,Bodó,24010,Serra de Santana,2402,Central Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240008,Currais Novos,2402,Caicó,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2401701,Bom Jesus,24015,Agreste Potiguar,2403,Agreste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240001,Natal,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2401800,Brejinho,24015,Agreste Potiguar,2403,Agreste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240001,Natal,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2401859,Caiçara do Norte,24008,Macau,2402,Central Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240005,João Câmara,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2401909,Caiçara do Rio do Vento,24009,Angicos,2402,Central Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240006,São Paulo do Potengi,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2402006,Caicó,24011,Seridó Ocidental,2402,Central Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240007,Caicó,2402,Caicó,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2402105,Campo Redondo,24014,Borborema Potiguar,2403,Agreste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240004,Santa Cruz,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2402204,Canguaretama,24019,Litoral Sul,2404,Leste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240003,Canguaretama,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2402303,Caraúbas,24002,Chapada do Apodi,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240009,Mossoró,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2402402,Carnaúba dos Dantas,24012,Seridó Oriental,2402,Central Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240008,Currais Novos,2402,Caicó,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2402501,Carnaubais,24004,Vale do Açu,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240011,Açu,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2402600,Ceará-Mirim,24017,Macaíba,2404,Leste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240001,Natal,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2402709,Cerro Corá,24010,Serra de Santana,2402,Central Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240008,Currais Novos,2402,Caicó,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2402808,Coronel Ezequiel,24014,Borborema Potiguar,2403,Agreste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240004,Santa Cruz,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2402907,Coronel João Pessoa,24005,Serra de São Miguel,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240010,Pau dos Ferros,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2403004,Cruzeta,24012,Seridó Oriental,2402,Central Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240007,Caicó,2402,Caicó,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2403103,Currais Novos,24012,Seridó Oriental,2402,Central Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240008,Currais Novos,2402,Caicó,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2403202,Doutor Severiano,24005,Serra de São Miguel,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240010,Pau dos Ferros,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2403251,Parnamirim,24018,Natal,2404,Leste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240001,Natal,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2403301,Encanto,24005,Serra de São Miguel,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240010,Pau dos Ferros,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2403400,Equador,24012,Seridó Oriental,2402,Central Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240007,Caicó,2402,Caicó,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2403509,Espírito Santo,24019,Litoral Sul,2404,Leste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240003,Canguaretama,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2403608,Extremoz,24018,Natal,2404,Leste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240001,Natal,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2403707,Felipe Guerra,24002,Chapada do Apodi,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240009,Mossoró,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2403756,Fernando Pedroza,24009,Angicos,2402,Central Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240011,Açu,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2403806,Florânia,24010,Serra de Santana,2402,Central Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240008,Currais Novos,2402,Caicó,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2403905,Francisco Dantas,24006,Pau dos Ferros,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240010,Pau dos Ferros,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2404002,Frutuoso Gomes,24007,Umarizal,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240010,Pau dos Ferros,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2404101,Galinhos,24008,Macau,2402,Central Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240005,João Câmara,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2404200,Goianinha,24019,Litoral Sul,2404,Leste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240003,Canguaretama,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2404309,Governador Dix-Sept Rosado,24002,Chapada do Apodi,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240009,Mossoró,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2404408,Grossos,24001,Mossoró,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240009,Mossoró,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2404507,Guamaré,24008,Macau,2402,Central Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240011,Açu,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2404606,Ielmo Marinho,24015,Agreste Potiguar,2403,Agreste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240001,Natal,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2404705,Ipanguaçu,24004,Vale do Açu,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240011,Açu,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2404804,Ipueira,24011,Seridó Ocidental,2402,Central Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240007,Caicó,2402,Caicó,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2404853,Itajá,24004,Vale do Açu,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240011,Açu,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2404903,Itaú,24006,Pau dos Ferros,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240009,Mossoró,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2405009,Jaçanã,24014,Borborema Potiguar,2403,Agreste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240004,Santa Cruz,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2405108,Jandaíra,24013,Baixa Verde,2403,Agreste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240005,João Câmara,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2405207,Janduís,24003,Médio Oeste,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240009,Mossoró,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2405306,Januário Cicco,24015,Agreste Potiguar,2403,Agreste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240002,Santo Antônio - Passa e Fica - Nova Cruz,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2405405,Japi,24014,Borborema Potiguar,2403,Agreste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240004,Santa Cruz,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2405504,Jardim de Angicos,24009,Angicos,2402,Central Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240005,João Câmara,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2405603,Jardim de Piranhas,24011,Seridó Ocidental,2402,Central Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240007,Caicó,2402,Caicó,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2405702,Jardim do Seridó,24012,Seridó Oriental,2402,Central Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240007,Caicó,2402,Caicó,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2405801,João Câmara,24013,Baixa Verde,2403,Agreste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240005,João Câmara,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2405900,João Dias,24007,Umarizal,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240010,Pau dos Ferros,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2406007,José da Penha,24006,Pau dos Ferros,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240010,Pau dos Ferros,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2406106,Jucurutu,24004,Vale do Açu,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240007,Caicó,2402,Caicó,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2406155,Jundiá,24015,Agreste Potiguar,2403,Agreste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240001,Natal,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2406205,Lagoa d'Anta,24015,Agreste Potiguar,2403,Agreste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240002,Santo Antônio - Passa e Fica - Nova Cruz,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2406304,Lagoa de Pedras,24015,Agreste Potiguar,2403,Agreste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240002,Santo Antônio - Passa e Fica - Nova Cruz,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2406403,Lagoa de Velhos,24014,Borborema Potiguar,2403,Agreste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240006,São Paulo do Potengi,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2406502,Lagoa Nova,24010,Serra de Santana,2402,Central Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240008,Currais Novos,2402,Caicó,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2406601,Lagoa Salgada,24015,Agreste Potiguar,2403,Agreste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240001,Natal,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2406700,Lajes,24009,Angicos,2402,Central Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240011,Açu,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2406809,Lajes Pintadas,24014,Borborema Potiguar,2403,Agreste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240004,Santa Cruz,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2406908,Lucrécia,24007,Umarizal,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240010,Pau dos Ferros,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2407005,Luís Gomes,24005,Serra de São Miguel,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240010,Pau dos Ferros,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2407104,Macaíba,24017,Macaíba,2404,Leste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240001,Natal,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2407203,Macau,24008,Macau,2402,Central Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240011,Açu,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2407252,Major Sales,24005,Serra de São Miguel,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240010,Pau dos Ferros,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2407302,Marcelino Vieira,24006,Pau dos Ferros,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240010,Pau dos Ferros,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2407401,Martins,24007,Umarizal,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240010,Pau dos Ferros,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2407500,Maxaranguape,24016,Litoral Nordeste,2404,Leste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240001,Natal,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2407609,Messias Targino,24003,Médio Oeste,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240009,Mossoró,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2407708,Montanhas,24019,Litoral Sul,2404,Leste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240003,Canguaretama,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2407807,Monte Alegre,24015,Agreste Potiguar,2403,Agreste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240001,Natal,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2407906,Monte das Gameleiras,24014,Borborema Potiguar,2403,Agreste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240002,Santo Antônio - Passa e Fica - Nova Cruz,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2408003,Mossoró,24001,Mossoró,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240009,Mossoró,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2408102,Natal,24018,Natal,2404,Leste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240001,Natal,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2408201,Nísia Floresta,24017,Macaíba,2404,Leste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240001,Natal,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2408300,Nova Cruz,24015,Agreste Potiguar,2403,Agreste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240002,Santo Antônio - Passa e Fica - Nova Cruz,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2408409,Olho d'Água do Borges,24007,Umarizal,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240010,Pau dos Ferros,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2408508,Ouro Branco,24012,Seridó Oriental,2402,Central Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240007,Caicó,2402,Caicó,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2408607,Paraná,24006,Pau dos Ferros,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240010,Pau dos Ferros,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2408706,Paraú,24003,Médio Oeste,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240011,Açu,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2408805,Parazinho,24013,Baixa Verde,2403,Agreste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240005,João Câmara,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2408904,Parelhas,24012,Seridó Oriental,2402,Central Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240007,Caicó,2402,Caicó,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2408953,Rio do Fogo,24016,Litoral Nordeste,2404,Leste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240001,Natal,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2409100,Passa e Fica,24015,Agreste Potiguar,2403,Agreste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240002,Santo Antônio - Passa e Fica - Nova Cruz,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2409209,Passagem,24015,Agreste Potiguar,2403,Agreste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240002,Santo Antônio - Passa e Fica - Nova Cruz,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2409308,Patu,24007,Umarizal,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240010,Pau dos Ferros,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2409332,Santa Maria,24015,Agreste Potiguar,2403,Agreste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240006,São Paulo do Potengi,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2409407,Pau dos Ferros,24006,Pau dos Ferros,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240010,Pau dos Ferros,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2409506,Pedra Grande,24016,Litoral Nordeste,2404,Leste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240005,João Câmara,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2409605,Pedra Preta,24009,Angicos,2402,Central Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240005,João Câmara,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2409704,Pedro Avelino,24009,Angicos,2402,Central Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240005,João Câmara,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2409803,Pedro Velho,24019,Litoral Sul,2404,Leste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240003,Canguaretama,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2409902,Pendências,24004,Vale do Açu,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240011,Açu,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2410009,Pilões,24006,Pau dos Ferros,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240010,Pau dos Ferros,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2410108,Poço Branco,24013,Baixa Verde,2403,Agreste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240001,Natal,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2410207,Portalegre,24006,Pau dos Ferros,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240010,Pau dos Ferros,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2410256,Porto do Mangue,24004,Vale do Açu,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240011,Açu,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2410306,Serra Caiada,24015,Agreste Potiguar,2403,Agreste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240002,Santo Antônio - Passa e Fica - Nova Cruz,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2410405,Pureza,24016,Litoral Nordeste,2404,Leste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240001,Natal,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2410504,Rafael Fernandes,24006,Pau dos Ferros,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240010,Pau dos Ferros,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2410603,Rafael Godeiro,24007,Umarizal,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240010,Pau dos Ferros,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2410702,Riacho da Cruz,24006,Pau dos Ferros,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240010,Pau dos Ferros,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2410801,Riacho de Santana,24005,Serra de São Miguel,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240010,Pau dos Ferros,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2410900,Riachuelo,24015,Agreste Potiguar,2403,Agreste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240006,São Paulo do Potengi,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2411007,Rodolfo Fernandes,24006,Pau dos Ferros,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240009,Mossoró,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2411056,Tibau,24001,Mossoró,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240009,Mossoró,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2411106,Ruy Barbosa,24014,Borborema Potiguar,2403,Agreste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240006,São Paulo do Potengi,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2411205,Santa Cruz,24014,Borborema Potiguar,2403,Agreste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240004,Santa Cruz,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2411403,Santana do Matos,24010,Serra de Santana,2402,Central Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240011,Açu,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2411429,Santana do Seridó,24012,Seridó Oriental,2402,Central Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240007,Caicó,2402,Caicó,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2411502,Santo Antônio,24015,Agreste Potiguar,2403,Agreste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240002,Santo Antônio - Passa e Fica - Nova Cruz,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2411601,São Bento do Norte,24008,Macau,2402,Central Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240005,João Câmara,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2411700,São Bento do Trairí,24014,Borborema Potiguar,2403,Agreste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240004,Santa Cruz,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2411809,São Fernando,24011,Seridó Ocidental,2402,Central Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240007,Caicó,2402,Caicó,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2411908,São Francisco do Oeste,24006,Pau dos Ferros,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240010,Pau dos Ferros,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2412005,São Gonçalo do Amarante,24017,Macaíba,2404,Leste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240001,Natal,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2412104,São João do Sabugi,24011,Seridó Ocidental,2402,Central Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240007,Caicó,2402,Caicó,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2412203,São José de Mipibu,24017,Macaíba,2404,Leste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240001,Natal,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2412302,São José do Campestre,24014,Borborema Potiguar,2403,Agreste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240002,Santo Antônio - Passa e Fica - Nova Cruz,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2412401,São José do Seridó,24012,Seridó Oriental,2402,Central Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240007,Caicó,2402,Caicó,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2412500,São Miguel,24005,Serra de São Miguel,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240010,Pau dos Ferros,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2412559,São Miguel do Gostoso,24016,Litoral Nordeste,2404,Leste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240001,Natal,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2412609,São Paulo do Potengi,24015,Agreste Potiguar,2403,Agreste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240006,São Paulo do Potengi,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2412708,São Pedro,24015,Agreste Potiguar,2403,Agreste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240006,São Paulo do Potengi,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2412807,São Rafael,24004,Vale do Açu,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240011,Açu,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2412906,São Tomé,24014,Borborema Potiguar,2403,Agreste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240006,São Paulo do Potengi,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2413003,São Vicente,24010,Serra de Santana,2402,Central Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240008,Currais Novos,2402,Caicó,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2413102,Senador Elói de Souza,24015,Agreste Potiguar,2403,Agreste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240006,São Paulo do Potengi,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2413201,Senador Georgino Avelino,24019,Litoral Sul,2404,Leste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240001,Natal,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2413300,Serra de São Bento,24014,Borborema Potiguar,2403,Agreste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240002,Santo Antônio - Passa e Fica - Nova Cruz,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2413359,Serra do Mel,24001,Mossoró,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240009,Mossoró,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2413409,Serra Negra do Norte,24011,Seridó Ocidental,2402,Central Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240007,Caicó,2402,Caicó,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2413508,Serrinha,24015,Agreste Potiguar,2403,Agreste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240002,Santo Antônio - Passa e Fica - Nova Cruz,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2413557,Serrinha dos Pintos,24007,Umarizal,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240010,Pau dos Ferros,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2413607,Severiano Melo,24006,Pau dos Ferros,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240009,Mossoró,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2413706,Sítio Novo,24014,Borborema Potiguar,2403,Agreste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240004,Santa Cruz,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2413805,Taboleiro Grande,24006,Pau dos Ferros,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240010,Pau dos Ferros,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2413904,Taipu,24016,Litoral Nordeste,2404,Leste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240001,Natal,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2414001,Tangará,24014,Borborema Potiguar,2403,Agreste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240004,Santa Cruz,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2414100,Tenente Ananias,24006,Pau dos Ferros,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240010,Pau dos Ferros,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2414159,Tenente Laurentino Cruz,24010,Serra de Santana,2402,Central Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240008,Currais Novos,2402,Caicó,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2414209,Tibau do Sul,24019,Litoral Sul,2404,Leste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240003,Canguaretama,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2414308,Timbaúba dos Batistas,24011,Seridó Ocidental,2402,Central Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240007,Caicó,2402,Caicó,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2414407,Touros,24016,Litoral Nordeste,2404,Leste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240001,Natal,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2414456,Triunfo Potiguar,24003,Médio Oeste,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240011,Açu,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2414506,Umarizal,24007,Umarizal,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240010,Pau dos Ferros,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2414605,Upanema,24003,Médio Oeste,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240009,Mossoró,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2414704,Várzea,24015,Agreste Potiguar,2403,Agreste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240002,Santo Antônio - Passa e Fica - Nova Cruz,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2414753,Venha-Ver,24005,Serra de São Miguel,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240010,Pau dos Ferros,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2414803,Vera Cruz,24015,Agreste Potiguar,2403,Agreste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240001,Natal,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2414902,Viçosa,24006,Pau dos Ferros,2401,Oeste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240010,Pau dos Ferros,2403,Mossoró,24,RN,Rio Grande do Norte,2,NE,Nordeste
+2415008,Vila Flor,24019,Litoral Sul,2404,Leste Potiguar,24,RN,Rio Grande do Norte,2,NE,Nordeste,240003,Canguaretama,2401,Natal,24,RN,Rio Grande do Norte,2,NE,Nordeste

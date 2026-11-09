@@ -1,0 +1,27 @@
+Aula 10 — Laboratório: Pipeline de Limpeza Completo
+Análise e Ciência de Dados — Especialização em Ciência de Dados — IFRN
+
+Conteúdo
+  Aula10_Pipeline_de_Limpeza.ipynb   laboratório guiado: pipeline ETL completo (com todas as saídas)
+  Aula10_Exercicio_Pratico.ipynb     exercício para treinar (TODOs + "Para conferir") — sem entrega
+  Aula10_Entrega_Modelo.ipynb        notebook-modelo da ATIVIDADE DE ENTREGA (requisitos e critérios)
+  dados/pacientes.csv                cadastro de 200 pacientes (laboratório)
+  dados/internacoes.json             304 internações (laboratório)
+  dados/consultas_ambulatorio.csv    83 consultas ambulatoriais (exercício)
+  dados/exames_laboratoriais.csv     155 exames laboratoriais (atividade de entrega)
+  gerar_dados.py                     script que gera os quatro arquivos (semente fixa)
+
+Como usar
+  1. Extraia o ZIP mantendo a pasta dados/ ao lado dos notebooks.
+  2. pip install pandas numpy scikit-learn pyarrow
+  3. Abra os notebooks nesta pasta. O laboratório grava os resultados na pasta saida/.
+
+Avaliação (prazo 30/10/2026)
+  - Formulário avaliativo (10 questões) no Moodle.
+  - Tarefa "Entrega — Dataset limpo + Notebook documentado (Aula 10)":
+    envie o notebook executado e comentado (Aula10_Entrega_Modelo.ipynb preenchido,
+    com seu nome no arquivo) e o arquivo exames_laboratoriais_limpo.csv.
+
+IMPORTANTE: todos os dados são SINTÉTICOS (sorteados pelo gerar_dados.py).
+Nenhum registro corresponde a um paciente real. Os problemas de qualidade
+foram inseridos de propósito.

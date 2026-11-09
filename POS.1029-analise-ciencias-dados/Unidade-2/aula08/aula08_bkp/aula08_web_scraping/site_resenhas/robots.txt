@@ -1,0 +1,4 @@
+# Estante Potiguar — regras para robôs
+User-agent: *
+Disallow: /privado/
+Crawl-delay: 1

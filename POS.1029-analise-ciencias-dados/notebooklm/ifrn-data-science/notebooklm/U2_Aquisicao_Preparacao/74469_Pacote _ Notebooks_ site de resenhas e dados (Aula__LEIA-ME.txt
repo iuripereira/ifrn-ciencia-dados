@@ -1,0 +1,22 @@
+Aula 08 — Laboratório: Web Scraping com BeautifulSoup
+Análise e Ciência de Dados — Especialização em Ciência de Dados — IFRN
+
+Conteúdo do pacote
+  Aula08_Web_Scraping_BeautifulSoup.ipynb  notebook do laboratório guiado (com as saídas)
+  Aula08_Exercicio_Pratico.ipynb           ponto de partida do exercício (trechos TODO)
+  site_resenhas/                           "Estante Potiguar": mini-site de resenhas de livros
+                                           (3 páginas de resenhas, ranking.html, robots.txt)
+  dados/                                   resultados de referência gerados pelo notebook em 09/10/2026
+
+Como usar
+  1. Extraia o ZIP mantendo as pastas.
+  2. Instale: pip install requests beautifulsoup4 pandas lxml
+  3. Abra os notebooks NESTA pasta (a mesma que contém site_resenhas/).
+     O próprio notebook coloca o site no ar em http://localhost:8000/
+     (equivale a rodar: python -m http.server 8000 --directory site_resenhas).
+
+Sobre os dados
+  - Estante Potiguar é FICTÍCIA: os livros são clássicos brasileiros em domínio público,
+    mas leitores e comentários foram escritos para fins didáticos.
+  - books_toscrape_5paginas.csv vem do site real de treino https://books.toscrape.com
+    (5 primeiras páginas do catálogo, coletadas em 09/10/2026).

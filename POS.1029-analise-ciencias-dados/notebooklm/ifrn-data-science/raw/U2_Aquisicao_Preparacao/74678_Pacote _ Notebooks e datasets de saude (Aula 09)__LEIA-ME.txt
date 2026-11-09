@@ -1,0 +1,22 @@
+Aula 09 — Qualidade de Dados e Limpeza
+Análise e Ciência de Dados — Especialização em Ciência de Dados — IFRN
+
+Conteúdo
+  Aula09_Qualidade_e_Limpeza_de_Dados.ipynb  laboratório guiado (com todas as saídas)
+  Aula09_Exercicio_Pratico.ipynb             exercício para treinar (TODOs + "Para conferir")
+  dados/atendimentos_ubs_sujo.csv            250 atendimentos em UBS (laboratório)
+  dados/vacinacao_influenza_larga.csv        doses por município e mês (tidy data)
+  dados/triagem_pa_sujo.csv                  64 registros de triagem (exercício)
+  gerar_dados.py                             script que gera os três arquivos (semente fixa)
+
+Como usar
+  1. Extraia o ZIP mantendo a pasta dados/ ao lado dos notebooks.
+  2. pip install pandas numpy matplotlib
+  3. Abra os notebooks nesta pasta.
+
+IMPORTANTE: todos os dados são SINTÉTICOS (sorteados pelo gerar_dados.py).
+Nenhum registro corresponde a um paciente real. Os problemas de qualidade
+(ausentes, duplicatas, erros, unidades trocadas) foram inseridos de propósito.
+
+O exercício prático é para treino e não precisa ser entregue.
+A avaliação da aula é o formulário avaliativo no Moodle (prazo 30/10/2026).

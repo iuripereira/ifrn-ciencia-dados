@@ -1,0 +1,35 @@
+Aula 07 — Laboratório: Coleta via APIs REST
+Pacote de dados de referência
+
+Estes arquivos foram gerados ao vivo em 2026-10-05 seguindo exatamente os passos do
+notebook "Aula07_Coleta_via_APIs_REST.ipynb" (Parte II / Laboratório guiado), usando
+as APIs públicas do IBGE e do TSE. Eles servem como referência para conferir se a sua
+própria coleta (rodando o notebook você mesmo) chegou a resultados parecidos — não são
+necessários para rodar o notebook, que coleta tudo de novo, ao vivo, quando executado.
+
+Arquivos:
+
+  ibge_municipios_rn.json        Lista completa dos 167 municípios do RN, como vem da
+                                  API de Localidades do IBGE (com id, nome e uf),
+                                  mais metadados de proveniência.
+
+  municipios_rn.json             Resultado do Passo 4 do notebook: os 167 municípios
+                                  simplificados (codigo_ibge, municipio) + proveniência,
+                                  exatamente como o notebook grava.
+
+  municipios_rn.csv               Os mesmos dados, em CSV.
+
+  tse_catalogo_snapshot.json     Snapshot do catálogo de dados abertos do TSE coletado em
+                                  05/10/2026: estatísticas gerais (182 conjuntos de dados,
+                                  7 organizações, 12 grupos), a demonstração de paginação
+                                  (busca por "eleições", 9 resultados em 2 páginas) e os
+                                  recursos do conjunto "Candidatos - 2026".
+
+  tse_conjuntos_eleicoes.json    Resultado do Passo 4 do notebook: a lista dos 9 conjuntos
+                                  de dados coletados por paginação com o termo "eleições".
+
+Fontes:
+  IBGE — API de Localidades — https://servicodados.ibge.gov.br/api/v1/localidades
+  TSE — Portal de Dados Abertos — https://dadosabertos.tse.jus.br (API em /api/3/action/)
+
+Licença: dados abertos governamentais (Lei 12.527/2011) — uso livre, com citação da fonte.

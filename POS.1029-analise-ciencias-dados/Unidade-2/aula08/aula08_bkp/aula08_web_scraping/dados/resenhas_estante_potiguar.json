@@ -1,0 +1,248 @@
+{
+  "fonte": "Estante Potiguar (site fictício da Aula 08, servido localmente)",
+  "url": "http://localhost:8000/",
+  "coletado_em": "2026-10-09",
+  "observacao": "leitores e comentários fictícios; nomes abreviados",
+  "resenhas": [
+    {
+      "id": 1,
+      "livro": "Dom Casmurro",
+      "autor": "Machado de Assis",
+      "nota": 5,
+      "leitor": "Ana P.",
+      "data": "2026-09-02",
+      "comentario": "Releio a cada cinco anos e sempre mudo de opinião sobre Capitu. Narrador mais suspeito da literatura brasileira.",
+      "util": 31
+    },
+    {
+      "id": 2,
+      "livro": "O Cortiço",
+      "autor": "Aluísio Azevedo",
+      "nota": 4,
+      "leitor": "Bruno M.",
+      "data": "2026-09-03",
+      "comentario": "Retrato forte e coletivo da vida urbana no século XIX. Algumas descrições são longas, mas valem a pena.",
+      "util": 12
+    },
+    {
+      "id": 3,
+      "livro": "Iracema",
+      "autor": "José de Alencar",
+      "nota": 3,
+      "leitor": "Carla R.",
+      "data": "2026-09-04",
+      "comentario": "Linguagem belíssima, quase um poema em prosa. Achei a história romantizada demais para o meu gosto.",
+      "util": 7
+    },
+    {
+      "id": 4,
+      "livro": "O Alienista",
+      "autor": "Machado de Assis",
+      "nota": 5,
+      "leitor": "Diego S.",
+      "data": "2026-09-05",
+      "comentario": "Curto, irônico e atualíssimo. Dá para ler numa tarde e discutir por uma semana.",
+      "util": 25
+    },
+    {
+      "id": 5,
+      "livro": "Triste Fim de Policarpo Quaresma",
+      "autor": "Lima Barreto",
+      "nota": 4,
+      "leitor": "Elisa F.",
+      "data": "2026-09-06",
+      "comentario": "Policarpo é ingênuo e comovente ao mesmo tempo. O final é amargo, como o título promete.",
+      "util": 9
+    },
+    {
+      "id": 6,
+      "livro": "Memórias Póstumas de Brás Cubas",
+      "autor": "Machado de Assis",
+      "nota": 5,
+      "leitor": "Fábio L.",
+      "data": "2026-09-08",
+      "comentario": "Um defunto-autor com humor ácido. Os capítulos curtíssimos deixam a leitura muito dinâmica.",
+      "util": 28
+    },
+    {
+      "id": 7,
+      "livro": "Dom Casmurro",
+      "autor": "Machado de Assis",
+      "nota": 4,
+      "leitor": "Gabriela T.",
+      "data": "2026-09-09",
+      "comentario": "Excelente, mas precisei de um guia de leitura para entender todas as referências.",
+      "util": 6
+    },
+    {
+      "id": 8,
+      "livro": "Iracema",
+      "autor": "José de Alencar",
+      "nota": 2,
+      "leitor": "Heitor A.",
+      "data": "2026-09-10",
+      "comentario": "Li por obrigação na escola e não gostei. Talvez releia com outros olhos.",
+      "util": null
+    },
+    {
+      "id": 9,
+      "livro": "O Cortiço",
+      "autor": "Aluísio Azevedo",
+      "nota": 5,
+      "leitor": "Isabela N.",
+      "data": "2026-09-12",
+      "comentario": "João Romão é um dos vilões mais bem construídos que já li. Leitura obrigatória.",
+      "util": 18
+    },
+    {
+      "id": 10,
+      "livro": "O Alienista",
+      "autor": "Machado de Assis",
+      "nota": 4,
+      "leitor": "João V.",
+      "data": "2026-09-13",
+      "comentario": "Sátira inteligente sobre ciência e poder. Recomendo para quem está começando Machado.",
+      "util": 11
+    },
+    {
+      "id": 11,
+      "livro": "Memórias Póstumas de Brás Cubas",
+      "autor": "Machado de Assis",
+      "nota": 3,
+      "leitor": "Karen O.",
+      "data": "2026-09-15",
+      "comentario": "Reconheço a genialidade, mas o narrador me irritou do começo ao fim — talvez seja essa a intenção.",
+      "util": 4
+    },
+    {
+      "id": 12,
+      "livro": "Triste Fim de Policarpo Quaresma",
+      "autor": "Lima Barreto",
+      "nota": 5,
+      "leitor": "Lucas D.",
+      "data": "2026-09-16",
+      "comentario": "Crítica ao nacionalismo que continua fazendo sentido. Lima Barreto merece mais leitores.",
+      "util": 15
+    },
+    {
+      "id": 13,
+      "livro": "Dom Casmurro",
+      "autor": "Machado de Assis",
+      "nota": 5,
+      "leitor": "Marina C.",
+      "data": "2026-09-18",
+      "comentario": "Traiu ou não traiu? O livro é sobre ciúme e memória, não sobre a resposta.",
+      "util": 22
+    },
+    {
+      "id": 14,
+      "livro": "Iracema",
+      "autor": "José de Alencar",
+      "nota": 4,
+      "leitor": "Nelson B.",
+      "data": "2026-09-19",
+      "comentario": "Gostei muito da musicalidade do texto. Ótimo para ler em voz alta.",
+      "util": 5
+    },
+    {
+      "id": 15,
+      "livro": "O Cortiço",
+      "autor": "Aluísio Azevedo",
+      "nota": 3,
+      "leitor": "Olívia G.",
+      "data": "2026-09-21",
+      "comentario": "História importante, mas a visão determinista dos personagens envelheceu mal.",
+      "util": 8
+    },
+    {
+      "id": 16,
+      "livro": "O Alienista",
+      "autor": "Machado de Assis",
+      "nota": 5,
+      "leitor": "Paulo H.",
+      "data": "2026-09-22",
+      "comentario": "Simão Bacamarte é inesquecível. Final perfeito.",
+      "util": 19
+    },
+    {
+      "id": 17,
+      "livro": "Memórias Póstumas de Brás Cubas",
+      "autor": "Machado de Assis",
+      "nota": 4,
+      "leitor": "Quésia I.",
+      "data": "2026-09-24",
+      "comentario": "Começo estranho, meio brilhante. O capítulo das negativas é genial.",
+      "util": 10
+    },
+    {
+      "id": 18,
+      "livro": "Triste Fim de Policarpo Quaresma",
+      "autor": "Lima Barreto",
+      "nota": 3,
+      "leitor": "Rafael J.",
+      "data": "2026-09-25",
+      "comentario": "A primeira parte é ótima; a parte da revolta ficou cansativa para mim.",
+      "util": null
+    },
+    {
+      "id": 19,
+      "livro": "Dom Casmurro",
+      "autor": "Machado de Assis",
+      "nota": 3,
+      "leitor": "Sofia K.",
+      "data": "2026-09-27",
+      "comentario": "Entendo a importância, mas o ritmo é lento para leitores de hoje.",
+      "util": 3
+    },
+    {
+      "id": 20,
+      "livro": "O Cortiço",
+      "autor": "Aluísio Azevedo",
+      "nota": 4,
+      "leitor": "Tiago E.",
+      "data": "2026-09-28",
+      "comentario": "Parece um documentário sobre o Rio antigo. Muito bem escrito.",
+      "util": 6
+    },
+    {
+      "id": 21,
+      "livro": "Iracema",
+      "autor": "José de Alencar",
+      "nota": 5,
+      "leitor": "Úrsula Q.",
+      "data": "2026-09-30",
+      "comentario": "Clássico do romantismo indianista. A abertura é uma das mais bonitas da nossa literatura.",
+      "util": 13
+    },
+    {
+      "id": 22,
+      "livro": "O Alienista",
+      "autor": "Machado de Assis",
+      "nota": 4,
+      "leitor": "Vitor W.",
+      "data": "2026-10-01",
+      "comentario": "Bom para discutir em sala: loucura, ciência e autoridade em poucas páginas.",
+      "util": 9
+    },
+    {
+      "id": 23,
+      "livro": "Memórias Póstumas de Brás Cubas",
+      "autor": "Machado de Assis",
+      "nota": 5,
+      "leitor": "Wesley Y.",
+      "data": "2026-10-02",
+      "comentario": "O melhor livro de Machado, na minha opinião. Moderno até hoje.",
+      "util": 21
+    },
+    {
+      "id": 24,
+      "livro": "Triste Fim de Policarpo Quaresma",
+      "autor": "Lima Barreto",
+      "nota": 4,
+      "leitor": "Yara Z.",
+      "data": "2026-10-03",
+      "comentario": "Personagem quixotesco e muito humano. Fiquei com pena do major.",
+      "util": 7
+    }
+  ]
+}

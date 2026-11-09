@@ -1,0 +1,11 @@
+{
+ "fonte": "Ministério da Saúde — DEMAS API de Dados Abertos (CNES)",
+ "endpoint": "https://apidadosabertos.saude.gov.br/cnes/estabelecimentos",
+ "parametros": {
+  "codigo_municipio": 240810,
+  "limit": 20
+ },
+ "data_coleta": "2026-09-28",
+ "licenca": "Dados abertos governamentais (Lei de Acesso à Informação, Lei 12.527/2011) — uso livre com citação da fonte",
+ "observacao": "Amostra: 20 primeiros estabelecimentos retornados pela API para cada um dos 8 municípios (limite fixo do servidor, ignora limit>20). Não é o total de estabelecimentos do CNES no município."
+}
