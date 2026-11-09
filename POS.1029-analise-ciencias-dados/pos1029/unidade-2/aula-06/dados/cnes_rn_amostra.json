@@ -1,0 +1,1293 @@
+{
+ "fonte": "Ministério da Saúde — DEMAS API de Dados Abertos (CNES)",
+ "endpoint": "https://apidadosabertos.saude.gov.br/cnes/estabelecimentos",
+ "parametros_exemplo": {
+  "codigo_municipio": 240810,
+  "limit": 20
+ },
+ "data_coleta": "2026-09-28",
+ "observacao": "Amostra: 20 primeiros estabelecimentos retornados pela API para cada um dos 8 municípios (limite fixo do servidor, ignora limit>20). Não é o total de estabelecimentos do CNES no município.",
+ "licenca": "Dados abertos governamentais (Lei de Acesso à Informação, Lei 12.527/2011) — uso livre com citação da fonte",
+ "registros": [
+  {
+   "municipio": "Natal",
+   "codigo_municipio_ibge6": 240810,
+   "codigo_tipo_unidade": 22,
+   "descricao_tipo_unidade": "CONSULTORIO ISOLADO",
+   "latitude": -5.795,
+   "longitude": -35.209
+  },
+  {
+   "municipio": "Natal",
+   "codigo_municipio_ibge6": 240810,
+   "codigo_tipo_unidade": 22,
+   "descricao_tipo_unidade": "CONSULTORIO ISOLADO",
+   "latitude": -5.8096882,
+   "longitude": -35.2094784
+  },
+  {
+   "municipio": "Natal",
+   "codigo_municipio_ibge6": 240810,
+   "codigo_tipo_unidade": 42,
+   "descricao_tipo_unidade": "UNIDADE MOVEL DE NIVEL PRE-HOSPITALAR NA AREA DE URGENCIA",
+   "latitude": -5.7789535,
+   "longitude": -35.2061909
+  },
+  {
+   "municipio": "Natal",
+   "codigo_municipio_ibge6": 240810,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -5.8212425,
+   "longitude": -35.2167169
+  },
+  {
+   "municipio": "Natal",
+   "codigo_municipio_ibge6": 240810,
+   "codigo_tipo_unidade": 22,
+   "descricao_tipo_unidade": "CONSULTORIO ISOLADO",
+   "latitude": -5.820628690566431,
+   "longitude": -35.20988881587982
+  },
+  {
+   "municipio": "Natal",
+   "codigo_municipio_ibge6": 240810,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -5.7968987,
+   "longitude": -35.1992853
+  },
+  {
+   "municipio": "Natal",
+   "codigo_municipio_ibge6": 240810,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -5.788806416251979,
+   "longitude": -35.20321648706045
+  },
+  {
+   "municipio": "Natal",
+   "codigo_municipio_ibge6": 240810,
+   "codigo_tipo_unidade": 22,
+   "descricao_tipo_unidade": "CONSULTORIO ISOLADO",
+   "latitude": -5.795689456321238,
+   "longitude": -35.20414084196091
+  },
+  {
+   "municipio": "Natal",
+   "codigo_municipio_ibge6": 240810,
+   "codigo_tipo_unidade": 39,
+   "descricao_tipo_unidade": "UNIDADE DE APOIO DIAGNOSE E TERAPIA (SADT ISOLADO)",
+   "latitude": -5.771683135050676,
+   "longitude": -35.26379585266113
+  },
+  {
+   "municipio": "Natal",
+   "codigo_municipio_ibge6": 240810,
+   "codigo_tipo_unidade": 39,
+   "descricao_tipo_unidade": "UNIDADE DE APOIO DIAGNOSE E TERAPIA (SADT ISOLADO)",
+   "latitude": -5.87289,
+   "longitude": -35.2203427
+  },
+  {
+   "municipio": "Natal",
+   "codigo_municipio_ibge6": 240810,
+   "codigo_tipo_unidade": 22,
+   "descricao_tipo_unidade": "CONSULTORIO ISOLADO",
+   "latitude": -5.782426863638998,
+   "longitude": -35.19644021987915
+  },
+  {
+   "municipio": "Natal",
+   "codigo_municipio_ibge6": 240810,
+   "codigo_tipo_unidade": 22,
+   "descricao_tipo_unidade": "CONSULTORIO ISOLADO",
+   "latitude": -5.795,
+   "longitude": -35.209
+  },
+  {
+   "municipio": "Natal",
+   "codigo_municipio_ibge6": 240810,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -5.795,
+   "longitude": -35.209
+  },
+  {
+   "municipio": "Natal",
+   "codigo_municipio_ibge6": 240810,
+   "codigo_tipo_unidade": 60,
+   "descricao_tipo_unidade": "COOPERATIVA OU EMPRESA DE CESSAO DE TRABALHADORES NA SAUDE",
+   "latitude": -5.750046,
+   "longitude": -35.2398636
+  },
+  {
+   "municipio": "Natal",
+   "codigo_municipio_ibge6": 240810,
+   "codigo_tipo_unidade": 77,
+   "descricao_tipo_unidade": "SERVICO DE ATENCAO DOMICILIAR ISOLADO(HOME CARE)",
+   "latitude": -5.7837972,
+   "longitude": -35.1998099
+  },
+  {
+   "municipio": "Natal",
+   "codigo_municipio_ibge6": 240810,
+   "codigo_tipo_unidade": 77,
+   "descricao_tipo_unidade": "SERVICO DE ATENCAO DOMICILIAR ISOLADO(HOME CARE)",
+   "latitude": -5.7971728,
+   "longitude": -35.2118976
+  },
+  {
+   "municipio": "Natal",
+   "codigo_municipio_ibge6": 240810,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -5.784673787551636,
+   "longitude": -35.19503742456436
+  },
+  {
+   "municipio": "Natal",
+   "codigo_municipio_ibge6": 240810,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -5.795,
+   "longitude": -35.209
+  },
+  {
+   "municipio": "Natal",
+   "codigo_municipio_ibge6": 240810,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -5.8238675,
+   "longitude": -35.206077
+  },
+  {
+   "municipio": "Natal",
+   "codigo_municipio_ibge6": 240810,
+   "codigo_tipo_unidade": 22,
+   "descricao_tipo_unidade": "CONSULTORIO ISOLADO",
+   "latitude": -5.795,
+   "longitude": -35.209
+  },
+  {
+   "municipio": "Mossoro",
+   "codigo_municipio_ibge6": 240800,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -5.183696368913802,
+   "longitude": -37.354373931884766
+  },
+  {
+   "municipio": "Mossoro",
+   "codigo_municipio_ibge6": 240800,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -5.1815199,
+   "longitude": -37.3410521
+  },
+  {
+   "municipio": "Mossoro",
+   "codigo_municipio_ibge6": 240800,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -5.168224362276549,
+   "longitude": -37.336928844451904
+  },
+  {
+   "municipio": "Mossoro",
+   "codigo_municipio_ibge6": 240800,
+   "codigo_tipo_unidade": 40,
+   "descricao_tipo_unidade": "UNIDADE MOVEL TERRESTRE",
+   "latitude": -5.1888447,
+   "longitude": -37.3604804
+  },
+  {
+   "municipio": "Mossoro",
+   "codigo_municipio_ibge6": 240800,
+   "codigo_tipo_unidade": 2,
+   "descricao_tipo_unidade": "CENTRO DE SAUDE/UNIDADE BASICA",
+   "latitude": -5.8989943,
+   "longitude": -36.7775313
+  },
+  {
+   "municipio": "Mossoro",
+   "codigo_municipio_ibge6": 240800,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -5.1670276167215965,
+   "longitude": -37.3804235458374
+  },
+  {
+   "municipio": "Mossoro",
+   "codigo_municipio_ibge6": 240800,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -5.183824588381283,
+   "longitude": -37.35450267791748
+  },
+  {
+   "municipio": "Mossoro",
+   "codigo_municipio_ibge6": 240800,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -5.1786316,
+   "longitude": -37.3644313
+  },
+  {
+   "municipio": "Mossoro",
+   "codigo_municipio_ibge6": 240800,
+   "codigo_tipo_unidade": 77,
+   "descricao_tipo_unidade": "SERVICO DE ATENCAO DOMICILIAR ISOLADO(HOME CARE)",
+   "latitude": -5.173737910801185,
+   "longitude": -37.33637094497681
+  },
+  {
+   "municipio": "Mossoro",
+   "codigo_municipio_ibge6": 240800,
+   "codigo_tipo_unidade": 22,
+   "descricao_tipo_unidade": "CONSULTORIO ISOLADO",
+   "latitude": -5.168160250964846,
+   "longitude": -37.33677864074707
+  },
+  {
+   "municipio": "Mossoro",
+   "codigo_municipio_ibge6": 240800,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -5.193718778730179,
+   "longitude": -37.35684156417847
+  },
+  {
+   "municipio": "Mossoro",
+   "codigo_municipio_ibge6": 240800,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -5.1879144,
+   "longitude": -37.3456609
+  },
+  {
+   "municipio": "Mossoro",
+   "codigo_municipio_ibge6": 240800,
+   "codigo_tipo_unidade": 22,
+   "descricao_tipo_unidade": "CONSULTORIO ISOLADO",
+   "latitude": -5.187906227821883,
+   "longitude": -37.34574794769287
+  },
+  {
+   "municipio": "Mossoro",
+   "codigo_municipio_ibge6": 240800,
+   "codigo_tipo_unidade": 22,
+   "descricao_tipo_unidade": "CONSULTORIO ISOLADO",
+   "latitude": -5.188141295258129,
+   "longitude": -37.3439884185791
+  },
+  {
+   "municipio": "Mossoro",
+   "codigo_municipio_ibge6": 240800,
+   "codigo_tipo_unidade": 22,
+   "descricao_tipo_unidade": "CONSULTORIO ISOLADO",
+   "latitude": -5.173802021548097,
+   "longitude": -37.33630657196045
+  },
+  {
+   "municipio": "Mossoro",
+   "codigo_municipio_ibge6": 240800,
+   "codigo_tipo_unidade": 22,
+   "descricao_tipo_unidade": "CONSULTORIO ISOLADO",
+   "latitude": -5.186621,
+   "longitude": -37.3392433
+  },
+  {
+   "municipio": "Mossoro",
+   "codigo_municipio_ibge6": 240800,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -5.667619136169524,
+   "longitude": -37.7984619140625
+  },
+  {
+   "municipio": "Mossoro",
+   "codigo_municipio_ibge6": 240800,
+   "codigo_tipo_unidade": 22,
+   "descricao_tipo_unidade": "CONSULTORIO ISOLADO",
+   "latitude": -5.173737910801185,
+   "longitude": -37.33622074127197
+  },
+  {
+   "municipio": "Mossoro",
+   "codigo_municipio_ibge6": 240800,
+   "codigo_tipo_unidade": 22,
+   "descricao_tipo_unidade": "CONSULTORIO ISOLADO",
+   "latitude": -5.1726063,
+   "longitude": -37.3380826
+  },
+  {
+   "municipio": "Mossoro",
+   "codigo_municipio_ibge6": 240800,
+   "codigo_tipo_unidade": 22,
+   "descricao_tipo_unidade": "CONSULTORIO ISOLADO",
+   "latitude": -5.1837604786507985,
+   "longitude": -37.354416847229004
+  },
+  {
+   "municipio": "Parnamirim",
+   "codigo_municipio_ibge6": 240325,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -5.87506,
+   "longitude": -35.22051
+  },
+  {
+   "municipio": "Parnamirim",
+   "codigo_municipio_ibge6": 240325,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -5.875094,
+   "longitude": -35.2131394
+  },
+  {
+   "municipio": "Parnamirim",
+   "codigo_municipio_ibge6": 240325,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -5.8771521,
+   "longitude": -35.2101153
+  },
+  {
+   "municipio": "Parnamirim",
+   "codigo_municipio_ibge6": 240325,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -5.91721,
+   "longitude": -35.20797
+  },
+  {
+   "municipio": "Parnamirim",
+   "codigo_municipio_ibge6": 240325,
+   "codigo_tipo_unidade": 39,
+   "descricao_tipo_unidade": "UNIDADE DE APOIO DIAGNOSE E TERAPIA (SADT ISOLADO)",
+   "latitude": -5.9172313,
+   "longitude": -35.2669277
+  },
+  {
+   "municipio": "Parnamirim",
+   "codigo_municipio_ibge6": 240325,
+   "codigo_tipo_unidade": 39,
+   "descricao_tipo_unidade": "UNIDADE DE APOIO DIAGNOSE E TERAPIA (SADT ISOLADO)",
+   "latitude": -5.8965819,
+   "longitude": -35.1979579
+  },
+  {
+   "municipio": "Parnamirim",
+   "codigo_municipio_ibge6": 240325,
+   "codigo_tipo_unidade": 43,
+   "descricao_tipo_unidade": "FARMACIA",
+   "latitude": -5.9057522,
+   "longitude": -35.2642408
+  },
+  {
+   "municipio": "Parnamirim",
+   "codigo_municipio_ibge6": 240325,
+   "codigo_tipo_unidade": 43,
+   "descricao_tipo_unidade": "FARMACIA",
+   "latitude": -5.9228257,
+   "longitude": -35.2624916
+  },
+  {
+   "municipio": "Parnamirim",
+   "codigo_municipio_ibge6": 240325,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -5.9268727,
+   "longitude": -35.2684475
+  },
+  {
+   "municipio": "Parnamirim",
+   "codigo_municipio_ibge6": 240325,
+   "codigo_tipo_unidade": 22,
+   "descricao_tipo_unidade": "CONSULTORIO ISOLADO",
+   "latitude": -5.9216575,
+   "longitude": -35.2627521
+  },
+  {
+   "municipio": "Parnamirim",
+   "codigo_municipio_ibge6": 240325,
+   "codigo_tipo_unidade": 22,
+   "descricao_tipo_unidade": "CONSULTORIO ISOLADO",
+   "latitude": -5.9194573,
+   "longitude": -35.2669737
+  },
+  {
+   "municipio": "Parnamirim",
+   "codigo_municipio_ibge6": 240325,
+   "codigo_tipo_unidade": 39,
+   "descricao_tipo_unidade": "UNIDADE DE APOIO DIAGNOSE E TERAPIA (SADT ISOLADO)",
+   "latitude": -5.9146429,
+   "longitude": -35.261607
+  },
+  {
+   "municipio": "Parnamirim",
+   "codigo_municipio_ibge6": 240325,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -5.8941018,
+   "longitude": -35.2686871
+  },
+  {
+   "municipio": "Parnamirim",
+   "codigo_municipio_ibge6": 240325,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -5.8748528,
+   "longitude": -35.2144763
+  },
+  {
+   "municipio": "Parnamirim",
+   "codigo_municipio_ibge6": 240325,
+   "codigo_tipo_unidade": 39,
+   "descricao_tipo_unidade": "UNIDADE DE APOIO DIAGNOSE E TERAPIA (SADT ISOLADO)",
+   "latitude": -5.92133,
+   "longitude": -35.2629
+  },
+  {
+   "municipio": "Parnamirim",
+   "codigo_municipio_ibge6": 240325,
+   "codigo_tipo_unidade": 2,
+   "descricao_tipo_unidade": "CENTRO DE SAUDE/UNIDADE BASICA",
+   "latitude": -5.9283355,
+   "longitude": -35.2609324
+  },
+  {
+   "municipio": "Parnamirim",
+   "codigo_municipio_ibge6": 240325,
+   "codigo_tipo_unidade": 2,
+   "descricao_tipo_unidade": "CENTRO DE SAUDE/UNIDADE BASICA",
+   "latitude": -5.876502,
+   "longitude": -35.211396
+  },
+  {
+   "municipio": "Parnamirim",
+   "codigo_municipio_ibge6": 240325,
+   "codigo_tipo_unidade": 2,
+   "descricao_tipo_unidade": "CENTRO DE SAUDE/UNIDADE BASICA",
+   "latitude": -5.8878258,
+   "longitude": -35.2314437
+  },
+  {
+   "municipio": "Parnamirim",
+   "codigo_municipio_ibge6": 240325,
+   "codigo_tipo_unidade": 2,
+   "descricao_tipo_unidade": "CENTRO DE SAUDE/UNIDADE BASICA",
+   "latitude": -5.9299792,
+   "longitude": -35.2571644
+  },
+  {
+   "municipio": "Parnamirim",
+   "codigo_municipio_ibge6": 240325,
+   "codigo_tipo_unidade": 2,
+   "descricao_tipo_unidade": "CENTRO DE SAUDE/UNIDADE BASICA",
+   "latitude": -5.9214015,
+   "longitude": -35.2662406
+  },
+  {
+   "municipio": "Caico",
+   "codigo_municipio_ibge6": 240200,
+   "codigo_tipo_unidade": 4,
+   "descricao_tipo_unidade": "POLICLINICA",
+   "latitude": -6.457980752333259,
+   "longitude": -37.09550857543945
+  },
+  {
+   "municipio": "Caico",
+   "codigo_municipio_ibge6": 240200,
+   "codigo_tipo_unidade": 4,
+   "descricao_tipo_unidade": "POLICLINICA",
+   "latitude": -6.4375863,
+   "longitude": -37.0867733
+  },
+  {
+   "municipio": "Caico",
+   "codigo_municipio_ibge6": 240200,
+   "codigo_tipo_unidade": 22,
+   "descricao_tipo_unidade": "CONSULTORIO ISOLADO",
+   "latitude": -6.4748575,
+   "longitude": -37.0810732
+  },
+  {
+   "municipio": "Caico",
+   "codigo_municipio_ibge6": 240200,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -6.4661784,
+   "longitude": -37.0913303
+  },
+  {
+   "municipio": "Caico",
+   "codigo_municipio_ibge6": 240200,
+   "codigo_tipo_unidade": 22,
+   "descricao_tipo_unidade": "CONSULTORIO ISOLADO",
+   "latitude": -6.46891857117,
+   "longitude": -37.088449
+  },
+  {
+   "municipio": "Caico",
+   "codigo_municipio_ibge6": 240200,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -6.470176511780713,
+   "longitude": -37.08583116531372
+  },
+  {
+   "municipio": "Caico",
+   "codigo_municipio_ibge6": 240200,
+   "codigo_tipo_unidade": 39,
+   "descricao_tipo_unidade": "UNIDADE DE APOIO DIAGNOSE E TERAPIA (SADT ISOLADO)",
+   "latitude": -6.447170628965527,
+   "longitude": -37.09606647491455
+  },
+  {
+   "municipio": "Caico",
+   "codigo_municipio_ibge6": 240200,
+   "codigo_tipo_unidade": 43,
+   "descricao_tipo_unidade": "FARMACIA",
+   "latitude": -6.460560649047963,
+   "longitude": -37.09658145904541
+  },
+  {
+   "municipio": "Caico",
+   "codigo_municipio_ibge6": 240200,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -6.4596812,
+   "longitude": -37.0957896
+  },
+  {
+   "municipio": "Caico",
+   "codigo_municipio_ibge6": 240200,
+   "codigo_tipo_unidade": 85,
+   "descricao_tipo_unidade": "CENTRO DE IMUNIZACAO",
+   "latitude": -6.45898286,
+   "longitude": -37.0933198
+  },
+  {
+   "municipio": "Caico",
+   "codigo_municipio_ibge6": 240200,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -6.4480394,
+   "longitude": -37.0829534
+  },
+  {
+   "municipio": "Caico",
+   "codigo_municipio_ibge6": 240200,
+   "codigo_tipo_unidade": 4,
+   "descricao_tipo_unidade": "POLICLINICA",
+   "latitude": -6.4607692,
+   "longitude": -37.0966218
+  },
+  {
+   "municipio": "Caico",
+   "codigo_municipio_ibge6": 240200,
+   "codigo_tipo_unidade": 22,
+   "descricao_tipo_unidade": "CONSULTORIO ISOLADO",
+   "latitude": -6.4581407,
+   "longitude": -37.0953892
+  },
+  {
+   "municipio": "Caico",
+   "codigo_municipio_ibge6": 240200,
+   "codigo_tipo_unidade": 50,
+   "descricao_tipo_unidade": "UNIDADE DE VIGILANCIA EM SAUDE",
+   "latitude": -6.446808155349962,
+   "longitude": -37.095937728881836
+  },
+  {
+   "municipio": "Caico",
+   "codigo_municipio_ibge6": 240200,
+   "codigo_tipo_unidade": 4,
+   "descricao_tipo_unidade": "POLICLINICA",
+   "latitude": -6.459089469888282,
+   "longitude": -37.09662437438965
+  },
+  {
+   "municipio": "Caico",
+   "codigo_municipio_ibge6": 240200,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -6.4648072,
+   "longitude": -37.0844563
+  },
+  {
+   "municipio": "Caico",
+   "codigo_municipio_ibge6": 240200,
+   "codigo_tipo_unidade": 22,
+   "descricao_tipo_unidade": "CONSULTORIO ISOLADO",
+   "latitude": -6.4632919,
+   "longitude": -37.0901467
+  },
+  {
+   "municipio": "Caico",
+   "codigo_municipio_ibge6": 240200,
+   "codigo_tipo_unidade": 22,
+   "descricao_tipo_unidade": "CONSULTORIO ISOLADO",
+   "latitude": -6.465969,
+   "longitude": -37.0881717
+  },
+  {
+   "municipio": "Caico",
+   "codigo_municipio_ibge6": 240200,
+   "codigo_tipo_unidade": 80,
+   "descricao_tipo_unidade": "LABORATORIO DE SAUDE PUBLICA",
+   "latitude": -6.4788837,
+   "longitude": -37.0681283
+  },
+  {
+   "municipio": "Caico",
+   "codigo_municipio_ibge6": 240200,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -6.458982862536609,
+   "longitude": -37.09660291671753
+  },
+  {
+   "municipio": "PauDosFerros",
+   "codigo_municipio_ibge6": 240940,
+   "codigo_tipo_unidade": 85,
+   "descricao_tipo_unidade": "CENTRO DE IMUNIZACAO",
+   "latitude": -6.0959509,
+   "longitude": -38.2077492
+  },
+  {
+   "municipio": "PauDosFerros",
+   "codigo_municipio_ibge6": 240940,
+   "codigo_tipo_unidade": 39,
+   "descricao_tipo_unidade": "UNIDADE DE APOIO DIAGNOSE E TERAPIA (SADT ISOLADO)",
+   "latitude": -6.119155791073736,
+   "longitude": -38.20049285888672
+  },
+  {
+   "municipio": "PauDosFerros",
+   "codigo_municipio_ibge6": 240940,
+   "codigo_tipo_unidade": 39,
+   "descricao_tipo_unidade": "UNIDADE DE APOIO DIAGNOSE E TERAPIA (SADT ISOLADO)",
+   "latitude": -6.120265231452837,
+   "longitude": -38.20195198059082
+  },
+  {
+   "municipio": "PauDosFerros",
+   "codigo_municipio_ibge6": 240940,
+   "codigo_tipo_unidade": 39,
+   "descricao_tipo_unidade": "UNIDADE DE APOIO DIAGNOSE E TERAPIA (SADT ISOLADO)",
+   "latitude": -6.123657544474151,
+   "longitude": -38.201823234558105
+  },
+  {
+   "municipio": "PauDosFerros",
+   "codigo_municipio_ibge6": 240940,
+   "codigo_tipo_unidade": 39,
+   "descricao_tipo_unidade": "UNIDADE DE APOIO DIAGNOSE E TERAPIA (SADT ISOLADO)",
+   "latitude": -6.1532992,
+   "longitude": -38.206627
+  },
+  {
+   "municipio": "PauDosFerros",
+   "codigo_municipio_ibge6": 240940,
+   "codigo_tipo_unidade": 22,
+   "descricao_tipo_unidade": "CONSULTORIO ISOLADO",
+   "latitude": -6.0873602,
+   "longitude": -38.1229256
+  },
+  {
+   "municipio": "PauDosFerros",
+   "codigo_municipio_ibge6": 240940,
+   "codigo_tipo_unidade": 5,
+   "descricao_tipo_unidade": "HOSPITAL GERAL",
+   "latitude": -6.134298,
+   "longitude": -38.203225
+  },
+  {
+   "municipio": "PauDosFerros",
+   "codigo_municipio_ibge6": 240940,
+   "codigo_tipo_unidade": 39,
+   "descricao_tipo_unidade": "UNIDADE DE APOIO DIAGNOSE E TERAPIA (SADT ISOLADO)",
+   "latitude": -6.119881194659184,
+   "longitude": -38.196845054626465
+  },
+  {
+   "municipio": "PauDosFerros",
+   "codigo_municipio_ibge6": 240940,
+   "codigo_tipo_unidade": 39,
+   "descricao_tipo_unidade": "UNIDADE DE APOIO DIAGNOSE E TERAPIA (SADT ISOLADO)",
+   "latitude": -6.1054071,
+   "longitude": -38.2053171
+  },
+  {
+   "municipio": "PauDosFerros",
+   "codigo_municipio_ibge6": 240940,
+   "codigo_tipo_unidade": 39,
+   "descricao_tipo_unidade": "UNIDADE DE APOIO DIAGNOSE E TERAPIA (SADT ISOLADO)",
+   "latitude": -6.1147318,
+   "longitude": -38.203261
+  },
+  {
+   "municipio": "PauDosFerros",
+   "codigo_municipio_ibge6": 240940,
+   "codigo_tipo_unidade": 39,
+   "descricao_tipo_unidade": "UNIDADE DE APOIO DIAGNOSE E TERAPIA (SADT ISOLADO)",
+   "latitude": -6.120158554593399,
+   "longitude": -38.20250988006592
+  },
+  {
+   "municipio": "PauDosFerros",
+   "codigo_municipio_ibge6": 240940,
+   "codigo_tipo_unidade": 39,
+   "descricao_tipo_unidade": "UNIDADE DE APOIO DIAGNOSE E TERAPIA (SADT ISOLADO)",
+   "latitude": -6.120243896082652,
+   "longitude": -38.20547103881836
+  },
+  {
+   "municipio": "PauDosFerros",
+   "codigo_municipio_ibge6": 240940,
+   "codigo_tipo_unidade": 39,
+   "descricao_tipo_unidade": "UNIDADE DE APOIO DIAGNOSE E TERAPIA (SADT ISOLADO)",
+   "latitude": -6.1130546,
+   "longitude": -38.2027994
+  },
+  {
+   "municipio": "PauDosFerros",
+   "codigo_municipio_ibge6": 240940,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -6.101511112665409,
+   "longitude": -38.20424795150757
+  },
+  {
+   "municipio": "PauDosFerros",
+   "codigo_municipio_ibge6": 240940,
+   "codigo_tipo_unidade": 39,
+   "descricao_tipo_unidade": "UNIDADE DE APOIO DIAGNOSE E TERAPIA (SADT ISOLADO)",
+   "latitude": -6.140853466182628,
+   "longitude": -38.20544958114624
+  },
+  {
+   "municipio": "PauDosFerros",
+   "codigo_municipio_ibge6": 240940,
+   "codigo_tipo_unidade": 39,
+   "descricao_tipo_unidade": "UNIDADE DE APOIO DIAGNOSE E TERAPIA (SADT ISOLADO)",
+   "latitude": -6.120094548467511,
+   "longitude": -38.19903371718262
+  },
+  {
+   "municipio": "PauDosFerros",
+   "codigo_municipio_ibge6": 240940,
+   "codigo_tipo_unidade": 39,
+   "descricao_tipo_unidade": "UNIDADE DE APOIO DIAGNOSE E TERAPIA (SADT ISOLADO)",
+   "latitude": -6.1203292375582805,
+   "longitude": -38.19978475570679
+  },
+  {
+   "municipio": "PauDosFerros",
+   "codigo_municipio_ibge6": 240940,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -6.119603834581017,
+   "longitude": -38.20201635360718
+  },
+  {
+   "municipio": "PauDosFerros",
+   "codigo_municipio_ibge6": 240940,
+   "codigo_tipo_unidade": 39,
+   "descricao_tipo_unidade": "UNIDADE DE APOIO DIAGNOSE E TERAPIA (SADT ISOLADO)",
+   "latitude": -6.1203292375582805,
+   "longitude": -38.203346729278564
+  },
+  {
+   "municipio": "PauDosFerros",
+   "codigo_municipio_ibge6": 240940,
+   "codigo_tipo_unidade": 39,
+   "descricao_tipo_unidade": "UNIDADE DE APOIO DIAGNOSE E TERAPIA (SADT ISOLADO)",
+   "latitude": -6.101489776547551,
+   "longitude": -38.206586837768555
+  },
+  {
+   "municipio": "Acu",
+   "codigo_municipio_ibge6": 240020,
+   "codigo_tipo_unidade": 22,
+   "descricao_tipo_unidade": "CONSULTORIO ISOLADO",
+   "latitude": -5.577006,
+   "longitude": -36.917168
+  },
+  {
+   "municipio": "Acu",
+   "codigo_municipio_ibge6": 240020,
+   "codigo_tipo_unidade": 22,
+   "descricao_tipo_unidade": "CONSULTORIO ISOLADO",
+   "latitude": -5.574835,
+   "longitude": -36.909354
+  },
+  {
+   "municipio": "Acu",
+   "codigo_municipio_ibge6": 240020,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -5.573079,
+   "longitude": -36.9085
+  },
+  {
+   "municipio": "Acu",
+   "codigo_municipio_ibge6": 240020,
+   "codigo_tipo_unidade": 22,
+   "descricao_tipo_unidade": "CONSULTORIO ISOLADO",
+   "latitude": -5.573942,
+   "longitude": -36.909457
+  },
+  {
+   "municipio": "Acu",
+   "codigo_municipio_ibge6": 240020,
+   "codigo_tipo_unidade": 22,
+   "descricao_tipo_unidade": "CONSULTORIO ISOLADO",
+   "latitude": -5.577135,
+   "longitude": -36.922722
+  },
+  {
+   "municipio": "Acu",
+   "codigo_municipio_ibge6": 240020,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -5.575127,
+   "longitude": -36.92343
+  },
+  {
+   "municipio": "Acu",
+   "codigo_municipio_ibge6": 240020,
+   "codigo_tipo_unidade": 2,
+   "descricao_tipo_unidade": "CENTRO DE SAUDE/UNIDADE BASICA",
+   "latitude": -5.588095075281129,
+   "longitude": -36.92180683357534
+  },
+  {
+   "municipio": "Acu",
+   "codigo_municipio_ibge6": 240020,
+   "codigo_tipo_unidade": 74,
+   "descricao_tipo_unidade": "POLO ACADEMIA DA SAUDE",
+   "latitude": -5.589158,
+   "longitude": -36.93734
+  },
+  {
+   "municipio": "Acu",
+   "codigo_municipio_ibge6": 240020,
+   "codigo_tipo_unidade": 22,
+   "descricao_tipo_unidade": "CONSULTORIO ISOLADO",
+   "latitude": -5.576937,
+   "longitude": -36.917348
+  },
+  {
+   "municipio": "Acu",
+   "codigo_municipio_ibge6": 240020,
+   "codigo_tipo_unidade": 50,
+   "descricao_tipo_unidade": "UNIDADE DE VIGILANCIA EM SAUDE",
+   "latitude": -5.576713245595997,
+   "longitude": -36.91532850265503
+  },
+  {
+   "municipio": "Acu",
+   "codigo_municipio_ibge6": 240020,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -5.56987395244097,
+   "longitude": -36.916289990772675
+  },
+  {
+   "municipio": "Acu",
+   "codigo_municipio_ibge6": 240020,
+   "codigo_tipo_unidade": 22,
+   "descricao_tipo_unidade": "CONSULTORIO ISOLADO",
+   "latitude": -5.575303740478674,
+   "longitude": -36.913944482803345
+  },
+  {
+   "municipio": "Acu",
+   "codigo_municipio_ibge6": 240020,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -5.5753250966420795,
+   "longitude": -36.924458742141724
+  },
+  {
+   "municipio": "Acu",
+   "codigo_municipio_ibge6": 240020,
+   "codigo_tipo_unidade": 39,
+   "descricao_tipo_unidade": "UNIDADE DE APOIO DIAGNOSE E TERAPIA (SADT ISOLADO)",
+   "latitude": -5.5724259903551685,
+   "longitude": -36.91044420003891
+  },
+  {
+   "municipio": "Acu",
+   "codigo_municipio_ibge6": 240020,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -5.577588845554979,
+   "longitude": -36.91710948944092
+  },
+  {
+   "municipio": "Acu",
+   "codigo_municipio_ibge6": 240020,
+   "codigo_tipo_unidade": 43,
+   "descricao_tipo_unidade": "FARMACIA",
+   "latitude": -5.58023,
+   "longitude": -36.91449
+  },
+  {
+   "municipio": "Acu",
+   "codigo_municipio_ibge6": 240020,
+   "codigo_tipo_unidade": 22,
+   "descricao_tipo_unidade": "CONSULTORIO ISOLADO",
+   "latitude": -5.576937,
+   "longitude": -36.917348
+  },
+  {
+   "municipio": "Acu",
+   "codigo_municipio_ibge6": 240020,
+   "codigo_tipo_unidade": 84,
+   "descricao_tipo_unidade": "CENTRAL DE ABASTECIMENTO",
+   "latitude": -5.577097655494986,
+   "longitude": -36.917179226875305
+  },
+  {
+   "municipio": "Acu",
+   "codigo_municipio_ibge6": 240020,
+   "codigo_tipo_unidade": 22,
+   "descricao_tipo_unidade": "CONSULTORIO ISOLADO",
+   "latitude": -5.57475915804952,
+   "longitude": -36.91228151321411
+  },
+  {
+   "municipio": "Acu",
+   "codigo_municipio_ibge6": 240020,
+   "codigo_tipo_unidade": 22,
+   "descricao_tipo_unidade": "CONSULTORIO ISOLADO",
+   "latitude": -5.574470849500126,
+   "longitude": -36.93209767341614
+  },
+  {
+   "municipio": "CearaMirim",
+   "codigo_municipio_ibge6": 240260,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -5.642,
+   "longitude": -35.428
+  },
+  {
+   "municipio": "CearaMirim",
+   "codigo_municipio_ibge6": 240260,
+   "codigo_tipo_unidade": 4,
+   "descricao_tipo_unidade": "POLICLINICA",
+   "latitude": -5.633001,
+   "longitude": -35.423009
+  },
+  {
+   "municipio": "CearaMirim",
+   "codigo_municipio_ibge6": 240260,
+   "codigo_tipo_unidade": 4,
+   "descricao_tipo_unidade": "POLICLINICA",
+   "latitude": -5.630003,
+   "longitude": -35.425009
+  },
+  {
+   "municipio": "CearaMirim",
+   "codigo_municipio_ibge6": 240260,
+   "codigo_tipo_unidade": 22,
+   "descricao_tipo_unidade": "CONSULTORIO ISOLADO",
+   "latitude": -5.636008,
+   "longitude": -35.4270006
+  },
+  {
+   "municipio": "CearaMirim",
+   "codigo_municipio_ibge6": 240260,
+   "codigo_tipo_unidade": 22,
+   "descricao_tipo_unidade": "CONSULTORIO ISOLADO",
+   "latitude": -5.631001,
+   "longitude": -35.421002
+  },
+  {
+   "municipio": "CearaMirim",
+   "codigo_municipio_ibge6": 240260,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -5.6341002,
+   "longitude": -35.425007
+  },
+  {
+   "municipio": "CearaMirim",
+   "codigo_municipio_ibge6": 240260,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -5.6474154,
+   "longitude": -35.4227028
+  },
+  {
+   "municipio": "CearaMirim",
+   "codigo_municipio_ibge6": 240260,
+   "codigo_tipo_unidade": 2,
+   "descricao_tipo_unidade": "CENTRO DE SAUDE/UNIDADE BASICA",
+   "latitude": -5.632,
+   "longitude": -35.425
+  },
+  {
+   "municipio": "CearaMirim",
+   "codigo_municipio_ibge6": 240260,
+   "codigo_tipo_unidade": 2,
+   "descricao_tipo_unidade": "CENTRO DE SAUDE/UNIDADE BASICA",
+   "latitude": -5.5798723,
+   "longitude": -35.4920882
+  },
+  {
+   "municipio": "CearaMirim",
+   "codigo_municipio_ibge6": 240260,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -5.6398808,
+   "longitude": -35.4194654
+  },
+  {
+   "municipio": "CearaMirim",
+   "codigo_municipio_ibge6": 240260,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -5.6409743,
+   "longitude": -35.424111
+  },
+  {
+   "municipio": "CearaMirim",
+   "codigo_municipio_ibge6": 240260,
+   "codigo_tipo_unidade": 43,
+   "descricao_tipo_unidade": "FARMACIA",
+   "latitude": -5.5844243,
+   "longitude": -35.2306123
+  },
+  {
+   "municipio": "CearaMirim",
+   "codigo_municipio_ibge6": 240260,
+   "codigo_tipo_unidade": 50,
+   "descricao_tipo_unidade": "UNIDADE DE VIGILANCIA EM SAUDE",
+   "latitude": -5.635278,
+   "longitude": -35.420278
+  },
+  {
+   "municipio": "CearaMirim",
+   "codigo_municipio_ibge6": 240260,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -5.6362,
+   "longitude": -35.4259
+  },
+  {
+   "municipio": "CearaMirim",
+   "codigo_municipio_ibge6": 240260,
+   "codigo_tipo_unidade": 43,
+   "descricao_tipo_unidade": "FARMACIA",
+   "latitude": -5.6342,
+   "longitude": -35.4258
+  },
+  {
+   "municipio": "CearaMirim",
+   "codigo_municipio_ibge6": 240260,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -5.633111,
+   "longitude": -35.425111
+  },
+  {
+   "municipio": "CearaMirim",
+   "codigo_municipio_ibge6": 240260,
+   "codigo_tipo_unidade": 2,
+   "descricao_tipo_unidade": "CENTRO DE SAUDE/UNIDADE BASICA",
+   "latitude": -5.6088573,
+   "longitude": -35.4494087
+  },
+  {
+   "municipio": "CearaMirim",
+   "codigo_municipio_ibge6": 240260,
+   "codigo_tipo_unidade": 2,
+   "descricao_tipo_unidade": "CENTRO DE SAUDE/UNIDADE BASICA",
+   "latitude": -5.5711087951118765,
+   "longitude": -35.24534001794996
+  },
+  {
+   "municipio": "CearaMirim",
+   "codigo_municipio_ibge6": 240260,
+   "codigo_tipo_unidade": 2,
+   "descricao_tipo_unidade": "CENTRO DE SAUDE/UNIDADE BASICA",
+   "latitude": -5.6040028,
+   "longitude": -35.3073046
+  },
+  {
+   "municipio": "CearaMirim",
+   "codigo_municipio_ibge6": 240260,
+   "codigo_tipo_unidade": 2,
+   "descricao_tipo_unidade": "CENTRO DE SAUDE/UNIDADE BASICA",
+   "latitude": -5.7932041,
+   "longitude": -35.6303742
+  },
+  {
+   "municipio": "CurraisNovos",
+   "codigo_municipio_ibge6": 240310,
+   "codigo_tipo_unidade": 22,
+   "descricao_tipo_unidade": "CONSULTORIO ISOLADO",
+   "latitude": -6.2592532,
+   "longitude": -36.5206282
+  },
+  {
+   "municipio": "CurraisNovos",
+   "codigo_municipio_ibge6": 240310,
+   "codigo_tipo_unidade": 2,
+   "descricao_tipo_unidade": "CENTRO DE SAUDE/UNIDADE BASICA",
+   "latitude": -6.2105275190311735,
+   "longitude": -36.56679153442383
+  },
+  {
+   "municipio": "CurraisNovos",
+   "codigo_municipio_ibge6": 240310,
+   "codigo_tipo_unidade": 39,
+   "descricao_tipo_unidade": "UNIDADE DE APOIO DIAGNOSE E TERAPIA (SADT ISOLADO)",
+   "latitude": -6.265571186300785,
+   "longitude": -36.516408920288086
+  },
+  {
+   "municipio": "CurraisNovos",
+   "codigo_municipio_ibge6": 240310,
+   "codigo_tipo_unidade": 50,
+   "descricao_tipo_unidade": "UNIDADE DE VIGILANCIA EM SAUDE",
+   "latitude": -6.2779495,
+   "longitude": -36.5223691
+  },
+  {
+   "municipio": "CurraisNovos",
+   "codigo_municipio_ibge6": 240310,
+   "codigo_tipo_unidade": 22,
+   "descricao_tipo_unidade": "CONSULTORIO ISOLADO",
+   "latitude": -6.256932667608032,
+   "longitude": -36.522159576416016
+  },
+  {
+   "municipio": "CurraisNovos",
+   "codigo_municipio_ibge6": 240310,
+   "codigo_tipo_unidade": 22,
+   "descricao_tipo_unidade": "CONSULTORIO ISOLADO",
+   "latitude": -6.261907831935819,
+   "longitude": -36.514456272125244
+  },
+  {
+   "municipio": "CurraisNovos",
+   "codigo_municipio_ibge6": 240310,
+   "codigo_tipo_unidade": 22,
+   "descricao_tipo_unidade": "CONSULTORIO ISOLADO",
+   "latitude": -6.26839595,
+   "longitude": -36.5162485978672
+  },
+  {
+   "municipio": "CurraisNovos",
+   "codigo_municipio_ibge6": 240310,
+   "codigo_tipo_unidade": 22,
+   "descricao_tipo_unidade": "CONSULTORIO ISOLADO",
+   "latitude": -6.2522497,
+   "longitude": -36.5247015
+  },
+  {
+   "municipio": "CurraisNovos",
+   "codigo_municipio_ibge6": 240310,
+   "codigo_tipo_unidade": 22,
+   "descricao_tipo_unidade": "CONSULTORIO ISOLADO",
+   "latitude": -6.262110463562145,
+   "longitude": -36.514665484428406
+  },
+  {
+   "municipio": "CurraisNovos",
+   "codigo_municipio_ibge6": 240310,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -6.2567726936923105,
+   "longitude": -36.522674560546875
+  },
+  {
+   "municipio": "CurraisNovos",
+   "codigo_municipio_ibge6": 240310,
+   "codigo_tipo_unidade": 43,
+   "descricao_tipo_unidade": "FARMACIA",
+   "latitude": -6.2650059542625325,
+   "longitude": -36.51782512664795
+  },
+  {
+   "municipio": "CurraisNovos",
+   "codigo_municipio_ibge6": 240310,
+   "codigo_tipo_unidade": 40,
+   "descricao_tipo_unidade": "UNIDADE MOVEL TERRESTRE",
+   "latitude": -6.253253255159421,
+   "longitude": -36.524498462677
+  },
+  {
+   "municipio": "CurraisNovos",
+   "codigo_municipio_ibge6": 240310,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -6.25971620590083,
+   "longitude": -36.523908376693726
+  },
+  {
+   "municipio": "CurraisNovos",
+   "codigo_municipio_ibge6": 240310,
+   "codigo_tipo_unidade": 2,
+   "descricao_tipo_unidade": "CENTRO DE SAUDE/UNIDADE BASICA",
+   "latitude": -6.25680468847938,
+   "longitude": -36.51258409023285
+  },
+  {
+   "municipio": "CurraisNovos",
+   "codigo_municipio_ibge6": 240310,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -6.255556890332675,
+   "longitude": -36.52409076690674
+  },
+  {
+   "municipio": "CurraisNovos",
+   "codigo_municipio_ibge6": 240310,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -6.25920429192543,
+   "longitude": -36.512686014175415
+  },
+  {
+   "municipio": "CurraisNovos",
+   "codigo_municipio_ibge6": 240310,
+   "codigo_tipo_unidade": 36,
+   "descricao_tipo_unidade": "CLINICA/CENTRO DE ESPECIALIDADE",
+   "latitude": -6.2586497178859934,
+   "longitude": -36.52278184890747
+  },
+  {
+   "municipio": "CurraisNovos",
+   "codigo_municipio_ibge6": 240310,
+   "codigo_tipo_unidade": 22,
+   "descricao_tipo_unidade": "CONSULTORIO ISOLADO",
+   "latitude": -6.258511074284139,
+   "longitude": -36.521193981170654
+  },
+  {
+   "municipio": "CurraisNovos",
+   "codigo_municipio_ibge6": 240310,
+   "codigo_tipo_unidade": 43,
+   "descricao_tipo_unidade": "FARMACIA",
+   "latitude": -6.2578071908149075,
+   "longitude": -36.512911319732666
+  },
+  {
+   "municipio": "CurraisNovos",
+   "codigo_municipio_ibge6": 240310,
+   "codigo_tipo_unidade": 43,
+   "descricao_tipo_unidade": "FARMACIA",
+   "latitude": -6.261123966746229,
+   "longitude": -36.51909112930298
+  }
+ ]
+}

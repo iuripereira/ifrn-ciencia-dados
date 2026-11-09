@@ -1,0 +1,220 @@
+
+<div class="toast-wrapper mx-auto py-0 fixed-top" role="status" aria-live="polite"></div>
+
+<div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Ir para o conteúdo principal</a>
+</div>
+
+
+
+
+<div id="page">
+    <section class="embedded-main">
+            <span id="maincontent"></span>
+            <div class="activity-header" data-for="page-activity-header"></div>
+        <div role="main"><div class="book p-4">
+    <div class="text-end"><a onclick="window.print();return false;" class="hidden-print" href="#"><img class="icon icon" alt="Imprimir o livro todo" title="Imprimir o livro todo" src="https://presencial.ava.ifrn.edu.br/theme/image.php/suap/booktool_print/1793831080/book">Imprimir o livro todo</a></div>
+    <div class="text-center pb-3 book_title"><h1>Tópicos de Estudo — Aula 08: Web Scraping com BeautifulSoup</h1></div>
+    <div class="book_info w-100 pt-6 d-inline-block">
+        <div class="w-50 float-start">
+            <table>
+                <tbody><tr>
+                    <td>
+                        Site:
+                    </td>
+                    <td class="ps-3">
+                        <a href="https://presencial.ava.ifrn.edu.br">AVA-Presencial</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Curso:
+                    </td>
+                    <td class="ps-3">
+                        Análise e Ciência de Dados
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Livro:
+                    </td>
+                    <td class="ps-3">
+                        Tópicos de Estudo — Aula 08: Web Scraping com BeautifulSoup
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+        <div class="w-50 float-start">
+            <table class="float-end">
+                <tbody><tr>
+                    <td>
+                        Impresso por:
+                    </td>
+                    <td class="ps-3">
+                        Iuri Guerra de Freitas Pereira
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Data:
+                    </td>
+                    <td class="ps-3">
+                        segunda-feira, 9 nov. 2026, 16:40
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </div>
+    <div class="w-100 book_description">
+        <div class="py-5">
+            <h2 class="text-center pb-5">Descrição</h2>
+             <p class="book_summary"></p><p class="translationhash"><span data-translationhash="345cd353a68372457b1a59bdf0649537"></span></p>
+<p>Roteiro de leitura da Aula 08 em 5 capítulos curtos: o que é web scraping, anatomia do HTML e BeautifulSoup, seletores CSS, tabelas e paginação, uso ético e limitações legais.</p><p></p>
+        </div>
+    </div>
+    <div class="w-100">
+        <div class="py-5"><div class="book_toc_numbered"><a name="toc"></a><h2 class="text-center pb-5">Índice</h2><ul><li><a title="1. Web scraping: o que é e quando usar" class="font-weight-bold text-decoration-none" href="#ch7966">1. Web scraping: o que é e quando usar</a></li><li><a title="2. Anatomia do HTML e o BeautifulSoup" class="font-weight-bold text-decoration-none" href="#ch7967">2. Anatomia do HTML e o BeautifulSoup</a></li><li><a title="3. Seletores CSS na prática" class="font-weight-bold text-decoration-none" href="#ch7968">3. Seletores CSS na prática</a></li><li><a title="4. Tabelas e paginação" class="font-weight-bold text-decoration-none" href="#ch7970">4. Tabelas e paginação</a></li><li><a title="5. Uso ético e limitações legais" class="font-weight-bold text-decoration-none" href="#ch7969">5. Uso ético e limitações legais</a></li></ul></div></div>
+    </div>
+    <div class="w-100">
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch7966"><h2 class="text-center pb-5">1. Web scraping: o que é e quando usar</h2><p class="translationhash"><span data-translationhash="66416b499887ab9ce9487d02c6e88413"></span></p>
+<p><strong>Web scraping</strong> é baixar páginas web com um programa e extrair delas, automaticamente, as informações de interesse. É a quarta família de fontes de dados vista na Aula 06 — e a mais frágil: a página foi feita para pessoas lerem, não para programas consumirem, e qualquer mudança no visual do site pode quebrar o código.</p>
+<h4>Ordem de preferência</h4>
+<ol>
+<li><strong>Arquivo pronto</strong> (CSV, Excel, portal de dados abertos);</li>
+<li><strong>API</strong> (Aula 07) — canal oficial, estruturado e estável;</li>
+<li><strong>Web scraping</strong> — quando o dado só existe na página HTML.</li>
+</ol>
+<h4>O fluxo de uma coleta</h4>
+<pre>requests.get(url) → resp.text (HTML) → BeautifulSoup → select(...) → lista de dicionários → DataFrame → CSV/JSON</pre>
+<h4>Nossas fontes nesta aula</h4>
+<ul>
+<li><strong>Estante Potiguar</strong> — mini-site de resenhas de clássicos brasileiros, criado para a aula (leitores e comentários fictícios). Roda no seu computador com <code>python -m http.server 8000 --directory site_resenhas</code>.</li>
+<li><strong>Books to Scrape</strong> (<code>books.toscrape.com</code>) — site real mantido para treino de scraping: 1.000 livros, preço e avaliação em estrelas, 50 páginas.</li>
+</ul>
+<p>Grandes sites de resenhas reais (de livros ou restaurantes) costumam proibir a coleta automatizada nos Termos de Uso e publicam comentários de pessoas reais — por isso usamos fontes onde a coleta é permitida.</p></div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch7967"><h2 class="text-center pb-5">2. Anatomia do HTML e o BeautifulSoup</h2><p class="translationhash"><span data-translationhash="aaf0b7ea413416510c3f5d3856c07671"></span></p>
+<p>Uma página HTML é uma <strong>árvore de tags</strong>. Cada tag pode ter <strong>atributos</strong>; para scraping, os mais úteis são <code>class</code> e <code>id</code>. Uma resenha da Estante Potiguar:</p>
+<pre>&lt;article class="resenha" data-id="1"&gt;
+  &lt;h2 class="livro"&gt;Dom Casmurro&lt;/h2&gt;
+  &lt;p class="autor"&gt;Machado de Assis&lt;/p&gt;
+  &lt;div class="nota" data-nota="5"&gt;★★★★★&lt;/div&gt;
+  &lt;p class="leitor"&gt;Por &lt;span class="nome"&gt;Ana P.&lt;/span&gt; em &lt;time datetime="2026-09-02"&gt;02/09/2026&lt;/time&gt;&lt;/p&gt;
+  &lt;p class="comentario"&gt;Releio a cada cinco anos...&lt;/p&gt;
+&lt;/article&gt;</pre>
+<p>A mesma informação pode aparecer como texto (★★★★★, 02/09/2026) e como atributo (<code>data-nota="5"</code>, <code>datetime="2026-09-02"</code>). Prefira a versão mais limpa — normalmente o atributo.</p>
+<h4>BeautifulSoup em quatro linhas</h4>
+<pre>soup = BeautifulSoup(html, "html.parser")
+soup.find("h2").get_text()                    # 'Dom Casmurro'
+soup.find("div", class_="nota")["data-nota"]  # '5'
+soup.find_all("article")                      # lista de tags</pre>
+<ul>
+<li><code>get_text(strip=True)</code> — texto visível, sem espaços nas pontas;</li>
+<li><code>tag["atr"]</code> (erro se não existir) e <code>tag.get("atr")</code> (devolve <code>None</code>);</li>
+<li><code>tag["class"]</code> devolve uma <strong>lista</strong>: <code>class="star-rating Three"</code> → <code>["star-rating", "Three"]</code>.</li>
+</ul>
+<p><strong>Atenção à codificação:</strong> se o servidor responde só <code>text/html</code>, sem charset, o <code>requests</code> assume ISO-8859-1 e "página" vira "pÃ¡gina", "£51.77" vira "Â£51.77". Corrija com <code>resp.encoding = "utf-8"</code> antes de usar <code>resp.text</code>.</p>
+<p><strong>Dica:</strong> use o botão direito → <em>Inspecionar</em> do navegador para descobrir tags, classes e atributos.</p></div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch7968"><h2 class="text-center pb-5">3. Seletores CSS na prática</h2><p class="translationhash"><span data-translationhash="6d4191350728f1e8d7ccdf6de2578344"></span></p>
+<p>Com <code>select()</code> e <code>select_one()</code> o BeautifulSoup aceita <strong>seletores CSS</strong>, a mesma linguagem usada nas folhas de estilo.</p>
+<table style="border-collapse: collapse;" border="1" cellpadding="4">
+<tbody>
+<tr>
+<th>Seletor</th>
+<th>Encontra</th>
+</tr>
+<tr>
+<td><code>.comentario</code></td>
+<td>elementos com a classe comentario</td>
+</tr>
+<tr>
+<td><code>#ranking</code></td>
+<td>o elemento com id ranking</td>
+</tr>
+<tr>
+<td><code>article.resenha</code></td>
+<td>&lt;article&gt; com a classe resenha</td>
+</tr>
+<tr>
+<td><code>article.resenha span.nome</code></td>
+<td>span.nome em qualquer nível dentro da resenha</td>
+</tr>
+<tr>
+<td><code>ul.paginacao &gt; li</code></td>
+<td>&lt;li&gt; filho direto da lista</td>
+</tr>
+<tr>
+<td><code>div[data-nota]</code></td>
+<td>&lt;div&gt; que tem o atributo data-nota</td>
+</tr>
+</tbody>
+</table>
+<p><code>select()</code> devolve uma <strong>lista</strong> (talvez vazia); <code>select_one()</code> devolve o primeiro elemento ou <code>None</code>.</p>
+<h4>Extraindo uma lista de resenhas</h4>
+<pre>for art in soup.select("article.resenha"):
+    util = art.select_one(".util")          # pode não existir!
+    registro = {
+        "livro": art.select_one("h2.livro").get_text(strip=True),
+        "nota": int(art.select_one("div.nota")["data-nota"]),
+        "data": art.select_one("time")["datetime"],
+        "util": int(util.get_text().split()[0]) if util else None,
+    }</pre>
+<p>No Books to Scrape, a avaliação fica no nome da classe: <code>&lt;p class="star-rating Three"&gt;</code> → <code>pod.select_one("p.star-rating")["class"][1]</code> devolve <code>"Three"</code>, que um dicionário converte em 3.</p></div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch7970"><h2 class="text-center pb-5">4. Tabelas e paginação</h2><p class="translationhash"><span data-translationhash="d640be3498011c711d9e7ae4a89076ce"></span></p>
+<h4>Tabelas HTML</h4>
+<p>Duas formas de transformar uma <code>&lt;table&gt;</code> em dados:</p>
+<pre># Manual (controle total)
+tabela = soup.select_one("table#ranking")
+linhas = [[td.get_text(strip=True) for td in tr.select("td")] for tr in tabela.select("tbody tr")]
+
+# Pandas (rápido) — StringIO vem do módulo io
+ranking = pd.read_html(StringIO(resp.text), attrs={"id": "ranking"}, decimal=",", thousands=".")[0]</pre>
+<p><code>read_html</code> devolve uma lista de DataFrames. Com <code>decimal=","</code>, a nota "4,50" vira o número 4.5 — sem isso, a coluna fica como texto.</p>
+<h4>Paginação</h4>
+<p>A estratégia mais robusta é <strong>seguir o link "próxima página" até ele não existir</strong>. O <code>href</code> costuma ser relativo; <code>urljoin</code> monta o endereço completo.</p>
+<pre>url = BASE      # endereço do site local (ver notebook)
+while url:
+    soup = BeautifulSoup(baixar(url).text, "html.parser")
+    todas.extend(extrair_resenhas(soup))
+    link = soup.select_one("li.proxima a")
+    url = urljoin(url, link["href"]) if link else None
+    time.sleep(PAUSA)   # PAUSA = 1 segundo</pre>
+<p>Resultado na Estante Potiguar: 3 páginas, 24 resenhas. No Books to Scrape, o link é <code>li.next a</code>; as 5 primeiras páginas trazem 100 livros (preço médio £34,56 em 09/10/2026).</p></div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch7969"><h2 class="text-center pb-5">5. Uso ético e limitações legais</h2><p class="translationhash"><span data-translationhash="81436a0612440f81392f950387c738fd"></span></p>
+<p>Conseguir baixar uma página não significa poder coletá-la em massa. Antes de raspar:</p>
+<ul>
+<li><strong>Termos de Uso</strong> — muitos sites proíbem a coleta automatizada.</li>
+<li><strong>robots.txt</strong> — na raiz do site; lista caminhos proibidos (<code>Disallow</code>) e o intervalo entre requisições (<code>Crawl-delay</code>). Em Python: <code>urllib.robotparser.RobotFileParser</code>. A ausência do arquivo não é um "vale tudo".</li>
+<li><strong>Existe API?</strong> Se existir, prefira-a.</li>
+<li><strong>Dados pessoais</strong> — nomes, fotos e perfis são protegidos pela <strong>LGPD</strong> (Lei 13.709/2018) mesmo quando públicos. Colete só o necessário; anonimize quando possível.</li>
+<li><strong>Direitos autorais</strong> — resenhas têm autoria: analisar estatisticamente é diferente de republicar.</li>
+</ul>
+<h4>Boas maneiras de um robô</h4>
+<ul>
+<li>Identifique-se no <code>User-Agent</code>;</li>
+<li>espere entre requisições (<code>time.sleep</code>) e baixe só o necessário;</li>
+<li>guarde os dados localmente e registre a proveniência (fonte, URL, data).</li>
+</ul>
+<h4>Limitações técnicas</h4>
+<p>O <code>requests</code> só recebe o HTML enviado pelo servidor; páginas montadas por JavaScript aparecem vazias para o BeautifulSoup (seria preciso Selenium/Playwright). CAPTCHAs e bloqueios são sinais de que o site não quer ser raspado.</p></div>
+            </div>
+    </div>
+</div></div>
+    </section>
+</div>
+
+
+
+
+
+
+
+

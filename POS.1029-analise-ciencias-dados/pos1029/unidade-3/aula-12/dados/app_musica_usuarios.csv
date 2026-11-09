@@ -1,0 +1,241 @@
+usuario_id,idade,plano,genero_favorito,dispositivo,horas_semana,playlists_criadas,anuncios_semana,satisfacao
+1,58,Gratuito,Forró,Celular,11.6,5,108,2.7
+2,24,Gratuito,Pop,Computador,17.1,1,161,4.6
+3,17,Gratuito,MPB,Celular,19.1,2,170,2.0
+4,47,Premium,MPB,Celular,19.1,6,0,9.7
+5,34,Premium,Eletrônica,Computador,19.4,5,0,7.7
+6,39,Premium,Rock,Celular,19.7,9,0,8.4
+7,19,Gratuito,MPB,Smart TV,14.0,2,136,4.3
+8,34,Gratuito,Pop,Celular,16.0,6,148,2.3
+9,48,Gratuito,Eletrônica,Celular,18.3,4,194,1.3
+10,33,Gratuito,Pop,Celular,16.2,6,165,4.3
+11,57,Gratuito,Rock,Smart TV,8.4,3,59,5.9
+12,55,Gratuito,Pop,Celular,8.8,1,79,4.7
+13,51,Gratuito,MPB,Computador,11.3,3,108,3.9
+14,61,Gratuito,Sertanejo,Computador,9.2,6,75,4.4
+15,52,Premium,Eletrônica,Computador,19.1,4,0,7.5
+16,24,Gratuito,Pop,Celular,16.4,3,133,2.1
+17,58,Gratuito,Eletrônica,Celular,11.9,3,83,4.3
+18,48,Gratuito,Rock,Computador,11.8,2,74,4.3
+19,20,Gratuito,Pop,Celular,23.8,10,196,0.9
+20,30,Gratuito,Forró,Celular,17.7,3,146,0.4
+21,24,Gratuito,Pop,Computador,25.3,3,212,2.4
+22,64,Premium,Sertanejo,Computador,10.8,1,0,4.9
+23,52,Premium,Sertanejo,Computador,13.9,4,0,4.5
+24,61,Premium,Pop,Celular,21.1,8,0,5.2
+25,30,Gratuito,Sertanejo,Computador,14.6,4,116,4.0
+26,47,Premium,Rock,Computador,16.3,5,0,7.2
+27,46,Premium,Rock,Celular,14.4,1,0,7.3
+28,53,Premium,Eletrônica,Computador,15.2,5,0,9.1
+29,21,Premium,Sertanejo,Smart TV,22.6,7,0,7.8
+30,41,Premium,Pop,Celular,18.5,6,0,9.0
+31,48,Gratuito,MPB,Celular,11.8,5,122,4.0
+32,57,Premium,Rock,Celular,11.9,2,0,8.4
+33,48,Gratuito,Sertanejo,Computador,13.0,4,117,5.6
+34,38,Premium,Rock,Celular,16.5,6,0,9.5
+35,39,Gratuito,Forró,Smart TV,15.6,4,144,3.2
+36,32,Premium,Forró,Smart TV,18.7,4,0,5.8
+37,23,Gratuito,Rock,Computador,22.2,1,231,2.5
+38,29,Gratuito,MPB,Computador,23.1,11,177,4.6
+39,23,Premium,Forró,Celular,22.1,5,0,9.0
+40,27,Gratuito,Forró,Celular,21.6,4,207,2.9
+41,58,Gratuito,Pop,Computador,15.1,4,147,3.9
+42,42,Gratuito,Rock,Celular,15.3,3,148,5.2
+43,20,Premium,Rock,Celular,27.0,5,0,7.4
+44,37,Gratuito,Pop,Celular,14.2,2,124,4.5
+45,29,Gratuito,Pop,Celular,22.5,4,223,3.6
+46,49,Premium,Forró,Celular,20.5,4,0,6.9
+47,57,Gratuito,Rock,Smart TV,9.6,3,74,3.3
+48,16,Premium,Forró,Celular,23.6,8,0,10.0
+49,39,Premium,Pop,Computador,23.0,11,0,6.5
+50,38,Gratuito,MPB,Celular,11.9,3,100,2.8
+51,65,Premium,Pop,Computador,10.8,4,0,6.9
+52,34,Premium,MPB,Smart TV,20.7,12,0,7.4
+53,24,Gratuito,Eletrônica,Celular,20.0,5,193,3.2
+54,25,Gratuito,Forró,Celular,16.3,4,181,2.7
+55,39,Gratuito,Rock,Smart TV,13.5,2,120,4.3
+56,45,Premium,Pop,Celular,29.0,9,0,9.2
+57,32,Gratuito,MPB,Smart TV,14.1,0,96,3.7
+58,37,Premium,Sertanejo,Smart TV,21.3,10,0,7.2
+59,49,Gratuito,Pop,Smart TV,11.4,2,113,5.4
+60,30,Premium,Sertanejo,Computador,21.4,5,0,6.1
+61,64,Gratuito,Pop,Celular,9.2,2,79,2.9
+62,26,Gratuito,Sertanejo,Computador,16.1,2,143,2.7
+63,62,Gratuito,Forró,Celular,6.6,2,63,4.3
+64,59,Gratuito,MPB,Celular,7.7,2,60,5.5
+65,63,Premium,Rock,Smart TV,10.7,6,0,5.3
+66,55,Gratuito,Pop,Celular,10.5,4,126,2.9
+67,42,Gratuito,Rock,Celular,12.7,2,121,2.5
+68,46,Premium,Pop,Smart TV,16.8,6,0,5.4
+69,26,Gratuito,Eletrônica,Smart TV,19.8,4,136,2.1
+70,33,Premium,Eletrônica,Celular,22.2,9,0,8.1
+71,39,Premium,Forró,Smart TV,19.7,10,0,7.3
+72,63,Gratuito,Pop,Computador,12.2,2,92,4.3
+73,55,Premium,Pop,Computador,14.5,4,0,7.9
+74,44,Gratuito,Eletrônica,Celular,16.8,5,146,3.9
+75,45,Gratuito,Pop,Celular,13.6,5,129,4.1
+76,37,Gratuito,Pop,Celular,20.2,5,220,4.7
+77,36,Gratuito,MPB,Celular,19.3,7,150,4.2
+78,61,Premium,Rock,Celular,10.4,4,0,4.1
+79,16,Gratuito,Sertanejo,Celular,21.6,3,206,3.4
+80,31,Gratuito,Sertanejo,Celular,17.9,4,148,4.5
+81,36,Gratuito,Forró,Celular,13.8,2,141,4.1
+82,50,Gratuito,Sertanejo,Celular,17.1,5,141,2.8
+83,36,Premium,MPB,Computador,17.3,2,0,6.0
+84,31,Gratuito,Sertanejo,Celular,17.8,6,141,3.6
+85,19,Gratuito,Rock,Celular,18.3,9,122,4.5
+86,29,Gratuito,Pop,Computador,16.6,6,136,4.6
+87,21,Premium,MPB,Computador,17.9,10,0,5.1
+88,51,Premium,Pop,Celular,15.7,4,0,7.6
+89,37,Gratuito,Forró,Celular,11.7,3,103,5.4
+90,27,Gratuito,Forró,Smart TV,14.6,1,103,4.8
+91,43,Premium,Eletrônica,Celular,23.6,8,0,10.0
+92,40,Gratuito,Pop,Celular,16.3,3,137,2.8
+93,39,Premium,Pop,Computador,21.0,7,0,5.8
+94,45,Premium,Forró,Celular,17.5,6,0,8.2
+95,47,Premium,Rock,Computador,17.6,6,0,8.9
+96,25,Premium,Pop,Computador,23.5,9,0,6.0
+97,23,Premium,Eletrônica,Computador,22.6,5,0,7.3
+98,52,Gratuito,Forró,Celular,10.6,2,79,4.5
+99,64,Gratuito,Pop,Computador,14.4,3,86,4.7
+100,43,Premium,Pop,Computador,16.9,8,0,8.6
+101,38,Gratuito,MPB,Celular,12.3,5,129,6.3
+102,47,Gratuito,Sertanejo,Celular,10.3,4,92,3.4
+103,17,Gratuito,Eletrônica,Smart TV,18.9,2,204,2.4
+104,34,Gratuito,Sertanejo,Celular,17.1,5,140,1.8
+105,33,Gratuito,Pop,Celular,14.3,4,151,4.3
+106,37,Premium,Pop,Celular,23.0,7,0,5.9
+107,53,Gratuito,Sertanejo,Celular,17.3,5,178,3.2
+108,40,Gratuito,Forró,Celular,14.6,4,167,3.7
+109,58,Gratuito,Pop,Celular,8.9,2,77,5.8
+110,39,Gratuito,Rock,Celular,18.8,4,130,3.6
+111,17,Premium,Sertanejo,Celular,26.4,10,0,6.6
+112,49,Premium,Forró,Smart TV,13.8,3,0,6.5
+113,55,Gratuito,Pop,Celular,14.8,3,120,4.9
+114,44,Gratuito,MPB,Smart TV,9.5,3,81,3.8
+115,62,Premium,Rock,Celular,12.9,9,0,7.3
+116,36,Premium,MPB,Celular,16.6,6,0,8.1
+117,55,Premium,MPB,Computador,16.5,6,0,8.7
+118,16,Gratuito,Eletrônica,Celular,20.8,9,178,4.4
+119,17,Gratuito,Rock,Computador,22.9,6,198,1.2
+120,55,Premium,MPB,Celular,12.5,7,0,6.0
+121,59,Gratuito,Pop,Computador,11.3,3,129,4.1
+122,41,Gratuito,Rock,Celular,11.1,0,79,4.9
+123,53,Gratuito,Pop,Smart TV,13.0,5,141,3.8
+124,32,Gratuito,Sertanejo,Smart TV,18.0,5,187,4.4
+125,52,Premium,Pop,Computador,21.7,6,0,9.0
+126,40,Premium,Eletrônica,Computador,22.7,9,0,7.1
+127,31,Gratuito,Pop,Smart TV,17.5,2,160,3.5
+128,20,Premium,Sertanejo,Computador,22.9,11,0,8.4
+129,24,Premium,MPB,Celular,20.9,1,0,8.2
+130,61,Premium,Pop,Celular,14.0,7,0,6.1
+131,38,Gratuito,Sertanejo,Celular,13.9,1,115,2.3
+132,65,Premium,Sertanejo,Celular,12.9,3,0,5.2
+133,33,Premium,MPB,Celular,20.6,9,0,7.2
+134,18,Gratuito,Forró,Celular,19.6,3,136,2.9
+135,28,Gratuito,MPB,Celular,14.4,1,89,3.4
+136,33,Gratuito,MPB,Celular,16.4,7,165,1.5
+137,51,Premium,Sertanejo,Celular,15.1,5,0,7.1
+138,52,Gratuito,Rock,Celular,9.6,3,74,2.6
+139,52,Gratuito,Pop,Smart TV,15.5,5,161,1.9
+140,31,Gratuito,Pop,Celular,15.5,2,180,2.6
+141,35,Gratuito,MPB,Computador,11.2,6,88,4.7
+142,44,Gratuito,Rock,Celular,11.4,1,126,3.7
+143,46,Gratuito,Eletrônica,Computador,14.4,2,141,4.3
+144,36,Gratuito,Rock,Celular,15.6,7,140,3.4
+145,25,Gratuito,Pop,Celular,20.4,3,147,2.9
+146,54,Premium,Rock,Celular,13.6,7,0,6.8
+147,42,Gratuito,Rock,Computador,13.8,4,125,2.7
+148,63,Premium,Pop,Celular,14.3,2,0,7.2
+149,63,Gratuito,Sertanejo,Celular,16.3,2,130,4.9
+150,60,Gratuito,MPB,Computador,7.7,2,58,5.3
+151,64,Premium,Sertanejo,Computador,11.6,6,0,8.0
+152,47,Gratuito,Sertanejo,Celular,10.5,1,100,4.4
+153,30,Gratuito,Eletrônica,Computador,16.1,9,161,3.5
+154,24,Gratuito,Pop,Celular,16.3,2,164,3.3
+155,21,Gratuito,Sertanejo,Celular,20.9,4,207,1.5
+156,63,Gratuito,Eletrônica,Celular,15.3,3,125,2.4
+157,29,Premium,Sertanejo,Computador,23.6,7,0,6.1
+158,17,Premium,Sertanejo,Computador,23.2,5,0,8.2
+159,17,Gratuito,Sertanejo,Computador,21.7,3,214,1.9
+160,30,Gratuito,Pop,Computador,15.5,5,130,4.3
+161,64,Gratuito,Forró,Computador,5.9,1,43,3.4
+162,30,Premium,Eletrônica,Smart TV,22.8,4,0,6.9
+163,21,Premium,Eletrônica,Celular,24.6,12,0,6.1
+164,49,Gratuito,Sertanejo,Celular,15.6,3,166,4.0
+165,18,Gratuito,Rock,Smart TV,20.4,3,193,5.1
+166,40,Gratuito,Forró,Celular,12.0,1,55,3.1
+167,20,Gratuito,Eletrônica,Celular,19.9,5,201,3.1
+168,20,Gratuito,Eletrônica,Smart TV,22.0,6,128,2.7
+169,34,Gratuito,Rock,Celular,15.5,6,184,3.8
+170,16,Gratuito,Eletrônica,Celular,23.6,10,220,4.4
+171,58,Premium,Forró,Smart TV,13.8,7,0,6.6
+172,46,Premium,MPB,Computador,18.3,7,0,8.3
+173,62,Gratuito,Pop,Celular,8.3,1,71,4.2
+174,40,Gratuito,Eletrônica,Celular,15.6,8,134,2.8
+175,43,Gratuito,MPB,Celular,9.9,2,83,3.8
+176,46,Gratuito,Pop,Celular,12.5,1,115,5.1
+177,39,Premium,Sertanejo,Computador,17.8,4,0,7.7
+178,44,Premium,Pop,Celular,15.9,8,0,7.1
+179,44,Gratuito,Forró,Computador,9.6,2,38,4.6
+180,60,Gratuito,Sertanejo,Smart TV,8.8,1,78,3.6
+181,31,Gratuito,Sertanejo,Celular,20.0,4,132,4.3
+182,61,Premium,MPB,Computador,14.7,3,0,9.6
+183,24,Premium,MPB,Computador,20.8,10,0,7.0
+184,25,Gratuito,Pop,Celular,19.3,4,200,1.6
+185,28,Premium,MPB,Celular,17.7,7,0,7.6
+186,63,Premium,Sertanejo,Computador,11.1,8,0,7.8
+187,28,Gratuito,Pop,Computador,18.7,6,143,4.7
+188,55,Premium,Rock,Smart TV,16.2,6,0,5.9
+189,45,Gratuito,Sertanejo,Celular,13.3,5,137,3.9
+190,47,Premium,MPB,Celular,22.4,12,0,6.3
+191,19,Premium,Eletrônica,Celular,33.6,12,0,8.8
+192,48,Gratuito,Pop,Celular,12.3,2,130,4.5
+193,19,Gratuito,Sertanejo,Celular,20.6,5,186,2.8
+194,43,Gratuito,MPB,Celular,12.3,2,90,2.8
+195,55,Gratuito,Forró,Smart TV,21.8,6,223,4.7
+196,61,Premium,MPB,Computador,13.8,5,0,7.0
+197,65,Premium,Sertanejo,Celular,19.0,8,0,8.2
+198,27,Gratuito,Pop,Computador,19.2,2,206,0.6
+199,54,Premium,Sertanejo,Celular,12.2,4,0,7.4
+200,45,Premium,Sertanejo,Celular,20.7,8,0,8.1
+201,52,Gratuito,Eletrônica,Computador,12.4,6,127,1.3
+202,56,Gratuito,Rock,Computador,9.8,3,73,4.6
+203,39,Premium,Pop,Computador,21.2,5,0,8.6
+204,22,Gratuito,MPB,Celular,20.7,1,218,0.9
+205,55,Gratuito,Sertanejo,Celular,11.9,4,133,3.5
+206,46,Gratuito,Sertanejo,Celular,11.7,5,121,3.4
+207,22,Gratuito,Eletrônica,Computador,19.7,3,150,2.7
+208,36,Gratuito,Forró,Computador,19.7,5,183,2.3
+209,23,Gratuito,Forró,Smart TV,18.6,5,161,2.3
+210,54,Gratuito,Eletrônica,Smart TV,14.8,4,135,2.7
+211,32,Premium,Forró,Celular,17.5,6,0,7.1
+212,19,Gratuito,Eletrônica,Computador,22.6,3,156,3.4
+213,30,Gratuito,Forró,Smart TV,14.2,5,139,2.0
+214,46,Gratuito,Sertanejo,Celular,15.1,7,146,2.8
+215,45,Gratuito,Rock,Celular,13.5,2,102,4.1
+216,58,Premium,Pop,Celular,14.6,5,0,8.5
+217,34,Gratuito,Sertanejo,Computador,16.1,0,131,5.0
+218,47,Gratuito,Pop,Computador,18.0,7,163,3.2
+219,63,Gratuito,Pop,Celular,10.1,2,52,4.7
+220,32,Gratuito,Forró,Smart TV,20.3,5,217,1.0
+221,17,Gratuito,Forró,Celular,18.9,4,162,3.3
+222,48,Gratuito,Pop,Computador,11.9,2,101,1.9
+223,46,Premium,Pop,Celular,19.1,7,0,6.8
+224,32,Gratuito,Forró,Computador,16.4,1,100,2.5
+225,44,Gratuito,Sertanejo,Celular,12.0,4,124,2.9
+226,49,Gratuito,Sertanejo,Celular,14.8,2,157,3.5
+227,56,Gratuito,Pop,Celular,12.8,6,77,4.5
+228,22,Premium,MPB,Celular,24.4,6,0,8.6
+229,39,Premium,Rock,Computador,18.5,3,0,7.4
+230,29,Gratuito,Rock,Celular,14.7,3,109,3.3
+231,32,Premium,Sertanejo,Smart TV,26.7,9,0,7.9
+232,17,Gratuito,Sertanejo,Celular,18.9,5,191,1.0
+233,37,Premium,Eletrônica,Celular,19.8,6,0,9.1
+234,20,Gratuito,Pop,Celular,19.4,4,142,1.1
+235,62,Premium,Pop,Celular,12.6,6,0,7.9
+236,43,Gratuito,Pop,Celular,13.8,5,141,4.1
+237,37,Premium,MPB,Computador,14.9,5,0,6.5
+238,27,Gratuito,Rock,Celular,14.8,3,98,3.5
+239,62,Premium,Eletrônica,Celular,19.1,7,0,5.5
+240,41,Gratuito,Pop,Celular,15.4,1,113,4.0

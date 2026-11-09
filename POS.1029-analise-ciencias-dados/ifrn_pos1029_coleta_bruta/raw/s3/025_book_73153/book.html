@@ -1,0 +1,339 @@
+
+<div class="toast-wrapper mx-auto py-0 fixed-top" role="status" aria-live="polite"></div>
+
+<div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Ir para o conteúdo principal</a>
+</div>
+
+
+
+
+<div id="page">
+    <section class="embedded-main">
+            <span id="maincontent"></span>
+            <div class="activity-header" data-for="page-activity-header"></div>
+        <div role="main"><div class="book p-4">
+    <div class="text-end"><a onclick="window.print();return false;" class="hidden-print" href="#"><img class="icon icon" alt="Imprimir o livro todo" title="Imprimir o livro todo" src="https://presencial.ava.ifrn.edu.br/theme/image.php/suap/booktool_print/1793831080/book">Imprimir o livro todo</a></div>
+    <div class="text-center pb-3 book_title"><h1>Tópicos de Estudo — Aula 04: Laboratório NumPy e Pandas I</h1></div>
+    <div class="book_info w-100 pt-6 d-inline-block">
+        <div class="w-50 float-start">
+            <table>
+                <tbody><tr>
+                    <td>
+                        Site:
+                    </td>
+                    <td class="ps-3">
+                        <a href="https://presencial.ava.ifrn.edu.br">AVA-Presencial</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Curso:
+                    </td>
+                    <td class="ps-3">
+                        Análise e Ciência de Dados
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Livro:
+                    </td>
+                    <td class="ps-3">
+                        Tópicos de Estudo — Aula 04: Laboratório NumPy e Pandas I
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+        <div class="w-50 float-start">
+            <table class="float-end">
+                <tbody><tr>
+                    <td>
+                        Impresso por:
+                    </td>
+                    <td class="ps-3">
+                        Iuri Guerra de Freitas Pereira
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Data:
+                    </td>
+                    <td class="ps-3">
+                        segunda-feira, 9 nov. 2026, 16:40
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </div>
+    <div class="w-100 book_description">
+        <div class="py-5">
+            <h2 class="text-center pb-5">Descrição</h2>
+             <p class="book_summary"></p><p class="translationhash"><span data-translationhash="feab4b9fd197c02a502d524504f58060"></span></p>
+<p>Conteúdo teórico da Aula 04 em formato de livro, em 6 capítulos: da lista Python ao DataFrame; anatomia de <code>Series</code> e <code>DataFrame</code>; criação de DataFrames e leitura de CSV/Excel; inspeção básica (<code>head</code>, <code>info</code>, <code>describe</code>); seleção com <code>loc</code> e <code>iloc</code>; filtragem booleana, atribuição segura e valores ausentes.</p>
+<p>Leia com o Jupyter aberto: execute cada trecho, altere um parâmetro e observe o que muda. A apostila em PDF traz o mesmo conteúdo ampliado, com o laboratório guiado e o exercício.</p><p></p>
+        </div>
+    </div>
+    <div class="w-100">
+        <div class="py-5"><div class="book_toc_numbered"><a name="toc"></a><h2 class="text-center pb-5">Índice</h2><ul><li><a title="1. Capítulo 1 — Do array ao DataFrame" class="font-weight-bold text-decoration-none" href="#ch7636">1. Capítulo 1 — Do array ao DataFrame</a></li><li><a title="2. Capítulo 2 — Series, DataFrame e o índice" class="font-weight-bold text-decoration-none" href="#ch7637">2. Capítulo 2 — Series, DataFrame e o índice</a></li><li><a title="3. Capítulo 3 — Criando DataFrames e lendo arquivos" class="font-weight-bold text-decoration-none" href="#ch7638">3. Capítulo 3 — Criando DataFrames e lendo arquivos</a></li><li><a title="4. Capítulo 4 — Inspeção básica: as sete primeiras perguntas" class="font-weight-bold text-decoration-none" href="#ch7639">4. Capítulo 4 — Inspeção básica: as sete primeiras perguntas</a></li><li><a title="5. Capítulo 5 — Seleção com loc e iloc" class="font-weight-bold text-decoration-none" href="#ch7640">5. Capítulo 5 — Seleção com loc e iloc</a></li><li><a title="6. Capítulo 6 — Filtragem, atribuição segura e valores ausentes" class="font-weight-bold text-decoration-none" href="#ch7641">6. Capítulo 6 — Filtragem, atribuição segura e valores ausentes</a></li></ul></div></div>
+    </div>
+    <div class="w-100">
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch7636"><h2 class="text-center pb-5">1. Capítulo 1 — Do array ao DataFrame</h2><p class="translationhash"><span data-translationhash="8f54dcb64cc181e1cfd019f5f468a49e"></span></p>
+<p>Na Aula 03 representamos uma pequena tabela como uma <strong>lista de dicionários</strong>. Funciona — mas tente responder, em Python puro, a pergunta <em>"qual a nota média dos estudantes do turno noturno, por campus, ignorando quem está sem nota?"</em>. O código tem três laços aninhados, um dicionário acumulador e várias verificações de <code>None</code>. Em Pandas, a mesma pergunta cabe em uma linha.</p>
+<h4>Três camadas empilhadas</h4>
+<ul>
+<li><strong>Python puro</strong> (<code>list</code>, <code>dict</code>): flexibilidade total, mas cada elemento é um objeto separado na memória e toda operação exige laço explícito.</li>
+<li><strong>NumPy</strong> (<code>ndarray</code>): bloco contíguo de memória, um único tipo, operações vetorizadas executadas em C. Em compensação: um só tipo por array, sem nomes de coluna, sem suporte nativo a ausentes em inteiros.</li>
+<li><strong>Pandas</strong> (<code>Series</code>, <code>DataFrame</code>): colunas <em>nomeadas</em> e de <em>tipos diferentes</em>, índice rotulado, alinhamento automático, tratamento de ausentes e leitura de dezenas de formatos — ao custo de mais memória e alguma sobrecarga.</li>
+</ul>
+<p>A frase que vale guardar: <strong>Pandas é NumPy com rótulos, tipos mistos e tratamento de dados faltantes.</strong> Quase tudo o que confunde em Pandas — o índice, o <code>NaN</code>, o <code>dtype object</code>, o <code>SettingWithCopyWarning</code> — aparece exatamente onde essas três adições encostam no NumPy de baixo.</p>
+<h4>Vetorização</h4>
+<p>Vetorizar é aplicar uma operação a todos os elementos de uma vez. O laço continua existindo; apenas passou a rodar em código compilado.</p>
+<pre># Python puro: o laço está no seu código, interpretado
+bonus = []
+for n in lista_notas:
+    bonus.append(n * 1.05)
+
+# NumPy: o laço está dentro da biblioteca, compilado
+bonus = notas * 1.05</pre>
+<p>Para arrays grandes, a segunda forma é tipicamente 10 a 100 vezes mais rápida. Regra prática: <em>se você escreveu um <code>for</code> percorrendo linhas de um DataFrame, quase certamente existe uma forma vetorizada melhor.</em></p>
+<h4>Indexação booleana: o mecanismo por trás de toda filtragem</h4>
+<pre>import numpy as np
+notas = np.array([72.5, 68.0, 91.3, 55.4, 80.1])
+
+notas &gt;= 70            # array([ True, False,  True, False,  True])
+notas[notas &gt;= 70]     # array([72.5, 91.3, 80.1])
+(notas &gt;= 70).sum()    # 3   -&gt; True vale 1, False vale 0
+(notas &gt;= 70).mean()   # 0.6 -&gt; proporção de aprovados</pre>
+<p>Como <code>True == 1</code>, <code>mascara.sum()</code> conta os casos e <code>mascara.mean()</code> devolve a <em>proporção</em>. Você usará isso o tempo todo para calcular taxas.</p>
+<h4>Ausentes em NumPy e em Pandas</h4>
+<p>Em NumPy, <code>np.mean</code> de um array com <code>NaN</code> devolve <code>NaN</code>; é preciso usar <code>np.nanmean</code>. Em Pandas, <code>.mean()</code> já ignora ausentes <strong>por padrão</strong>. É conveniente e perigoso: uma média calculada sobre 441 de 482 estudantes não é a média da turma, e o Pandas não avisa.</p></div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch7637"><h2 class="text-center pb-5">2. Capítulo 2 — Series, DataFrame e o índice</h2><p class="translationhash"><span data-translationhash="dfc412f0045144c5272cf1ad4a5e7692"></span></p>
+<h4>Series: um vetor com rótulos</h4>
+<p>Uma <code>Series</code> é um array unidimensional acompanhado de um <strong>índice</strong> (os rótulos das posições) e de um <strong>nome</strong>.</p>
+<pre>import pandas as pd
+
+s = pd.Series([72.5, 68.0, 91.3],
+              index=["20261000", "20261001", "20261002"],
+              name="nota_final")
+
+s.values   # array([72.5, 68. , 91.3])  -&gt; o ndarray NumPy por baixo
+s.index    # Index(['20261000', '20261001', '20261002'], dtype='object')
+s.dtype    # dtype('float64')</pre>
+<h4>Alinhamento automático</h4>
+<p>O índice não é decoração: ele governa a combinação entre objetos. Ao operar duas Series, o Pandas casa os <strong>rótulos</strong>, não as posições.</p>
+<pre>a = pd.Series([10, 20, 30], index=["x", "y", "z"])
+b = pd.Series([ 1,  2,  3], index=["z", "y", "x"])   # ordem invertida
+
+a + b
+# x    13    &lt;- 10 + 3, casado pelo rótulo "x"
+# y    22
+# z    31</pre>
+<p><strong>Consequência prática:</strong> somar colunas vindas de DataFrames com índices diferentes pode produzir <code>NaN</code> — não porque os dados estejam errados, mas porque os rótulos não casaram. Ao concatenar ou reordenar, use <code>.reset_index(drop=True)</code>.</p>
+<h4>DataFrame: um dicionário ordenado de Series</h4>
+<p>Um <code>DataFrame</code> é uma tabela bidimensional: várias Series que <strong>compartilham o mesmo índice</strong>.</p>
+<ul>
+<li><code>df.shape</code> — tupla (linhas, colunas)</li>
+<li><code>df.columns</code> / <code>df.index</code> — rótulos de colunas e de linhas</li>
+<li><code>df.dtypes</code> — tipo de cada coluna</li>
+<li><code>df.to_numpy()</code> — o conteúdo como array NumPy</li>
+<li><code>len(df)</code> — número de <strong>linhas</strong></li>
+</ul>
+<h4>Os dtypes que você vai encontrar</h4>
+<ul>
+<li><code>int64</code> — inteiros. <strong>Não aceita <code>NaN</code></strong>: um único ausente converte a coluna inteira para <code>float64</code>.</li>
+<li><code>float64</code> — decimais; tipo padrão de coluna numérica com ausentes.</li>
+<li><code>object</code> / <code>str</code> — texto e tipos mistos. Frequentemente sinaliza número lido como texto.</li>
+<li><code>bool</code> — resultado de toda comparação.</li>
+<li><code>datetime64[ns]</code> — datas; só aparece com <code>parse_dates=</code> ou <code>pd.to_datetime()</code>.</li>
+<li><code>category</code> — texto com poucos valores distintos; economiza muita memória em colunas como <code>turno</code> ou <code>campus</code>.</li>
+</ul>
+<p><strong>Sintoma mais comum de leitura malfeita:</strong> uma coluna que deveria ser numérica aparece como <code>object</code>. Causas quase sempre: vírgula decimal não declarada, separador de milhar, ou um texto como <code>"N/D"</code> no meio dos números.</p></div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch7638"><h2 class="text-center pb-5">3. Capítulo 3 — Criando DataFrames e lendo arquivos</h2><p class="translationhash"><span data-translationhash="9b67b7c8bf46486a2a7c7577b81db2b8"></span></p>
+<h4>Cinco formas de criar um DataFrame</h4>
+<pre># (a) dicionário de listas — as chaves viram colunas
+df = pd.DataFrame({"campus": ["Natal-Central", "Mossoró"],
+                   "alunos": [98, 70]})
+
+# (b) lista de dicionários — um registro por linha; chave ausente vira NaN
+df = pd.DataFrame([{"campus": "Natal-Central", "alunos": 98},
+                   {"campus": "Mossoró"}])
+
+# (c) lista de tuplas + columns
+df = pd.DataFrame([("Natal-Central", 98), ("Mossoró", 70)],
+                  columns=["campus", "alunos"])
+
+# (d) array NumPy — quando tudo é numérico
+df = pd.DataFrame(np.zeros((5, 3)), columns=["p1", "p2", "p3"])
+
+# (e) com índice significativo
+df = df.set_index("campus")     # promove coluna a índice
+df = df.reset_index()           # desfaz</pre>
+<h4>read_csv: os parâmetros que importam</h4>
+<p>O CSV é apenas texto, sem esquema, e cada sistema o gera à sua maneira. <strong>Ler um CSV brasileiro com os parâmetros padrão quase sempre dá errado</strong>, porque o padrão do Pandas é o formato norte-americano.</p>
+<ul>
+<li><code>sep=";"</code> — separador de campos</li>
+<li><code>decimal=","</code> — separador decimal</li>
+<li><code>thousands="."</code> — separador de milhar</li>
+<li><code>encoding="utf-8"</code> / <code>"latin-1"</code> / <code>"cp1252"</code></li>
+<li><code>dtype={"matricula": "string"}</code> — força o tipo de colunas específicas</li>
+<li><code>usecols=[...]</code> e <code>nrows=1000</code> — lê só o necessário</li>
+<li><code>na_values=["N/D", "-"]</code> — textos a tratar como ausente</li>
+<li><code>parse_dates=["data"]</code> — converte para <code>datetime64</code></li>
+<li><code>index_col="matricula"</code>, <code>skiprows=3</code></li>
+</ul>
+<pre>df = pd.read_csv("dados/matriculas_ifrn_2026.csv",
+                 sep=";", decimal=",", encoding="utf-8",
+                 dtype={"matricula": "string"})</pre>
+<h4>Por que a matrícula não pode ser inteiro</h4>
+<p>Identificadores lidos como <code>int64</code> perdem zeros à esquerda (<code>"00123"</code> vira <code>123</code>), estouram a precisão em códigos longos e passam a aceitar operações sem sentido, como somar duas matrículas. <strong>Regra: se não faz sentido calcular a média, não é número — é texto.</strong> Vale para CPF, CEP, SIAPE e código de escola.</p>
+<h4>Diagnóstico rápido</h4>
+<p>Antes de insistir em parâmetros, olhe o arquivo cru — as três primeiras linhas revelam quase tudo. Acentos corrompidos (<code>MossorÃ³</code>) indicam codificação errada; uma única coluna gigante indica <code>sep</code> errado.</p>
+<pre>with open("dados/matriculas_ifrn_2026.csv", encoding="utf-8") as f:
+    for _ in range(3):
+        print(f.readline().rstrip())</pre>
+<h4>read_excel</h4>
+<p>Requer <code>openpyxl</code> para arquivos <code>.xlsx</code>. A diferença em relação ao CSV é a existência de <strong>planilhas (abas)</strong>.</p>
+<pre>campi  = pd.read_excel("dados/campi_ifrn.xlsx", sheet_name="campi")
+todas  = pd.read_excel("dados/campi_ifrn.xlsx", sheet_name=None)  # dict
+df     = pd.read_excel("relatorio.xlsx", skiprows=4)  # pula título decorativo</pre>
+<p>Planilhas costumam trazer células mescladas, títulos decorativos e totais no meio da tabela. Sempre confira <code>df.head()</code> e <code>df.dtypes</code> logo após ler um <code>.xlsx</code>.</p>
+<h4>Gravando</h4>
+<p><code>df.to_csv("saida.csv", index=False)</code> — sem <code>index=False</code>, o índice vira uma coluna anônima que reaparece como <code>Unnamed: 0</code> na próxima leitura.</p></div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch7639"><h2 class="text-center pb-5">4. Capítulo 4 — Inspeção básica: as sete primeiras perguntas</h2><p class="translationhash"><span data-translationhash="59982187959e9e3ed1b11d21fc4bf536"></span></p>
+<p>Diante de um arquivo desconhecido, esta sequência deve ser <strong>automática</strong>. Leva menos de um minuto e evita horas de análise sobre dados quebrados.</p>
+<ol>
+<li><code>df.shape</code> — quantas linhas e colunas? O número bate com o esperado?</li>
+<li><code>df.head()</code> / <code>df.sample(5)</code> — com o que esses dados se parecem?</li>
+<li><code>df.info()</code> — que tipo tem cada coluna? Quantos não nulos?</li>
+<li><code>df.describe()</code> — as estatísticas fazem sentido?</li>
+<li><code>df.isna().sum()</code> — onde estão os buracos?</li>
+<li><code>df["col"].value_counts()</code> — que categorias existem?</li>
+<li><code>df.duplicated().sum()</code> — há linhas repetidas?</li>
+</ol>
+<h4>Lendo o info()</h4>
+<p>É a saída mais informativa do Pandas. Três colunas importam:</p>
+<ul>
+<li><strong>Non-Null Count</strong> — comparado ao total de linhas, revela imediatamente quantos ausentes cada coluna tem. Se <code>RangeIndex</code> mostra 482 e a coluna mostra 441, são 41 ausentes.</li>
+<li><strong>Dtype</strong> — coluna que deveria ser numérica aparecendo como <code>object</code> significa que a leitura precisa ser corrigida <em>antes</em> de qualquer análise.</li>
+<li><strong>memory usage</strong> — use <code>df.info(memory_usage="deep")</code> para o tamanho real das colunas de texto.</li>
+</ul>
+<h4>Lendo o describe()</h4>
+<p>Por padrão resume apenas colunas numéricas: <code>count</code>, <code>mean</code>, <code>std</code>, <code>min</code>, <code>25%</code>, <code>50%</code> (mediana), <code>75%</code>, <code>max</code>.</p>
+<ul>
+<li><strong><code>count</code> menor que <code>len(df)</code></strong> denuncia ausentes naquela coluna — e lembra que a média exibida foi calculada só sobre os presentes.</li>
+<li><strong>Média muito distante da mediana</strong> sugere assimetria ou valores extremos.</li>
+<li><strong><code>min</code> ou <code>max</code> impossíveis</strong> (idade 0, nota 999) indicam erro de coleta ou código de ausência disfarçado de número.</li>
+<li><code>df.describe(include="all")</code> inclui as colunas de texto, com <code>unique</code>, <code>top</code> e <code>freq</code>.</li>
+</ul>
+<p><em>Nota de versão:</em> a partir do Pandas 3.0 as colunas de texto têm dtype próprio <code>str</code>, e <code>describe(include="object")</code> emite aviso de compatibilidade. Prefira <code>include="all"</code>. Verifique sua versão com <code>pd.__version__</code>.</p>
+<h4>value_counts(): o detector de sujeira</h4>
+<pre>df["turno"].value_counts()                  # contagem absoluta
+df["turno"].value_counts(normalize=True)    # proporção
+df["turno"].value_counts(dropna=False)      # inclui os NaN
+df["campus"].nunique()                      # quantos distintos</pre>
+<p>É a ferramenta número um para detectar categorias sujas: <code>"Natal-Central"</code>, <code>"natal-central"</code> e <code>" Natal-Central "</code> aparecem como três valores diferentes. No conjunto desta aula, <code>nunique()</code> devolve <strong>19</strong> campi antes da limpeza e <strong>12</strong> depois de <code>str.strip()</code>.</p></div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch7640"><h2 class="text-center pb-5">5. Capítulo 5 — Seleção com loc e iloc</h2><p class="translationhash"><span data-translationhash="64c5396e3e8c06bdcb91294727e8437e"></span></p>
+<p>Este é o ponto em que a maioria dos iniciantes escorrega. A confusão desaparece com uma única distinção:</p>
+<blockquote>
+<p><strong><code>loc</code> trabalha com RÓTULOS</strong> (o que está escrito no índice e nos nomes das colunas).<br><strong><code>iloc</code> trabalha com POSIÇÕES</strong> (inteiros de 0 a n−1, como em listas Python).</p>
+</blockquote>
+<h4>Colchetes simples</h4>
+<pre>df["nota_final"]              # uma COLUNA -&gt; Series
+df[["nome", "nota_final"]]    # várias colunas -&gt; DataFrame
+df[0:5]                       # fatia de LINHAS por posição (ambíguo!)
+df[df["nota_final"] &gt; 90]     # filtragem booleana de LINHAS</pre>
+<p>Note a ambiguidade: com um texto, <code>[]</code> seleciona coluna; com fatia ou máscara, seleciona linhas. Por isso, <strong>para qualquer seleção que não seja "uma ou mais colunas inteiras", prefira <code>loc</code> ou <code>iloc</code></strong>.</p>
+<h4>loc — por rótulo</h4>
+<pre>df.loc[0]                                 # linha de RÓTULO 0
+df.loc[0, "nome"]                         # uma célula
+df.loc[0:2]                               # rótulos 0, 1 E 2 -&gt; fim INCLUÍDO
+df.loc[0:2, ["nome", "campus"]]           # linhas x colunas
+df.loc[df["turno"] == "Noturno", "nota_final"]   # filtro + coluna</pre>
+<h4>iloc — por posição</h4>
+<pre>df.iloc[0]                    # PRIMEIRA linha, seja qual for o rótulo
+df.iloc[0, 1]                 # 1ª linha, 2ª coluna
+df.iloc[0:3]                  # posições 0, 1, 2 -&gt; fim EXCLUÍDO
+df.iloc[0:3, 0:4]             # 3 primeiras linhas, 4 primeiras colunas
+df.iloc[-1]                   # última linha
+df.iloc[[0, 5, 10], [1, 9]]   # listas de posições</pre>
+<h4>A pegadinha clássica</h4>
+<p>Com o índice padrão, <code>df.loc[0:2]</code> devolve <strong>três</strong> linhas e <code>df.iloc[0:2]</code> devolve <strong>duas</strong>. Não é bug: <code>loc</code> fatia rótulos (intervalo fechado), <code>iloc</code> fatia posições (intervalo semiaberto, como toda fatia Python).</p>
+<h4>Quando o índice deixa de ser 0, 1, 2…</h4>
+<pre>noturno = df[df["turno"] == "Noturno"]
+noturno.index[:5]     # Index([0, 1, 5, 8, 10], ...) -&gt; com buracos
+
+noturno.loc[5]        # a linha cujo RÓTULO é 5
+noturno.iloc[5]       # a 6ª linha deste subconjunto
+
+noturno = noturno.reset_index(drop=True)   # renumera 0..n-1</pre>
+<p>Depois de <code>set_index("matricula")</code>, <code>dfm.loc["20261250"]</code> funciona e <code>dfm.iloc["20261250"]</code> falha: <code>iloc</code> exige um inteiro de posição, nunca um texto.</p>
+<h4>at e iat</h4>
+<p>Versões otimizadas para acessar <strong>um único valor escalar</strong>: <code>df.at[0, "nome"]</code> (rótulo) e <code>df.iat[0, 1]</code> (posição). Mais rápidas, porém mais restritas.</p></div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch7641"><h2 class="text-center pb-5">6. Capítulo 6 — Filtragem, atribuição segura e valores ausentes</h2><p class="translationhash"><span data-translationhash="2fcbe421d4a181b2b9b807eac3a0cbc0"></span></p>
+<h4>Máscaras booleanas</h4>
+<p>Filtrar é selecionar linhas por uma <em>condição</em>. A condição produz uma Series de <code>True</code>/<code>False</code> do tamanho do DataFrame, usada como índice.</p>
+<pre>mascara = df["nota_final"] &gt;= 70
+df[mascara]
+df.loc[mascara, ["nome", "nota_final"]]   # filtra E escolhe colunas</pre>
+<h4>Dois erros que todo iniciante comete</h4>
+<ol>
+<li><strong>Usar <code>and</code>/<code>or</code> no lugar de <code>&amp;</code>/<code>|</code>.</strong> Os operadores do Python esperam um único booleano e disparam <code>ValueError: The truth value of a Series is ambiguous</code>.</li>
+<li><strong>Esquecer os parênteses.</strong> <code>&amp;</code> tem precedência maior que <code>&gt;=</code>, então <code>df["a"] &gt; 1 &amp; df["b"] &lt; 2</code> é avaliado na ordem errada.</li>
+</ol>
+<pre># CERTO
+df[(df["turno"] == "Noturno") &amp; (df["nota_final"] &gt;= 80)]   # E
+df[(df["campus"] == "Mossoró") | (df["campus"] == "Apodi")]  # OU
+df[~(df["situacao"] == "Aprovado")]                          # NÃO</pre>
+<h4>Atalhos que deixam o código legível</h4>
+<ul>
+<li><code>df["campus"].isin(lista)</code> — pertence a um conjunto; substitui uma cadeia de <code>|</code></li>
+<li><code>df["idade"].between(18, 24)</code> — intervalo fechado</li>
+<li><code>df["curso"].str.contains("Sistemas|Redes", na=False)</code> — texto contém; aceita regex. <strong><code>na=False</code> não é opcional</strong>: um ausente produziria <code>NaN</code> na máscara e levantaria erro.</li>
+<li><code>df.query("turno == 'Noturno' and nota_final &gt;= 80")</code> — filtro em string</li>
+<li><code>df.nlargest(10, "nota_final")</code>, <code>df.sort_values("nota_final", ascending=False)</code></li>
+</ul>
+<h4>Atribuição segura e o SettingWithCopyWarning</h4>
+<pre># ERRADO — "indexação encadeada": dois colchetes em sequência
+df[df["frequencia"].isna()]["frequencia"] = 85.0
+
+# CERTO — uma única operação com loc: [linhas, coluna]
+df.loc[df["frequencia"].isna(), "frequencia"] = 85.0</pre>
+<p><strong>Por quê?</strong> <code>df[mascara]</code> pode devolver uma <em>cópia</em> ou uma <em>vista</em> — o Pandas não garante qual. Se for cópia, a atribuição altera um objeto temporário que será descartado. Com <code>df.loc[linhas, coluna] = valor</code> o Pandas sabe que a intenção é escrever no original. Ao derivar um subconjunto que será alterado, use <code>.copy()</code> explicitamente.</p>
+<h4>A armadilha do np.where com ausentes</h4>
+<p><code>NaN &gt;= 70</code> é <code>False</code>. Logo, <code>np.where(df["nota"] &gt;= 70, "Bom", "A melhorar")</code> classifica silenciosamente todos os estudantes <em>sem nota</em> como "A melhorar". A correção é reinserir o ausente depois:</p>
+<pre>df["faixa"] = df["faixa"].mask(df["nota_final"].isna())</pre>
+<h4>NaN não é zero</h4>
+<p>Ausente significa "não sei", e isso é diferente de "zero" e de "vazio".</p>
+<ul>
+<li><code>df.isna().sum()</code> — quantos ausentes por coluna</li>
+<li><code>df.isna().mean()</code> — <em>proporção</em> de ausentes</li>
+<li><code>df.dropna(subset=["nota_final"])</code> — remove só quem falta naquela coluna</li>
+<li><code>df["col"].fillna(df["col"].median())</code> — imputa pela mediana</li>
+</ul>
+<p>A pergunta certa não é "como remover os <code>NaN</code>?", e sim <strong>"por que eles estão ali?"</strong>. No conjunto desta aula, os 41 estudantes sem <code>nota_final</code> estão em situação <em>Trancado</em> (27) ou <em>Em curso</em> (14): a nota não existe ainda — não foi perdida. Preenchê-la com a média criaria desempenho fictício. Já a <code>frequencia</code> ausente em 9 registros é plausivelmente falha de registro, e imputar a mediana é defensável — <strong>desde que a decisão seja documentada</strong>.</p>
+<h4>O que vem na Aula 05</h4>
+<p><em>Laboratório Pandas II — Agrupamentos e Joins</em>: <code>groupby</code>, <code>agg</code>, <code>pivot_table</code>, <code>merge</code>/<code>join</code>, <code>apply</code> com <code>lambda</code> e <em>method chaining</em>.</p></div>
+            </div>
+    </div>
+</div></div>
+    </section>
+</div>
+
+
+
+
+
+
+
+

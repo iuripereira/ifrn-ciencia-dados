@@ -1,0 +1,245 @@
+
+<div class="toast-wrapper mx-auto py-0 fixed-top" role="status" aria-live="polite"></div>
+
+<div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Ir para o conteúdo principal</a>
+</div>
+
+
+
+
+<div id="page">
+    <section class="embedded-main">
+            <span id="maincontent"></span>
+            <div class="activity-header" data-for="page-activity-header"></div>
+        <div role="main"><div class="book p-4">
+    <div class="text-end"><a onclick="window.print();return false;" class="hidden-print" href="#"><img class="icon icon" alt="Imprimir o livro todo" title="Imprimir o livro todo" src="https://presencial.ava.ifrn.edu.br/theme/image.php/suap/booktool_print/1793831080/book">Imprimir o livro todo</a></div>
+    <div class="text-center pb-3 book_title"><h1>Tópicos de Estudo — Aula 12</h1></div>
+    <div class="book_info w-100 pt-6 d-inline-block">
+        <div class="w-50 float-start">
+            <table>
+                <tbody><tr>
+                    <td>
+                        Site:
+                    </td>
+                    <td class="ps-3">
+                        <a href="https://presencial.ava.ifrn.edu.br">AVA-Presencial</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Curso:
+                    </td>
+                    <td class="ps-3">
+                        Análise e Ciência de Dados
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Livro:
+                    </td>
+                    <td class="ps-3">
+                        Tópicos de Estudo — Aula 12
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+        <div class="w-50 float-start">
+            <table class="float-end">
+                <tbody><tr>
+                    <td>
+                        Impresso por:
+                    </td>
+                    <td class="ps-3">
+                        Iuri Guerra de Freitas Pereira
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Data:
+                    </td>
+                    <td class="ps-3">
+                        segunda-feira, 9 nov. 2026, 16:40
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </div>
+    <div class="w-100 book_description">
+        <div class="py-5">
+            <h2 class="text-center pb-5">Descrição</h2>
+             <p class="book_summary"></p><p>Resumo dos principais tópicos da Aula 12 — Laboratório: Matplotlib, Seaborn e Plotly, em 5 capítulos curtos.</p><p></p>
+        </div>
+    </div>
+    <div class="w-100">
+        <div class="py-5"><div class="book_toc_numbered"><a name="toc"></a><h2 class="text-center pb-5">Índice</h2><ul><li><a title="1. Bibliotecas, anatomia de uma figura e escolha do gráfico" class="font-weight-bold text-decoration-none" href="#ch8165">1. Bibliotecas, anatomia de uma figura e escolha do gráfico</a></li><li><a title="2. Gráficos univariados: histograma, boxplot e violino" class="font-weight-bold text-decoration-none" href="#ch8166">2. Gráficos univariados: histograma, boxplot e violino</a></li><li><a title="3. Gráficos bivariados: dispersão, barras e mapa de calor" class="font-weight-bold text-decoration-none" href="#ch8167">3. Gráficos bivariados: dispersão, barras e mapa de calor</a></li><li><a title="4. Customização e paletas de cores" class="font-weight-bold text-decoration-none" href="#ch8168">4. Customização e paletas de cores</a></li><li><a title="5. Plotly, roteiro do laboratório e materiais" class="font-weight-bold text-decoration-none" href="#ch8169">5. Plotly, roteiro do laboratório e materiais</a></li></ul></div></div>
+    </div>
+    <div class="w-100">
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch8165"><h2 class="text-center pb-5">1. Bibliotecas, anatomia de uma figura e escolha do gráfico</h2><p>Nesta aula de laboratório vamos transformar as medidas da Aula 11 em <strong>gráficos</strong>. A regra que guia tudo: <strong>cada gráfico responde a uma pergunta e traz escrito o número que sustenta a resposta</strong> (média, mediana, quartis, r, intervalo de confiança, <em>n</em>).</p>
+<h4>O caso da aula (sintético)</h4>
+<p>600 pedidos de delivery de uma hamburgueria fictícia (<em>Brasa &amp; Pão</em>) em 8 semanas: bairro, distância, veículo (moto ou bicicleta), chuva, turno, itens, valor, taxa, tempo de entrega e avaliação. No exercício, 240 usuários de um aplicativo de música fictício. Nenhum dado é real.</p>
+<h4>As três bibliotecas</h4>
+<table style="border-collapse: collapse;" border="1" cellpadding="4">
+<tbody>
+<tr><th>Biblioteca</th><th>Nível</th><th>Use quando</th></tr>
+<tr><td><strong>Matplotlib</strong> (<code>plt</code>)</td><td>baixo — controle de cada elemento</td><td>precisar customizar, anotar, montar painéis e exportar</td></tr>
+<tr><td><strong>Seaborn</strong> (<code>sns</code>)</td><td>alto — recebe DataFrame e nomes de colunas; calcula médias, IC, KDE e regressão</td><td>quiser explorar distribuições e relações rapidamente</td></tr>
+<tr><td><strong>Plotly Express</strong> (<code>px</code>)</td><td>alto — uma linha por gráfico, interativo</td><td>quiser explorar com o mouse ou compartilhar em HTML</td></tr>
+</tbody>
+</table>
+<p>O Seaborn desenha <strong>sobre</strong> o Matplotlib: todo gráfico do Seaborn fica dentro de um <code>Axes</code>, que pode ser ajustado depois. O Plotly é independente.</p>
+<h4>Anatomia de uma figura</h4>
+<ul>
+<li><strong>Figure</strong>: a folha inteira (tamanho, título geral, <code>savefig</code>).</li>
+<li><strong>Axes</strong>: cada área de plotagem, com eixos, título, rótulos e legenda.</li>
+</ul>
+<p>Use a <strong>interface orientada a objetos</strong>:</p>
+<pre>fig, ax = plt.subplots(figsize=(9, 4))
+sns.histplot(df["tempo_entrega_min"], ax=ax)
+ax.set(title="Tempo de entrega", xlabel="Tempo (min)", ylabel="Pedidos")
+
+fig, axes = plt.subplots(2, 2)   # painéis: axes[0, 0], axes[0, 1], axes[1, 0], axes[1, 1]</pre>
+<h4>Qual gráfico usar?</h4>
+<table style="border-collapse: collapse;" border="1" cellpadding="4">
+<tbody>
+<tr><th>Pergunta</th><th>Gráfico</th><th>Número no gráfico</th></tr>
+<tr><td>Como uma variável numérica se distribui?</td><td>histograma</td><td>média, mediana, desvio-padrão</td></tr>
+<tr><td>Há outliers? Como grupos se comparam?</td><td>boxplot</td><td>mediana, IQR, <em>n</em></td></tr>
+<tr><td>Qual a forma da distribuição em cada grupo?</td><td>violino</td><td>quartis</td></tr>
+<tr><td>Duas numéricas se relacionam?</td><td>dispersão</td><td>r de Pearson/Spearman, reta</td></tr>
+<tr><td>Qual a média/contagem por categoria?</td><td>barras</td><td>IC 95% ou desvio-padrão, <em>n</em></td></tr>
+<tr><td>Como várias numéricas se relacionam?</td><td>mapa de calor</td><td>matriz de r</td></tr>
+</tbody>
+</table>
+</div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch8166"><h2 class="text-center pb-5">2. Gráficos univariados: histograma, boxplot e violino</h2><p>Gráficos <strong>univariados</strong> mostram a distribuição de uma variável: centro, dispersão, assimetria e valores atípicos.</p>
+<h4>Histograma</h4>
+<p>Divide a variável em classes (<em>bins</em>) e conta as observações em cada uma. Marque <strong>média</strong> e <strong>mediana</strong> com <code>ax.axvline</code>. No caso da aula: média 37,4 min, mediana 36 min, skew = 1,18 → <strong>assimetria positiva</strong> (alguns atrasos longos puxam a média). Poucas classes escondem detalhes; classes demais viram ruído — comece com <code>bins="auto"</code>.</p>
+<pre>sns.histplot(t, bins="auto", ax=ax)
+ax.axvline(t.mean(), label=f"média = {t.mean():.1f} min")
+ax.axvline(t.median(), ls="--", label=f"mediana = {t.median():.0f} min")</pre>
+<h4>Boxplot</h4>
+<p>Resumo em cinco números. A caixa vai do <strong>Q1</strong> ao <strong>Q3</strong> (altura = <strong>IQR</strong>), a linha interna é a <strong>mediana</strong>, os bigodes vão até Q1 − 1,5·IQR e Q3 + 1,5·IQR, e os pontos além disso são <strong>outliers</strong> (critério de Tukey). No caso: Q1 = 30, Q3 = 43, IQR = 13 → outliers acima de 62,5 min (15 pedidos).</p>
+<p>É o melhor gráfico para <strong>comparar grupos</strong> (tempo por bairro: medianas de 29 min no Centro a 46 min na Serra). Limitação: esconde o tamanho da amostra — escreva o <em>n</em> nos rótulos ou sobreponha os pontos com <code>sns.stripplot</code>. Use <code>showmeans=True</code> para marcar também a média.</p>
+<h4>Violino</h4>
+<p>Combina o boxplot com a <strong>densidade estimada (KDE)</strong>: a largura mostra onde os valores se concentram. Parâmetros úteis: <code>inner="quart"</code> (Q1, mediana, Q3), <code>split=True</code> (dois grupos em metades do mesmo violino) e <code>cut=0</code> (não ultrapassa os valores observados). No caso, com chuva a distribuição inteira sobe (almoço: mediana de 31 para 39 min).</p>
+<pre>sns.violinplot(data=df, x="turno", y="tempo_entrega_min", hue="chuva",
+               split=True, inner="quart", cut=0, ax=ax)</pre>
+</div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch8167"><h2 class="text-center pb-5">3. Gráficos bivariados: dispersão, barras e mapa de calor</h2><p>Gráficos <strong>bivariados</strong> cruzam duas variáveis. A estatística muda conforme os tipos envolvidos.</p>
+<h4>Dispersão (scatter) — numérica × numérica</h4>
+<p>Acompanhe de <strong>r de Pearson</strong> (relação linear), <strong>ρ de Spearman</strong> (monotônica, robusta a outliers) e da <strong>reta de regressão</strong> (<code>sns.regplot</code>; a faixa é o IC 95% da reta). <code>hue</code> e <code>style</code> acrescentam variáveis. No caso: distância × tempo, r = 0,71, tempo ≈ 25,8 + 2,80 × km (cada km a mais ≈ 2,8 min).</p>
+<p><strong>Atenção à variável de confusão:</strong> a bicicleta parece mais rápida (mediana 33 × 36 min), mas só faz entregas de até 3 km. Na mesma faixa de distância ela é mais lenta (33 × 29 min).</p>
+<h4>Barras — categórica (× numérica)</h4>
+<p><code>sns.barplot</code> calcula uma estatística por categoria (média, por padrão) e desenha uma barra de erro; <code>sns.countplot</code> apenas conta. Sempre diga qual barra de erro foi usada:</p>
+<table style="border-collapse: collapse;" border="1" cellpadding="4">
+<tbody>
+<tr><th>Parâmetro</th><th>Significado</th></tr>
+<tr><td><code>errorbar=("ci", 95)</code></td><td>IC 95% da média (padrão)</td></tr>
+<tr><td><code>errorbar="sd"</code></td><td>média ± 1 desvio-padrão</td></tr>
+<tr><td><code>errorbar="se"</code></td><td>média ± 1 erro-padrão</td></tr>
+<tr><td><code>estimator="median"</code></td><td>usa a mediana no lugar da média</td></tr>
+</tbody>
+</table>
+<p>Barras começam no zero. No caso, o ticket médio vai de R$ 89 (segunda) a R$ 118 (sábado).</p>
+<h4>Mapa de calor da correlação — várias numéricas</h4>
+<p>Paleta <strong>divergente</strong> centrada no zero, valores escritos e máscara do triângulo superior:</p>
+<pre>corr = df[colunas].corr()
+mask = np.triu(np.ones_like(corr, dtype=bool), k=1)
+sns.heatmap(corr, mask=mask, annot=True, fmt=".2f", cmap="vlag",
+            vmin=-1, vmax=1, center=0, ax=ax)</pre>
+<p>No caso: distância × taxa = 0,99 (redundantes), distância × tempo = 0,71, tempo × avaliação = −0,59, itens × valor = 0,92. Mapas de calor também servem para tabelas dinâmicas (bairro × turno), com paleta sequencial.</p>
+</div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch8168"><h2 class="text-center pb-5">4. Customização e paletas de cores</h2><h4>Paletas: escolha pelo tipo de dado</h4>
+<table style="border-collapse: collapse;" border="1" cellpadding="4">
+<tbody>
+<tr><th>Tipo</th><th>Quando usar</th><th>Exemplos</th></tr>
+<tr><td>Qualitativa</td><td>categorias sem ordem (bairro, plano)</td><td><code>"colorblind"</code>, <code>"Set2"</code>, <code>"tab10"</code></td></tr>
+<tr><td>Sequencial</td><td>valores que só crescem (contagem, tempo)</td><td><code>"viridis"</code>, <code>"Greens"</code>, <code>"rocket"</code></td></tr>
+<tr><td>Divergente</td><td>valores com ponto central (correlação, variação)</td><td><code>"vlag"</code>, <code>"RdBu"</code>, <code>"coolwarm"</code></td></tr>
+</tbody>
+</table>
+<p>Evite o arco-íris (<code>jet</code>): cria fronteiras falsas e falha para daltônicos e em impressão. Prefira <code>sns.set_theme(palette="colorblind")</code> e não dependa só da cor — use também forma do marcador (<code>style=</code>), rótulos e legenda.</p>
+<h4>Customizar é comunicar</h4>
+<ul>
+<li><strong>Ordene</strong> as categorias pelo valor.</li>
+<li>Use <strong>cinza</strong> para o contexto e <strong>uma cor</strong> para o destaque.</li>
+<li><strong>Rotule diretamente</strong>: <code>ax.bar_label(ax.containers[0])</code>.</li>
+<li>Escreva no <strong>título a conclusão</strong> ("Serra: entregas levam 46 min — 17 a mais que no Centro").</li>
+<li>Eixos com <strong>unidade</strong>; fonte dos dados no rodapé (<code>fig.text</code>).</li>
+<li>Remova o que não ajuda: <code>sns.despine()</code>, grades desnecessárias.</li>
+</ul>
+<h4>Comandos de customização</h4>
+<pre>sns.set_theme(style="whitegrid", palette="colorblind")
+ax.set(title="...", xlabel="... (min)", ylabel="...", ylim=(0, 140))
+ax.axhline(y, ls="--"); ax.axvspan(a, b, alpha=0.1)
+ax.annotate("texto", xy=(x0, y0), xytext=(x1, y1), arrowprops=dict(arrowstyle="-&gt;"))
+fig.suptitle("Título do painel"); fig.tight_layout()
+fig.savefig("figura.png", dpi=200, bbox_inches="tight")</pre>
+<h4>Checklist de um bom gráfico</h4>
+<ol>
+<li>Título com a conclusão.</li>
+<li>Eixos com nome e unidade.</li>
+<li>Estatística identificada (média? mediana? IC 95%? desvio-padrão?).</li>
+<li><em>n</em> por grupo quando há comparação.</li>
+<li>Paleta adequada e acessível; cor com significado.</li>
+<li>Barras a partir do zero; sem 3D, pizza com muitas fatias ou dois eixos y.</li>
+<li>Fonte dos dados.</li>
+</ol>
+</div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch8169"><h2 class="text-center pb-5">5. Plotly, roteiro do laboratório e materiais</h2><h4>Plotly Express: gráficos interativos</h4>
+<p>O Plotly faz em uma linha os mesmos gráficos com <strong>interatividade</strong>: <em>hover</em> com os valores, zoom, filtro clicando na legenda e exportação para HTML que abre em qualquer navegador. No boxplot do Plotly, o <em>hover</em> já mostra mínimo, Q1, mediana, Q3, máximo e as cercas.</p>
+<table style="border-collapse: collapse;" border="1" cellpadding="4">
+<tbody>
+<tr><th>Gráfico</th><th>Função</th><th>Parâmetros úteis</th></tr>
+<tr><td>Histograma</td><td><code>px.histogram</code></td><td><code>nbins</code>, <code>marginal="box"</code></td></tr>
+<tr><td>Boxplot / violino</td><td><code>px.box</code> / <code>px.violin</code></td><td><code>points="all"</code>, <code>box=True</code></td></tr>
+<tr><td>Dispersão</td><td><code>px.scatter</code></td><td><code>color</code>, <code>symbol</code>, <code>hover_data</code></td></tr>
+<tr><td>Mapa de calor</td><td><code>px.imshow</code></td><td><code>text_auto=True</code>, <code>zmin=-1</code>, <code>zmax=1</code></td></tr>
+</tbody>
+</table>
+<pre>fig = px.scatter(df, x="distancia_km", y="tempo_entrega_min", color="chuva",
+                 hover_data=["bairro", "valor_pedido", "avaliacao"])
+fig.write_html("graficos/dispersao.html", include_plotlyjs="cdn")
+fig.show()</pre>
+<h4>Roteiro do laboratório (1h30)</h4>
+<table style="border-collapse: collapse;" border="1" cellpadding="4">
+<tbody>
+<tr><th>Tempo</th><th>Parte</th></tr>
+<tr><td>0–10 min</td><td>Preparação, tema, paleta e anatomia de uma figura</td></tr>
+<tr><td>10–35 min</td><td>Univariados: histograma, boxplot, violino</td></tr>
+<tr><td>35–60 min</td><td>Bivariados: dispersão, barras, mapa de calor</td></tr>
+<tr><td>60–75 min</td><td>Customização, paletas e painel 2×2</td></tr>
+<tr><td>75–90 min</td><td>Plotly e fechamento</td></tr>
+</tbody>
+</table>
+<h4>Materiais e avaliação</h4>
+<ul>
+<li><strong>Apostila (PDF)</strong>: conteúdo completo, com as figuras do laboratório e a colinha de comandos.</li>
+<li><strong>Pacote</strong>: notebook guiado (com saídas), exercício prático com resultados esperados, gabarito, dados e <code>gerar_dados.py</code>.</li>
+<li><strong>Exercício prático</strong> (app de música, 9 passos): treino, <strong>não precisa ser entregue</strong>.</li>
+<li><strong>Formulário avaliativo</strong>: 10 questões objetivas — prazo <strong>16/11/2026, 23:59</strong>.</li>
+</ul>
+</div>
+            </div>
+    </div>
+</div></div>
+    </section>
+</div>
+
+
+
+
+
+
+
+

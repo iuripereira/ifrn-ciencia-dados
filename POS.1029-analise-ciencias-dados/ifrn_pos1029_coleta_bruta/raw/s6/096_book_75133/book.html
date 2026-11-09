@@ -1,0 +1,206 @@
+
+<div class="toast-wrapper mx-auto py-0 fixed-top" role="status" aria-live="polite"></div>
+
+<div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Ir para o conteúdo principal</a>
+</div>
+
+
+
+
+<div id="page">
+    <section class="embedded-main">
+            <span id="maincontent"></span>
+            <div class="activity-header" data-for="page-activity-header"></div>
+        <div role="main"><div class="book p-4">
+    <div class="text-end"><a onclick="window.print();return false;" class="hidden-print" href="#"><img class="icon icon" alt="Imprimir o livro todo" title="Imprimir o livro todo" src="https://presencial.ava.ifrn.edu.br/theme/image.php/suap/booktool_print/1793831080/book">Imprimir o livro todo</a></div>
+    <div class="text-center pb-3 book_title"><h1>Tópicos de Estudo — Aula 14</h1></div>
+    <div class="book_info w-100 pt-6 d-inline-block">
+        <div class="w-50 float-start">
+            <table>
+                <tbody><tr>
+                    <td>
+                        Site:
+                    </td>
+                    <td class="ps-3">
+                        <a href="https://presencial.ava.ifrn.edu.br">AVA-Presencial</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Curso:
+                    </td>
+                    <td class="ps-3">
+                        Análise e Ciência de Dados
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Livro:
+                    </td>
+                    <td class="ps-3">
+                        Tópicos de Estudo — Aula 14
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+        <div class="w-50 float-start">
+            <table class="float-end">
+                <tbody><tr>
+                    <td>
+                        Impresso por:
+                    </td>
+                    <td class="ps-3">
+                        Iuri Guerra de Freitas Pereira
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Data:
+                    </td>
+                    <td class="ps-3">
+                        segunda-feira, 9 nov. 2026, 16:40
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </div>
+    <div class="w-100 book_description">
+        <div class="py-5">
+            <h2 class="text-center pb-5">Descrição</h2>
+             <p class="book_summary"></p><p>Resumo dos principais tópicos da Aula 14 — scikit-learn: Fluxo de Trabalho em ML, em 5 capítulos curtos.</p><p></p>
+        </div>
+    </div>
+    <div class="w-100">
+        <div class="py-5"><div class="book_toc_numbered"><a name="toc"></a><h2 class="text-center pb-5">Índice</h2><ul><li><a title="1. Aprendizado supervisionado, fluxo de trabalho e API" class="font-weight-bold text-decoration-none" href="#ch8170">1. Aprendizado supervisionado, fluxo de trabalho e API</a></li><li><a title="2. Treino/teste, vazamento e baseline" class="font-weight-bold text-decoration-none" href="#ch8171">2. Treino/teste, vazamento e baseline</a></li><li><a title="3. Pré-processamento e pipelines" class="font-weight-bold text-decoration-none" href="#ch8172">3. Pré-processamento e pipelines</a></li><li><a title="4. Métricas de classificação e limiar de decisão" class="font-weight-bold text-decoration-none" href="#ch8173">4. Métricas de classificação e limiar de decisão</a></li><li><a title="5. Validação cruzada, regressão e avaliação" class="font-weight-bold text-decoration-none" href="#ch8174">5. Validação cruzada, regressão e avaliação</a></li></ul></div></div>
+    </div>
+    <div class="w-100">
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch8170"><h2 class="text-center pb-5">1. Aprendizado supervisionado, fluxo de trabalho e API</h2><p>Nesta aula começamos a <strong>Unidade 4 — Aprendizado de Máquina Aplicado</strong>. O foco não é um algoritmo específico, mas o <strong>fluxo de trabalho</strong> que garante que um modelo seja avaliado de forma honesta.</p>
+<h4>O caso da aula (sintético)</h4>
+<p>1.500 usuários do aplicativo de música fictício da Aula 12, agora com a coluna <code>cancelou</code> (1 = cancelou a conta no mês seguinte; 27% dos usuários). Pergunta: <em>quem tem risco de cancelar?</em> No trabalho prático, os 600 pedidos da hamburgueria da Aula 12: <em>quem vai ficar insatisfeito?</em></p>
+<h4>Classificação × regressão</h4>
+<table style="border-collapse: collapse;" border="1" cellpadding="4"><tbody>
+<tr><th></th><th>Classificação</th><th>Regressão</th></tr>
+<tr><td>Alvo</td><td>categoria (cancelou / ficou)</td><td>número (minutos de entrega)</td></tr>
+<tr><td>Modelos</td><td>LogisticRegression, DecisionTreeClassifier, RandomForestClassifier</td><td>LinearRegression, RandomForestRegressor</td></tr>
+<tr><td>Métricas</td><td>acurácia, precisão, recall, F1, ROC-AUC</td><td>MAE, RMSE, R²</td></tr>
+</tbody></table>
+<h4>O fluxo em oito etapas</h4>
+<ol><li>Pergunta e alvo</li><li>X (atributos) e y (alvo)</li><li>Treino / teste</li><li>Baseline</li><li>Pipeline (pré-processamento + modelo)</li><li>Validação cruzada</li><li>Teste final e métricas</li><li>Limiar e decisão</li></ol>
+<h4>A API do scikit-learn</h4>
+<ul>
+<li><strong>Estimador</strong> (modelo): <code>fit(X, y)</code> aprende; <code>predict(X)</code> prevê; <code>predict_proba(X)</code> dá a probabilidade de cada classe.</li>
+<li><strong>Transformador</strong>: <code>fit(X)</code> aprende parâmetros; <code>transform(X)</code> aplica; <code>fit_transform(X)</code> faz os dois.</li>
+<li>O que foi aprendido fica em atributos terminados em <code>_</code> (<code>coef_</code>, <code>mean_</code>).</li>
+</ul>
+<pre>modelo = LogisticRegression(max_iter=1000)
+modelo.fit(X_treino, y_treino)
+modelo.predict_proba(X_teste)[:, 1]   # probabilidade de cancelar</pre>
+</div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch8171"><h2 class="text-center pb-5">2. Treino/teste, vazamento e baseline</h2><h4>Treino e teste</h4>
+<p>Avaliar o modelo nos dados em que ele aprendeu dá um resultado otimista. Separamos uma parte para <strong>teste</strong> e só a usamos no fim.</p>
+<pre>X_treino, X_teste, y_treino, y_teste = train_test_split(
+    X, y, test_size=0.25, stratify=y, random_state=42)</pre>
+<ul>
+<li><code>stratify=y</code>: mesma proporção de classes nos dois conjuntos (26,8% e 26,9% de cancelamentos).</li>
+<li><code>random_state</code>: sorteio fixo, resultados reproduzíveis.</li>
+</ul>
+<h4>Vazamento de dados (data leakage)</h4>
+<p>O modelo não pode receber, no treino, informação que não teria no uso real. Dois casos frequentes:</p>
+<ol>
+<li><strong>Pré-processar antes de dividir</strong>: padronizar ou imputar com a média de todos os dados faz o treino "ver" o teste. Solução: <code>Pipeline</code>.</li>
+<li><strong>Atributo que carrega a resposta</strong> ou só existe depois dela: usar a avaliação para prever a insatisfação; usar o tempo de entrega para prever a insatisfação "no momento do pedido".</li>
+</ol>
+<h4>Baseline e o paradoxo da acurácia</h4>
+<p>O <code>DummyClassifier(strategy="most_frequent")</code> sempre prevê a classe mais comum. No caso da aula, ele tem <strong>73,1% de acurácia</strong> e <strong>recall 0</strong>: não encontra nenhum cliente que vai cancelar. Em dados desbalanceados, acurácia alta pode esconder um modelo inútil. Todo modelo deve ser comparado com o baseline.</p>
+</div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch8172"><h2 class="text-center pb-5">3. Pré-processamento e pipelines</h2><h4>Pré-processamento</h4>
+<table style="border-collapse: collapse;" border="1" cellpadding="4"><tbody>
+<tr><th>Problema</th><th>Transformador</th></tr>
+<tr><td>valores faltantes (satisfação em branco)</td><td><code>SimpleImputer(strategy="median")</code></td></tr>
+<tr><td>escalas diferentes (dias, horas, anúncios)</td><td><code>StandardScaler()</code></td></tr>
+<tr><td>categorias (plano, dispositivo)</td><td><code>OneHotEncoder(handle_unknown="ignore")</code></td></tr>
+</tbody></table>
+<h4>ColumnTransformer + Pipeline</h4>
+<p>O <code>ColumnTransformer</code> aplica cada tratamento às suas colunas. O <code>Pipeline</code> encadeia o pré-processamento e o modelo em <strong>um único estimador</strong>.</p>
+<pre>preprocess = ColumnTransformer([
+    ("num", Pipeline([("imputar", SimpleImputer(strategy="median")),
+                      ("padronizar", StandardScaler())]), numericas),
+    ("cat", OneHotEncoder(handle_unknown="ignore"), categoricas)])
+modelo = Pipeline([("preprocess", preprocess),
+                   ("classificador", LogisticRegression(max_iter=1000))])
+modelo.fit(X_treino, y_treino)   # tudo aprende só com o treino</pre>
+<p><strong>Vantagens:</strong> sem vazamento (inclusive na validação cruzada), um só <code>fit</code> e um só <code>predict</code>, troca de modelo em uma linha e um único objeto para salvar.</p>
+<h4>O que o modelo aprendeu</h4>
+<p>Pelos coeficientes da regressão logística (variáveis padronizadas): <strong>plano gratuito, dias sem acessar e chamados ao suporte aumentam</strong> o risco de cancelar; <strong>satisfação, meses de conta e plano Premium diminuem</strong>. São associações, não causas.</p>
+</div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch8173"><h2 class="text-center pb-5">4. Métricas de classificação e limiar de decisão</h2><h4>Matriz de confusão (teste, 375 usuários)</h4>
+<table style="border-collapse: collapse;" border="1" cellpadding="4"><tbody>
+<tr><th></th><th>previsto: ficou</th><th>previsto: cancelou</th></tr>
+<tr><td><strong>real: ficou</strong></td><td>VN = 255</td><td>FP = 19 (falso alarme)</td></tr>
+<tr><td><strong>real: cancelou</strong></td><td>FN = 46 (cancelamento perdido)</td><td>VP = 55</td></tr>
+</tbody></table>
+<h4>Métricas</h4>
+<table style="border-collapse: collapse;" border="1" cellpadding="4"><tbody>
+<tr><th>Métrica</th><th>Fórmula</th><th>Pergunta</th><th>Valor</th></tr>
+<tr><td>Acurácia</td><td>(VP + VN) / total</td><td>quantos acertos no geral?</td><td>0,827</td></tr>
+<tr><td>Precisão</td><td>VP / (VP + FP)</td><td>dos apontados, quantos cancelaram?</td><td>0,743</td></tr>
+<tr><td>Recall</td><td>VP / (VP + FN)</td><td>dos que cancelaram, quantos foram encontrados?</td><td>0,545</td></tr>
+<tr><td>F1</td><td>2·P·R / (P + R)</td><td>equilíbrio entre precisão e recall</td><td>0,629</td></tr>
+<tr><td>ROC-AUC</td><td>área sob a curva ROC</td><td>o modelo ordena bem o risco?</td><td>0,831</td></tr>
+</tbody></table>
+<h4>ROC-AUC</h4>
+<p>A curva ROC mostra recall × taxa de falsos positivos em todos os limiares; a AUC resume: 0,5 = chute, 1,0 = perfeito. AUC = 0,83: sorteando um cliente que cancelou e um que ficou, o modelo dá risco maior ao primeiro em 83% das vezes.</p>
+<h4>Limiar de decisão</h4>
+<p>O <code>predict</code> usa 0,5. Baixar o limiar aumenta o recall e reduz a precisão: com 0,3, o modelo encontra 70% dos cancelamentos (contra 55%), apontando 134 clientes em vez de 74. <strong>O limiar é uma decisão de negócio</strong>, que depende do custo de cada tipo de erro.</p>
+<pre>proba = modelo.predict_proba(X_teste)[:, 1]
+pred_03 = (proba &gt;= 0.3).astype(int)</pre>
+</div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch8174"><h2 class="text-center pb-5">5. Validação cruzada, regressão e avaliação</h2><h4>Validação cruzada</h4>
+<p>Uma única divisão depende da sorte. Na validação cruzada <strong>k-fold</strong>, o treino é dividido em k partes; o modelo é treinado k vezes, cada vez validado em uma parte diferente. Resultado: <strong>média ± desvio-padrão</strong>. Serve para <strong>escolher</strong> o modelo; o teste fica guardado.</p>
+<pre>cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
+r = cross_validate(modelo, X_treino, y_treino, cv=cv,
+                   scoring=["accuracy", "f1", "roc_auc"])</pre>
+<table style="border-collapse: collapse;" border="1" cellpadding="4"><tbody>
+<tr><th>Modelo</th><th>Acurácia</th><th>F1</th><th>ROC-AUC</th></tr>
+<tr><td>Baseline</td><td>0,732</td><td>0,000</td><td>0,500</td></tr>
+<tr><td>Regressão logística</td><td>0,803</td><td>0,564</td><td>0,845 ± 0,029</td></tr>
+<tr><td>Árvore de decisão</td><td>0,787</td><td>0,527</td><td>0,778 ± 0,032</td></tr>
+<tr><td>Random forest</td><td>0,806</td><td>0,556</td><td>0,838 ± 0,026</td></tr>
+</tbody></table>
+<h4>Métricas de regressão (tempo de entrega)</h4>
+<ul>
+<li><strong>MAE</strong> = 3,94 min — erro típico, na unidade do alvo.</li>
+<li><strong>RMSE</strong> = 6,84 min — pune mais os erros grandes (baseline: 10,75 min).</li>
+<li><strong>R²</strong> = 0,59 — proporção da variação explicada (0 = prever sempre a média).</li>
+</ul>
+<h4>Materiais e avaliação</h4>
+<ul>
+<li><strong>Apostila (PDF)</strong> e <strong>slides</strong> da aula.</li>
+<li><strong>Pacote</strong>: notebook guiado com saídas, notebook do trabalho prático, dados e <code>gerar_dados.py</code>.</li>
+<li><strong>Trabalho prático</strong> (entrega): classificação dos clientes insatisfeitos da hamburgueria — prazo <strong>23/11/2026, 23:59</strong>.</li>
+<li><strong>Formulário avaliativo</strong>: 10 questões objetivas — prazo <strong>23/11/2026, 23:59</strong>.</li>
+</ul>
+</div>
+            </div>
+    </div>
+</div></div>
+    </section>
+</div>
+
+
+
+
+
+
+
+

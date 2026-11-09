@@ -1,0 +1,299 @@
+
+<div class="toast-wrapper mx-auto py-0 fixed-top" role="status" aria-live="polite"></div>
+
+<div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Ir para o conteúdo principal</a>
+</div>
+
+
+
+
+<div id="page">
+    <section class="embedded-main">
+            <span id="maincontent"></span>
+            <div class="activity-header" data-for="page-activity-header"></div>
+        <div role="main"><div class="book p-4">
+    <div class="text-end"><a onclick="window.print();return false;" class="hidden-print" href="#"><img class="icon icon" alt="Imprimir o livro todo" title="Imprimir o livro todo" src="https://presencial.ava.ifrn.edu.br/theme/image.php/suap/booktool_print/1793831080/book">Imprimir o livro todo</a></div>
+    <div class="text-center pb-3 book_title"><h1>Tópicos de Estudo — Aula 05: Laboratório Pandas II</h1></div>
+    <div class="book_info w-100 pt-6 d-inline-block">
+        <div class="w-50 float-start">
+            <table>
+                <tbody><tr>
+                    <td>
+                        Site:
+                    </td>
+                    <td class="ps-3">
+                        <a href="https://presencial.ava.ifrn.edu.br">AVA-Presencial</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Curso:
+                    </td>
+                    <td class="ps-3">
+                        Análise e Ciência de Dados
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Livro:
+                    </td>
+                    <td class="ps-3">
+                        Tópicos de Estudo — Aula 05: Laboratório Pandas II
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+        <div class="w-50 float-start">
+            <table class="float-end">
+                <tbody><tr>
+                    <td>
+                        Impresso por:
+                    </td>
+                    <td class="ps-3">
+                        Iuri Guerra de Freitas Pereira
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Data:
+                    </td>
+                    <td class="ps-3">
+                        segunda-feira, 9 nov. 2026, 16:40
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </div>
+    <div class="w-100">
+        <div class="py-5"><div class="book_toc_numbered"><a name="toc"></a><h2 class="text-center pb-5">Índice</h2><ul><li><a title="1. Capítulo 1 — groupby: dividir, aplicar, combinar" class="font-weight-bold text-decoration-none" href="#ch7701">1. Capítulo 1 — groupby: dividir, aplicar, combinar</a></li><li><a title="2. Capítulo 2 — agg: várias estatísticas de uma vez" class="font-weight-bold text-decoration-none" href="#ch7702">2. Capítulo 2 — agg: várias estatísticas de uma vez</a></li><li><a title="3. Capítulo 3 — pivot_table: o groupby de duas dimensões" class="font-weight-bold text-decoration-none" href="#ch7703">3. Capítulo 3 — pivot_table: o groupby de duas dimensões</a></li><li><a title="4. Capítulo 4 — merge e join: combinando tabelas" class="font-weight-bold text-decoration-none" href="#ch7704">4. Capítulo 4 — merge e join: combinando tabelas</a></li><li><a title="5. Capítulo 5 — apply, lambda e por que vetorizar continua vencendo" class="font-weight-bold text-decoration-none" href="#ch7705">5. Capítulo 5 — apply, lambda e por que vetorizar continua vencendo</a></li><li><a title="6. Capítulo 6 — method chaining e pipe" class="font-weight-bold text-decoration-none" href="#ch7706">6. Capítulo 6 — method chaining e pipe</a></li></ul></div></div>
+    </div>
+    <div class="w-100">
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch7701"><h2 class="text-center pb-5">1. Capítulo 1 — groupby: dividir, aplicar, combinar</h2><p class="translationhash"><span data-translationhash="efa4d0fe0cf34a5e38265b6803e001a5"></span></p>
+<p>Na Aula 04 respondemos "qual a nota média por campus?" com um único <code>groupby</code>. Esta aula aprofunda essa ferramenta e acrescenta as que faltavam para transformar uma tabela bruta em respostas: <code>agg</code>, <code>pivot_table</code>, <code>merge</code>, <code>apply</code> e o estilo de <em>method chaining</em>.</p>
+<h4>O padrão split-apply-combine</h4>
+<p>Todo <code>groupby</code> segue três passos, sempre na mesma ordem:</p>
+<ol>
+<li><strong>Dividir (split)</strong> — o DataFrame é particionado em grupos, um por valor distinto da coluna (ou colunas) de agrupamento.</li>
+<li><strong>Aplicar (apply)</strong> — uma função (média, contagem, soma, uma função personalizada) roda separadamente em cada grupo.</li>
+<li><strong>Combinar (combine)</strong> — os resultados de cada grupo são reunidos de volta em uma única Series ou DataFrame.</li>
+</ol>
+<p>Nada disso é mágico: <code>df.groupby("campus")["nota_final"].mean()</code> é conceitualmente equivalente a fazer um laço sobre cada campus, calcular a média do subconjunto e depois montar uma tabela com os resultados — só que o Pandas faz isso de forma vetorizada e muito mais rápida.</p>
+<h4>Agrupando por uma coluna</h4>
+<pre>media_por_campus = df.groupby("campus")["nota_final"].mean().round(2)
+media_por_campus.sort_values(ascending=False)</pre>
+<p><code>df.groupby("campus")</code> sozinho não calcula nada: devolve um objeto <code>DataFrameGroupBy</code>, uma promessa de agrupamento. O cálculo só acontece quando se aplica uma função — <code>.mean()</code>, <code>.sum()</code>, <code>.count()</code> etc.</p>
+<h4>Agrupando por várias colunas</h4>
+<pre>df.groupby(["campus", "turno"])["nota_final"].mean()</pre>
+<p>O resultado tem um <strong><code>MultiIndex</code></strong>: um índice hierárquico, com um nível para cada coluna de agrupamento. Para "achatar" esse índice em uma tabela larga, com o segundo nível virando colunas, usa-se <code>.unstack()</code> — o assunto do Capítulo 3.</p>
+<h4><code>size()</code> não é <code>count()</code></h4>
+<p>Esta é a armadilha mais comum do capítulo:</p>
+<ul>
+<li><code>df.groupby("campus").size()</code> — conta <strong>linhas</strong> do grupo, ausentes incluídos.</li>
+<li><code>df.groupby("campus")["nota_final"].count()</code> — conta apenas os valores <strong>não ausentes</strong> daquela coluna específica.</li>
+</ul>
+<pre>tamanho   = df.groupby("campus").size()
+contagem  = df.groupby("campus")["nota_final"].count()
+ausentes  = tamanho - contagem   # quantos "sumiram" na coluna</pre>
+<p>No conjunto desta disciplina, Natal-Central tem 98 linhas mas apenas 87 notas presentes — a diferença (11) são os estudantes sem <code>nota_final</code>, e só aparece quando as duas contagens são comparadas lado a lado.</p>
+<h4>Iterando grupos (bastidores, raramente necessário)</h4>
+<pre>for campus, grupo in df.groupby("campus"):
+    print(campus, len(grupo), grupo["nota_final"].mean())</pre>
+<p>Serve para entender o mecanismo por dentro; no dia a dia, quase sempre há uma forma vetorizada (agg, pivot_table, apply) que resolve sem laço explícito.</p></div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch7702"><h2 class="text-center pb-5">2. Capítulo 2 — agg: várias estatísticas de uma vez</h2><p class="translationhash"><span data-translationhash="bdfbfc5e9d34644ce18047191557978b"></span></p>
+<p><code>.mean()</code> sozinho devolve um único número por grupo. Quando é preciso mais de uma estatística ao mesmo tempo, entra o <code>agg</code> (abreviação de <em>aggregate</em>).</p>
+<h4>Uma lista de funções</h4>
+<pre>df.groupby("campus")["nota_final"].agg(["mean", "median", "std", "count"])</pre>
+<p>Cada string da lista é o nome de uma função conhecida do Pandas (<code>"mean"</code>, <code>"sum"</code>, <code>"min"</code>, <code>"max"</code>, <code>"std"</code>, <code>"count"</code>, <code>"nunique"</code> …). O resultado é uma tabela com uma coluna por estatística.</p>
+<h4>Várias colunas, cada uma com suas próprias funções</h4>
+<pre>df.groupby("turno").agg({
+    "nota_final": ["mean", "count"],
+    "frequencia": "mean",
+    "idade": "median",
+})</pre>
+<p>Aqui o resultado tem colunas em <strong>MultiIndex</strong>: <code>("nota_final", "mean")</code>, <code>("nota_final", "count")</code> etc. Funciona, mas essas colunas de dois níveis são incômodas de referenciar depois (<code>resultado[("nota_final", "mean")]</code>).</p>
+<h4>Named aggregation — a forma recomendada</h4>
+<p>Desde o Pandas 0.25, é possível nomear cada coluna resultante diretamente:</p>
+<pre>df.groupby("turno").agg(
+    nota_media=("nota_final", "mean"),
+    nota_desvio=("nota_final", "std"),
+    n_estudantes=("matricula", "count"),
+    taxa_aprovacao=("situacao", lambda s: (s == "Aprovado").mean() * 100),
+).round(2)</pre>
+<p>Cada argumento nomeado tem a forma <code>nome_da_coluna_de_saida=(coluna_de_origem, função)</code>. O resultado sai com colunas <strong>planas</strong> — <code>nota_media</code>, <code>n_estudantes</code> — prontas para usar em <code>sort_values</code>, gráficos ou um novo <code>merge</code>. Sempre que uma tabela de resumo precisar de nomes de coluna claros, esta é a forma preferida.</p>
+<h4>Uma <code>lambda</code> dentro do <code>agg</code></h4>
+<p><code>taxa_aprovacao=("situacao", lambda s: (s == "Aprovado").mean() * 100)</code> merece atenção: dentro do <code>agg</code>, <code>s</code> é a <em>coluna daquele grupo</em> — uma Series só com os valores de <code>situacao</code> daquele campus, por exemplo. <code>s == "Aprovado"</code> produz uma máscara booleana; <code>.mean()</code> dessa máscara é a proporção de <code>True</code>; multiplicar por 100 converte para percentual. É a mesma lógica de "máscara booleana + <code>.mean()</code>" da Aula 04, agora aplicada dentro de cada grupo.</p></div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch7703"><h2 class="text-center pb-5">3. Capítulo 3 — pivot_table: o groupby de duas dimensões</h2><p class="translationhash"><span data-translationhash="d113796fc408f2947281ff245e8c8de1"></span></p>
+<p>Quando o resultado que se quer é uma tabela "larga" — uma categoria nas linhas, outra nas colunas, um valor resumido em cada célula — <code>pivot_table</code> é o caminho mais direto.</p>
+<h4>A forma básica</h4>
+<pre>df.pivot_table(values="nota_final", index="campus",
+              columns="turno", aggfunc="mean")</pre>
+<p>Os quatro parâmetros centrais:</p>
+<ul>
+<li><code>values</code> — a coluna que será resumida dentro de cada célula.</li>
+<li><code>index</code> — a(s) coluna(s) que viram as <strong>linhas</strong> da tabela.</li>
+<li><code>columns</code> — a(s) coluna(s) que viram as <strong>colunas</strong> da tabela.</li>
+<li><code>aggfunc</code> — a função de resumo (<code>"mean"</code> por padrão, mas pode ser <code>"sum"</code>, <code>"count"</code>, uma lista, ou uma função personalizada).</li>
+</ul>
+<h4>É exatamente um groupby + unstack</h4>
+<pre>df.groupby(["campus", "turno"])["nota_final"].mean().unstack("turno")</pre>
+<p>Este código produz o <strong>mesmo resultado</strong> do <code>pivot_table</code> acima. <code>pivot_table</code> é um atalho para esse padrão frequente: agrupar por duas colunas e "desempilhar" uma delas em colunas. Saber os dois caminhos ajuda a reconhecer a mesma operação escrita de formas diferentes.</p>
+<h4><code>fill_value</code> e <code>margins</code></h4>
+<pre>df.pivot_table(values="matricula", index="campus", columns="situacao",
+              aggfunc="count", fill_value=0,
+              margins=True, margins_name="Total")</pre>
+<p><code>fill_value=0</code> substitui por zero as combinações campus×situação que não ocorreram (em vez de <code>NaN</code>) — faz sentido aqui porque "zero estudantes nessa situação" é um valor válido, não um dado ausente. <code>margins=True</code> acrescenta uma linha e uma coluna de <strong>totais</strong>, o que serve como conferência: a soma das partes deve bater com o total geral.</p>
+<h4>Múltiplas funções de agregação</h4>
+<pre>df.pivot_table(values="nota_final", index="turno", columns="modalidade",
+              aggfunc=["mean", "count"])</pre>
+<p>Passar uma lista em <code>aggfunc</code> produz colunas em dois níveis (a função e depois a categoria) — útil para ver média e tamanho da amostra lado a lado, e lembrar que uma média sobre poucos casos merece menos confiança.</p>
+<h4><code>crosstab</code>: quando só interessa contar</h4>
+<p><code>pd.crosstab(df["turno"], df["situacao"])</code> é uma versão simplificada, dedicada a tabelas de <strong>contagem</strong> cruzando duas colunas categóricas — equivalente a um <code>pivot_table</code> com <code>aggfunc="count"</code>, mas com uma assinatura mais direta quando não se precisa de nenhum outro parâmetro.</p></div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch7704"><h2 class="text-center pb-5">4. Capítulo 4 — merge e join: combinando tabelas</h2><p class="translationhash"><span data-translationhash="cbe29587728206b135d95e05c9cd26f3"></span></p>
+<p>Até aqui, cada tabela foi analisada isoladamente. Mas <code>matriculas_ifrn_2026.csv</code> só tem o <em>nome</em> do campus e do curso — os detalhes (região, número de docentes, eixo tecnológico, carga horária) estão em <code>campi_ifrn.xlsx</code>. <code>merge</code> é a operação que junta essas tabelas pela coluna em comum.</p>
+<h4>Merge muitos-para-um</h4>
+<pre>df_campi = df.merge(campi, on="campus", how="left", validate="m:1")
+df_completo = df_campi.merge(cursos, on="curso", how="left", validate="m:1")</pre>
+<p>Cada estudante (muitos) pertence a exatamente um campus (um) — por isso a relação é "muitos-para-um" (<code>m:1</code>). <code>on="campus"</code> diz qual coluna serve de <strong>chave</strong> de junção; ela precisa existir, com o mesmo nome e os mesmos valores, nas duas tabelas (é por isso que o <code>str.strip()</code> da Aula 04 é indispensável <em>antes</em> do merge — <code>" Mossoró "</code> não casaria com <code>"Mossoró"</code>).</p>
+<h4><code>validate</code>: verificação, não correção</h4>
+<p><code>validate="m:1"</code> não conserta nada — ele <strong>verifica</strong> que a tabela à direita (<code>campi</code>) tem no máximo uma linha por valor de chave. Se por engano <code>campi</code> tivesse duas linhas para "Mossoró", um merge sem <code>validate</code> duplicaria silenciosamente todas as linhas de estudantes daquele campus; com <code>validate="m:1"</code>, o Pandas levanta <code>MergeError</code> imediatamente. É uma rede de segurança barata que vale usar sempre que a cardinalidade da relação for conhecida.</p>
+<h4><code>how</code>: o que fazer com quem não casa</h4>
+<table>
+<tbody>
+<tr>
+<th>how</th>
+<th>Mantém</th>
+</tr>
+<tr>
+<td><code>"inner"</code></td>
+<td>só as linhas cuja chave existe nas DUAS tabelas</td>
+</tr>
+<tr>
+<td><code>"left"</code></td>
+<td>TODAS as linhas da tabela da esquerda; sem casamento, entra <code>NaN</code></td>
+</tr>
+<tr>
+<td><code>"right"</code></td>
+<td>todas as linhas da tabela da direita (o espelho de <code>"left"</code>)</td>
+</tr>
+<tr>
+<td><code>"outer"</code></td>
+<td>todas as linhas de ambas, com <code>NaN</code> onde faltar</td>
+</tr>
+</tbody>
+</table>
+<pre>cursos_parcial = cursos[cursos["eixo_tecnologico"] != "Informação e Comunicação"]
+
+inner = df.merge(cursos_parcial, on="curso", how="inner")   # perde quem faz TI
+left  = df.merge(cursos_parcial, on="curso", how="left")    # mantém todos, com NaN</pre>
+<p><code>how="left"</code> é o padrão mais seguro quando o objetivo é <em>enriquecer</em> uma tabela principal sem perder nenhuma de suas linhas — é o que se quer ao juntar matrículas com campi ou cursos.</p>
+<h4>Auditando o resultado com <code>indicator=True</code></h4>
+<pre>checagem = df.merge(cursos, on="curso", how="left", indicator=True)
+checagem["_merge"].value_counts()</pre>
+<p>A coluna <code>_merge</code> (valores <code>"both"</code>, <code>"left_only"</code>, <code>"right_only"</code>) é a forma mais direta de confirmar que um merge se comportou como esperado — especialmente útil quando as chaves vêm de fontes diferentes e podem ter pequenas divergências de grafia.</p>
+<h4><code>join()</code>: atalho quando a chave é o índice</h4>
+<pre>campi_idx = campi.set_index("campus")
+df.join(campi_idx[["regiao", "num_docentes"]], on="campus")</pre>
+<p><code>join</code> é essencialmente um <code>merge</code> especializado para o caso em que a tabela da direita já está indexada pela chave de junção. O parâmetro <code>on</code> diz qual coluna de <code>df</code> deve ser comparada com o índice de <code>campi_idx</code>.</p></div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch7705"><h2 class="text-center pb-5">5. Capítulo 5 — apply, lambda e por que vetorizar continua vencendo</h2><p class="translationhash"><span data-translationhash="c2872fffcc743693d5d49fe3c03808fe"></span></p>
+<h4><code>apply</code> em uma única coluna</h4>
+<pre>df["situacao_curta"] = df["situacao"].apply(
+    lambda s: "OK" if s == "Aprovado" else "Não-OK")</pre>
+<p><code>Series.apply(funcao)</code> chama <code>funcao</code> uma vez para <strong>cada valor</strong> da coluna e monta uma nova Series com os retornos. É flexível — a função pode ter qualquer lógica — mas paga o preço de rodar em Python puro, elemento a elemento.</p>
+<h4><code>apply(axis=1)</code>: uma linha inteira por vez</h4>
+<pre>def classificar(linha):
+    if pd.isna(linha["nota_final"]):
+        return "Sem nota"
+    if linha["nota_final"] &gt;= 85 and linha["frequencia"] &gt;= 90:
+        return "Destaque"
+    if linha["nota_final"] &gt;= 60:
+        return "Regular"
+    return "Atenção"
+
+df["perfil"] = df.apply(classificar, axis=1)</pre>
+<p>Com <code>axis=1</code>, cada chamada de <code>classificar</code> recebe uma <strong>linha inteira</strong> (uma Series com todas as colunas), o que permite combinar várias colunas numa mesma regra. É a ferramenta certa quando a lógica é condicional demais para caber em uma única expressão vetorizada — mas é também a forma <strong>mais lenta</strong> de operar em um DataFrame, porque o Pandas monta uma Series por linha antes de cada chamada.</p>
+<h4>A mesma regra, vetorizada</h4>
+<pre>condicoes = [
+    df["nota_final"].isna(),
+    (df["nota_final"] &gt;= 85) &amp; (df["frequencia"] &gt;= 90),
+    df["nota_final"] &gt;= 60,
+]
+valores = ["Sem nota", "Destaque", "Regular"]
+df["perfil_v2"] = np.select(condicoes, valores, default="Atenção")</pre>
+<p><code>np.select</code> testa uma lista de condições, na ordem, e devolve o valor correspondente à primeira verdadeira — exatamente a lógica do <code>if/elif/else</code> de <code>classificar</code>, mas avaliada sobre a coluna inteira de uma vez. Em uma base de alguns milhares de linhas a diferença é imperceptível; em milhões de linhas, pode ser a diferença entre segundos e minutos.</p>
+<h4>Quando usar cada um</h4>
+<ul>
+<li>Existe uma expressão vetorizada direta (comparação, <code>np.where</code>, <code>np.select</code>, operação aritmética)? <strong>Use-a.</strong></li>
+<li>A lógica depende de várias colunas de forma difícil de expressar sem <code>if</code>, ou chama uma função externa complexa (uma API, um modelo)? <code>apply</code> é aceitável — comece por ele, otimize depois se o desempenho importar.</li>
+<li>Um laço <code>for</code> explícito percorrendo <code>df.iterrows()</code> quase nunca é a resposta certa: é ainda mais lento que <code>apply</code> e existe quase sempre um caminho vetorizado ou um <code>apply</code> mais direto.</li>
+</ul>
+<h4><code>lambda</code> não é exclusivo do <code>apply</code></h4>
+<p>As mesmas funções anônimas aparecem dentro de <code>agg</code> (Capítulo 2), de <code>assign</code> e de <code>sort_values(key=...)</code>. O padrão é sempre o mesmo: <code>lambda argumento: expressão</code>, uma forma compacta de escrever uma função de uma linha sem precisar de <code>def</code> em outro lugar do código.</p></div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch7706"><h2 class="text-center pb-5">6. Capítulo 6 — method chaining e pipe</h2><p class="translationhash"><span data-translationhash="ccfb4772aebdccf5a935fc431f34fb15"></span></p>
+<h4>O problema das variáveis intermediárias</h4>
+<p>Uma análise de vários passos, escrita "passo a passo", costuma acumular nomes de variáveis que só servem de ponte:</p>
+<pre>tmp1 = df_completo[df_completo["situacao"] != "Trancado"]
+tmp2 = tmp1.copy()
+tmp2["aprovado"] = tmp2["situacao"] == "Aprovado"
+tmp3 = tmp2.groupby(["regiao", "eixo_tecnologico"])
+tmp4 = tmp3.agg(n=("matricula", "count"), taxa_aprovacao=("aprovado", "mean"))
+tmp5 = tmp4[tmp4["n"] &gt;= 10]
+resultado = tmp5.sort_values("taxa_aprovacao", ascending=False)</pre>
+<p>Funciona, mas cada <code>tmpN</code> é uma oportunidade de erro: usar <code>tmp2</code> onde deveria ser <code>tmp3</code>, esquecer de atualizar uma referência depois de editar o código no meio.</p>
+<h4>A mesma sequência, encadeada</h4>
+<pre>resultado = (
+    df_completo
+    .query("situacao != 'Trancado'")
+    .assign(aprovado=lambda d: d["situacao"] == "Aprovado")
+    .groupby(["regiao", "eixo_tecnologico"])
+    .agg(n=("matricula", "count"), taxa_aprovacao=("aprovado", "mean"))
+    .query("n &gt;= 10")
+    .sort_values("taxa_aprovacao", ascending=False)
+)</pre>
+<p>Os parênteses externos permitem quebrar a expressão em várias linhas sem usar <code>\</code>. Cada método devolve um novo objeto, sobre o qual o próximo método é chamado — uma leitura de cima para baixo que corresponde exatamente à ordem das transformações: filtrar, criar coluna, agrupar, agregar, filtrar de novo, ordenar.</p>
+<h4>Duas peças que tornam o encadeamento possível</h4>
+<ul>
+<li><code>query("expressão")</code> — filtra linhas usando uma condição escrita como texto, sem precisar repetir o nome do DataFrame nem usar <code>&amp;</code>/<code>|</code> com parênteses (compare com <code>df[(df["nota"] &gt; 5) &amp; (df["turno"] == "Noturno")]</code> contra <code>df.query("nota &gt; 5 and turno == 'Noturno'")</code>).</li>
+<li><code>assign(coluna=lambda d: expressão)</code> — cria (ou substitui) uma coluna <strong>sem</strong> precisar de uma atribuição <code>df["coluna"] = ...</code> separada. O <code>lambda d: ...</code> recebe o DataFrame <em>naquele ponto da cadeia</em> — não o <code>df_completo</code> original — o que é essencial quando uma etapa anterior já filtrou ou transformou os dados.</li>
+</ul>
+<h4><code>.pipe()</code>: encaixando sua própria função na cadeia</h4>
+<pre>def com_faixa_carga(d):
+    d = d.copy()
+    d["carga_faixa"] = pd.cut(d["carga_horaria"],
+                              bins=[0, 1200, 1800, 3000],
+                              labels=["Até 1200h", "1201–1800h", "Acima de 1800h"])
+    return d
+
+resultado2 = (
+    df_completo
+    .pipe(com_faixa_carga)
+    .groupby("carga_faixa", observed=True)["nota_final"]
+    .mean()
+)</pre>
+<p>Quando uma etapa é complexa demais para uma <code>lambda</code> de uma linha, <code>.pipe(funcao)</code> deixa continuar a cadeia chamando uma função nomeada — a função recebe o DataFrame corrente e devolve o próximo, exatamente como qualquer outro método da cadeia. É a forma recomendada de misturar lógica personalizada com method chaining, em vez de "sair" da cadeia com uma variável intermediária.</p>
+<h4>Quando NÃO encadear</h4>
+<p>Method chaining melhora a leitura quando os passos são poucos e formam uma narrativa clara. Uma cadeia de dez ou mais métodos, ou que precisa ser depurada com frequência (inspecionar o resultado no meio do caminho), costuma ficar mais clara quebrada em duas ou três variáveis com nomes que dizem o que cada etapa representa. A regra não é "sempre encadear" — é "encadear quando isso deixa a intenção mais legível, não menos".</p></div>
+            </div>
+    </div>
+</div></div>
+    </section>
+</div>
+
+
+
+
+
+
+
+

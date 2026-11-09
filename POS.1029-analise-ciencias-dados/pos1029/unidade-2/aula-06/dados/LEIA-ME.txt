@@ -1,0 +1,21 @@
+Aula 06 — Processos e Fontes de Dados
+Pacote de exemplo: fontes de dados reais (Ministério da Saúde / CNES + IBGE)
+
+Conteúdo:
+  exemplo_fontes_dados.py       - script principal (rode com: python3 exemplo_fontes_dados.py)
+  dados/cnes_rn_amostra.json    - snapshot real da API do CNES (Ministério da Saúde), com metadados de proveniência
+  dados/rn_contorno.json        - contorno do RN (API de Malhas do IBGE), simplificado para fins didáticos
+  dados/wikipedia_municipios_rn.html - trecho salvo de uma tabela da Wikipédia (para o exemplo de web scraping)
+  dados/cnes_rn_amostra.csv     - export do mesmo conjunto em CSV (gerado pelo script)
+  dados/cnes_rn_amostra.parquet - export do mesmo conjunto em Parquet (gerado pelo script)
+  dados/cnes_amostra_3linhas.xml - export ilustrativo de 3 registros em XML (gerado pelo script)
+
+Como usar:
+  1. Instale as dependências: pip install pandas requests beautifulsoup4 pyarrow matplotlib
+  2. Rode: python3 exemplo_fontes_dados.py
+  3. O script recria os arquivos CSV/Parquet/XML e gera mapa_estabelecimentos_rn.png
+
+Fonte dos dados originais: Ministério da Saúde — API de Dados Abertos (CNES),
+apidadosabertos.saude.gov.br, e IBGE — API de Malhas Territoriais,
+servicodados.ibge.gov.br. Coletados ao vivo em 2026-09-28. Dados abertos
+governamentais (Lei de Acesso à Informação, Lei 12.527/2011).

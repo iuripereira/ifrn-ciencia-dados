@@ -1,0 +1,25 @@
+id,livro,autor,nota,leitor,data,comentario,util
+1,Dom Casmurro,Machado de Assis,5,Ana P.,2026-09-02,Releio a cada cinco anos e sempre mudo de opinião sobre Capitu. Narrador mais suspeito da literatura brasileira.,31.0
+2,O Cortiço,Aluísio Azevedo,4,Bruno M.,2026-09-03,"Retrato forte e coletivo da vida urbana no século XIX. Algumas descrições são longas, mas valem a pena.",12.0
+3,Iracema,José de Alencar,3,Carla R.,2026-09-04,"Linguagem belíssima, quase um poema em prosa. Achei a história romantizada demais para o meu gosto.",7.0
+4,O Alienista,Machado de Assis,5,Diego S.,2026-09-05,"Curto, irônico e atualíssimo. Dá para ler numa tarde e discutir por uma semana.",25.0
+5,Triste Fim de Policarpo Quaresma,Lima Barreto,4,Elisa F.,2026-09-06,"Policarpo é ingênuo e comovente ao mesmo tempo. O final é amargo, como o título promete.",9.0
+6,Memórias Póstumas de Brás Cubas,Machado de Assis,5,Fábio L.,2026-09-08,Um defunto-autor com humor ácido. Os capítulos curtíssimos deixam a leitura muito dinâmica.,28.0
+7,Dom Casmurro,Machado de Assis,4,Gabriela T.,2026-09-09,"Excelente, mas precisei de um guia de leitura para entender todas as referências.",6.0
+8,Iracema,José de Alencar,2,Heitor A.,2026-09-10,Li por obrigação na escola e não gostei. Talvez releia com outros olhos.,
+9,O Cortiço,Aluísio Azevedo,5,Isabela N.,2026-09-12,João Romão é um dos vilões mais bem construídos que já li. Leitura obrigatória.,18.0
+10,O Alienista,Machado de Assis,4,João V.,2026-09-13,Sátira inteligente sobre ciência e poder. Recomendo para quem está começando Machado.,11.0
+11,Memórias Póstumas de Brás Cubas,Machado de Assis,3,Karen O.,2026-09-15,"Reconheço a genialidade, mas o narrador me irritou do começo ao fim — talvez seja essa a intenção.",4.0
+12,Triste Fim de Policarpo Quaresma,Lima Barreto,5,Lucas D.,2026-09-16,Crítica ao nacionalismo que continua fazendo sentido. Lima Barreto merece mais leitores.,15.0
+13,Dom Casmurro,Machado de Assis,5,Marina C.,2026-09-18,"Traiu ou não traiu? O livro é sobre ciúme e memória, não sobre a resposta.",22.0
+14,Iracema,José de Alencar,4,Nelson B.,2026-09-19,Gostei muito da musicalidade do texto. Ótimo para ler em voz alta.,5.0
+15,O Cortiço,Aluísio Azevedo,3,Olívia G.,2026-09-21,"História importante, mas a visão determinista dos personagens envelheceu mal.",8.0
+16,O Alienista,Machado de Assis,5,Paulo H.,2026-09-22,Simão Bacamarte é inesquecível. Final perfeito.,19.0
+17,Memórias Póstumas de Brás Cubas,Machado de Assis,4,Quésia I.,2026-09-24,"Começo estranho, meio brilhante. O capítulo das negativas é genial.",10.0
+18,Triste Fim de Policarpo Quaresma,Lima Barreto,3,Rafael J.,2026-09-25,A primeira parte é ótima; a parte da revolta ficou cansativa para mim.,
+19,Dom Casmurro,Machado de Assis,3,Sofia K.,2026-09-27,"Entendo a importância, mas o ritmo é lento para leitores de hoje.",3.0
+20,O Cortiço,Aluísio Azevedo,4,Tiago E.,2026-09-28,Parece um documentário sobre o Rio antigo. Muito bem escrito.,6.0
+21,Iracema,José de Alencar,5,Úrsula Q.,2026-09-30,Clássico do romantismo indianista. A abertura é uma das mais bonitas da nossa literatura.,13.0
+22,O Alienista,Machado de Assis,4,Vitor W.,2026-10-01,"Bom para discutir em sala: loucura, ciência e autoridade em poucas páginas.",9.0
+23,Memórias Póstumas de Brás Cubas,Machado de Assis,5,Wesley Y.,2026-10-02,"O melhor livro de Machado, na minha opinião. Moderno até hoje.",21.0
+24,Triste Fim de Policarpo Quaresma,Lima Barreto,4,Yara Z.,2026-10-03,Personagem quixotesco e muito humano. Fiquei com pena do major.,7.0

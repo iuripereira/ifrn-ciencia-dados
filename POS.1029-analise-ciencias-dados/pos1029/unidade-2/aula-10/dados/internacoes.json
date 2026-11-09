@@ -1,0 +1,3042 @@
+[
+ {
+  "id_internacao": "INT-00078",
+  "id_paciente": "PAC-0129",
+  "data_entrada": "2026-05-26",
+  "data_alta": "2026-06-03",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Grave",
+  "uti": "S",
+  "custo_total": "R$ 15.764,91"
+ },
+ {
+  "id_internacao": "INT-00098",
+  "id_paciente": "PAC-0056",
+  "data_entrada": "2026-05-23",
+  "data_alta": "2026-05-25",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 2.382,98"
+ },
+ {
+  "id_internacao": "INT-00270",
+  "id_paciente": "PAC-0024",
+  "data_entrada": "2026-07-18",
+  "data_alta": "2026-07-28",
+  "diagnostico_principal": "AVC",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 12.493,78"
+ },
+ {
+  "id_internacao": "INT-00139",
+  "id_paciente": "PAC-0109",
+  "data_entrada": "2026-08-21",
+  "data_alta": "2026-08-26",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Grave",
+  "uti": "S",
+  "custo_total": "R$ 12.951,47"
+ },
+ {
+  "id_internacao": "INT-00043",
+  "id_paciente": "PAC-0162",
+  "data_entrada": "2026-06-12",
+  "data_alta": "2026-06-18",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 7.024,60"
+ },
+ {
+  "id_internacao": "INT-00159",
+  "id_paciente": "PAC-0005",
+  "data_entrada": "2026-06-16",
+  "data_alta": "2026-06-21",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 5.502,79"
+ },
+ {
+  "id_internacao": "INT-00209",
+  "id_paciente": "PAC-0079",
+  "data_entrada": "2026-02-23",
+  "data_alta": "2026-03-01",
+  "diagnostico_principal": "Fratura de fêmur",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 4.268,91"
+ },
+ {
+  "id_internacao": "INT-00016",
+  "id_paciente": "PAC-0141",
+  "data_entrada": "2026-05-14",
+  "data_alta": "2026-05-20",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": null
+ },
+ {
+  "id_internacao": "INT-00236",
+  "id_paciente": "PAC-0121",
+  "data_entrada": "2026-03-05",
+  "data_alta": "2026-03-12",
+  "diagnostico_principal": "Fratura de fêmur",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 9.191,25"
+ },
+ {
+  "id_internacao": "INT-00088",
+  "id_paciente": "PAC-0094",
+  "data_entrada": "2026-07-01",
+  "data_alta": "2026-07-12",
+  "diagnostico_principal": "AVC",
+  "gravidade": "Moderada",
+  "uti": "S",
+  "custo_total": "R$ 19.713,35"
+ },
+ {
+  "id_internacao": "INT-00022",
+  "id_paciente": "PAC-0117",
+  "data_entrada": "2026-06-11",
+  "data_alta": "2026-06-14",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 2.839,16"
+ },
+ {
+  "id_internacao": "INT-00039",
+  "id_paciente": "PAC-0015",
+  "data_entrada": "2026-02-03",
+  "data_alta": "2026-02-09",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 6.550,39"
+ },
+ {
+  "id_internacao": "INT-00026",
+  "id_paciente": "PAC-0115",
+  "data_entrada": "2026-06-16",
+  "data_alta": "2026-06-22",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 6.167,82"
+ },
+ {
+  "id_internacao": "INT-00248",
+  "id_paciente": "PAC-0047",
+  "data_entrada": "2026-08-16",
+  "data_alta": "2026-08-21",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 5.345,63"
+ },
+ {
+  "id_internacao": "INT-00281",
+  "id_paciente": "PAC-0008",
+  "data_entrada": "2026-03-09",
+  "data_alta": "2026-03-16",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 7.286,57"
+ },
+ {
+  "id_internacao": "INT-00164",
+  "id_paciente": "PAC-0075",
+  "data_entrada": "2026-03-25",
+  "data_alta": "2026-04-09",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "grave",
+  "uti": "N",
+  "custo_total": "R$ 16.651,37"
+ },
+ {
+  "id_internacao": "INT-00176",
+  "id_paciente": "PAC-0147",
+  "data_entrada": "2026-06-10",
+  "data_alta": "2026-06-14",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 3.981,67"
+ },
+ {
+  "id_internacao": "INT-00183",
+  "id_paciente": "PAC-0187",
+  "data_entrada": "2026-03-11",
+  "data_alta": "2026-03-18",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 8.977,26"
+ },
+ {
+  "id_internacao": "INT-00017",
+  "id_paciente": "PAC-0113",
+  "data_entrada": "2026-01-11",
+  "data_alta": "2026-01-14",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 2.979,60"
+ },
+ {
+  "id_internacao": "INT-00092",
+  "id_paciente": "PAC-0121",
+  "data_entrada": "2026-06-12",
+  "data_alta": "2026-06-20",
+  "diagnostico_principal": "AVC",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 8.400,51"
+ },
+ {
+  "id_internacao": "INT-00239",
+  "id_paciente": "PAC-0120",
+  "data_entrada": "2026-07-05",
+  "data_alta": "2026-07-11",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 6.728,58"
+ },
+ {
+  "id_internacao": "INT-00263",
+  "id_paciente": "PAC-0044",
+  "data_entrada": "2026-08-22",
+  "data_alta": "2026-08-29",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 6.823,97"
+ },
+ {
+  "id_internacao": "INT-00221",
+  "id_paciente": "PAC-0045",
+  "data_entrada": "2026-01-06",
+  "data_alta": "2026-01-15",
+  "diagnostico_principal": "Fratura de fêmur",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 8.562,51"
+ },
+ {
+  "id_internacao": "INT-00194",
+  "id_paciente": "PAC-0046",
+  "data_entrada": "2026-02-07",
+  "data_alta": "2026-02-08",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Moderada",
+  "uti": "S",
+  "custo_total": "R$ 9.902,44"
+ },
+ {
+  "id_internacao": "INT-00057",
+  "id_paciente": "PAC-0058",
+  "data_entrada": "2026-04-06",
+  "data_alta": "2026-04-10",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 4.040,05"
+ },
+ {
+  "id_internacao": "INT-00158",
+  "id_paciente": "PAC-0043",
+  "data_entrada": "2026-05-30",
+  "data_alta": "2026-06-02",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 2.885,16"
+ },
+ {
+  "id_internacao": "INT-00035",
+  "id_paciente": "PAC-0091",
+  "data_entrada": "2026-02-01",
+  "data_alta": "2026-02-03",
+  "diagnostico_principal": "Fratura de fêmur",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 2.377,46"
+ },
+ {
+  "id_internacao": "INT-00045",
+  "id_paciente": "PAC-0041",
+  "data_entrada": "2026-05-09",
+  "data_alta": "2026-05-15",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 7.041,16"
+ },
+ {
+  "id_internacao": "INT-00200",
+  "id_paciente": "PAC-0025",
+  "data_entrada": "2026-07-11",
+  "data_alta": "2026-07-16",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 5.025,01"
+ },
+ {
+  "id_internacao": "INT-00120",
+  "id_paciente": "PAC-0071",
+  "data_entrada": "2026-08-06",
+  "data_alta": "2026-08-10",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Moderada",
+  "uti": "S",
+  "custo_total": "R$ 12.295,08"
+ },
+ {
+  "id_internacao": "INT-00295",
+  "id_paciente": "PAC-0008",
+  "data_entrada": "2026-01-10",
+  "data_alta": "2026-01-22",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Grave",
+  "uti": "N",
+  "custo_total": "R$ 13.260,61"
+ },
+ {
+  "id_internacao": "INT-00251",
+  "id_paciente": "PAC-9003",
+  "data_entrada": "2026-04-05",
+  "data_alta": "2026-04-15",
+  "diagnostico_principal": "AVC",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 8.318,26"
+ },
+ {
+  "id_internacao": "INT-00213",
+  "id_paciente": "PAC-0169",
+  "data_entrada": "2026-08-04",
+  "data_alta": "2026-08-10",
+  "diagnostico_principal": "Fratura de fêmur",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 7.274,02"
+ },
+ {
+  "id_internacao": "INT-00211",
+  "id_paciente": "PAC-0098",
+  "data_entrada": "2026-05-24",
+  "data_alta": "2026-06-02",
+  "diagnostico_principal": "AVC",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 9.667,35"
+ },
+ {
+  "id_internacao": "INT-00111",
+  "id_paciente": "PAC-0190",
+  "data_entrada": "2026-06-05",
+  "data_alta": "2026-06-11",
+  "diagnostico_principal": "AVC",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 5.898,63"
+ },
+ {
+  "id_internacao": "INT-00262",
+  "id_paciente": "PAC-0102",
+  "data_entrada": "2026-07-02",
+  "data_alta": "2026-07-04",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 1.967,53"
+ },
+ {
+  "id_internacao": "INT-00299",
+  "id_paciente": "PAC-0130",
+  "data_entrada": "2026-04-18",
+  "data_alta": "2026-04-29",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Grave",
+  "uti": "S",
+  "custo_total": "R$ 21.530,25"
+ },
+ {
+  "id_internacao": "INT-00044",
+  "id_paciente": "PAC-0014",
+  "data_entrada": "2026-05-27",
+  "data_alta": "2026-06-01",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 5.459,56"
+ },
+ {
+  "id_internacao": "INT-00252",
+  "id_paciente": "PAC-0043",
+  "data_entrada": "2026-05-01",
+  "data_alta": "2026-05-10",
+  "diagnostico_principal": "Fratura de fêmur",
+  "gravidade": "Grave",
+  "uti": "N",
+  "custo_total": "R$ 8.361,71"
+ },
+ {
+  "id_internacao": "INT-00212",
+  "id_paciente": "PAC-0014",
+  "data_entrada": "2026-06-29",
+  "data_alta": "2026-07-13",
+  "diagnostico_principal": "AVC",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 16.522,97"
+ },
+ {
+  "id_internacao": "INT-00090",
+  "id_paciente": "PAC-0174",
+  "data_entrada": "2026-06-14",
+  "data_alta": "2026-06-22",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 8.624,38"
+ },
+ {
+  "id_internacao": "INT-00036",
+  "id_paciente": "PAC-0088",
+  "data_entrada": "2026-08-23",
+  "data_alta": "2026-09-02",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Grave",
+  "uti": "N",
+  "custo_total": "R$ 9.917,91"
+ },
+ {
+  "id_internacao": "INT-00268",
+  "id_paciente": "PAC-0038",
+  "data_entrada": "2026-05-23",
+  "data_alta": "2026-05-30",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Grave",
+  "uti": "N",
+  "custo_total": "R$ 8.857,44"
+ },
+ {
+  "id_internacao": "INT-00175",
+  "id_paciente": "PAC-0033",
+  "data_entrada": "2026-03-18",
+  "data_alta": "2026-03-21",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 4.039,85"
+ },
+ {
+  "id_internacao": "INT-00019",
+  "id_paciente": "PAC-0001",
+  "data_entrada": "2026-05-10",
+  "data_alta": "2026-05-16",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 8.336,02"
+ },
+ {
+  "id_internacao": "INT-00218",
+  "id_paciente": "PAC-0115",
+  "data_entrada": "2026-02-23",
+  "data_alta": "2026-03-02",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 7.096,90"
+ },
+ {
+  "id_internacao": "INT-00276",
+  "id_paciente": "PAC-0109",
+  "data_entrada": "2026-05-30",
+  "data_alta": "2026-06-06",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": null
+ },
+ {
+  "id_internacao": "INT-00047",
+  "id_paciente": "PAC-0178",
+  "data_entrada": "2026-07-10",
+  "data_alta": "2026-07-11",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 876,66"
+ },
+ {
+  "id_internacao": "INT-00108",
+  "id_paciente": "PAC-0132",
+  "data_entrada": "2026-08-09",
+  "data_alta": "2026-08-14",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 5.908,20"
+ },
+ {
+  "id_internacao": "INT-00087",
+  "id_paciente": "PAC-0159",
+  "data_entrada": "2026-07-28",
+  "data_alta": "2026-08-07",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Grave",
+  "uti": "N",
+  "custo_total": "R$ 10.310,21"
+ },
+ {
+  "id_internacao": "INT-00288",
+  "id_paciente": "PAC-0191",
+  "data_entrada": "2026-02-05",
+  "data_alta": "2026-02-11",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 7.477,68"
+ },
+ {
+  "id_internacao": "INT-00205",
+  "id_paciente": "PAC-0104",
+  "data_entrada": "2026-03-14",
+  "data_alta": "2026-03-19",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 5.232,63"
+ },
+ {
+  "id_internacao": "INT-00100",
+  "id_paciente": "PAC-0008",
+  "data_entrada": "2026-01-14",
+  "data_alta": "2026-01-19",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 6.691,04"
+ },
+ {
+  "id_internacao": "INT-00187",
+  "id_paciente": "PAC-0081",
+  "data_entrada": "2026-08-29",
+  "data_alta": "2026-09-03",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 6.109,12"
+ },
+ {
+  "id_internacao": "INT-00110",
+  "id_paciente": "PAC-0181",
+  "data_entrada": "2026-01-21",
+  "data_alta": "2026-02-01",
+  "diagnostico_principal": "AVC",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 11.348,52"
+ },
+ {
+  "id_internacao": "INT-00109",
+  "id_paciente": "PAC-0022",
+  "data_entrada": "2026-08-21",
+  "data_alta": "2026-08-25",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Grave",
+  "uti": "S",
+  "custo_total": "R$ 14.561,56"
+ },
+ {
+  "id_internacao": "INT-00203",
+  "id_paciente": "PAC-0084",
+  "data_entrada": "2026-01-22",
+  "data_alta": "2026-01-23",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Grave",
+  "uti": "N",
+  "custo_total": "R$ 1.062,82"
+ },
+ {
+  "id_internacao": "INT-00249",
+  "id_paciente": "PAC-0119",
+  "data_entrada": "2026-05-17",
+  "data_alta": "2026-05-26",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 9.360,39"
+ },
+ {
+  "id_internacao": "INT-00157",
+  "id_paciente": "PAC-0158",
+  "data_entrada": "2026-02-09",
+  "data_alta": "2026-02-11",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 1.942,34"
+ },
+ {
+  "id_internacao": "INT-00261",
+  "id_paciente": "PAC-0172",
+  "data_entrada": "2026-08-12",
+  "data_alta": "2026-08-20",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Grave",
+  "uti": "N",
+  "custo_total": "R$ 10.056,47"
+ },
+ {
+  "id_internacao": "INT-00240",
+  "id_paciente": "PAC-0099",
+  "data_entrada": "2026-06-09",
+  "data_alta": "2026-06-13",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 5.498,32"
+ },
+ {
+  "id_internacao": "INT-00293",
+  "id_paciente": "PAC-0036",
+  "data_entrada": "2026-02-24",
+  "data_alta": "2026-02-28",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "leve",
+  "uti": "N",
+  "custo_total": "R$ 4.741,18"
+ },
+ {
+  "id_internacao": "INT-00165",
+  "id_paciente": "PAC-0108",
+  "data_entrada": "2026-01-27",
+  "data_alta": "2026-02-05",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Grave",
+  "uti": "S",
+  "custo_total": "R$ 19.823,69"
+ },
+ {
+  "id_internacao": "INT-00141",
+  "id_paciente": "PAC-0061",
+  "data_entrada": "2026-06-05",
+  "data_alta": "2026-06-16",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Grave",
+  "uti": "S",
+  "custo_total": "R$ 20.051,98"
+ },
+ {
+  "id_internacao": "INT-00244",
+  "id_paciente": "PAC-0166",
+  "data_entrada": "2026-05-14",
+  "data_alta": "2026-05-20",
+  "diagnostico_principal": "Fratura de fêmur",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 5.757,04"
+ },
+ {
+  "id_internacao": "INT-00290",
+  "id_paciente": "PAC-0152",
+  "data_entrada": "2026-03-07",
+  "data_alta": "2026-03-10",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 3.284,88"
+ },
+ {
+  "id_internacao": "INT-00105",
+  "id_paciente": "PAC-0192",
+  "data_entrada": "2026-03-24",
+  "data_alta": "2026-03-27",
+  "diagnostico_principal": "Fratura de fêmur",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 3.164,02"
+ },
+ {
+  "id_internacao": "INT-00296",
+  "id_paciente": "PAC-0116",
+  "data_entrada": "2026-08-09",
+  "data_alta": "2026-08-16",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 5.375,81"
+ },
+ {
+  "id_internacao": "INT-00147",
+  "id_paciente": "PAC-0041",
+  "data_entrada": "2026-01-28",
+  "data_alta": "2026-02-06",
+  "diagnostico_principal": "Fratura de fêmur",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 9.574,70"
+ },
+ {
+  "id_internacao": "INT-00254",
+  "id_paciente": "PAC-0070",
+  "data_entrada": "2026-03-15",
+  "data_alta": "2026-03-23",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 7.892,66"
+ },
+ {
+  "id_internacao": "INT-00072",
+  "id_paciente": "PAC-0104",
+  "data_entrada": "2026-03-28",
+  "data_alta": "2026-04-02",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 3.925,49"
+ },
+ {
+  "id_internacao": "INT-00231",
+  "id_paciente": "PAC-0181",
+  "data_entrada": "2026-04-06",
+  "data_alta": "2026-04-11",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 5.685,23"
+ },
+ {
+  "id_internacao": "INT-00242",
+  "id_paciente": "PAC-0041",
+  "data_entrada": "2026-06-12",
+  "data_alta": "2026-06-18",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Leve",
+  "uti": "S",
+  "custo_total": "R$ 19.470,32"
+ },
+ {
+  "id_internacao": "INT-00119",
+  "id_paciente": "PAC-0135",
+  "data_entrada": "2026-04-17",
+  "data_alta": "2026-04-24",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "moderada",
+  "uti": "S",
+  "custo_total": "R$ 19.364,15"
+ },
+ {
+  "id_internacao": "INT-00073",
+  "id_paciente": "PAC-0150",
+  "data_entrada": "2026-07-30",
+  "data_alta": "2026-08-07",
+  "diagnostico_principal": "AVC",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 9.254,50"
+ },
+ {
+  "id_internacao": "INT-00171",
+  "id_paciente": "PAC-0139",
+  "data_entrada": "2026-08-27",
+  "data_alta": "2026-09-01",
+  "diagnostico_principal": "Fratura de fêmur",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 4.467,91"
+ },
+ {
+  "id_internacao": "INT-00115",
+  "id_paciente": "PAC-0195",
+  "data_entrada": "2026-08-13",
+  "data_alta": "2026-08-22",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Grave",
+  "uti": "N",
+  "custo_total": "R$ 11.086,50"
+ },
+ {
+  "id_internacao": "INT-00021",
+  "id_paciente": "PAC-0145",
+  "data_entrada": "2026-08-05",
+  "data_alta": "2026-08-16",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 12.035,04"
+ },
+ {
+  "id_internacao": "INT-00079",
+  "id_paciente": "PAC-0109",
+  "data_entrada": "2026-03-11",
+  "data_alta": "2026-03-19",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 9.128,64"
+ },
+ {
+  "id_internacao": "INT-00101",
+  "id_paciente": "PAC-0129",
+  "data_entrada": "2026-07-06",
+  "data_alta": "2026-07-15",
+  "diagnostico_principal": "AVC",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 8.918,17"
+ },
+ {
+  "id_internacao": "INT-00013",
+  "id_paciente": "PAC-0119",
+  "data_entrada": "2026-08-05",
+  "data_alta": "2026-08-14",
+  "diagnostico_principal": "AVC",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 9.778,71"
+ },
+ {
+  "id_internacao": "INT-00238",
+  "id_paciente": "PAC-0031",
+  "data_entrada": "2026-05-25",
+  "data_alta": "2026-05-26",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 999,22"
+ },
+ {
+  "id_internacao": "INT-00063",
+  "id_paciente": "PAC-0121",
+  "data_entrada": "2026-01-20",
+  "data_alta": "2026-01-24",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 3.568,07"
+ },
+ {
+  "id_internacao": "INT-00089",
+  "id_paciente": "PAC-0093",
+  "data_entrada": "2026-06-27",
+  "data_alta": "2026-07-03",
+  "diagnostico_principal": "AVC",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 6.012,82"
+ },
+ {
+  "id_internacao": "INT-00201",
+  "id_paciente": "PAC-0087",
+  "data_entrada": "2026-02-16",
+  "data_alta": "2026-02-21",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 7.031,74"
+ },
+ {
+  "id_internacao": "INT-00217",
+  "id_paciente": "PAC-0139",
+  "data_entrada": "2026-04-16",
+  "data_alta": "2026-04-19",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 2.896,05"
+ },
+ {
+  "id_internacao": "INT-00177",
+  "id_paciente": "PAC-0171",
+  "data_entrada": "2026-07-14",
+  "data_alta": "2026-07-19",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Grave",
+  "uti": "N",
+  "custo_total": "R$ 4.960,59"
+ },
+ {
+  "id_internacao": "INT-00066",
+  "id_paciente": "PAC-0197",
+  "data_entrada": "2026-07-24",
+  "data_alta": "2026-08-03",
+  "diagnostico_principal": "Fratura de fêmur",
+  "gravidade": "Grave",
+  "uti": "S",
+  "custo_total": "R$ 22.763,88"
+ },
+ {
+  "id_internacao": "INT-00048",
+  "id_paciente": "PAC-0044",
+  "data_entrada": "2026-04-19",
+  "data_alta": "2026-04-25",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Moderada",
+  "uti": "S",
+  "custo_total": "R$ 17.366,17"
+ },
+ {
+  "id_internacao": "INT-00145",
+  "id_paciente": "PAC-0157",
+  "data_entrada": "2026-04-22",
+  "data_alta": "2026-04-30",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Grave",
+  "uti": "N",
+  "custo_total": "R$ 9.269,97"
+ },
+ {
+  "id_internacao": "INT-00011",
+  "id_paciente": "PAC-0180",
+  "data_entrada": "2026-04-06",
+  "data_alta": "2026-04-15",
+  "diagnostico_principal": "AVC",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 10.832,99"
+ },
+ {
+  "id_internacao": "INT-00228",
+  "id_paciente": "PAC-0062",
+  "data_entrada": "2026-05-23",
+  "data_alta": "2026-05-31",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 8.957,29"
+ },
+ {
+  "id_internacao": "INT-00136",
+  "id_paciente": "PAC-0020",
+  "data_entrada": "2026-07-02",
+  "data_alta": "2026-07-20",
+  "diagnostico_principal": "AVC",
+  "gravidade": "Grave",
+  "uti": "S",
+  "custo_total": "R$ 29.393,77"
+ },
+ {
+  "id_internacao": "INT-00095",
+  "id_paciente": "PAC-0031",
+  "data_entrada": "2026-07-12",
+  "data_alta": "2026-07-28",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Grave",
+  "uti": "N",
+  "custo_total": "R$ 13.823,85"
+ },
+ {
+  "id_internacao": "INT-00007",
+  "id_paciente": "PAC-0106",
+  "data_entrada": "2026-01-30",
+  "data_alta": "2026-02-05",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 7.438,51"
+ },
+ {
+  "id_internacao": "INT-00114",
+  "id_paciente": "PAC-0009",
+  "data_entrada": "2026-05-30",
+  "data_alta": "2026-06-09",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 9.393,14"
+ },
+ {
+  "id_internacao": "INT-00060",
+  "id_paciente": "PAC-0132",
+  "data_entrada": "2026-04-26",
+  "data_alta": "2026-05-01",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 5.818,43"
+ },
+ {
+  "id_internacao": "INT-00179",
+  "id_paciente": "PAC-0105",
+  "data_entrada": "2026-04-21",
+  "data_alta": "2026-04-23",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 2.148,26"
+ },
+ {
+  "id_internacao": "INT-00042",
+  "id_paciente": "PAC-0172",
+  "data_entrada": "2026-07-12",
+  "data_alta": "2026-07-14",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 2.347,94"
+ },
+ {
+  "id_internacao": "INT-00138",
+  "id_paciente": "PAC-0097",
+  "data_entrada": "2026-01-11",
+  "data_alta": "2026-01-16",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Moderada",
+  "uti": "S",
+  "custo_total": "R$ 16.742,18"
+ },
+ {
+  "id_internacao": "INT-00084",
+  "id_paciente": "PAC-0177",
+  "data_entrada": "2026-05-05",
+  "data_alta": "2026-05-09",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 4.636,51"
+ },
+ {
+  "id_internacao": "INT-00199",
+  "id_paciente": "PAC-0138",
+  "data_entrada": "2026-02-20",
+  "data_alta": "2026-02-27",
+  "diagnostico_principal": "Fratura de fêmur",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 8.001,13"
+ },
+ {
+  "id_internacao": "INT-00154",
+  "id_paciente": "PAC-0127",
+  "data_entrada": "2026-04-26",
+  "data_alta": "2026-05-05",
+  "diagnostico_principal": "AVC",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 11.183,92"
+ },
+ {
+  "id_internacao": "INT-00002",
+  "id_paciente": "PAC-0070",
+  "data_entrada": "2026-01-09",
+  "data_alta": "2026-01-15",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Moderada",
+  "uti": "S",
+  "custo_total": "R$ 16.948,09"
+ },
+ {
+  "id_internacao": "INT-00001",
+  "id_paciente": "PAC-0134",
+  "data_entrada": "2026-01-29",
+  "data_alta": "2026-02-06",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": null
+ },
+ {
+  "id_internacao": "INT-00278",
+  "id_paciente": "PAC-0131",
+  "data_entrada": "2026-07-05",
+  "data_alta": "2026-07-09",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 4.565,04"
+ },
+ {
+  "id_internacao": "INT-00298",
+  "id_paciente": "PAC-0075",
+  "data_entrada": "2026-09-01",
+  "data_alta": "2026-09-11",
+  "diagnostico_principal": "AVC",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 11.646,14"
+ },
+ {
+  "id_internacao": "INT-00110",
+  "id_paciente": "PAC-0181",
+  "data_entrada": "2026-01-21",
+  "data_alta": "2026-02-01",
+  "diagnostico_principal": "AVC",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 11.348,52"
+ },
+ {
+  "id_internacao": "INT-00155",
+  "id_paciente": "PAC-0163",
+  "data_entrada": "2026-03-14",
+  "data_alta": "2026-03-24",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Grave",
+  "uti": "N",
+  "custo_total": "R$ 11.762,02"
+ },
+ {
+  "id_internacao": "INT-00030",
+  "id_paciente": "PAC-0041",
+  "data_entrada": "2026-08-03",
+  "data_alta": "2026-08-13",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Moderada",
+  "uti": "S",
+  "custo_total": "R$ 21.326,47"
+ },
+ {
+  "id_internacao": "INT-00130",
+  "id_paciente": "PAC-0023",
+  "data_entrada": "2026-04-20",
+  "data_alta": "2026-05-06",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Grave",
+  "uti": "S",
+  "custo_total": "R$ 26.484,74"
+ },
+ {
+  "id_internacao": "INT-00080",
+  "id_paciente": "PAC-0096",
+  "data_entrada": "2026-02-15",
+  "data_alta": "2026-02-22",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Moderada",
+  "uti": "S",
+  "custo_total": "R$ 15.445,67"
+ },
+ {
+  "id_internacao": "INT-00117",
+  "id_paciente": "PAC-0188",
+  "data_entrada": "2026-04-03",
+  "data_alta": "2026-04-15",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Grave",
+  "uti": "S",
+  "custo_total": "R$ 22.579,87"
+ },
+ {
+  "id_internacao": "INT-00041",
+  "id_paciente": "PAC-0196",
+  "data_entrada": "2026-02-15",
+  "data_alta": "2026-02-22",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Grave",
+  "uti": "S",
+  "custo_total": "R$ 15.828,58"
+ },
+ {
+  "id_internacao": "INT-00173",
+  "id_paciente": "PAC-0067",
+  "data_entrada": "2026-03-09",
+  "data_alta": "2026-03-14",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 4.773,31"
+ },
+ {
+  "id_internacao": "INT-00169",
+  "id_paciente": "PAC-0103",
+  "data_entrada": "2026-01-27",
+  "data_alta": "2026-02-03",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Grave",
+  "uti": "N",
+  "custo_total": "R$ 6.069,17"
+ },
+ {
+  "id_internacao": "INT-00099",
+  "id_paciente": "PAC-0144",
+  "data_entrada": "2026-02-19",
+  "data_alta": "2026-02-22",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 3.753,51"
+ },
+ {
+  "id_internacao": "INT-00037",
+  "id_paciente": "PAC-0184",
+  "data_entrada": "2026-07-27",
+  "data_alta": "2026-08-02",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 7.022,78"
+ },
+ {
+  "id_internacao": "INT-00268",
+  "id_paciente": "PAC-0038",
+  "data_entrada": "2026-05-23",
+  "data_alta": "2026-05-30",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Grave",
+  "uti": "N",
+  "custo_total": "R$ 8.857,44"
+ },
+ {
+  "id_internacao": "INT-00234",
+  "id_paciente": "PAC-0190",
+  "data_entrada": "2026-03-24",
+  "data_alta": "2026-03-29",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 5.536,28"
+ },
+ {
+  "id_internacao": "INT-00009",
+  "id_paciente": "PAC-0143",
+  "data_entrada": "2026-04-19",
+  "data_alta": "2026-04-26",
+  "diagnostico_principal": "Fratura de fêmur",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 6.500,19"
+ },
+ {
+  "id_internacao": "INT-00202",
+  "id_paciente": "PAC-0053",
+  "data_entrada": "2026-08-08",
+  "data_alta": "2026-08-11",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 4.370,55"
+ },
+ {
+  "id_internacao": "INT-00006",
+  "id_paciente": "PAC-0016",
+  "data_entrada": "2026-06-19",
+  "data_alta": "2026-06-28",
+  "diagnostico_principal": "Fratura de fêmur",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 10.232,48"
+ },
+ {
+  "id_internacao": "INT-00156",
+  "id_paciente": "PAC-0033",
+  "data_entrada": "2026-05-20",
+  "data_alta": "2026-05-21",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 1.204,38"
+ },
+ {
+  "id_internacao": "INT-00227",
+  "id_paciente": "PAC-0115",
+  "data_entrada": "2026-03-19",
+  "data_alta": "2026-03-23",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 4.998,45"
+ },
+ {
+  "id_internacao": "INT-00077",
+  "id_paciente": "PAC-0191",
+  "data_entrada": "2026-03-15",
+  "data_alta": "2026-03-25",
+  "diagnostico_principal": "AVC",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 11.129,81"
+ },
+ {
+  "id_internacao": "INT-00226",
+  "id_paciente": "PAC-0096",
+  "data_entrada": "2026-06-05",
+  "data_alta": "2026-06-12",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 7.428,92"
+ },
+ {
+  "id_internacao": "INT-00034",
+  "id_paciente": "PAC-0175",
+  "data_entrada": "2026-01-28",
+  "data_alta": "2026-02-07",
+  "diagnostico_principal": "AVC",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 10.419,24"
+ },
+ {
+  "id_internacao": "INT-00190",
+  "id_paciente": "PAC-0068",
+  "data_entrada": "2026-01-13",
+  "data_alta": "2026-01-18",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 6.075,17"
+ },
+ {
+  "id_internacao": "INT-00085",
+  "id_paciente": "PAC-0107",
+  "data_entrada": "2026-02-20",
+  "data_alta": "2026-02-24",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 4.174,41"
+ },
+ {
+  "id_internacao": "INT-00223",
+  "id_paciente": "PAC-0061",
+  "data_entrada": "2026-02-16",
+  "data_alta": "2026-02-26",
+  "diagnostico_principal": "AVC",
+  "gravidade": "Moderada",
+  "uti": "S",
+  "custo_total": "R$ 17.786,13"
+ },
+ {
+  "id_internacao": "INT-00207",
+  "id_paciente": "PAC-0172",
+  "data_entrada": "2026-04-05",
+  "data_alta": "2026-04-06",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 998,00"
+ },
+ {
+  "id_internacao": "INT-00128",
+  "id_paciente": "PAC-0093",
+  "data_entrada": "2026-02-10",
+  "data_alta": "2026-02-20",
+  "diagnostico_principal": "AVC",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 9.950,18"
+ },
+ {
+  "id_internacao": "INT-00116",
+  "id_paciente": "PAC-0139",
+  "data_entrada": "2026-04-19",
+  "data_alta": "2026-04-24",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 6.786,23"
+ },
+ {
+  "id_internacao": "INT-00300",
+  "id_paciente": "PAC-0184",
+  "data_entrada": "2026-04-17",
+  "data_alta": "2026-04-22",
+  "diagnostico_principal": "Fratura de fêmur",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 7.016,60"
+ },
+ {
+  "id_internacao": "INT-00260",
+  "id_paciente": "PAC-0174",
+  "data_entrada": "2026-05-04",
+  "data_alta": "2026-05-15",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 7.679,96"
+ },
+ {
+  "id_internacao": "INT-00097",
+  "id_paciente": "PAC-0064",
+  "data_entrada": "2026-02-24",
+  "data_alta": "2026-03-05",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "leve",
+  "uti": "N",
+  "custo_total": "R$ 10.304,74"
+ },
+ {
+  "id_internacao": "INT-00148",
+  "id_paciente": "PAC-0143",
+  "data_entrada": "2026-05-10",
+  "data_alta": "2026-05-19",
+  "diagnostico_principal": "AVC",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 10.901,89"
+ },
+ {
+  "id_internacao": "INT-00204",
+  "id_paciente": "PAC-0068",
+  "data_entrada": "2026-02-05",
+  "data_alta": "2026-02-06",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "leve",
+  "uti": "N",
+  "custo_total": "R$ 1.186,77"
+ },
+ {
+  "id_internacao": "INT-00046",
+  "id_paciente": "PAC-0152",
+  "data_entrada": "2026-07-23",
+  "data_alta": "2026-07-28",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 4.431,48"
+ },
+ {
+  "id_internacao": "INT-00031",
+  "id_paciente": "PAC-0135",
+  "data_entrada": "2026-07-23",
+  "data_alta": "2026-08-02",
+  "diagnostico_principal": "AVC",
+  "gravidade": "moderada",
+  "uti": "N",
+  "custo_total": "R$ 12.538,05"
+ },
+ {
+  "id_internacao": "INT-00162",
+  "id_paciente": "PAC-0153",
+  "data_entrada": "2026-07-14",
+  "data_alta": "2026-07-17",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "leve",
+  "uti": "N",
+  "custo_total": "R$ 3.168,99"
+ },
+ {
+  "id_internacao": "INT-00018",
+  "id_paciente": "PAC-0050",
+  "data_entrada": "2026-03-26",
+  "data_alta": "2026-03-31",
+  "diagnostico_principal": "Fratura de fêmur",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 7.069,00"
+ },
+ {
+  "id_internacao": "INT-00127",
+  "id_paciente": "PAC-0102",
+  "data_entrada": "2026-06-06",
+  "data_alta": "2026-06-11",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 6.420,72"
+ },
+ {
+  "id_internacao": "INT-00052",
+  "id_paciente": "PAC-0159",
+  "data_entrada": "2026-02-03",
+  "data_alta": "2026-02-06",
+  "diagnostico_principal": "Fratura de fêmur",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 2.560,71"
+ },
+ {
+  "id_internacao": "INT-00216",
+  "id_paciente": "PAC-0148",
+  "data_entrada": "2026-08-31",
+  "data_alta": "2026-09-02",
+  "diagnostico_principal": "Fratura de fêmur",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 2.451,00"
+ },
+ {
+  "id_internacao": "INT-00059",
+  "id_paciente": "PAC-0196",
+  "data_entrada": "2026-01-25",
+  "data_alta": "2026-01-28",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 3.638,57"
+ },
+ {
+  "id_internacao": "INT-00210",
+  "id_paciente": "PAC-0137",
+  "data_entrada": "2026-05-12",
+  "data_alta": "2026-05-17",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 4.800,21"
+ },
+ {
+  "id_internacao": "INT-00178",
+  "id_paciente": "PAC-0116",
+  "data_entrada": "2026-02-21",
+  "data_alta": "2026-02-28",
+  "diagnostico_principal": "Fratura de fêmur",
+  "gravidade": "moderada",
+  "uti": "N",
+  "custo_total": "R$ 7.391,84"
+ },
+ {
+  "id_internacao": "INT-00032",
+  "id_paciente": "PAC-0037",
+  "data_entrada": "2026-01-14",
+  "data_alta": "2026-01-19",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "moderada",
+  "uti": "S",
+  "custo_total": "R$ 15.235,00"
+ },
+ {
+  "id_internacao": "INT-00286",
+  "id_paciente": "PAC-0097",
+  "data_entrada": "2026-02-07",
+  "data_alta": "2026-02-19",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 9.764,46"
+ },
+ {
+  "id_internacao": "INT-00050",
+  "id_paciente": "PAC-0080",
+  "data_entrada": "2026-08-22",
+  "data_alta": "2026-08-25",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 3.589,27"
+ },
+ {
+  "id_internacao": "INT-00273",
+  "id_paciente": "PAC-0068",
+  "data_entrada": "2026-08-09",
+  "data_alta": "2026-08-13",
+  "diagnostico_principal": "Fratura de fêmur",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 3.837,69"
+ },
+ {
+  "id_internacao": "INT-00182",
+  "id_paciente": "PAC-0154",
+  "data_entrada": "2026-07-02",
+  "data_alta": "2026-07-06",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 4.285,23"
+ },
+ {
+  "id_internacao": "INT-00081",
+  "id_paciente": "PAC-0178",
+  "data_entrada": "2026-06-09",
+  "data_alta": "2026-06-15",
+  "diagnostico_principal": "AVC",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 6.712,06"
+ },
+ {
+  "id_internacao": "INT-00219",
+  "id_paciente": "PAC-0109",
+  "data_entrada": "2026-01-28",
+  "data_alta": "2026-02-08",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Grave",
+  "uti": "S",
+  "custo_total": "R$ 18.130,23"
+ },
+ {
+  "id_internacao": "INT-00129",
+  "id_paciente": "PAC-0067",
+  "data_entrada": "2026-02-08",
+  "data_alta": "2026-02-11",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 3.508,69"
+ },
+ {
+  "id_internacao": "INT-00112",
+  "id_paciente": "PAC-0033",
+  "data_entrada": "2026-08-23",
+  "data_alta": "2026-08-24",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 1.117,57"
+ },
+ {
+  "id_internacao": "INT-00224",
+  "id_paciente": "PAC-9001",
+  "data_entrada": "2026-01-22",
+  "data_alta": "2026-01-29",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 9.034,37"
+ },
+ {
+  "id_internacao": "INT-00271",
+  "id_paciente": "PAC-0119",
+  "data_entrada": "2026-07-11",
+  "data_alta": "2026-07-18",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 8.279,58"
+ },
+ {
+  "id_internacao": "INT-00137",
+  "id_paciente": "PAC-0001",
+  "data_entrada": "2026-01-31",
+  "data_alta": "2026-02-03",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 3.594,50"
+ },
+ {
+  "id_internacao": "INT-00132",
+  "id_paciente": "PAC-0065",
+  "data_entrada": "2026-03-24",
+  "data_alta": "2026-04-01",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 9.072,68"
+ },
+ {
+  "id_internacao": "INT-00233",
+  "id_paciente": "PAC-0036",
+  "data_entrada": "2026-03-20",
+  "data_alta": "2026-03-27",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 8.175,37"
+ },
+ {
+  "id_internacao": "INT-00121",
+  "id_paciente": "PAC-0195",
+  "data_entrada": "2026-01-31",
+  "data_alta": "2026-02-06",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Moderada",
+  "uti": "S",
+  "custo_total": "R$ 18.398,82"
+ },
+ {
+  "id_internacao": "INT-00292",
+  "id_paciente": "PAC-0058",
+  "data_entrada": "2026-02-20",
+  "data_alta": "2026-02-27",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 7.372,23"
+ },
+ {
+  "id_internacao": "INT-00125",
+  "id_paciente": "PAC-0165",
+  "data_entrada": "2026-03-22",
+  "data_alta": "2026-03-29",
+  "diagnostico_principal": "Fratura de fêmur",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 8.135,22"
+ },
+ {
+  "id_internacao": "INT-00174",
+  "id_paciente": "PAC-0008",
+  "data_entrada": "2026-07-22",
+  "data_alta": "2026-07-26",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 3.924,23"
+ },
+ {
+  "id_internacao": "INT-00055",
+  "id_paciente": "PAC-0150",
+  "data_entrada": "2026-03-23",
+  "data_alta": "2026-04-11",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Grave",
+  "uti": "S",
+  "custo_total": "R$ 24.426,93"
+ },
+ {
+  "id_internacao": "INT-00038",
+  "id_paciente": "PAC-0170",
+  "data_entrada": "2026-08-17",
+  "data_alta": "2026-08-23",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "moderada",
+  "uti": "N",
+  "custo_total": "R$ 6.385,72"
+ },
+ {
+  "id_internacao": "INT-00274",
+  "id_paciente": "PAC-0108",
+  "data_entrada": "2026-03-05",
+  "data_alta": "2026-03-11",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 7.804,09"
+ },
+ {
+  "id_internacao": "INT-00010",
+  "id_paciente": "PAC-0123",
+  "data_entrada": "2026-04-05",
+  "data_alta": "2026-04-09",
+  "diagnostico_principal": "Fratura de fêmur",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 4.391,39"
+ },
+ {
+  "id_internacao": "INT-00287",
+  "id_paciente": "PAC-0048",
+  "data_entrada": "2026-04-03",
+  "data_alta": "2026-04-06",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 3.441,54"
+ },
+ {
+  "id_internacao": "INT-00029",
+  "id_paciente": "PAC-0087",
+  "data_entrada": "2026-01-22",
+  "data_alta": "2026-01-29",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 6.273,26"
+ },
+ {
+  "id_internacao": "INT-00230",
+  "id_paciente": "PAC-0135",
+  "data_entrada": "2026-09-01",
+  "data_alta": "2026-09-06",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 4.737,68"
+ },
+ {
+  "id_internacao": "INT-00033",
+  "id_paciente": "PAC-0077",
+  "data_entrada": "2026-05-29",
+  "data_alta": "2026-06-03",
+  "diagnostico_principal": "AVC",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 6.376,59"
+ },
+ {
+  "id_internacao": "INT-00004",
+  "id_paciente": "PAC-0019",
+  "data_entrada": "2026-02-07",
+  "data_alta": "2026-02-09",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 2.567,99"
+ },
+ {
+  "id_internacao": "INT-00253",
+  "id_paciente": "PAC-0059",
+  "data_entrada": "2026-03-12",
+  "data_alta": "2026-03-21",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "grave",
+  "uti": "N",
+  "custo_total": "R$ 10.487,89"
+ },
+ {
+  "id_internacao": "INT-00012",
+  "id_paciente": "PAC-0062",
+  "data_entrada": "2026-01-31",
+  "data_alta": "2026-02-06",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 8.961,90"
+ },
+ {
+  "id_internacao": "INT-00294",
+  "id_paciente": "PAC-0193",
+  "data_entrada": "2026-07-27",
+  "data_alta": "2026-07-31",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 3.288,73"
+ },
+ {
+  "id_internacao": "INT-00061",
+  "id_paciente": "PAC-0161",
+  "data_entrada": "2026-03-19",
+  "data_alta": "2026-03-27",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Grave",
+  "uti": "N",
+  "custo_total": "R$ 8.286,79"
+ },
+ {
+  "id_internacao": "INT-00113",
+  "id_paciente": "PAC-0168",
+  "data_entrada": "2026-06-21",
+  "data_alta": "2026-06-30",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 9.850,70"
+ },
+ {
+  "id_internacao": "INT-00040",
+  "id_paciente": "PAC-0062",
+  "data_entrada": "2026-05-10",
+  "data_alta": "2026-05-20",
+  "diagnostico_principal": "Fratura de fêmur",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 9.376,10"
+ },
+ {
+  "id_internacao": "INT-00258",
+  "id_paciente": "PAC-0173",
+  "data_entrada": "2026-08-25",
+  "data_alta": "2026-09-10",
+  "diagnostico_principal": "AVC",
+  "gravidade": "Grave",
+  "uti": "S",
+  "custo_total": "R$ 23.363,87"
+ },
+ {
+  "id_internacao": "INT-00277",
+  "id_paciente": "PAC-0006",
+  "data_entrada": "2026-03-25",
+  "data_alta": "2026-04-02",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 7.729,36"
+ },
+ {
+  "id_internacao": "INT-00280",
+  "id_paciente": "PAC-0179",
+  "data_entrada": "2026-04-05",
+  "data_alta": "2026-04-15",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Grave",
+  "uti": "N",
+  "custo_total": null
+ },
+ {
+  "id_internacao": "INT-00269",
+  "id_paciente": "PAC-0028",
+  "data_entrada": "2026-05-18",
+  "data_alta": "2026-05-30",
+  "diagnostico_principal": "Fratura de fêmur",
+  "gravidade": "Grave",
+  "uti": "N",
+  "custo_total": "R$ 11.318,01"
+ },
+ {
+  "id_internacao": "INT-00153",
+  "id_paciente": "PAC-0127",
+  "data_entrada": "2026-02-19",
+  "data_alta": "2026-02-21",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 2.479,76"
+ },
+ {
+  "id_internacao": "INT-00071",
+  "id_paciente": "PAC-0058",
+  "data_entrada": "2026-04-10",
+  "data_alta": "2026-04-22",
+  "diagnostico_principal": "Fratura de fêmur",
+  "gravidade": "Grave",
+  "uti": "S",
+  "custo_total": "R$ 18.483,68"
+ },
+ {
+  "id_internacao": "INT-00250",
+  "id_paciente": "PAC-0100",
+  "data_entrada": "2026-06-05",
+  "data_alta": "2026-06-13",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 9.952,66"
+ },
+ {
+  "id_internacao": "INT-00023",
+  "id_paciente": "PAC-0001",
+  "data_entrada": "2026-07-21",
+  "data_alta": "2026-07-30",
+  "diagnostico_principal": "AVC",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 9.446,57"
+ },
+ {
+  "id_internacao": "INT-00064",
+  "id_paciente": "PAC-0084",
+  "data_entrada": "2026-02-21",
+  "data_alta": "2026-03-01",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 10.022,31"
+ },
+ {
+  "id_internacao": "INT-00185",
+  "id_paciente": "PAC-0002",
+  "data_entrada": "2026-02-24",
+  "data_alta": "2026-03-02",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 6.585,67"
+ },
+ {
+  "id_internacao": "INT-00107",
+  "id_paciente": "PAC-0168",
+  "data_entrada": "2026-03-07",
+  "data_alta": "2026-03-13",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 6.334,21"
+ },
+ {
+  "id_internacao": "INT-00192",
+  "id_paciente": "PAC-0137",
+  "data_entrada": "2026-06-01",
+  "data_alta": "2026-06-04",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 3.340,31"
+ },
+ {
+  "id_internacao": "INT-00027",
+  "id_paciente": "PAC-0125",
+  "data_entrada": "2026-06-03",
+  "data_alta": "2026-06-07",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 4.274,02"
+ },
+ {
+  "id_internacao": "INT-00070",
+  "id_paciente": "PAC-0095",
+  "data_entrada": "2026-01-19",
+  "data_alta": "2026-01-23",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "leve",
+  "uti": "N",
+  "custo_total": "R$ 5.991,09"
+ },
+ {
+  "id_internacao": "INT-00094",
+  "id_paciente": "PAC-0054",
+  "data_entrada": "2026-02-20",
+  "data_alta": "2026-02-28",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 7.543,34"
+ },
+ {
+  "id_internacao": "INT-00051",
+  "id_paciente": "PAC-0012",
+  "data_entrada": "2026-06-18",
+  "data_alta": "2026-07-07",
+  "diagnostico_principal": "AVC",
+  "gravidade": "Grave",
+  "uti": "S",
+  "custo_total": null
+ },
+ {
+  "id_internacao": "INT-00062",
+  "id_paciente": "PAC-0052",
+  "data_entrada": "2026-04-22",
+  "data_alta": "2026-04-25",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 3.036,35"
+ },
+ {
+  "id_internacao": "INT-00086",
+  "id_paciente": "PAC-0114",
+  "data_entrada": "2026-02-01",
+  "data_alta": "2026-02-05",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 3.678,21"
+ },
+ {
+  "id_internacao": "INT-00297",
+  "id_paciente": "PAC-0021",
+  "data_entrada": "2026-02-10",
+  "data_alta": "2026-02-11",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Moderada",
+  "uti": "S",
+  "custo_total": "R$ 6.969,54"
+ },
+ {
+  "id_internacao": "INT-00020",
+  "id_paciente": "PAC-0073",
+  "data_entrada": "2026-06-09",
+  "data_alta": "2026-06-15",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Leve",
+  "uti": "S",
+  "custo_total": "R$ 16.741,79"
+ },
+ {
+  "id_internacao": "INT-00286",
+  "id_paciente": "PAC-0097",
+  "data_entrada": "2026-02-07",
+  "data_alta": "2026-02-19",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 9.764,46"
+ },
+ {
+  "id_internacao": "INT-00186",
+  "id_paciente": "PAC-0145",
+  "data_entrada": "2026-07-13",
+  "data_alta": "2026-07-23",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Grave",
+  "uti": "N",
+  "custo_total": "R$ 12.537,03"
+ },
+ {
+  "id_internacao": "INT-00189",
+  "id_paciente": "PAC-0172",
+  "data_entrada": "2026-06-21",
+  "data_alta": "2026-06-27",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 6.999,66"
+ },
+ {
+  "id_internacao": "INT-00131",
+  "id_paciente": "PAC-0075",
+  "data_entrada": "2026-08-10",
+  "data_alta": "2026-08-20",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 9.460,47"
+ },
+ {
+  "id_internacao": "INT-00282",
+  "id_paciente": "PAC-0166",
+  "data_entrada": "2026-04-02",
+  "data_alta": "2026-04-06",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 4.413,91"
+ },
+ {
+  "id_internacao": "INT-00003",
+  "id_paciente": "PAC-0019",
+  "data_entrada": "2026-04-27",
+  "data_alta": "2026-05-03",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 8.093,22"
+ },
+ {
+  "id_internacao": "INT-00082",
+  "id_paciente": "PAC-0115",
+  "data_entrada": "2026-07-20",
+  "data_alta": "2026-08-04",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Grave",
+  "uti": "S",
+  "custo_total": "R$ 26.672,05"
+ },
+ {
+  "id_internacao": "INT-00264",
+  "id_paciente": "PAC-0005",
+  "data_entrada": "2026-07-07",
+  "data_alta": "2026-07-10",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 4.363,90"
+ },
+ {
+  "id_internacao": "INT-00265",
+  "id_paciente": "PAC-0128",
+  "data_entrada": "2026-07-09",
+  "data_alta": "2026-07-25",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Grave",
+  "uti": "N",
+  "custo_total": "R$ 21.468,94"
+ },
+ {
+  "id_internacao": "INT-00168",
+  "id_paciente": "PAC-0104",
+  "data_entrada": "2026-03-03",
+  "data_alta": "2026-03-11",
+  "diagnostico_principal": "Fratura de fêmur",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 6.982,75"
+ },
+ {
+  "id_internacao": "INT-00014",
+  "id_paciente": "PAC-0117",
+  "data_entrada": "2026-01-17",
+  "data_alta": "2026-01-22",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 6.290,58"
+ },
+ {
+  "id_internacao": "INT-00152",
+  "id_paciente": "PAC-0020",
+  "data_entrada": "2026-03-30",
+  "data_alta": "2026-04-03",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 4.538,07"
+ },
+ {
+  "id_internacao": "INT-00266",
+  "id_paciente": "PAC-0169",
+  "data_entrada": "2026-01-29",
+  "data_alta": "2026-02-06",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 9.519,40"
+ },
+ {
+  "id_internacao": "INT-00096",
+  "id_paciente": "PAC-0092",
+  "data_entrada": "2026-06-07",
+  "data_alta": "2026-06-10",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 3.311,80"
+ },
+ {
+  "id_internacao": "INT-00246",
+  "id_paciente": "PAC-0045",
+  "data_entrada": "2026-06-23",
+  "data_alta": "2026-06-27",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 3.723,06"
+ },
+ {
+  "id_internacao": "INT-00149",
+  "id_paciente": "PAC-0106",
+  "data_entrada": "2026-07-05",
+  "data_alta": "2026-07-09",
+  "diagnostico_principal": "Fratura de fêmur",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 4.461,44"
+ },
+ {
+  "id_internacao": "INT-00225",
+  "id_paciente": "PAC-0118",
+  "data_entrada": "2026-04-13",
+  "data_alta": "2026-04-21",
+  "diagnostico_principal": "Fratura de fêmur",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 7.557,98"
+ },
+ {
+  "id_internacao": "INT-00093",
+  "id_paciente": "PAC-0194",
+  "data_entrada": "2026-05-23",
+  "data_alta": "2026-05-31",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 8.945,39"
+ },
+ {
+  "id_internacao": "INT-00247",
+  "id_paciente": "PAC-0179",
+  "data_entrada": "2026-07-21",
+  "data_alta": "2026-07-31",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 11.854,76"
+ },
+ {
+  "id_internacao": "INT-00256",
+  "id_paciente": "PAC-0153",
+  "data_entrada": "2026-01-17",
+  "data_alta": "2026-01-20",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 2.759,93"
+ },
+ {
+  "id_internacao": "INT-00067",
+  "id_paciente": "PAC-0159",
+  "data_entrada": "2026-07-25",
+  "data_alta": "2026-07-26",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 1.248,29"
+ },
+ {
+  "id_internacao": "INT-00188",
+  "id_paciente": "PAC-0180",
+  "data_entrada": "2026-03-03",
+  "data_alta": "2026-03-04",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 1.048,89"
+ },
+ {
+  "id_internacao": "INT-00291",
+  "id_paciente": "PAC-0195",
+  "data_entrada": "2026-01-15",
+  "data_alta": "2026-01-30",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Grave",
+  "uti": "S",
+  "custo_total": "R$ 25.595,64"
+ },
+ {
+  "id_internacao": "INT-00102",
+  "id_paciente": "PAC-0150",
+  "data_entrada": "2026-04-23",
+  "data_alta": "2026-04-28",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 5.753,13"
+ },
+ {
+  "id_internacao": "INT-00122",
+  "id_paciente": "PAC-0113",
+  "data_entrada": "2026-04-10",
+  "data_alta": "2026-04-19",
+  "diagnostico_principal": "Fratura de fêmur",
+  "gravidade": "Moderada",
+  "uti": "S",
+  "custo_total": "R$ 19.294,47"
+ },
+ {
+  "id_internacao": "INT-00267",
+  "id_paciente": "PAC-0191",
+  "data_entrada": "2026-05-13",
+  "data_alta": "2026-05-18",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 6.591,09"
+ },
+ {
+  "id_internacao": "INT-00124",
+  "id_paciente": "PAC-0128",
+  "data_entrada": "2026-03-16",
+  "data_alta": "2026-03-22",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 5.363,46"
+ },
+ {
+  "id_internacao": "INT-00074",
+  "id_paciente": "PAC-0098",
+  "data_entrada": "2026-05-23",
+  "data_alta": "2026-05-30",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 9.812,06"
+ },
+ {
+  "id_internacao": "INT-00181",
+  "id_paciente": "PAC-0145",
+  "data_entrada": "2026-05-02",
+  "data_alta": "2026-05-12",
+  "diagnostico_principal": "AVC",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 13.480,96"
+ },
+ {
+  "id_internacao": "INT-00118",
+  "id_paciente": "PAC-0034",
+  "data_entrada": "2026-08-28",
+  "data_alta": "2026-09-01",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 4.598,55"
+ },
+ {
+  "id_internacao": "INT-00065",
+  "id_paciente": "PAC-0115",
+  "data_entrada": "2026-02-21",
+  "data_alta": "2026-02-25",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "grave",
+  "uti": "N",
+  "custo_total": "R$ 4.704,47"
+ },
+ {
+  "id_internacao": "INT-00255",
+  "id_paciente": "PAC-0138",
+  "data_entrada": "2026-07-15",
+  "data_alta": "2026-07-17",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 1.842,94"
+ },
+ {
+  "id_internacao": "INT-00214",
+  "id_paciente": "PAC-0090",
+  "data_entrada": "2026-07-29",
+  "data_alta": "2026-08-02",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 4.628,05"
+ },
+ {
+  "id_internacao": "INT-00163",
+  "id_paciente": "PAC-0075",
+  "data_entrada": "2026-03-08",
+  "data_alta": "2026-03-13",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 5.875,85"
+ },
+ {
+  "id_internacao": "INT-00028",
+  "id_paciente": "PAC-0196",
+  "data_entrada": "2026-06-10",
+  "data_alta": "2026-06-17",
+  "diagnostico_principal": "Fratura de fêmur",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 8.847,13"
+ },
+ {
+  "id_internacao": "INT-00195",
+  "id_paciente": "PAC-0162",
+  "data_entrada": "2026-08-24",
+  "data_alta": "2026-08-28",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 4.821,95"
+ },
+ {
+  "id_internacao": "INT-00142",
+  "id_paciente": "PAC-0123",
+  "data_entrada": "2026-06-25",
+  "data_alta": "2026-06-28",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 2.883,86"
+ },
+ {
+  "id_internacao": "INT-00134",
+  "id_paciente": "PAC-0108",
+  "data_entrada": "2026-01-12",
+  "data_alta": "2026-01-19",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "grave",
+  "uti": "N",
+  "custo_total": "R$ 7.061,47"
+ },
+ {
+  "id_internacao": "INT-00058",
+  "id_paciente": "PAC-0087",
+  "data_entrada": "2026-08-31",
+  "data_alta": "2026-09-06",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 6.640,77"
+ },
+ {
+  "id_internacao": "INT-00146",
+  "id_paciente": "PAC-0118",
+  "data_entrada": "2026-05-18",
+  "data_alta": "2026-05-23",
+  "diagnostico_principal": "Fratura de fêmur",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 6.395,88"
+ },
+ {
+  "id_internacao": "INT-00106",
+  "id_paciente": "PAC-0075",
+  "data_entrada": "2026-06-29",
+  "data_alta": "2026-06-30",
+  "diagnostico_principal": "Fratura de fêmur",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 776,87"
+ },
+ {
+  "id_internacao": "INT-00068",
+  "id_paciente": "PAC-0131",
+  "data_entrada": "2026-04-26",
+  "data_alta": "2026-05-04",
+  "diagnostico_principal": "AVC",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 8.025,72"
+ },
+ {
+  "id_internacao": "INT-00075",
+  "id_paciente": "PAC-0032",
+  "data_entrada": "2026-01-29",
+  "data_alta": "2026-01-31",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 2.517,28"
+ },
+ {
+  "id_internacao": "INT-00289",
+  "id_paciente": "PAC-0087",
+  "data_entrada": "2026-05-20",
+  "data_alta": "2026-05-28",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 8.884,79"
+ },
+ {
+  "id_internacao": "INT-00222",
+  "id_paciente": "PAC-0171",
+  "data_entrada": "2026-02-05",
+  "data_alta": "2026-02-07",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 1.870,63"
+ },
+ {
+  "id_internacao": "INT-00083",
+  "id_paciente": "PAC-0052",
+  "data_entrada": "2026-02-01",
+  "data_alta": "2026-02-04",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 2.174,01"
+ },
+ {
+  "id_internacao": "INT-00245",
+  "id_paciente": "PAC-0095",
+  "data_entrada": "2026-02-02",
+  "data_alta": "2026-02-09",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Grave",
+  "uti": "S",
+  "custo_total": "R$ 15.689,44"
+ },
+ {
+  "id_internacao": "INT-00069",
+  "id_paciente": "PAC-0200",
+  "data_entrada": "2026-05-24",
+  "data_alta": "2026-05-29",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 5.899,87"
+ },
+ {
+  "id_internacao": "INT-00008",
+  "id_paciente": "PAC-0129",
+  "data_entrada": "2026-02-15",
+  "data_alta": "2026-02-24",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 9.705,16"
+ },
+ {
+  "id_internacao": "INT-00193",
+  "id_paciente": "PAC-0175",
+  "data_entrada": "2026-08-27",
+  "data_alta": "2026-09-08",
+  "diagnostico_principal": "Fratura de fêmur",
+  "gravidade": "Grave",
+  "uti": "N",
+  "custo_total": "R$ 11.294,77"
+ },
+ {
+  "id_internacao": "INT-00135",
+  "id_paciente": "PAC-0021",
+  "data_entrada": "2026-07-30",
+  "data_alta": "2026-08-08",
+  "diagnostico_principal": "AVC",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 9.957,81"
+ },
+ {
+  "id_internacao": "INT-00054",
+  "id_paciente": "PAC-0045",
+  "data_entrada": "2026-05-06",
+  "data_alta": "2026-05-12",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 7.541,02"
+ },
+ {
+  "id_internacao": "INT-00170",
+  "id_paciente": "PAC-0055",
+  "data_entrada": "2026-02-18",
+  "data_alta": "2026-02-24",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Grave",
+  "uti": "N",
+  "custo_total": "R$ 5.887,69"
+ },
+ {
+  "id_internacao": "INT-00184",
+  "id_paciente": "PAC-0140",
+  "data_entrada": "2026-06-19",
+  "data_alta": "2026-07-01",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Grave",
+  "uti": "N",
+  "custo_total": "R$ 13.212,17"
+ },
+ {
+  "id_internacao": "INT-00191",
+  "id_paciente": "PAC-0043",
+  "data_entrada": "2026-06-05",
+  "data_alta": "2026-06-22",
+  "diagnostico_principal": "AVC",
+  "gravidade": "Grave",
+  "uti": "S",
+  "custo_total": "R$ 28.631,35"
+ },
+ {
+  "id_internacao": "INT-00160",
+  "id_paciente": "PAC-0081",
+  "data_entrada": "2026-07-15",
+  "data_alta": "2026-07-21",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Grave",
+  "uti": "N",
+  "custo_total": "R$ 6.561,42"
+ },
+ {
+  "id_internacao": "INT-00241",
+  "id_paciente": "PAC-0017",
+  "data_entrada": "2026-03-03",
+  "data_alta": "2026-03-23",
+  "diagnostico_principal": "AVC",
+  "gravidade": "Grave",
+  "uti": "N",
+  "custo_total": "R$ 17.820,00"
+ },
+ {
+  "id_internacao": "INT-00272",
+  "id_paciente": "PAC-0012",
+  "data_entrada": "2026-07-16",
+  "data_alta": "2026-07-26",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Grave",
+  "uti": "S",
+  "custo_total": "R$ 20.644,18"
+ },
+ {
+  "id_internacao": "INT-00143",
+  "id_paciente": "PAC-0007",
+  "data_entrada": "2026-08-09",
+  "data_alta": "2026-08-13",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "leve",
+  "uti": "N",
+  "custo_total": "R$ 4.610,40"
+ },
+ {
+  "id_internacao": "INT-00284",
+  "id_paciente": "PAC-0063",
+  "data_entrada": "2026-04-27",
+  "data_alta": "2026-05-01",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 5.507,07"
+ },
+ {
+  "id_internacao": "INT-00161",
+  "id_paciente": "PAC-0071",
+  "data_entrada": "2026-02-02",
+  "data_alta": "2026-02-22",
+  "diagnostico_principal": "AVC",
+  "gravidade": "Grave",
+  "uti": "N",
+  "custo_total": "R$ 22.609,28"
+ },
+ {
+  "id_internacao": "INT-00150",
+  "id_paciente": "PAC-0033",
+  "data_entrada": "2026-08-18",
+  "data_alta": "2026-08-24",
+  "diagnostico_principal": "Fratura de fêmur",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 6.331,34"
+ },
+ {
+  "id_internacao": "INT-00140",
+  "id_paciente": "PAC-0153",
+  "data_entrada": "2026-06-12",
+  "data_alta": "2026-06-15",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 3.962,51"
+ },
+ {
+  "id_internacao": "INT-00123",
+  "id_paciente": "PAC-0048",
+  "data_entrada": "2026-03-04",
+  "data_alta": "2026-03-07",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 3.651,80"
+ },
+ {
+  "id_internacao": "INT-00275",
+  "id_paciente": "PAC-0027",
+  "data_entrada": "2026-05-14",
+  "data_alta": "2026-05-21",
+  "diagnostico_principal": "AVC",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 7.644,95"
+ },
+ {
+  "id_internacao": "INT-00285",
+  "id_paciente": "PAC-0076",
+  "data_entrada": "2026-06-04",
+  "data_alta": "2026-06-07",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 2.362,74"
+ },
+ {
+  "id_internacao": "INT-00144",
+  "id_paciente": "PAC-0137",
+  "data_entrada": "2026-04-12",
+  "data_alta": "2026-04-16",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 4.568,02"
+ },
+ {
+  "id_internacao": "INT-00220",
+  "id_paciente": "PAC-0195",
+  "data_entrada": "2026-04-15",
+  "data_alta": "2026-04-19",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 4.011,46"
+ },
+ {
+  "id_internacao": "INT-00257",
+  "id_paciente": "PAC-0163",
+  "data_entrada": "2026-05-07",
+  "data_alta": "2026-05-11",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 4.145,02"
+ },
+ {
+  "id_internacao": "INT-00215",
+  "id_paciente": "PAC-0122",
+  "data_entrada": "2026-04-15",
+  "data_alta": "2026-04-27",
+  "diagnostico_principal": "Fratura de fêmur",
+  "gravidade": "Grave",
+  "uti": "N",
+  "custo_total": "R$ 13.437,28"
+ },
+ {
+  "id_internacao": "INT-00198",
+  "id_paciente": "PAC-9002",
+  "data_entrada": "2026-04-30",
+  "data_alta": "2026-05-06",
+  "diagnostico_principal": "Fratura de fêmur",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 4.617,86"
+ },
+ {
+  "id_internacao": "INT-00206",
+  "id_paciente": "PAC-0120",
+  "data_entrada": "2026-02-15",
+  "data_alta": "2026-02-26",
+  "diagnostico_principal": "Fratura de fêmur",
+  "gravidade": "Grave",
+  "uti": "N",
+  "custo_total": "R$ 11.498,52"
+ },
+ {
+  "id_internacao": "INT-00235",
+  "id_paciente": "PAC-0034",
+  "data_entrada": "2026-06-22",
+  "data_alta": "2026-06-24",
+  "diagnostico_principal": "Fratura de fêmur",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 2.288,30"
+ },
+ {
+  "id_internacao": "INT-00056",
+  "id_paciente": "PAC-0068",
+  "data_entrada": "2026-04-05",
+  "data_alta": "2026-04-12",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 9.640,47"
+ },
+ {
+  "id_internacao": "INT-00005",
+  "id_paciente": "PAC-0070",
+  "data_entrada": "2026-08-14",
+  "data_alta": "2026-08-25",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Grave",
+  "uti": "S",
+  "custo_total": "R$ 25.906,15"
+ },
+ {
+  "id_internacao": "INT-00076",
+  "id_paciente": "PAC-0193",
+  "data_entrada": "2026-07-03",
+  "data_alta": "2026-07-09",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 7.849,35"
+ },
+ {
+  "id_internacao": "INT-00196",
+  "id_paciente": "PAC-0146",
+  "data_entrada": "2026-06-28",
+  "data_alta": "2026-06-29",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 868,42"
+ },
+ {
+  "id_internacao": "INT-00229",
+  "id_paciente": "PAC-0162",
+  "data_entrada": "2026-05-27",
+  "data_alta": "2026-06-13",
+  "diagnostico_principal": "AVC",
+  "gravidade": "grave",
+  "uti": "S",
+  "custo_total": "R$ 25.723,88"
+ },
+ {
+  "id_internacao": "INT-00167",
+  "id_paciente": "PAC-0144",
+  "data_entrada": "2026-04-18",
+  "data_alta": "2026-04-24",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Grave",
+  "uti": "N",
+  "custo_total": "R$ 6.493,54"
+ },
+ {
+  "id_internacao": "INT-00243",
+  "id_paciente": "PAC-0147",
+  "data_entrada": "2026-04-26",
+  "data_alta": "2026-05-01",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 5.228,43"
+ },
+ {
+  "id_internacao": "INT-00015",
+  "id_paciente": "PAC-0024",
+  "data_entrada": "2026-05-01",
+  "data_alta": "2026-05-11",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Grave",
+  "uti": "S",
+  "custo_total": "R$ 25.392,04"
+ },
+ {
+  "id_internacao": "INT-00025",
+  "id_paciente": "PAC-0153",
+  "data_entrada": "2026-01-23",
+  "data_alta": "2026-01-31",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 8.487,06"
+ },
+ {
+  "id_internacao": "INT-00104",
+  "id_paciente": "PAC-0193",
+  "data_entrada": "2026-08-26",
+  "data_alta": "2026-09-04",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Grave",
+  "uti": "N",
+  "custo_total": "R$ 10.687,69"
+ },
+ {
+  "id_internacao": "INT-00166",
+  "id_paciente": "PAC-0193",
+  "data_entrada": "2026-01-17",
+  "data_alta": "2026-01-24",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Grave",
+  "uti": "S",
+  "custo_total": "R$ 18.466,12"
+ },
+ {
+  "id_internacao": "INT-00126",
+  "id_paciente": "PAC-0136",
+  "data_entrada": "2026-03-20",
+  "data_alta": "2026-04-05",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Grave",
+  "uti": "N",
+  "custo_total": "R$ 18.458,14"
+ },
+ {
+  "id_internacao": "INT-00103",
+  "id_paciente": "PAC-0010",
+  "data_entrada": "2026-05-22",
+  "data_alta": "2026-05-26",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 4.463,97"
+ },
+ {
+  "id_internacao": "INT-00133",
+  "id_paciente": "PAC-0170",
+  "data_entrada": "2026-07-05",
+  "data_alta": "2026-07-10",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Moderada",
+  "uti": "S",
+  "custo_total": "R$ 12.752,90"
+ },
+ {
+  "id_internacao": "INT-00197",
+  "id_paciente": "PAC-0005",
+  "data_entrada": "2026-04-18",
+  "data_alta": "2026-04-25",
+  "diagnostico_principal": "AVC",
+  "gravidade": "moderada",
+  "uti": "N",
+  "custo_total": "R$ 7.380,24"
+ },
+ {
+  "id_internacao": "INT-00091",
+  "id_paciente": "PAC-0052",
+  "data_entrada": "2026-02-28",
+  "data_alta": "2026-03-03",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 4.217,60"
+ },
+ {
+  "id_internacao": "INT-00151",
+  "id_paciente": "PAC-0054",
+  "data_entrada": "2026-05-01",
+  "data_alta": "2026-05-10",
+  "diagnostico_principal": "AVC",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 10.225,95"
+ },
+ {
+  "id_internacao": "INT-00053",
+  "id_paciente": "PAC-0053",
+  "data_entrada": "2026-07-09",
+  "data_alta": "2026-07-11",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Moderada",
+  "uti": "S",
+  "custo_total": "R$ 10.708,23"
+ },
+ {
+  "id_internacao": "INT-00172",
+  "id_paciente": "PAC-0054",
+  "data_entrada": "2026-06-03",
+  "data_alta": "2026-06-13",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Grave",
+  "uti": "S",
+  "custo_total": "R$ 19.521,14"
+ },
+ {
+  "id_internacao": "INT-00237",
+  "id_paciente": "PAC-0104",
+  "data_entrada": "2026-04-26",
+  "data_alta": "2026-05-03",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Moderada",
+  "uti": "S",
+  "custo_total": "R$ 15.856,46"
+ },
+ {
+  "id_internacao": "INT-00297",
+  "id_paciente": "PAC-0021",
+  "data_entrada": "2026-02-10",
+  "data_alta": "2026-02-11",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Moderada",
+  "uti": "S",
+  "custo_total": "R$ 6.969,54"
+ },
+ {
+  "id_internacao": "INT-00180",
+  "id_paciente": "PAC-0031",
+  "data_entrada": "2026-03-01",
+  "data_alta": "2026-03-13",
+  "diagnostico_principal": "Fratura de fêmur",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 13.359,80"
+ },
+ {
+  "id_internacao": "INT-00208",
+  "id_paciente": "PAC-0181",
+  "data_entrada": "2026-07-23",
+  "data_alta": "2026-07-25",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 2.234,41"
+ },
+ {
+  "id_internacao": "INT-00283",
+  "id_paciente": "PAC-0072",
+  "data_entrada": "2026-08-28",
+  "data_alta": "2026-09-05",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Leve",
+  "uti": "N",
+  "custo_total": "R$ 10.395,92"
+ },
+ {
+  "id_internacao": "INT-00049",
+  "id_paciente": "PAC-0044",
+  "data_entrada": "2026-04-07",
+  "data_alta": "2026-04-16",
+  "diagnostico_principal": "Insuficiência cardíaca",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 9.298,81"
+ },
+ {
+  "id_internacao": "INT-00259",
+  "id_paciente": "PAC-0041",
+  "data_entrada": "2026-05-04",
+  "data_alta": "2026-05-10",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 7.476,08"
+ },
+ {
+  "id_internacao": "INT-00232",
+  "id_paciente": "PAC-0042",
+  "data_entrada": "2026-02-13",
+  "data_alta": "2026-02-24",
+  "diagnostico_principal": "AVC",
+  "gravidade": "moderada",
+  "uti": "S",
+  "custo_total": "R$ 25.854,16"
+ },
+ {
+  "id_internacao": "INT-00279",
+  "id_paciente": "PAC-0063",
+  "data_entrada": "2026-03-02",
+  "data_alta": "2026-03-14",
+  "diagnostico_principal": "Pneumonia",
+  "gravidade": "Grave",
+  "uti": "S",
+  "custo_total": "R$ 23.343,30"
+ },
+ {
+  "id_internacao": "INT-00024",
+  "id_paciente": "PAC-0045",
+  "data_entrada": "2026-08-21",
+  "data_alta": "2026-08-26",
+  "diagnostico_principal": "Infecção urinária",
+  "gravidade": "Moderada",
+  "uti": "N",
+  "custo_total": "R$ 6.760,36"
+ }
+]

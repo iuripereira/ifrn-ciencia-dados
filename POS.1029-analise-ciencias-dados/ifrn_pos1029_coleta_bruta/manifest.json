@@ -1,0 +1,1171 @@
+{
+ "course": 2698,
+ "collected": "2026-11-09T19:41:01.224Z",
+ "items": [
+  {
+   "sec": 3,
+   "id": "sec3",
+   "mod": "section",
+   "name": "Unidade 1 — Introdução à Ciência de Dados e Python (Aulas 01–05)",
+   "order": 0,
+   "base": "raw/s3/000_section_sec3/",
+   "files": [
+    "desc.html"
+   ]
+  },
+  {
+   "sec": 3,
+   "id": "67907",
+   "mod": "label",
+   "name": "📘 Aula 01 — Fundamentos e Panorama da Ciência de D... 📘 Aula 01 — Fundamentos e Panorama da Ciência de Dados Primeira aula da disciplina (semana de 17/08/2026). Nesta aula você encontrará: o livro da aula com o conteúdo teórico, um exemplo prático completo (ranking das escolas do RN no ENEM 2025), os microdados utilizados no exemplo e o formulário avaliativo com 8 questões.",
+   "order": 1,
+   "base": "raw/s3/001_label_67907/",
+   "files": [
+    "desc.html"
+   ]
+  },
+  {
+   "sec": 3,
+   "id": "67908",
+   "mod": "book",
+   "name": "Tópicos de Estudo — Fundamentos e Panorama da Ciência de Dados",
+   "order": 2,
+   "base": "raw/s3/002_book_67908/",
+   "files": [
+    "book.html"
+   ]
+  },
+  {
+   "sec": 3,
+   "id": "68907",
+   "mod": "resource",
+   "name": "Conteúdo — Fundamentos e Panorama da Ciência de Dados",
+   "order": 3,
+   "base": "raw/s3/003_resource_68907/",
+   "files": [
+    "file/Aula_1_-_Fundamentos_em_Ciencia_de_Dados.pdf"
+   ]
+  },
+  {
+   "sec": 3,
+   "id": "67911",
+   "mod": "label",
+   "name": "🗂️ Microdados — ENEM 2025 / RN Conjuntos de dados ... 🗂️ Microdados — ENEM 2025 / RN Conjuntos de dados utilizados no exemplo da aula: microdados de resultados do ENEM 2025 no RN e catálogo de escolas. Baixe os dois arquivos para executar o exemplo.",
+   "order": 4,
+   "base": "raw/s3/004_label_67911/",
+   "files": [
+    "desc.html"
+   ]
+  },
+  {
+   "sec": 3,
+   "id": "67912",
+   "mod": "page",
+   "name": "Microdados — Dicionário de Dados (ENEM 2025 RN)",
+   "order": 5,
+   "base": "raw/s3/005_page_67912/",
+   "files": [
+    "view.html"
+   ]
+  },
+  {
+   "sec": 3,
+   "id": "67918",
+   "mod": "resource",
+   "name": "Catálogo Escola RN",
+   "order": 6,
+   "base": "raw/s3/006_resource_67918/",
+   "files": [
+    "file/Catalogo_Escolas_RN.csv"
+   ]
+  },
+  {
+   "sec": 3,
+   "id": "67919",
+   "mod": "resource",
+   "name": "Microdados ENEM 2025 RN",
+   "order": 7,
+   "base": "raw/s3/007_resource_67919/",
+   "files": [
+    "file/Microdados_ENEM_2025_RN.csv"
+   ]
+  },
+  {
+   "sec": 3,
+   "id": "67909",
+   "mod": "label",
+   "name": "💻 Exemplo Prático — Ranking das Escolas do RN (ENE... 💻 Exemplo Prático — Ranking das Escolas do RN (ENEM 2025) Código completo do estudo de caso apresentado no livro da aula: leitura dos microdados, cálculo das médias, ranking e geração da página HTML interativa.",
+   "order": 8,
+   "base": "raw/s3/008_label_67909/",
+   "files": [
+    "desc.html"
+   ]
+  },
+  {
+   "sec": 3,
+   "id": "67910",
+   "mod": "page",
+   "name": "Exemplo — Código do Ranking das Escolas (main.py)",
+   "order": 9,
+   "base": "raw/s3/009_page_67910/",
+   "files": [
+    "view.html"
+   ]
+  },
+  {
+   "sec": 3,
+   "id": "67920",
+   "mod": "resource",
+   "name": "Exemplo — Páginas HTML Análise Escolas",
+   "order": 10,
+   "base": "raw/s3/010_resource_67920/",
+   "files": [
+    "file/Exemplo_Analise_Escolas.zip"
+   ]
+  },
+  {
+   "sec": 3,
+   "id": "67913",
+   "mod": "label",
+   "name": "✅ Formulário Avaliativo — Aula 01 Questionário com... ✅ Formulário Avaliativo — Aula 01 Questionário com 8 questões sobre o conteúdo da aula (livro + exemplo prático). Responda após estudar o material. Compõe as atividades semanais da Unidade 1.",
+   "order": 11,
+   "base": "raw/s3/011_label_67913/",
+   "files": [
+    "desc.html"
+   ]
+  },
+  {
+   "sec": 3,
+   "id": "67928",
+   "mod": "label",
+   "name": "🤖 Aula 02 — Introdução ao ML e KDD Segunda aula da... 🤖 Aula 02 — Introdução ao ML e KDD Segunda aula da disciplina (semana de 24/08/2026). Você encontrará: o livro da aula com a teoria de Aprendizado de Máquina e do processo KDD, um exemplo prático — um classificador KNN construído do zero, em Python puro, aplicado aos dados das escolas do RN — e o formulário avaliativo.",
+   "order": 12,
+   "base": "raw/s3/012_label_67928/",
+   "files": [
+    "desc.html"
+   ]
+  },
+  {
+   "sec": 3,
+   "id": "67929",
+   "mod": "book",
+   "name": "Tópicos de Estudo — Aula 02: Introdução ao ML e KDD",
+   "order": 13,
+   "base": "raw/s3/013_book_67929/",
+   "files": [
+    "book.html"
+   ]
+  },
+  {
+   "sec": 3,
+   "id": "67930",
+   "mod": "label",
+   "name": "💻 Exemplo Prático — Classificador KNN do Zero (Aul... 💻 Exemplo Prático — Pré-processamento de Dados (Aula 02) Pré-Processamento de dados, em Python puro, para diminuir dados inconsistentesno dataset do ENEM 2025. Reaproveita o microdado RESULTADOS_2025_RN.csv já disponível na Aula 01.",
+   "order": 14,
+   "base": "raw/s3/014_label_67930/",
+   "files": [
+    "desc.html"
+   ]
+  },
+  {
+   "sec": 3,
+   "id": "72204",
+   "mod": "resource",
+   "name": "Detalhamento Atividade Prática",
+   "order": 15,
+   "base": "raw/s3/015_resource_72204/",
+   "files": [
+    "file/Detalhamento_Atividade_Pratica.pdf"
+   ]
+  },
+  {
+   "sec": 3,
+   "id": "72205",
+   "mod": "resource",
+   "name": "Notebooks KDD Passos de 1 a 3",
+   "order": 16,
+   "base": "raw/s3/016_resource_72205/",
+   "files": [
+    "file/notebooks_KDD.zip"
+   ]
+  },
+  {
+   "sec": 3,
+   "id": "67932",
+   "mod": "label",
+   "name": "✅ Formulário Avaliativo — Aula 02 Questionário sob... ✅ Formulário Avaliativo — Aula 02 Questionário sobre ML, KDD e o exemplo do classificador KNN. Compõe as atividades semanais da Unidade 1.",
+   "order": 17,
+   "base": "raw/s3/017_label_67932/",
+   "files": [
+    "desc.html"
+   ]
+  },
+  {
+   "sec": 3,
+   "id": "68107",
+   "mod": "label",
+   "name": "🐍 Aula 03 — Ambiente Python e Primeiros Passos Ter... 🐍 Aula 03 — Ambiente Python e Primeiros Passos Terceira aula da disciplina (semana de 31/08/2026). Aula teórico-prática: você encontrará o livro da aula com a instalação do ambiente (Anaconda/venv, Jupyter), as estruturas fundamentais de Python (listas, dicionários, funções) e a introdução ao NumPy, além de um exemplo prático guiado e o formulário avaliativo.",
+   "order": 18,
+   "base": "raw/s3/018_label_68107/",
+   "files": [
+    "desc.html"
+   ]
+  },
+  {
+   "sec": 3,
+   "id": "72676",
+   "mod": "resource",
+   "name": "Tutorial - Estudo Orientado Python + Numpy + Pandas",
+   "order": 19,
+   "base": "raw/s3/019_resource_72676/",
+   "files": [
+    "file/Python_Numpy_Pandas.pdf"
+   ]
+  },
+  {
+   "sec": 3,
+   "id": "68108",
+   "mod": "book",
+   "name": "Tópicos de Estudo — Aula 03: Ambiente Python e Primeiros Passos",
+   "order": 20,
+   "base": "raw/s3/020_book_68108/",
+   "files": [
+    "book.html"
+   ]
+  },
+  {
+   "sec": 3,
+   "id": "68109",
+   "mod": "label",
+   "name": "💻 Exemplo Prático — Primeiros Passos com Python e ... 💻 Exemplo Prático — Primeiros Passos com Python e NumPy (Aula 03) Script guiado que aplica listas, dicionários e funções sobre um pequeno conjunto de escolas, e depois refaz o mesmo cálculo com NumPy — comparando desempenho entre loop puro e operação vetorizada.",
+   "order": 21,
+   "base": "raw/s3/021_label_68109/",
+   "files": [
+    "desc.html"
+   ]
+  },
+  {
+   "sec": 3,
+   "id": "68110",
+   "mod": "page",
+   "name": "Exemplo — Primeiros Passos com Python e NumPy (primeiros_passos.py)",
+   "order": 22,
+   "base": "raw/s3/022_page_68110/",
+   "files": [
+    "view.html"
+   ]
+  },
+  {
+   "sec": 3,
+   "id": "68111",
+   "mod": "label",
+   "name": "✅ Formulário Avaliativo — Aula 03 Questionário sob... ✅ Formulário Avaliativo — Aula 03 Questionário sobre ambiente Python, estruturas de dados, funções e NumPy. Compõe as atividades semanais da Unidade 1.",
+   "order": 23,
+   "base": "raw/s3/023_label_68111/",
+   "files": [
+    "desc.html"
+   ]
+  },
+  {
+   "sec": 3,
+   "id": "73152",
+   "mod": "label",
+   "name": "📊 Aula 04 — Laboratório NumPy e Pandas I (Prática)... 📊 Aula 04 — Laboratório NumPy e Pandas I (Prática) Quarta aula da Unidade 1. Criação e manipulação de DataFrames; seleção e filtragem (loc/iloc); leitura de CSV/Excel; inspeção básica (head, info, describe); atribuição segura e tratamento de valores ausentes. Recursos: Jupyter Notebook, conjuntos de dados de exemplo (matrículas do IFRN — dados sintéticos).Avaliação: exercício prático entregue no Moodle + formulário avaliativo com 10 questões. Materiais desta aula: livro Tópicos de Estudo (6 capítulos) · apostila completa em PDF (31 páginas) · pacote com o notebook e os dados · exemplo prático comentado · tarefa de entrega · formulário avaliativo.",
+   "order": 24,
+   "base": "raw/s3/024_label_73152/",
+   "files": [
+    "desc.html"
+   ]
+  },
+  {
+   "sec": 3,
+   "id": "73153",
+   "mod": "book",
+   "name": "Tópicos de Estudo — Aula 04: Laboratório NumPy e Pandas I",
+   "order": 25,
+   "base": "raw/s3/025_book_73153/",
+   "files": [
+    "book.html"
+   ]
+  },
+  {
+   "sec": 3,
+   "id": "73154",
+   "mod": "resource",
+   "name": "Conteúdo — Aula 04: Laboratório NumPy e Pandas I (apostila em PDF)",
+   "order": 26,
+   "base": "raw/s3/026_resource_73154/",
+   "files": [
+    "file/Aula04_NumPy_Pandas_I.pdf"
+   ]
+  },
+  {
+   "sec": 3,
+   "id": "73155",
+   "mod": "resource",
+   "name": "🗂️ Laboratório — Notebook e conjuntos de dados (ZIP)",
+   "order": 27,
+   "base": "raw/s3/027_resource_73155/",
+   "files": [
+    "file/aula04_laboratorio_dados.zip"
+   ]
+  },
+  {
+   "sec": 3,
+   "id": "73156",
+   "mod": "label",
+   "name": "💻 Exemplo Prático — Matrículas do IFRN (Aula 04) R... 💻 Exemplo Prático — Matrículas do IFRN (Aula 04) Roteiro guiado em oito passos, do arquivo bruto à primeira resposta: leitura correta do CSV brasileiro, inspeção, limpeza mínima, seleção com loc/iloc, filtragem booleana, atribuição segura, a máscara NumPy por baixo do Pandas e uma pergunta respondida com dados. Todas as saídas mostradas foram efetivamente produzidas pelo script.",
+   "order": 28,
+   "base": "raw/s3/028_label_73156/",
+   "files": [
+    "desc.html"
+   ]
+  },
+  {
+   "sec": 3,
+   "id": "73157",
+   "mod": "page",
+   "name": "Exemplo — Laboratório Pandas com as matrículas do IFRN (exemplo_pandas.py)",
+   "order": 29,
+   "base": "raw/s3/029_page_73157/",
+   "files": [
+    "view.html"
+   ]
+  },
+  {
+   "sec": 3,
+   "id": "73158",
+   "mod": "assign",
+   "name": "Exercício Prático — Aula 04 (entrega do notebook)",
+   "order": 30,
+   "base": "raw/s3/030_assign_73158/",
+   "files": [
+    "view.html"
+   ]
+  },
+  {
+   "sec": 3,
+   "id": "73159",
+   "mod": "label",
+   "name": "✅ Formulário Avaliativo — Aula 04 Questionário com... ✅ Formulário Avaliativo — Aula 04 Questionário com 10 questões objetivas sobre o livro Tópicos de Estudo, a apostila em PDF e o exemplo prático: leitura de CSV/Excel, inspeção com info e describe, loc × iloc, máscaras booleanas, atribuição segura, np.where com ausentes e interpretação de resultados. Você pode consultar o material durante a realização.",
+   "order": 31,
+   "base": "raw/s3/031_label_73159/",
+   "files": [
+    "desc.html"
+   ]
+  },
+  {
+   "sec": 3,
+   "id": "73618",
+   "mod": "label",
+   "name": "📊 Aula 05 — Laboratório Pandas II — Agrupamentos e... 📊 Aula 05 — Laboratório Pandas II — Agrupamentos e Joins (Prática) Quinta aula da Unidade 1. Agrupamento de dados (groupby, agg, named aggregation); reformatação com pivot_table; combinação de tabelas (merge, join); apply, lambda e introdução ao method chaining. Recursos: Jupyter Notebook, mesmo conjunto de dados da Aula 04 (matrículas do IFRN — dados sintéticos). Avaliação: exercício prático entregue no Moodle + formulário avaliativo com 10 questões. Materiais desta aula: livro Tópicos de Estudo (6 capítulos) · apostila completa em PDF (26 páginas) · pacote com o notebook e os dados · exemplo prático comentado · tarefa de entrega · formulário avaliativo.",
+   "order": 32,
+   "base": "raw/s3/032_label_73618/",
+   "files": [
+    "desc.html"
+   ]
+  },
+  {
+   "sec": 3,
+   "id": "73611",
+   "mod": "book",
+   "name": "Tópicos de Estudo — Aula 05: Laboratório Pandas II",
+   "order": 33,
+   "base": "raw/s3/033_book_73611/",
+   "files": [
+    "book.html"
+   ]
+  },
+  {
+   "sec": 3,
+   "id": "73619",
+   "mod": "resource",
+   "name": "Conteúdo — Aula 05: Laboratório Pandas II (apostila em PDF)",
+   "order": 34,
+   "base": "raw/s3/034_resource_73619/",
+   "files": [
+    "file/Aula05_Pandas_II.pdf"
+   ]
+  },
+  {
+   "sec": 3,
+   "id": "73620",
+   "mod": "resource",
+   "name": "🗂️ Laboratório — Notebook e conjuntos de dados (ZIP)",
+   "order": 35,
+   "base": "raw/s3/035_resource_73620/",
+   "files": [
+    "file/aula05_laboratorio_dados.zip"
+   ]
+  },
+  {
+   "sec": 3,
+   "id": "73621",
+   "mod": "label",
+   "name": "💻 Exemplo Prático — Agrupamentos e Joins (Aula 05)... 💻 Exemplo Prático — Agrupamentos e Joins (Aula 05) Código comentado, passo a passo, aplicando groupby, agg, pivot_table, merge/join e apply/method chaining sobre o mesmo conjunto de dados das matrículas do IFRN usado na Aula 04. Acompanhe a página antes de iniciar o exercício prático.",
+   "order": 36,
+   "base": "raw/s3/036_label_73621/",
+   "files": [
+    "desc.html"
+   ]
+  },
+  {
+   "sec": 3,
+   "id": "73622",
+   "mod": "page",
+   "name": "Exemplo — Agrupamentos, Joins e Method Chaining (exemplo_pandas2.py)",
+   "order": 37,
+   "base": "raw/s3/037_page_73622/",
+   "files": [
+    "view.html"
+   ]
+  },
+  {
+   "sec": 3,
+   "id": "73623",
+   "mod": "assign",
+   "name": "Exercício Prático — Aula 05 (entrega do notebook)",
+   "order": 38,
+   "base": "raw/s3/038_assign_73623/",
+   "files": [
+    "view.html"
+   ]
+  },
+  {
+   "sec": 3,
+   "id": "73624",
+   "mod": "label",
+   "name": "✅ Formulário Avaliativo — Aula 05 Questionário com... ✅ Formulário Avaliativo — Aula 05 Questionário com 10 questões objetivas sobre groupby, agg, pivot_table, merge/join, apply/lambda e method chaining. Pode ser refeito; considera-se a maior nota.",
+   "order": 39,
+   "base": "raw/s3/039_label_73624/",
+   "files": [
+    "desc.html"
+   ]
+  },
+  {
+   "sec": 4,
+   "id": "sec4",
+   "mod": "section",
+   "name": "Unidade 2 — Aquisição e Preparação de Dados (Aulas 06–10)",
+   "order": 40,
+   "base": "raw/s4/040_section_sec4/",
+   "files": [
+    "desc.html"
+   ]
+  },
+  {
+   "sec": 4,
+   "id": "73870",
+   "mod": "label",
+   "name": "📊 Aula 06 — Processos e Fontes de Dados (Teórica) ... 📊 Aula 06 — Processos e Fontes de Dados (Teórica) Primeira aula da Unidade 2 (Aquisição e Preparação de Dados). Tipos de fontes de dados: arquivos, bancos de dados, APIs REST, web scraping; formatos (CSV, JSON, XML, Parquet, GeoJSON); questões de licença e proveniência. Exemplo prático com dados reais do Ministério da Saúde (CNES) e do IBGE, incluindo um mapa do Rio Grande do Norte. Recursos: slides, apostila em PDF, exemplo de consumo de API pública. Avaliação: exercício prático entregue no Moodle + formulário avaliativo com 10 questões — prazo de envio até 13/10/2026. Materiais desta aula: livro Tópicos de Estudo (6 capítulos) · apostila completa em PDF · slides · pacote com o exemplo de API e dados · exemplo prático comentado · tarefa de entrega · formulário avaliativo.",
+   "order": 41,
+   "base": "raw/s4/041_label_73870/",
+   "files": [
+    "desc.html"
+   ]
+  },
+  {
+   "sec": 4,
+   "id": "73871",
+   "mod": "book",
+   "name": "Tópicos de Estudo — Aula 06: Processos e Fontes de Dados",
+   "order": 42,
+   "base": "raw/s4/042_book_73871/",
+   "files": [
+    "book.html"
+   ]
+  },
+  {
+   "sec": 4,
+   "id": "73872",
+   "mod": "resource",
+   "name": "Conteúdo — Aula 06: Processos e Fontes de Dados (apostila em PDF)",
+   "order": 43,
+   "base": "raw/s4/043_resource_73872/",
+   "files": [
+    "file/Aula06_Fontes_de_Dados.pdf"
+   ]
+  },
+  {
+   "sec": 4,
+   "id": "73873",
+   "mod": "resource",
+   "name": "Slides — Aula 06: Processos e Fontes de Dados",
+   "order": 44,
+   "base": "raw/s4/044_resource_73873/",
+   "files": [
+    "file/Aula06_Slides_Fontes_de_Dados.pptx"
+   ]
+  },
+  {
+   "sec": 4,
+   "id": "73874",
+   "mod": "resource",
+   "name": "Pacote — Exemplo de Fontes de Dados e APIs Públicas (Aula 06)",
+   "order": 45,
+   "base": "raw/s4/045_resource_73874/",
+   "files": [
+    "file/aula06_exemplo_fontes_dados.zip"
+   ]
+  },
+  {
+   "sec": 4,
+   "id": "73875",
+   "mod": "label",
+   "name": "💻 Exemplo Prático — Fontes de Dados e APIs Pública... 💻 Exemplo Prático — Fontes de Dados e APIs Públicas (Aula 06) Código comentado, passo a passo, com dados reais do Ministério da Saúde (CNES) e do IBGE: leitura de um snapshot de API salvo em arquivo, gravação e consulta em SQLite, web scraping de uma tabela da Wikipédia, exportação em quatro formatos (JSON, CSV, Parquet, XML) e um mapa do Rio Grande do Norte com os estabelecimentos de saúde. Acompanhe esta página antes de iniciar o exercício prático.",
+   "order": 46,
+   "base": "raw/s4/046_label_73875/",
+   "files": [
+    "desc.html"
+   ]
+  },
+  {
+   "sec": 4,
+   "id": "73876",
+   "mod": "page",
+   "name": "Exemplo — Fontes de Dados e APIs Públicas (exemplo_fontes_dados.py)",
+   "order": 47,
+   "base": "raw/s4/047_page_73876/",
+   "files": [
+    "view.html"
+   ]
+  },
+  {
+   "sec": 4,
+   "id": "73877",
+   "mod": "label",
+   "name": "✅ Formulário Avaliativo — Aula 06 Questionário com... ✅ Formulário Avaliativo — Aula 06 Questionário com 10 questões objetivas sobre fontes de dados, formatos (CSV, JSON, XML, Parquet, GeoJSON), APIs REST, web scraping, banco de dados, licença e proveniência. Você pode consultar o material durante a realização. Prazo de envio: até 13/10/2026 (15 dias após esta aula).",
+   "order": 48,
+   "base": "raw/s4/048_label_73877/",
+   "files": [
+    "desc.html"
+   ]
+  },
+  {
+   "sec": 4,
+   "id": "73878",
+   "mod": "quiz",
+   "name": "Formulário Avaliativo — Aula 06",
+   "order": 49,
+   "base": "raw/s4/049_quiz_73878/",
+   "files": [
+    "view.html"
+   ]
+  },
+  {
+   "sec": 4,
+   "id": "73879",
+   "mod": "assign",
+   "name": "Exercício Prático — Aula 06 (entrega do script/notebook)",
+   "order": 50,
+   "base": "raw/s4/050_assign_73879/",
+   "files": [
+    "view.html"
+   ]
+  },
+  {
+   "sec": 4,
+   "id": "74245",
+   "mod": "label",
+   "name": "📡 Aula 07 — Laboratório: Coleta via APIs REST (Prá... 📡 Aula 07 — Laboratório: Coleta via APIs REST (Prática) Segunda aula da Unidade 2 (Aquisição e Preparação de Dados). Uso da biblioteca requests; autenticação (API Key, OAuth básico); paginação; coleta de dados de APIs públicas reais do IBGE e do TSE; salvamento em JSON/CSV. Recursos: Jupyter Notebook, requests, json. Avaliação: mini-projeto — coleta de um dataset real via API, prazo 20/10/2026. Materiais desta aula: apostila completa em PDF · notebook do laboratório guiado · pacote com os dados de referência coletados ao vivo · exercício prático (notebook, não avaliado) · mini-projeto avaliativo.",
+   "order": 51,
+   "base": "raw/s4/051_label_74245/",
+   "files": [
+    "desc.html"
+   ]
+  },
+  {
+   "sec": 4,
+   "id": "74246",
+   "mod": "resource",
+   "name": "Apostila — Aula 07: Coleta via APIs REST (PDF)",
+   "order": 52,
+   "base": "raw/s4/052_resource_74246/",
+   "files": [
+    "file/Aula07_Coleta_via_APIs_REST.pdf"
+   ]
+  },
+  {
+   "sec": 4,
+   "id": "74247",
+   "mod": "resource",
+   "name": "Notebook — Aula 07: Coleta via APIs REST (laboratório guiado)",
+   "order": 53,
+   "base": "raw/s4/053_resource_74247/",
+   "files": [
+    "file/Aula07_Coleta_via_APIs_REST.ipynb"
+   ]
+  },
+  {
+   "sec": 4,
+   "id": "74248",
+   "mod": "resource",
+   "name": "Pacote — Dados de referência Aula 07 (JSON/CSV reais do IBGE e TSE)",
+   "order": 54,
+   "base": "raw/s4/054_resource_74248/",
+   "files": [
+    "file/pacote_aula07_dados_apis.zip"
+   ]
+  },
+  {
+   "sec": 4,
+   "id": "74249",
+   "mod": "label",
+   "name": "🧪 Exercício Prático — Aula 07 Notebook com um rote... 🧪 Exercício Prático — Aula 07 Notebook com um roteiro guiado (passos marcados com TODO) para você repetir, com uma UF e um termo de busca à sua escolha, os passos do laboratório desta aula: requisição GET, paginação real no TSE, tratamento de erro e salvamento em JSON/CSV. Não é entregue nem avaliado — é o aquecimento recomendado antes do mini-projeto.",
+   "order": 55,
+   "base": "raw/s4/055_label_74249/",
+   "files": [
+    "desc.html"
+   ]
+  },
+  {
+   "sec": 4,
+   "id": "74250",
+   "mod": "resource",
+   "name": "Exercício Prático — Aula 07 (notebook com roteiro guiado)",
+   "order": 56,
+   "base": "raw/s4/056_resource_74250/",
+   "files": [
+    "file/Aula07_Exercicio_Pratico.ipynb"
+   ]
+  },
+  {
+   "sec": 4,
+   "id": "74251",
+   "mod": "label",
+   "name": "✅ Mini-Projeto Avaliativo — Aula 07 Avaliação dest... ✅ Mini-Projeto Avaliativo — Aula 07 Avaliação desta aula: escolha uma API pública real (IBGE, TSE ou outra de sua preferência — veja sugestões no enunciado) e colete um dataset real, aplicando os conceitos da aula (requisição GET, paginação quando aplicável, tratamento de erro, salvamento em JSON/CSV). Entrega: notebook executado + arquivos gerados, compactados em .zip. Prazo de envio: até 20/10/2026 (15 dias após esta aula).",
+   "order": 57,
+   "base": "raw/s4/057_label_74251/",
+   "files": [
+    "desc.html"
+   ]
+  },
+  {
+   "sec": 4,
+   "id": "74252",
+   "mod": "assign",
+   "name": "Mini-Projeto — Aula 07 (coleta de dataset real via API)",
+   "order": 58,
+   "base": "raw/s4/058_assign_74252/",
+   "files": [
+    "view.html"
+   ]
+  },
+  {
+   "sec": 4,
+   "id": "74465",
+   "mod": "label",
+   "name": "🕸️ Aula 08 — Laboratório: Web Scraping com Beautif... 🕸️ Aula 08 — Laboratório: Web Scraping com BeautifulSoup (Prática) Terceira aula da Unidade 2 (Aquisição e Preparação de Dados). Análise de HTML; seletores CSS; extração de tabelas; tratamento de paginação; uso ético e limitações legais. Prática com avaliações e resenhas de livros: a Estante Potiguar (mini-site de resenhas criado para a aula, que roda no seu computador) e o Books to Scrape (site real de treino de scraping). Recursos: Jupyter Notebook, requests, BeautifulSoup4. Avaliação: exercício prático entregue no Moodle + formulário avaliativo com 10 questões — prazo de envio até 24/10/2026. Materiais desta aula: livro Tópicos de Estudo (5 capítulos) · apostila completa em PDF · notebook do laboratório guiado · pacote com o site de resenhas, notebooks e dados · tarefa de entrega · formulário avaliativo.",
+   "order": 59,
+   "base": "raw/s4/059_label_74465/",
+   "files": [
+    "desc.html"
+   ]
+  },
+  {
+   "sec": 4,
+   "id": "74466",
+   "mod": "book",
+   "name": "Tópicos de Estudo — Aula 08: Web Scraping com BeautifulSoup",
+   "order": 60,
+   "base": "raw/s4/060_book_74466/",
+   "files": [
+    "book.html"
+   ]
+  },
+  {
+   "sec": 4,
+   "id": "74467",
+   "mod": "resource",
+   "name": "Conteúdo — Aula 08: Web Scraping com BeautifulSoup (apostila em PDF)",
+   "order": 61,
+   "base": "raw/s4/061_resource_74467/",
+   "files": [
+    "file/Aula08_Web_Scraping_BeautifulSoup.pdf"
+   ]
+  },
+  {
+   "sec": 4,
+   "id": "74468",
+   "mod": "label",
+   "name": "💻 Exemplo Prático — Raspando resenhas e avaliações... 💻 Exemplo Prático — Raspando resenhas e avaliações de livros (Aula 08) Notebook comentado, passo a passo, com todas as saídas: coloca a Estante Potiguar no ar no seu computador, lê o robots.txt, corrige a codificação da página, extrai as 24 resenhas com seletores CSS seguindo a paginação, lê a tabela de ranking com pd.read_html e, por fim, raspa 100 livros reais do Books to Scrape. Baixe o Pacote (ZIP) e abra o notebook na pasta onde está a subpasta site_resenhas/.",
+   "order": 62,
+   "base": "raw/s4/062_label_74468/",
+   "files": [
+    "desc.html"
+   ]
+  },
+  {
+   "sec": 4,
+   "id": "74469",
+   "mod": "resource",
+   "name": "Pacote — Notebooks, site de resenhas e dados (Aula 08)",
+   "order": 63,
+   "base": "raw/s4/063_resource_74469/",
+   "files": [
+    "file/aula08_pacote_web_scraping.zip"
+   ]
+  },
+  {
+   "sec": 4,
+   "id": "74470",
+   "mod": "label",
+   "name": "✅ Formulário Avaliativo e Exercício Prático — Aula... ✅ Formulário Avaliativo e Exercício Prático — Aula 08 Questionário com 10 questões objetivas sobre robots.txt, seletores CSS, select × select_one, atributos e classes, codificação, paginação, extração de tabelas, elementos ausentes, API × scraping e LGPD. Você pode consultar o material durante a realização. O exercício prático (notebook + CSV/JSON em .zip) é entregue na tarefa logo abaixo. Prazo de envio de ambos: até 24/10/2026 (15 dias após esta aula).",
+   "order": 64,
+   "base": "raw/s4/064_label_74470/",
+   "files": [
+    "desc.html"
+   ]
+  },
+  {
+   "sec": 4,
+   "id": "74674",
+   "mod": "label",
+   "name": "🧹 Aula 09 — Qualidade de Dados e Limpeza (Teórico-... 🧹 Aula 09 — Qualidade de Dados e Limpeza (Teórico-Prática) Quarta aula da Unidade 2 (Aquisição e Preparação de Dados). Valores ausentes (isna, fillna, dropna); detecção de outliers (IQR, z-score); duplicatas; normalização e padronização; conceitos de tidy data. Prática com dados sintéticos da área da saúde — atendimentos em UBS do RN e triagem de pronto atendimento —, com problemas de qualidade inseridos de propósito (nenhum dado é de paciente real). Recursos: Jupyter Notebook, datasets sujos. Avaliação: formulário avaliativo com 10 questões — prazo de envio até 30/10/2026. O exercício prático é para treino e não precisa ser entregue. Materiais desta aula: livro Tópicos de Estudo (5 capítulos) · apostila completa em PDF · pacote com notebooks e datasets · formulário avaliativo.",
+   "order": 65,
+   "base": "raw/s4/065_label_74674/",
+   "files": [
+    "desc.html"
+   ]
+  },
+  {
+   "sec": 4,
+   "id": "74675",
+   "mod": "book",
+   "name": "Tópicos de Estudo — Aula 09: Qualidade de Dados e Limpeza",
+   "order": 66,
+   "base": "raw/s4/066_book_74675/",
+   "files": [
+    "book.html"
+   ]
+  },
+  {
+   "sec": 4,
+   "id": "74676",
+   "mod": "resource",
+   "name": "Conteúdo — Aula 09: Qualidade de Dados e Limpeza (apostila em PDF)",
+   "order": 67,
+   "base": "raw/s4/067_resource_74676/",
+   "files": [
+    "file/Aula09_Qualidade_e_Limpeza_de_Dados.pdf"
+   ]
+  },
+  {
+   "sec": 4,
+   "id": "74677",
+   "mod": "label",
+   "name": "💻 Exemplo Prático e Exercício — Limpando dados de ... 💻 Exemplo Prático e Exercício — Limpando dados de saúde (Aula 09) O pacote abaixo traz o laboratório guiado (Aula09_Qualidade_e_Limpeza_de_Dados.ipynb), que limpa 250 atendimentos em UBS passo a passo, com todas as saídas: diagnóstico, duplicatas, texto, datas, unidades trocadas, códigos sentinela, outliers por IQR e z-score, imputação por grupo, normalização/padronização e tidy data. Traz também o exercício prático (Aula09_Exercicio_Pratico.ipynb), mais simples, com dados de triagem de pronto atendimento: oito passos com o resultado esperado em cada um para você conferir. O exercício é para treino e não precisa ser entregue.",
+   "order": 68,
+   "base": "raw/s4/068_label_74677/",
+   "files": [
+    "desc.html"
+   ]
+  },
+  {
+   "sec": 4,
+   "id": "74678",
+   "mod": "resource",
+   "name": "Pacote — Notebooks e datasets de saúde (Aula 09)",
+   "order": 69,
+   "base": "raw/s4/069_resource_74678/",
+   "files": [
+    "file/aula09_pacote_qualidade_limpeza.zip"
+   ]
+  },
+  {
+   "sec": 4,
+   "id": "74679",
+   "mod": "label",
+   "name": "✅ Formulário Avaliativo — Aula 09 Questionário com... ✅ Formulário Avaliativo — Aula 09 Questionário com 10 questões objetivas sobre valores ausentes (remover × preencher, mediana, imputação por grupo, códigos sentinela), duplicatas, outliers (IQR, z-score e regras de domínio), normalização × padronização e tidy data. Várias questões usam as situações do laboratório e do exercício. Você pode consultar o material durante a realização. Prazo de envio: até 30/10/2026 (15 dias após esta aula).",
+   "order": 70,
+   "base": "raw/s4/070_label_74679/",
+   "files": [
+    "desc.html"
+   ]
+  },
+  {
+   "sec": 4,
+   "id": "74711",
+   "mod": "label",
+   "name": "🛠️ Aula 10 — Laboratório: Pipeline de Limpeza Comp... 🛠️ Aula 10 — Laboratório: Pipeline de Limpeza Completo (Prática) Última aula da Unidade 2 (Aquisição e Preparação de Dados). Pipeline ETL simples; transformação de tipos; engenharia de atributos básica (one-hot encoding, label encoding, binning); exportação do dataset limpo. Prática com dados sintéticos da área da saúde — cadastro de pacientes, internações, consultas ambulatoriais e exames laboratoriais de uma rede hospitalar fictícia do RN (nenhum dado é de paciente real). Recursos: Jupyter Notebook, pandas, scikit-learn (preprocessing). Avaliação: formulário avaliativo com 10 questões + entrega do dataset limpo e do notebook documentado — prazo de ambos até 30/10/2026. O exercício prático é para treino e não precisa ser entregue. Materiais desta aula: livro Tópicos de Estudo (5 capítulos) · apostila completa em PDF · pacote com notebooks e datasets · formulário avaliativo · tarefa de entrega.",
+   "order": 71,
+   "base": "raw/s4/071_label_74711/",
+   "files": [
+    "desc.html"
+   ]
+  },
+  {
+   "sec": 4,
+   "id": "74712",
+   "mod": "book",
+   "name": "Tópicos de Estudo — Aula 10",
+   "order": 72,
+   "base": "raw/s4/072_book_74712/",
+   "files": [
+    "book.html"
+   ]
+  },
+  {
+   "sec": 4,
+   "id": "74713",
+   "mod": "resource",
+   "name": "Conteúdo — Aula 10 (PDF)",
+   "order": 73,
+   "base": "raw/s4/073_resource_74713/",
+   "files": [
+    "file/Aula10_Pipeline_de_Limpeza_Completo.pdf"
+   ]
+  },
+  {
+   "sec": 4,
+   "id": "74714",
+   "mod": "label",
+   "name": "💻 Exemplo Prático e Exercício — Pipeline de limpez... 💻 Exemplo Prático e Exercício — Pipeline de limpeza com dados de saúde (Aula 10) O pacote abaixo traz o laboratório guiado (Aula10_Pipeline_de_Limpeza.ipynb), que constrói um pipeline ETL completo com todas as saídas: leitura de CSV e JSON, conversão de tipos (datas, moeda, Sim/Não), padronização, junção das fontes com verificação, atributos derivados, binning com cut e qcut, one-hot, codificação ordinal e label encoding, Pipeline e ColumnTransformer do scikit-learn e exportação em CSV e Parquet com dicionário de dados. Traz também o exercício prático (Aula10_Exercicio_Pratico.ipynb), mais simples, com consultas ambulatoriais: sete passos com o resultado esperado em cada um. O exercício é para treino e não precisa ser entregue. O pacote inclui ainda o notebook-modelo da atividade de entrega (Aula10_Entrega_Modelo.ipynb) e o arquivo exames_laboratoriais.csv.",
+   "order": 74,
+   "base": "raw/s4/074_label_74714/",
+   "files": [
+    "desc.html"
+   ]
+  },
+  {
+   "sec": 4,
+   "id": "74715",
+   "mod": "resource",
+   "name": "Pacote — Aula 10 (notebooks e datasets)",
+   "order": 75,
+   "base": "raw/s4/075_resource_74715/",
+   "files": [
+    "file/aula10_pacote_pipeline_limpeza.zip"
+   ]
+  },
+  {
+   "sec": 4,
+   "id": "74716",
+   "mod": "label",
+   "name": "✅ Avaliação — Aula 10 1) Formulário avaliativo: 10... ✅ Avaliação — Aula 10 1) Formulário avaliativo: 10 questões objetivas sobre etapas do ETL, conversão de tipos, junção de fontes, cut × qcut, one-hot, codificação ordinal × label encoding, armadilha da variável dummy, ajuste do pré-processamento só no treino, categorias desconhecidas e exportação (CSV × Parquet). Você pode consultar o material.2) Entrega — dataset limpo + notebook documentado: aplique o pipeline ao arquivo exames_laboratoriais.csv e envie o notebook executado e comentado e o arquivo exames_laboratoriais_limpo.csv. Requisitos e critérios na apostila (Parte IV) e no notebook-modelo.Prazo de ambos: até 30/10/2026 (15 dias após esta aula).",
+   "order": 76,
+   "base": "raw/s4/076_label_74716/",
+   "files": [
+    "desc.html"
+   ]
+  },
+  {
+   "sec": 5,
+   "id": "sec5",
+   "mod": "section",
+   "name": "Unidade 3 — Análise Exploratória de Dados e Visualização (Aulas 11–13)",
+   "order": 77,
+   "base": "raw/s5/077_section_sec5/",
+   "files": [
+    "desc.html"
+   ]
+  },
+  {
+   "sec": 5,
+   "id": "74961",
+   "mod": "label",
+   "name": "📈 Aula 11 — Fundamentos de AED e Estatística Descr... 📈 Aula 11 — Fundamentos de AED e Estatística Descritiva (Teórica) Primeira aula da Unidade 3 (Análise Exploratória de Dados e Visualização). Medidas de tendência central e dispersão; distribuições; correlações (Pearson, Spearman); matriz de correlação; formulação de hipóteses exploratórias. Exemplos com dados sintéticos de fácil entendimento — desempenho de estudantes de um curso fictício e vendas de uma sorveteria no verão (nenhum dado é real). Recursos: apostila/slides, Jupyter Notebook. Avaliação: formulário avaliativo com 20 questões — prazo de envio até 10/11/2026. O exercício prático é para treino e não precisa ser entregue. Materiais desta aula: livro Tópicos de Estudo (5 capítulos) · apostila completa em PDF · pacote com notebooks e datasets · formulário avaliativo.",
+   "order": 78,
+   "base": "raw/s5/078_label_74961/",
+   "files": [
+    "desc.html"
+   ]
+  },
+  {
+   "sec": 5,
+   "id": "74962",
+   "mod": "book",
+   "name": "Tópicos de Estudo — Aula 11",
+   "order": 79,
+   "base": "raw/s5/079_book_74962/",
+   "files": [
+    "book.html"
+   ]
+  },
+  {
+   "sec": 5,
+   "id": "74963",
+   "mod": "resource",
+   "name": "Conteúdo — Aula 11 (PDF)",
+   "order": 80,
+   "base": "raw/s5/080_resource_74963/",
+   "files": [
+    "desc.html",
+    "file/Aula11_AED_Estatistica_Descritiva.pdf"
+   ]
+  },
+  {
+   "sec": 5,
+   "id": "74964",
+   "mod": "label",
+   "name": "💻 Exemplo Prático e Exercício — Estatística descri... 💻 Exemplo Prático e Exercício — Estatística descritiva na prática (Aula 11) O pacote abaixo traz o exemplo guiado (Aula11_AED_Estatistica_Descritiva.ipynb), com todas as saídas e gráficos: tipos de variáveis, média × mediana × moda, desvio-padrão, CV e IQR, histogramas, assimetria e boxplots, comparação de grupos, correlações de Pearson e Spearman, matriz de correlação, variável de confusão e hipóteses exploratórias, usando 300 estudantes de um curso fictício. Traz também o exercício prático (Aula11_Exercicio_Pratico.ipynb), mais simples, com 90 dias de vendas de uma sorveteria: nove passos com o resultado esperado em cada um. O exercício é para treino e não precisa ser entregue.",
+   "order": 81,
+   "base": "raw/s5/081_label_74964/",
+   "files": [
+    "desc.html"
+   ]
+  },
+  {
+   "sec": 5,
+   "id": "74965",
+   "mod": "resource",
+   "name": "Pacote — Aula 11 (notebooks e datasets)",
+   "order": 82,
+   "base": "raw/s5/082_resource_74965/",
+   "files": [
+    "desc.html",
+    "file/aula11_pacote_aed.zip"
+   ]
+  },
+  {
+   "sec": 5,
+   "id": "74966",
+   "mod": "label",
+   "name": "✅ Formulário Avaliativo — Aula 11 Questionário com... ✅ Formulário Avaliativo — Aula 11 Questionário com 20 questões objetivas sobre AED e estatística descritiva: tipos de variáveis, média, mediana e moda, efeito de valores extremos, variância, desvio-padrão, coeficiente de variação e IQR, regra 68–95–99,7, assimetria e boxplot, correlações de Pearson e Spearman, efeito de outliers, matriz de correlação, variável de confusão e hipóteses exploratórias. Várias questões usam as situações do exemplo guiado e do exercício. Você pode consultar o material. Prazo de envio: até 10/11/2026 (15 dias após esta aula).",
+   "order": 83,
+   "base": "raw/s5/083_label_74966/",
+   "files": [
+    "desc.html"
+   ]
+  },
+  {
+   "sec": 5,
+   "id": "74967",
+   "mod": "quiz",
+   "name": "Formulário Avaliativo — Aula 11",
+   "order": 84,
+   "base": "raw/s5/084_quiz_74967/",
+   "files": [
+    "desc.html",
+    "view.html"
+   ]
+  },
+  {
+   "sec": 5,
+   "id": "75119",
+   "mod": "label",
+   "name": "🎨 Aula 12 — Laboratório: Matplotlib, Seaborn e Plo... 🎨 Aula 12 — Laboratório: Matplotlib, Seaborn e Plotly (Prática) Segunda aula da Unidade 3 (Análise Exploratória de Dados e Visualização). Gráficos univariados (histograma, boxplot, violino); bivariados (dispersão, barras, mapa de calor de correlação); customização e paletas de cores — sempre com as estatísticas que sustentam a leitura (média, mediana, quartis, IQR, r, IC 95%, n). Exemplos com dados sintéticos de fácil entendimento — delivery de uma hamburgueria fictícia (600 pedidos) e usuários de um aplicativo de música fictício (nenhum dado é real). Recursos: Jupyter Notebook, Matplotlib, Seaborn e Plotly. Avaliação: formulário avaliativo com 10 questões — prazo de envio até 16/11/2026. O exercício prático é para treino e não precisa ser entregue. Materiais desta aula: livro Tópicos de Estudo (5 capítulos) · apostila completa em PDF · materiais complementares sobre correlação de Pearson e de Spearman (PDF) · pacote com notebooks e datasets · formulário avaliativo.",
+   "order": 85,
+   "base": "raw/s5/085_label_75119/",
+   "files": [
+    "desc.html"
+   ]
+  },
+  {
+   "sec": 5,
+   "id": "75120",
+   "mod": "book",
+   "name": "Tópicos de Estudo — Aula 12",
+   "order": 86,
+   "base": "raw/s5/086_book_75120/",
+   "files": [
+    "book.html"
+   ]
+  },
+  {
+   "sec": 5,
+   "id": "75121",
+   "mod": "resource",
+   "name": "Conteúdo — Aula 12 (PDF)",
+   "order": 87,
+   "base": "raw/s5/087_resource_75121/",
+   "files": [
+    "desc.html",
+    "file/Aula12_Laboratorio_Visualizacao.pdf"
+   ]
+  },
+  {
+   "sec": 5,
+   "id": "75129",
+   "mod": "resource",
+   "name": "Material complementar — Correlação de Pearson (PDF)",
+   "order": 88,
+   "base": "raw/s5/088_resource_75129/",
+   "files": [
+    "desc.html",
+    "file/Aula12_Complementar_Correlacao_Pearson.pdf"
+   ]
+  },
+  {
+   "sec": 5,
+   "id": "75130",
+   "mod": "resource",
+   "name": "Material complementar — Correlação de Spearman (PDF)",
+   "order": 89,
+   "base": "raw/s5/089_resource_75130/",
+   "files": [
+    "desc.html",
+    "file/Aula12_Complementar_Correlacao_Spearman.pdf"
+   ]
+  },
+  {
+   "sec": 5,
+   "id": "75122",
+   "mod": "label",
+   "name": "💻 Exemplo Prático e Exercício — Gráficos com Matpl... 💻 Exemplo Prático e Exercício — Gráficos com Matplotlib, Seaborn e Plotly (Aula 12) O pacote abaixo traz o laboratório guiado (Aula12_Visualizacao_Laboratorio.ipynb), com todas as saídas e gráficos: anatomia de uma figura, histograma com média e mediana, boxplot com quartis, IQR e outliers, violino, dispersão com r e reta de regressão, barras com IC 95% e n, mapa de calor da correlação, paletas, antes × depois, painel 2×2 e gráficos interativos no Plotly, usando 600 pedidos de uma hamburgueria fictícia. Traz também o exercício prático (Aula12_Exercicio_Pratico.ipynb), com 240 usuários de um app de música fictício: nove passos com o resultado esperado em cada um, e o gabarito comentado. O exercício é para treino e não precisa ser entregue.",
+   "order": 90,
+   "base": "raw/s5/090_label_75122/",
+   "files": [
+    "desc.html"
+   ]
+  },
+  {
+   "sec": 5,
+   "id": "75123",
+   "mod": "resource",
+   "name": "Pacote — Aula 12 (notebooks e datasets)",
+   "order": 91,
+   "base": "raw/s5/091_resource_75123/",
+   "files": [
+    "desc.html",
+    "file/Aula12_Pacote_Notebooks_Dados.zip"
+   ]
+  },
+  {
+   "sec": 5,
+   "id": "75124",
+   "mod": "label",
+   "name": "✅ Formulário Avaliativo — Aula 12 Questionário com... ✅ Formulário Avaliativo — Aula 12 Questionário com 10 questões objetivas sobre visualização de dados: leitura do histograma (média × mediana), limite de outliers no boxplot, violino × boxplot, escolha do gráfico, leitura da dispersão e da reta de regressão, variável de confusão, barra de erro do barplot, paleta do mapa de calor, interface orientada a objetos do Matplotlib e Plotly. Várias questões usam as situações do laboratório guiado. Você pode consultar o material. Prazo de envio: até 16/11/2026 (1 semana).",
+   "order": 92,
+   "base": "raw/s5/092_label_75124/",
+   "files": [
+    "desc.html"
+   ]
+  },
+  {
+   "sec": 5,
+   "id": "75125",
+   "mod": "quiz",
+   "name": "Formulário Avaliativo — Aula 12",
+   "order": 93,
+   "base": "raw/s5/093_quiz_75125/",
+   "files": [
+    "desc.html",
+    "view.html"
+   ]
+  },
+  {
+   "sec": 6,
+   "id": "sec6",
+   "mod": "section",
+   "name": "Unidade 4 — Aprendizado de Máquina Aplicado (Aulas 14–16)",
+   "order": 94,
+   "base": "raw/s6/094_section_sec6/",
+   "files": [
+    "desc.html"
+   ]
+  },
+  {
+   "sec": 6,
+   "id": "75132",
+   "mod": "label",
+   "name": "🤖 Aula 14 — scikit-learn: Fluxo de Trabalho em ML ... 🤖 Aula 14 — scikit-learn: Fluxo de Trabalho em ML (Teórica) Primeira aula da Unidade 4 (Aprendizado de Máquina Aplicado). API do scikit-learn (fit/predict/transform); divisão treino/teste; validação cruzada; pipelines de ML; métricas de classificação (acurácia, F1, ROC-AUC) e de regressão (RMSE, R²). Exemplo com dados sintéticos de fácil entendimento — quem vai cancelar o aplicativo de música fictício da Aula 12 (1.500 usuários) e, na regressão e no trabalho prático, os pedidos da hamburgueria fictícia (nenhum dado é real). Recursos: slides, Jupyter Notebook. Avaliação: formulário avaliativo com 10 questões e trabalho prático (notebook de classificação) — prazo de envio de ambos até 23/11/2026. Materiais desta aula: livro Tópicos de Estudo (5 capítulos) · apostila completa em PDF · slides · pacote com notebooks e datasets · formulário avaliativo · tarefa de entrega do trabalho prático.",
+   "order": 95,
+   "base": "raw/s6/095_label_75132/",
+   "files": [
+    "desc.html"
+   ]
+  },
+  {
+   "sec": 6,
+   "id": "75133",
+   "mod": "book",
+   "name": "Tópicos de Estudo — Aula 14",
+   "order": 96,
+   "base": "raw/s6/096_book_75133/",
+   "files": [
+    "book.html"
+   ]
+  },
+  {
+   "sec": 6,
+   "id": "75134",
+   "mod": "resource",
+   "name": "Conteúdo — Aula 14 (PDF)",
+   "order": 97,
+   "base": "raw/s6/097_resource_75134/",
+   "files": [
+    "desc.html",
+    "file/Aula14_scikit_learn_Fluxo_ML.pdf"
+   ]
+  },
+  {
+   "sec": 6,
+   "id": "75135",
+   "mod": "resource",
+   "name": "Slides — Aula 14: scikit-learn — Fluxo de Trabalho em ML",
+   "order": 98,
+   "base": "raw/s6/098_resource_75135/",
+   "files": [
+    "desc.html",
+    "file/Aula14_Slides_scikit_learn_Fluxo_ML.pptx"
+   ]
+  },
+  {
+   "sec": 6,
+   "id": "75136",
+   "mod": "label",
+   "name": "💻 Exemplo Prático — Pipeline de classificação: que... 💻 Exemplo Prático — Pipeline de classificação: quem vai cancelar o app? (Aula 14) O pacote abaixo traz o exemplo guiado (Aula14_Fluxo_ML_scikit_learn.ipynb), com todas as saídas e gráficos: a API do scikit-learn, divisão treino/teste estratificada, baseline e paradoxo da acurácia, pipeline com ColumnTransformer (imputação, padronização e one-hot) e regressão logística, matriz de confusão, precisão, recall, F1, curva ROC e escolha do limiar, validação cruzada comparando quatro modelos e um exemplo de regressão com MAE, RMSE e R². Traz também o notebook do trabalho prático (Aula14_Trabalho_Pratico.ipynb), com as etapas marcadas com TODO, e os dois datasets sintéticos.",
+   "order": 99,
+   "base": "raw/s6/099_label_75136/",
+   "files": [
+    "desc.html"
+   ]
+  },
+  {
+   "sec": 6,
+   "id": "75137",
+   "mod": "resource",
+   "name": "Pacote — Aula 14 (notebooks e datasets)",
+   "order": 100,
+   "base": "raw/s6/100_resource_75137/",
+   "files": [
+    "desc.html",
+    "file/Aula14_Pacote_Notebooks_Dados.zip"
+   ]
+  },
+  {
+   "sec": 6,
+   "id": "75138",
+   "mod": "label",
+   "name": "✅ Formulário Avaliativo e Trabalho Prático — Aula ... ✅ Formulário Avaliativo e Trabalho Prático — Aula 14 Questionário com 10 questões objetivas sobre a API do scikit-learn, treino/teste e estratificação, vazamento de dados, baseline, pipelines e ColumnTransformer, matriz de confusão e recall, limiar de decisão, ROC-AUC, validação cruzada e métricas de regressão. Você pode consultar o material durante a realização. O trabalho prático (notebook de classificação executado, em .ipynb) é entregue na tarefa logo abaixo. Prazo de envio de ambos: até 23/11/2026 (1 semana após esta aula).",
+   "order": 101,
+   "base": "raw/s6/101_label_75138/",
+   "files": [
+    "desc.html"
+   ]
+  },
+  {
+   "sec": 6,
+   "id": "75139",
+   "mod": "quiz",
+   "name": "Formulário Avaliativo — Aula 14",
+   "order": 102,
+   "base": "raw/s6/102_quiz_75139/",
+   "files": [
+    "desc.html",
+    "view.html"
+   ]
+  },
+  {
+   "sec": 6,
+   "id": "75140",
+   "mod": "assign",
+   "name": "Trabalho Prático — Aula 14 (entrega do notebook de classificação)",
+   "order": 103,
+   "base": "raw/s6/103_assign_75140/",
+   "files": []
+  },
+  {
+   "sec": 7,
+   "id": "sec7",
+   "mod": "section",
+   "name": "Unidade 5 — Comunicação de Resultados  Ética (Aulas 17–18)",
+   "order": 104,
+   "base": "raw/s7/104_section_sec7/",
+   "files": [
+    "desc.html"
+   ]
+  }
+ ]
+}

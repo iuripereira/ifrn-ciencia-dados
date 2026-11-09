@@ -1,0 +1,224 @@
+
+<div class="toast-wrapper mx-auto py-0 fixed-top" role="status" aria-live="polite"></div>
+
+<div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Ir para o conteúdo principal</a>
+</div>
+
+
+
+
+<div id="page">
+    <section class="embedded-main">
+            <span id="maincontent"></span>
+            <div class="activity-header" data-for="page-activity-header"></div>
+        <div role="main"><div class="book p-4">
+    <div class="text-end"><a onclick="window.print();return false;" class="hidden-print" href="#"><img class="icon icon" alt="Imprimir o livro todo" title="Imprimir o livro todo" src="https://presencial.ava.ifrn.edu.br/theme/image.php/suap/booktool_print/1793831080/book">Imprimir o livro todo</a></div>
+    <div class="text-center pb-3 book_title"><h1>Tópicos de Estudo — Aula 03: Ambiente Python e Primeiros Passos</h1></div>
+    <div class="book_info w-100 pt-6 d-inline-block">
+        <div class="w-50 float-start">
+            <table>
+                <tbody><tr>
+                    <td>
+                        Site:
+                    </td>
+                    <td class="ps-3">
+                        <a href="https://presencial.ava.ifrn.edu.br">AVA-Presencial</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Curso:
+                    </td>
+                    <td class="ps-3">
+                        Análise e Ciência de Dados
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Livro:
+                    </td>
+                    <td class="ps-3">
+                        Tópicos de Estudo — Aula 03: Ambiente Python e Primeiros Passos
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+        <div class="w-50 float-start">
+            <table class="float-end">
+                <tbody><tr>
+                    <td>
+                        Impresso por:
+                    </td>
+                    <td class="ps-3">
+                        Iuri Guerra de Freitas Pereira
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Data:
+                    </td>
+                    <td class="ps-3">
+                        segunda-feira, 9 nov. 2026, 16:40
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </div>
+    <div class="w-100 book_description">
+        <div class="py-5">
+            <h2 class="text-center pb-5">Descrição</h2>
+             <p class="book_summary"></p><p class="translationhash"><span data-translationhash="0b07a4f602111c721d609078a2ba3583"></span></p>
+<p>Conteúdo teórico da Aula 03, em formato de livro: instalação do ambiente Python (Anaconda ou venv), uso do Jupyter Notebook/Lab, estruturas fundamentais de Python (listas, dicionários, funções) e introdução ao NumPy (arrays e operações vetorizadas).</p><p></p>
+        </div>
+    </div>
+    <div class="w-100">
+        <div class="py-5"><div class="book_toc_numbered"><a name="toc"></a><h2 class="text-center pb-5">Índice</h2><ul><li><a title="1. Capítulo 1 — Instalando o Ambiente Python" class="font-weight-bold text-decoration-none" href="#ch6976">1. Capítulo 1 — Instalando o Ambiente Python</a></li><li><a title="2. Capítulo 2 — Jupyter Notebook e Jupyter Lab" class="font-weight-bold text-decoration-none" href="#ch6977">2. Capítulo 2 — Jupyter Notebook e Jupyter Lab</a></li><li><a title="3. Capítulo 3 — Listas e Dicionários em Python" class="font-weight-bold text-decoration-none" href="#ch6978">3. Capítulo 3 — Listas e Dicionários em Python</a></li><li><a title="4. Capítulo 4 — Funções em Python" class="font-weight-bold text-decoration-none" href="#ch6979">4. Capítulo 4 — Funções em Python</a></li><li><a title="5. Capítulo 5 — Introdução ao NumPy: Arrays e Operações Vetorizadas" class="font-weight-bold text-decoration-none" href="#ch6980">5. Capítulo 5 — Introdução ao NumPy: Arrays e Operações Vetorizadas</a></li></ul></div></div>
+    </div>
+    <div class="w-100">
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch6976"><h2 class="text-center pb-5">1. Capítulo 1 — Instalando o Ambiente Python</h2><p class="translationhash"><span data-translationhash="e2892fc1b94f5bcc3af53360dbfe8a72"></span></p>
+<p>Antes de programar, é preciso montar o ambiente de trabalho. Existem dois caminhos principais para isso, e vale entender a diferença.</p>
+<h4>Anaconda Distribution</h4>
+<p>Um pacote completo que já vem com Python, Jupyter, e centenas de bibliotecas científicas pré-instaladas (NumPy, Pandas, Matplotlib, scikit-learn etc.), além do <strong>Anaconda Navigator</strong> (interface gráfica) e do gerenciador de ambientes <strong>conda</strong>.</p>
+<ul>
+<li><strong>Vantagem:</strong> tudo pronto em uma única instalação, ideal para quem está começando.</li>
+<li><strong>Desvantagem:</strong> instalação pesada (vários GB) e pode incluir muito mais do que o necessário para um projeto específico.</li>
+</ul>
+<h4>venv (ambiente virtual nativo do Python)</h4>
+<p>O módulo <code>venv</code>, incluído na instalação padrão do Python, cria um ambiente isolado e leve para cada projeto — você instala apenas as bibliotecas que aquele projeto específico precisa, via <code>pip</code>.</p>
+<pre class="language-python"><code>python -m venv .venv
+source .venv/bin/activate   # Linux/macOS
+.venv\Scripts\activate      # Windows
+
+pip install numpy pandas jupyter</code></pre>
+<ul>
+<li><strong>Vantagem:</strong> leve, isola dependências entre projetos diferentes, evita conflitos de versão.</li>
+<li><strong>Desvantagem:</strong> exige instalar cada biblioteca manualmente.</li>
+</ul>
+<h4>Qual escolher?</h4>
+<p>Para esta disciplina, qualquer um dos dois funciona. Recomendação: se você está começando agora, use <strong>Anaconda</strong> pela simplicidade; se já tem familiaridade com Python e quer ambientes mais leves e organizados por projeto, use <strong>venv</strong>. Os exemplos da disciplina funcionam em ambos.</p></div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch6977"><h2 class="text-center pb-5">2. Capítulo 2 — Jupyter Notebook e Jupyter Lab</h2><p class="translationhash"><span data-translationhash="539883a0a8e916ab700f46897e692f34"></span></p>
+<p>O <strong>Jupyter</strong> é o ambiente de desenvolvimento mais usado em Ciência de Dados. Ele organiza o trabalho em <strong>notebooks</strong> (arquivos <code>.ipynb</code>): documentos interativos que misturam código executável, resultados (tabelas, gráficos) e texto explicativo (Markdown) na mesma tela.</p>
+<h4>Por que notebooks, e não só scripts .py?</h4>
+<ul>
+<li><strong>Execução por células:</strong> você roda pequenos blocos de código isoladamente, inspeciona o resultado, e ajusta — ideal para explorar dados de forma iterativa.</li>
+<li><strong>Resultados inline:</strong> tabelas e gráficos aparecem logo abaixo do código que os gerou, sem precisar abrir arquivos externos.</li>
+<li><strong>Narrativa:</strong> células de Markdown permitem documentar o raciocínio junto ao código — essencial para comunicar uma análise (retome o Capítulo 5 da Aula 01, sobre o ciclo CRISP-DM).</li>
+</ul>
+<h4>Jupyter Notebook × Jupyter Lab</h4>
+<p><strong>Jupyter Notebook</strong> é a interface clássica, focada em um notebook por vez. <strong>Jupyter Lab</strong> é a evolução: um ambiente completo, com múltiplos notebooks, um explorador de arquivos e terminal integrado na mesma janela — recomendado para o dia a dia.</p>
+<h4>Como abrir</h4>
+<pre class="language-python"><code># Se instalado via Anaconda ou pip:
+jupyter lab
+# ou, para a interface clássica:
+jupyter notebook</code></pre>
+<p>O comando abre o Jupyter no navegador. Você também pode usar notebooks diretamente dentro do <strong>VS Code</strong>, com a extensão Jupyter — outra opção comum e usada nesta disciplina.</p>
+<h4>Estrutura básica de um notebook</h4>
+<ul>
+<li><strong>Células de código:</strong> executadas com <code>Shift+Enter</code>; o resultado aparece logo abaixo.</li>
+<li><strong>Células de Markdown:</strong> texto formatado (títulos, listas, fórmulas) para documentar o notebook.</li>
+<li><strong>Kernel:</strong> o processo Python que executa o código; pode ser reiniciado se o notebook "travar" ou entrar em um estado inconsistente.</li>
+</ul></div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch6978"><h2 class="text-center pb-5">3. Capítulo 3 — Listas e Dicionários em Python</h2><p class="translationhash"><span data-translationhash="dbf2682f2f0cff47a3985ad73ded3b19"></span></p>
+<p>Duas estruturas de dados cobrem a maior parte das necessidades de um cientista de dados antes mesmo de conhecer o Pandas: <strong>listas</strong> e <strong>dicionários</strong>.</p>
+<h4>Listas</h4>
+<p>Uma <strong>lista</strong> é uma coleção ordenada e mutável de itens, criada com colchetes:</p>
+<pre class="language-python"><code>notas = [512.3, 610.7, 645.1, 470.5]
+notas.append(598.4)          # adiciona ao final
+print(notas[0])              # 512.3 — acesso por índice (começa em 0)
+print(notas[-1])             # 598.4 — índice negativo acessa do final
+print(len(notas))            # 5 — quantidade de itens
+maiores = [n for n in notas if n &gt; 550]   # list comprehension: filtragem</code></pre>
+<p><strong>List comprehensions</strong> (a última linha) são uma forma concisa e "pythônica" de criar listas a partir de outras, substituindo um laço <code>for</code> explícito.</p>
+<h4>Dicionários</h4>
+<p>Um <strong>dicionário</strong> guarda pares chave-valor, criado com chaves. É a estrutura ideal para representar um registro (como uma linha de uma tabela):</p>
+<pre class="language-python"><code>escola = {"nome": "Escola A", "tipo": "Estadual", "media": 512.3}
+print(escola["nome"])         # "Escola A" — acesso por chave
+escola["participantes"] = 180 # adiciona uma nova chave
+print(escola.get("uf", "RN")) # acesso seguro, com valor padrão se a chave não existir</code></pre>
+<h4>Combinando as duas: lista de dicionários</h4>
+<p>Uma <strong>lista de dicionários</strong> é a forma mais natural de representar uma pequena tabela em Python puro — cada dicionário é uma linha (registro), e a lista reúne todas as linhas. É exatamente essa estrutura que usaremos no exemplo prático desta aula, e que será substituída por um <code>DataFrame</code> do Pandas a partir da Aula 04.</p>
+<pre class="language-python"><code>escolas = [
+    {"nome": "Escola A", "media": 512.3},
+    {"nome": "Escola B", "media": 610.7},
+]
+for e in escolas:
+    print(e["nome"], e["media"])</code></pre></div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch6979"><h2 class="text-center pb-5">4. Capítulo 4 — Funções em Python</h2><p class="translationhash"><span data-translationhash="7b8bd40afee513dd4c168da7c9bea40c"></span></p>
+<p>Uma <strong>função</strong> encapsula um bloco de código reutilizável, evitando repetição e organizando o raciocínio em passos nomeados — essencial à medida que os scripts de análise crescem.</p>
+<h4>Definindo uma função</h4>
+<pre class="language-python"><code>def media_geral(lista_escolas):
+    """Calcula a média das médias das escolas."""
+    total = 0
+    for escola in lista_escolas:
+        total += escola["media"]
+    return total / len(lista_escolas)
+
+resultado = media_geral(escolas)   # chamando a função</code></pre>
+<ul>
+<li><strong>def</strong> inicia a definição; o nome deve descrever o que a função faz.</li>
+<li><strong>Parâmetros</strong> (aqui, <code>lista_escolas</code>) são as entradas da função.</li>
+<li><strong>Docstring</strong> (texto entre <code>"""</code>) documenta o propósito — boa prática sempre.</li>
+<li><strong>return</strong> devolve o resultado; sem ele, a função retorna <code>None</code>.</li>
+</ul>
+<h4>Por que usar funções em análise de dados?</h4>
+<ul>
+<li><strong>Reuso:</strong> a mesma lógica de cálculo pode ser aplicada a diferentes conjuntos de dados sem copiar e colar código.</li>
+<li><strong>Testabilidade:</strong> é mais fácil verificar se uma função pequena está correta do que validar um script inteiro de uma vez.</li>
+<li><strong>Legibilidade:</strong> nomes de função bem escolhidos (<code>filtrar_por_tipo</code>, <code>escola_com_maior_media</code>) tornam o código autoexplicativo.</li>
+</ul>
+<h4>Funções com múltiplos parâmetros e valores padrão</h4>
+<pre class="language-python"><code>def filtrar_por_tipo(lista_escolas, tipo="Estadual"):
+    return [e for e in lista_escolas if e["tipo"] == tipo]
+
+filtrar_por_tipo(escolas)              # usa o padrão "Estadual"
+filtrar_por_tipo(escolas, "Privada")   # sobrescreve o padrão</code></pre>
+<p>No exemplo prático desta aula, você verá três funções trabalhando juntas sobre a mesma lista de dicionários: uma calcula uma média, outra filtra registros, e outra encontra um extremo — o mesmo tipo de composição que reaparecerá, com Pandas, a partir da Aula 04.</p></div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch6980"><h2 class="text-center pb-5">5. Capítulo 5 — Introdução ao NumPy: Arrays e Operações Vetorizadas</h2><p class="translationhash"><span data-translationhash="853b721cd9270b18a6fadd6b7bc546db"></span></p>
+<p>O <strong>NumPy</strong> (Numerical Python) é a base de praticamente todo o ecossistema científico em Python — Pandas, Matplotlib e scikit-learn são construídos sobre ele. Sua estrutura central é o <strong>array</strong>.</p>
+<h4>Array x lista: qual a diferença?</h4>
+<p>Um array do NumPy parece uma lista, mas é fundamentalmente diferente: armazena elementos do <strong>mesmo tipo</strong> em um bloco contíguo de memória, o que permite operações matemáticas muito mais rápidas e diretas.</p>
+<pre class="language-python"><code>import numpy as np
+
+medias = np.array([512.3, 610.7, 645.1, 470.5])
+print(medias.mean())    # 559.65 — média, sem escrever um loop
+print(medias.std())     # desvio padrão
+print(medias.max())     # valor máximo
+print(medias * 1.1)     # multiplica CADA elemento por 1.1, de uma vez</code></pre>
+<h4>Operações vetorizadas</h4>
+<p>Isso é <strong>vetorização</strong>: aplicar uma operação a todos os elementos de um array simultaneamente, sem escrever um laço <code>for</code> explícito. O código fica mais curto, mais legível e — como veremos no exemplo prático — muito mais rápido.</p>
+<pre class="language-python"><code># Sem NumPy (Python puro): precisa de um loop
+resultado = []
+for nota in medias_lista:
+    resultado.append(nota * 1.1)
+
+# Com NumPy: a operação já é vetorizada
+resultado = medias_array * 1.1</code></pre>
+<h4>Indexação booleana</h4>
+<p>Um dos recursos mais úteis do NumPy é filtrar dados usando condições diretamente sobre o array:</p>
+<pre class="language-python"><code>acima_da_media = medias &gt; medias.mean()   # array de True/False
+print(medias[acima_da_media])              # só os valores que satisfazem a condição</code></pre>
+<h4>O que vem a seguir</h4>
+<p>NumPy trabalha bem com números, mas dados reais também têm texto, datas e valores ausentes — é para isso que existe o <strong>Pandas</strong>, construído sobre o NumPy, que você conhecerá a partir da Aula 04. Por ora, o objetivo é entender <em>por que</em> a vetorização importa — o exemplo prático desta aula compara diretamente o tempo de um cálculo feito em loop puro contra o mesmo cálculo vetorizado.</p></div>
+            </div>
+    </div>
+</div></div>
+    </section>
+</div>
+
+
+
+
+
+
+
+

@@ -1,0 +1,156 @@
+id_exame,id_paciente,data_coleta,sexo,idade,tipo_exame,resultado,unidade,laboratorio,prioridade
+EX-0120,PAC-0166,2026-08-14,F,73.0,Colesterol total,"227,2",mg/dL,Laboratório Central,Rotina
+EX-0138,PAC-0035,2026-08-02,M,19.0,Hemoglobina,"12,5",g/dL,Laboratório Central,Rotina
+EX-0127,PAC-0165,2026-08-07,F,60.0,Glicemia,"84,2",mg/dL,Laboratório Central,Rotina
+EX-0066,PAC-0043,2026-09-08,M,31.0,Creatinina,"1,08",mg/dL,LabSaúde RN,Rotina
+EX-0089,PAC-0092,2026-09-06,M,29.0,Creatinina,"0,64",mg/dL,LabNatal,Urgente
+EX-0010,PAC-0155,2026-08-01,F,,Creatinina,"1,20",mg/dL,LabSaúde RN,Emergência
+EX-0084,PAC-0078,2026-09-25,M,58.0,Creatinina,"0,96",mg/dL,LabSaúde RN,Rotina
+EX-0016,PAC-0142,2026-08-13,M,60.0,Glicemia,"68,3",mg/dL,Laboratório Central,Rotina
+EX-0135,PAC-0112,2026-08-24,M,35.0,Creatinina,"0,68",mg/dL,Laboratório Central,Rotina
+EX-0144,PAC-0125,2026-08-02,masculino,43.0,Glicemia,"113,1",mg/dL,Laboratório Central,Rotina
+EX-0062,PAC-0178,2026-09-07,M,29.0,Glicemia,"111,1",mg/dL,Laboratório Central,Rotina
+EX-0142,PAC-0039,2026-08-02,M,44.0,Hemoglobina,"15,5",g/dL,Laboratório Central,Urgente
+EX-0074,PAC-0019,28/09/2026,M,20.0,Colesterol total,"205,2",mg/dL,Laboratório Central,Rotina
+EX-0119,PAC-0107,2026-08-28,M,78.0,Colesterol total,"186,4",mg/dL,Laboratório Central,Rotina
+EX-0139,PAC-0033,2026-08-04,F,85.0,Glicemia,"98,9",mg/dL,LabNatal,Rotina
+EX-0042,PAC-0130,2026-09-21,M,44.0,Hemoglobina,"14,4",g/dL,LabNatal,Urgente
+EX-0064,PAC-0179,2026-09-05,F,50.0,Colesterol total,"235,5",mg/dL,LabSaúde RN,Rotina
+EX-0101,PAC-0026,06/07/2026,F,42.0,Hemoglobina,"17,0",g/dL, labnatal ,Urgente
+EX-0031,PAC-0193,2026-09-09,M,25.0,Hemoglobina,"12,0",g/dL,LabSaúde RN,Urgente
+EX-0057,PAC-0058,14/07/2026,M,26.0,Hemoglobina,"15,8",g/dL,LabSaúde RN,Rotina
+EX-0094,PAC-0043,2026-07-03,masculino,67.0,Colesterol total,"206,3",mg/dL,Laboratório Central,Urgente
+EX-0147,PAC-0075,2026-09-08,F,74.0,Creatinina,"1,04",mg/dL,LabNatal,Emergência
+EX-0003,PAC-0100,2026-09-09,M,76.0,Creatinina,"1,13",mg/dL,Laboratório Central,Rotina
+EX-0023,PAC-0082,2026-09-23,F,28.0,Colesterol total,"226,6",mg/dL, labnatal ,Urgente
+EX-0053,PAC-0041,2026-08-24,Feminino,64.0,Glicemia,"111,2",mg/dL,Laboratório Central,Urgente
+EX-0013,PAC-0164,2026-08-08,M,75.0,Hemoglobina,"13,8",g/dL,Laboratório Central,ROTINA
+EX-0012,PAC-0151,2026-08-26,M,29.0,Hemoglobina,"14,0",g/dL,LabSaúde RN,Rotina
+EX-0111,PAC-0097,2026-09-15,M,77.0,Creatinina,"0,64",mg/dL,Laboratório Central,Rotina
+EX-0116,PAC-0107,2026-07-05,M,67.0,Colesterol total,"76,8",mg/dL,LabNatal,Emergência
+EX-0017,PAC-0093,2026-07-31,F,28.0,Colesterol total,"193,8",mg/dL,LabSaúde RN,ROTINA
+EX-0148,PAC-0088,2026-08-05,M,46.0,Creatinina,999,mg/dL,LabNatal,Rotina
+EX-0001,PAC-0107,2026-09-18,F,29.0,Hemoglobina,"13,8",g/dL,LabNatal,Rotina
+EX-0052,PAC-0180,2026-08-16,masculino,84.0,Creatinina,"1,04",mg/dL,LabSaúde RN,Urgente
+EX-0129,PAC-0022,2026-09-28,F,66.0,Colesterol total,"240,0",mg/dL,Laboratório Central,Rotina
+EX-0059,PAC-0023,2026-07-03,masculino,25.0,Glicemia,"89,7",mg/dL,Laboratório Central,ROTINA
+EX-0030,PAC-0168,19/07/2026,M,69.0,Glicemia,"72,4",mg/dL,LabSaúde RN,ROTINA
+EX-0112,PAC-0009,2026-09-10,F,87.0,Creatinina,"0,55",mg/dL,LabNatal,Rotina
+EX-0146,PAC-0007,31/07/2026,F,42.0,Colesterol total,"199,4",mg/dL,LabSaúde RN,Rotina
+EX-0091,PAC-0153,2026-07-08,F,,Creatinina,"0,82",mg/dL,LabNatal,Rotina
+EX-0037,PAC-0117,2026-09-15,F,,Glicemia,"95,9",mg/dL,LabSaúde RN,URGENTE
+EX-0050,PAC-0064,2026-08-06,M,82.0,Hemoglobina,"15,7",g/dL,Laboratório Central,Rotina
+EX-0063,PAC-0151,2026-08-24,M,21.0,Glicemia,"87,0",mg/dL,LabNatal,ROTINA
+EX-0106,PAC-0178,2026-08-15,M,89.0,Colesterol total,"209,6",mg/dL,LabSaúde RN,Rotina
+EX-0007,PAC-0017,2026-08-20,F,50.0,Colesterol total,"121,9",mg/dL,LabSaúde RN,ROTINA
+EX-0109,PAC-0163,2026-08-01,M,37.0,Colesterol total,"216,0",mg/dL,Laboratório Central,Urgente
+EX-0087,PAC-0179,2026-09-01,M,47.0,Colesterol total,"186,7",mg/dL,LabNatal,Rotina
+EX-0103,PAC-0077,2026-08-06,F,,Glicemia,"95,8",mg/dL,LabSaúde RN,Urgente
+EX-0125,PAC-0165,2026-09-23,M,42.0,Glicemia,"98,0",mg/dL,LabNatal,Rotina
+EX-0036,PAC-0196,18/08/2026,F,38.0,Creatinina,"0,97",mg/dL,LabNatal,Rotina
+EX-0070,PAC-0079,12/08/2026,F,63.0,Hemoglobina,"13,3",g/dL,LabSaúde RN,Rotina
+EX-0047,PAC-0104,2026-07-25,F,37.0,Glicemia,"90,2",mg/dL,Laboratório Central,Rotina
+EX-0086,PAC-0030,2026-08-31,M,42.0,Creatinina,999,mg/dL,LabNatal,ROTINA
+EX-0067,PAC-0080,2026-07-13,M,57.0,Creatinina,"0,67",mg/dL, labsaúde rn ,Rotina
+EX-0117,PAC-0073,2026-09-25,Feminino,70.0,Creatinina,"0,64",mg/dL,Laboratório Central,Rotina
+EX-0085,PAC-0071,2026-07-27,F,38.0,Hemoglobina,"13,6",g/dL, labnatal ,Rotina
+EX-0132,PAC-0010,2026-09-18,M,37.0,Colesterol total,"233,1",mg/dL,LabSaúde RN,Rotina
+EX-0043,PAC-0155,2026-07-15,F,64.0,Glicemia,"98,2",mg/dL,Laboratório Central,Rotina
+EX-0021,PAC-0092,2026-08-23,F,89.0,Glicemia,"70,4",mg/dL,LabSaúde RN,Rotina
+EX-0055,PAC-0192,2026-09-14,M,31.0,Colesterol total,"156,4",mg/dL,LabSaúde RN,Rotina
+EX-0022,PAC-0060,2026-08-31,F,67.0,Glicemia,"105,3",mg/dL,LabSaúde RN,Rotina
+EX-0027,PAC-0046,08/08/2026,M,32.0,Glicemia,"55,3",mg/dL,Laboratório Central,Rotina
+EX-0061,PAC-0075,2026-07-27,F,75.0,Glicemia,"119,7",mg/dL,Laboratório Central,Rotina
+EX-0078,PAC-0010,2026-08-10,masculino,19.0,Creatinina,"0,90",mg/dL,Laboratório Central,Rotina
+EX-0123,PAC-0146,2026-09-24,F,34.0,Colesterol total,"174,7",mg/dL,Laboratório Central,Rotina
+EX-0088,PAC-0007,2026-07-11,M,26.0,Glicemia,"103,4",mg/dL,LabNatal,Urgente
+EX-0029,PAC-0045,2026-07-08,M,46.0,Colesterol total,"191,8",mg/dL,LabSaúde RN,Rotina
+EX-0005,PAC-0129,2026-08-19,F,53.0,Colesterol total,"187,1",mg/dL,LabSaúde RN,Rotina
+EX-0032,PAC-0005,2026-07-23,M,31.0,Creatinina,"0,47",mg/dL,LabSaúde RN,Rotina
+EX-0150,PAC-0058,2026-07-14,F,75.0,Creatinina,"0,91",mg/dL,LabNatal,Rotina
+EX-0040,PAC-0193,02/07/2026,F,61.0,Colesterol total,"268,0",mg/dL,Laboratório Central,Rotina
+EX-0136,PAC-0163,2026-07-17,M,78.0,Colesterol total,"161,7",mg/dL,LabSaúde RN,Rotina
+EX-0145,PAC-0168,2026-08-10,Feminino,81.0,Glicemia,"82,9",mg/dL,LabSaúde RN,ROTINA
+EX-0107,PAC-0106,20/07/2026,M,78.0,Creatinina,"1,28",mg/dL, labnatal ,Rotina
+EX-0095,PAC-0141,2026-09-07,M,82.0,Creatinina,"0,81",mg/dL,LabSaúde RN,Rotina
+EX-0098,PAC-0016,2026-09-15,F,32.0,Colesterol total,"198,5",mg/dL,Laboratório Central,Rotina
+EX-0141,PAC-0165,2026-07-04,F,34.0,Colesterol total,"172,6",mg/dL,LabNatal,Rotina
+EX-0076,PAC-0043,2026-08-12,F,44.0,Colesterol total,"245,1",mg/dL,Laboratório Central,Urgente
+EX-0104,PAC-0052,2026-09-14,F,31.0,Colesterol total,"214,7",mg/dL,LabSaúde RN,Urgente
+EX-0034,PAC-0122,2026-07-04,F,50.0,Glicemia,"91,9",mg/dL,LabSaúde RN,EMERGÊNCIA
+EX-0099,PAC-0170,2026-08-18,F,,Creatinina,"0,66",mg/dL,LabSaúde RN,Rotina
+EX-0102,PAC-0180,12/09/2026,M,71.0,Colesterol total,"240,6",mg/dL,LabNatal,Urgente
+EX-0114,PAC-0189,2026-09-20,M,29.0,Creatinina,"1,13",mg/dL,LabSaúde RN,Rotina
+EX-0121,PAC-0113,2026-07-10,F,38.0,Colesterol total,"151,9",mg/dL,LabSaúde RN,Urgente
+EX-0140,PAC-0053,2026-08-14,F,51.0,Glicemia,"109,1",mg/dL,Laboratório Central,Emergência
+EX-0048,PAC-0014,2026-08-04,M,73.0,Colesterol total,999,mg/dL,Laboratório Central,Rotina
+EX-0124,PAC-0003,2026-08-11,M,69.0,Glicemia,"113,2",mg/dL,LabSaúde RN,Rotina
+EX-0049,PAC-0132,2026-09-09,F,52.0,Glicemia,"92,9",mg/dL,LabSaúde RN,Rotina
+EX-0019,PAC-0146,2026-07-10,F,84.0,Colesterol total,"177,6",mg/dL,Laboratório Central,Rotina
+EX-0044,PAC-0134,2026-07-08,M,25.0,Glicemia,"87,1",mg/dL,LabSaúde RN,Urgente
+EX-0018,PAC-0198,2026-08-13,M,44.0,Colesterol total,"189,6",mg/dL,LabNatal,Urgente
+EX-0105,PAC-0163,2026-07-23,masculino,56.0,Colesterol total,"239,6",mg/dL,LabNatal,Rotina
+EX-0039,PAC-0084,2026-08-22,M,18.0,Creatinina,"0,54",mg/dL,Laboratório Central,Emergência
+EX-0091,PAC-0153,2026-07-08,F,,Creatinina,"0,82",mg/dL,LabNatal,Rotina
+EX-0026,PAC-0012,2026-08-09,F,43.0,Creatinina,"0,79",mg/dL,Laboratório Central,Urgente
+EX-0020,PAC-0133,2026-08-29,M,65.0,Creatinina,"1,11",mg/dL,Laboratório Central,Rotina
+EX-0079,PAC-0092,2026-08-06,M,66.0,Glicemia,"99,8",mg/dL,LabNatal,Urgente
+EX-0033,PAC-0067,2026-09-07,F,69.0,Hemoglobina,"14,1",g/dL, labsaúde rn ,Urgente
+EX-0073,PAC-0140,2026-09-07,F,21.0,Glicemia,"104,9",mg/dL,LabSaúde RN,Rotina
+EX-0069,PAC-0024,2026-09-03,M,,Hemoglobina,"12,9",g/dL,LabSaúde RN,Urgente
+EX-0137,PAC-0120,2026-09-14,masculino,26.0,Glicemia,"123,5",mg/dL,LabNatal,Emergência
+EX-0088,PAC-0007,2026-07-11,M,26.0,Glicemia,"103,4",mg/dL,LabNatal,Urgente
+EX-0009,PAC-0015,2026-07-13,M,79.0,Hemoglobina,"14,2",g/dL,LabSaúde RN,Rotina
+EX-0004,PAC-0013,2026-07-13,F,61.0,Hemoglobina,"14,0",g/dL,LabSaúde RN,Rotina
+EX-0002,PAC-0049,2026-08-17,M,49.0,Colesterol total,"233,4",mg/dL,LabNatal,Rotina
+EX-0060,PAC-0048,16/09/2026,F,64.0,Creatinina,"0,87",mg/dL,Laboratório Central,Rotina
+EX-0100,PAC-0088,2026-08-19,Feminino,47.0,Glicemia,"90,3",mg/dL,Laboratório Central,Urgente
+EX-0051,PAC-0074,2026-08-05,M,91.0,Glicemia,"97,9",mg/dL,Laboratório Central,Rotina
+EX-0149,PAC-0192,2026-09-05,F,40.0,Creatinina,"1,16",mg/dL,LabNatal,Rotina
+EX-0054,PAC-0004,2026-07-29,M,34.0,Hemoglobina,"15,8",g/dL,LabSaúde RN,Rotina
+EX-0006,PAC-0098,2026-09-28,masculino,71.0,Colesterol total,"174,8",mg/dL,LabSaúde RN,Rotina
+EX-0096,PAC-0141,2026-08-05,F,64.0,Hemoglobina,"12,8",g/dL,LabSaúde RN,Urgente
+EX-0122,PAC-0058,2026-08-06,M,66.0,Glicemia,"73,0",mg/dL,LabNatal,Rotina
+EX-0113,PAC-0002,2026-09-18,F,70.0,Colesterol total,"192,9",mg/dL,Laboratório Central,Rotina
+EX-0041,PAC-0054,2026-08-03,F,88.0,Colesterol total,"197,1",mg/dL,LabNatal,Rotina
+EX-0065,PAC-0144,2026-07-19,F,30.0,Colesterol total,999,mg/dL,LabSaúde RN,Emergência
+EX-0131,PAC-0122,2026-08-31,M,65.0,Glicemia,"82,7",mg/dL,LabSaúde RN,Rotina
+EX-0056,PAC-0031,2026-07-24,F,25.0,Creatinina,"0,75",mg/dL,Laboratório Central,Rotina
+EX-0008,PAC-0194,2026-09-18,M,72.0,Hemoglobina,"13,7",g/dL,LabNatal,Urgente
+EX-0015,PAC-0108,2026-07-24,F,18.0,Creatinina,"1,01",mg/dL,LabSaúde RN,Rotina
+EX-0118,PAC-0139,2026-08-20,F,68.0,Colesterol total,"180,3",mg/dL,Laboratório Central,Urgente
+EX-0045,PAC-0067,2026-07-20,M,45.0,Colesterol total,"208,6",mg/dL,LabNatal,Rotina
+EX-0128,PAC-0040,2026-07-13,masculino,48.0,Colesterol total,"205,8",mg/dL,LabSaúde RN,Urgente
+EX-0058,PAC-0096,23/09/2026,masculino,85.0,Hemoglobina,"11,8",g/dL,Laboratório Central,Rotina
+EX-0011,PAC-0110,2026-07-14,F,22.0,Creatinina,"0,97",mg/dL, labsaúde rn ,Urgente
+EX-0108,PAC-0190,2026-07-20,F,22.0,Glicemia,"79,3",mg/dL,LabSaúde RN,Rotina
+EX-0090,PAC-0162,2026-08-16,M,72.0,Creatinina,"1,16",mg/dL,Laboratório Central,Rotina
+EX-0134,PAC-0044,2026-08-23,M,38.0,Hemoglobina,"12,4",g/dL,LabSaúde RN,Rotina
+EX-0028,PAC-0013,2026-08-26,F,58.0,Hemoglobina,"13,8",g/dL,LabSaúde RN,Rotina
+EX-0024,PAC-0027,2026-07-10,F,45.0,Glicemia,"86,4",mg/dL,LabSaúde RN,Rotina
+EX-0097,PAC-0077,2026-08-19,F,90.0,Colesterol total,"208,5",mg/dL,LabSaúde RN,Rotina
+EX-0080,PAC-0178,2026-09-28,F,68.0,Glicemia,"85,1",mg/dL,Laboratório Central,Urgente
+EX-0143,PAC-0039,2026-08-07,M,83.0,Glicemia,"109,4",mg/dL,LabNatal,Rotina
+EX-0115,PAC-0124,2026-08-25,M,37.0,Glicemia,"128,7",mg/dL,LabNatal,Urgente
+EX-0071,PAC-0103,2026-08-17,M,59.0,Hemoglobina,"17,0",g/dL,LabNatal,Rotina
+EX-0068,PAC-0122,2026-08-02,F,47.0,Creatinina,"1,14",mg/dL,Laboratório Central,Urgente
+EX-0023,PAC-0082,2026-09-23,F,28.0,Colesterol total,"226,6",mg/dL, labnatal ,Urgente
+EX-0086,PAC-0030,2026-08-31,M,42.0,Creatinina,999,mg/dL,LabNatal,ROTINA
+EX-0038,PAC-0108,2026-07-03,F,63.0,Creatinina,"1,41",mg/dL,LabNatal,ROTINA
+EX-0075,PAC-0026,2026-07-21,M,36.0,Creatinina,"0,92",mg/dL, labsaúde rn ,Rotina
+EX-0130,PAC-0121,2026-09-26,M,56.0,Creatinina,"0,76",mg/dL, labnatal ,Rotina
+EX-0035,PAC-0178,2026-08-25,M,46.0,Glicemia,"101,5",mg/dL,LabNatal,Rotina
+EX-0133,PAC-0044,2026-09-22,F,34.0,Colesterol total,"137,5",mg/dL,LabSaúde RN,Urgente
+EX-0126,PAC-0015,2026-08-22,F,58.0,Glicemia,"98,9",mg/dL,LabNatal,Emergência
+EX-0046,PAC-0023,2026-09-15,M,20.0,Glicemia,"83,8",mg/dL,LabNatal,ROTINA
+EX-0093,PAC-0072,2026-07-20,F,30.0,Glicemia,"72,3",mg/dL,Laboratório Central,Rotina
+EX-0110,PAC-0076,2026-09-08,M,65.0,Colesterol total,"188,2",mg/dL,LabSaúde RN,Rotina
+EX-0025,PAC-0132,2026-07-18,M,86.0,Colesterol total,"135,9",mg/dL,LabNatal,Emergência
+EX-0083,PAC-0033,2026-09-15,M,40.0,Glicemia,"95,6",mg/dL,LabNatal,Urgente
+EX-0072,PAC-0181,2026-08-25,M,35.0,Hemoglobina,"13,8",g/dL,LabNatal,Rotina
+EX-0077,PAC-0134,2026-08-06,F,88.0,Creatinina,"0,95",mg/dL,LabNatal,Rotina
+EX-0014,PAC-0168,2026-09-20,M,83.0,Glicemia,"88,1",mg/dL, labsaúde rn ,Rotina
+EX-0082,PAC-0185,24/07/2026,F,91.0,Glicemia,"81,7",mg/dL,LabSaúde RN,Rotina
+EX-0092,PAC-0145,2026-07-17,F,62.0,Colesterol total,"148,1",mg/dL,Laboratório Central,Urgente
+EX-0081,PAC-0093,2026-09-26,M,72.0,Colesterol total,"168,1",mg/dL,Laboratório Central,Rotina
+EX-0093,PAC-0072,2026-07-20,F,30.0,Glicemia,"72,3",mg/dL,Laboratório Central,Rotina

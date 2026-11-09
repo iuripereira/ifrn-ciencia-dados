@@ -1,0 +1,267 @@
+
+<div class="toast-wrapper mx-auto py-0 fixed-top" role="status" aria-live="polite"></div>
+
+<div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Ir para o conteúdo principal</a>
+</div>
+
+
+
+
+<div id="page">
+    <section class="embedded-main">
+            <span id="maincontent"></span>
+            <div class="activity-header" data-for="page-activity-header"></div>
+        <div role="main"><div class="book p-4">
+    <div class="text-end"><a onclick="window.print();return false;" class="hidden-print" href="#"><img class="icon icon" alt="Imprimir o livro todo" title="Imprimir o livro todo" src="https://presencial.ava.ifrn.edu.br/theme/image.php/suap/booktool_print/1793831080/book">Imprimir o livro todo</a></div>
+    <div class="text-center pb-3 book_title"><h1>Tópicos de Estudo — Aula 11</h1></div>
+    <div class="book_info w-100 pt-6 d-inline-block">
+        <div class="w-50 float-start">
+            <table>
+                <tbody><tr>
+                    <td>
+                        Site:
+                    </td>
+                    <td class="ps-3">
+                        <a href="https://presencial.ava.ifrn.edu.br">AVA-Presencial</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Curso:
+                    </td>
+                    <td class="ps-3">
+                        Análise e Ciência de Dados
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Livro:
+                    </td>
+                    <td class="ps-3">
+                        Tópicos de Estudo — Aula 11
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+        <div class="w-50 float-start">
+            <table class="float-end">
+                <tbody><tr>
+                    <td>
+                        Impresso por:
+                    </td>
+                    <td class="ps-3">
+                        Iuri Guerra de Freitas Pereira
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Data:
+                    </td>
+                    <td class="ps-3">
+                        segunda-feira, 9 nov. 2026, 16:40
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </div>
+    <div class="w-100 book_description">
+        <div class="py-5">
+            <h2 class="text-center pb-5">Descrição</h2>
+             <p class="book_summary"></p><p class="translationhash"><span data-translationhash="7fbf877717197681d8d24bc178d019c2"></span></p>
+<p>Resumo dos principais tópicos da Aula 11 — Fundamentos de AED e Estatística Descritiva, em 5 capítulos curtos.</p><p></p>
+        </div>
+    </div>
+    <div class="w-100">
+        <div class="py-5"><div class="book_toc_numbered"><a name="toc"></a><h2 class="text-center pb-5">Índice</h2><ul><li><a title="1. Análise exploratória e tipos de variáveis" class="font-weight-bold text-decoration-none" href="#ch8073">1. Análise exploratória e tipos de variáveis</a></li><li><a title="2. Medidas de tendência central" class="font-weight-bold text-decoration-none" href="#ch8074">2. Medidas de tendência central</a></li><li><a title="3. Medidas de dispersão" class="font-weight-bold text-decoration-none" href="#ch8075">3. Medidas de dispersão</a></li><li><a title="4. Distribuições: forma, assimetria e boxplot" class="font-weight-bold text-decoration-none" href="#ch8076">4. Distribuições: forma, assimetria e boxplot</a></li><li><a title="5. Correlação, matriz de correlação e hipóteses" class="font-weight-bold text-decoration-none" href="#ch8077">5. Correlação, matriz de correlação e hipóteses</a></li></ul></div></div>
+    </div>
+    <div class="w-100">
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch8073"><h2 class="text-center pb-5">1. Análise exploratória e tipos de variáveis</h2><p class="translationhash"><span data-translationhash="2309c60e4e7899575706add16c376f13"></span></p>
+<p>A <strong>Análise Exploratória de Dados (AED)</strong> — <em>Exploratory Data Analysis</em>, termo popularizado por John Tukey — é a etapa em que olhamos os dados com <strong>resumos numéricos</strong> e <strong>gráficos simples</strong> antes de qualquer modelo. O objetivo é conhecer os dados, encontrar padrões e problemas e, principalmente, formular <strong>boas perguntas</strong>.</p>
+<h4>O dataset da aula (sintético)</h4>
+<p>300 estudantes de um curso fictício: horas de estudo por semana, horas de sono, tempo de celular, faltas, deslocamento, mês de nascimento, turno, se trabalha e nota final (0 a 10). No exercício, 90 dias de uma sorveteria fictícia.</p>
+<h4>Tipos de variáveis</h4>
+<table style="border-collapse: collapse;" border="1" cellpadding="4">
+<tbody>
+<tr>
+<th>Tipo</th>
+<th>Subtipo</th>
+<th>Exemplo</th>
+</tr>
+<tr>
+<td>Qualitativa</td>
+<td>nominal (sem ordem)</td>
+<td>turno, trabalha</td>
+</tr>
+<tr>
+<td>Qualitativa</td>
+<td>ordinal (com ordem)</td>
+<td>conceito A/B/C, satisfação</td>
+</tr>
+<tr>
+<td>Quantitativa</td>
+<td>discreta (contagem)</td>
+<td>faltas, sorvetes vendidos</td>
+</tr>
+<tr>
+<td>Quantitativa</td>
+<td>contínua (medida)</td>
+<td>horas de sono, temperatura, nota</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Atenção:</strong> o tipo no Pandas não é o tipo estatístico. <code>mes_nascimento</code> é <code>int64</code>, mas a "média do mês de nascimento" não tem significado útil.</p>
+<pre>df.dtypes
+df["turno"].value_counts(normalize=True)   # proporções de uma variável qualitativa</pre></div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch8074"><h2 class="text-center pb-5">2. Medidas de tendência central</h2><p class="translationhash"><span data-translationhash="b4c0bf28faf60e1da84bbac723e83bf0"></span></p>
+<p>Respondem à pergunta <strong>"qual é o valor típico?"</strong></p>
+<ul>
+<li><strong>Média</strong> (<code>mean</code>) — soma ÷ quantidade; usa todos os valores, mas é sensível a extremos.</li>
+<li><strong>Mediana</strong> (<code>median</code>) — valor central dos dados ordenados; robusta a extremos.</li>
+<li><strong>Moda</strong> (<code>mode</code>) — valor mais frequente; a única que serve para variáveis nominais.</li>
+</ul>
+<table style="border-collapse: collapse;" border="1" cellpadding="4">
+<tbody>
+<tr>
+<th>Variável</th>
+<th>Média</th>
+<th>Mediana</th>
+</tr>
+<tr>
+<td>nota final</td>
+<td>5,69</td>
+<td>5,80</td>
+</tr>
+<tr>
+<td>horas de sono</td>
+<td>7,06</td>
+<td>7,10</td>
+</tr>
+<tr>
+<td>horas de estudo/semana</td>
+<td>7,34</td>
+<td>6,25</td>
+</tr>
+<tr>
+<td>deslocamento (min)</td>
+<td>26,0</td>
+<td>23,0</td>
+</tr>
+</tbody>
+</table>
+<p>Quando a <strong>média é bem maior que a mediana</strong>, há uma cauda à direita: poucos valores altos puxam a média. Nesse caso, a mediana descreve melhor o caso típico.</p>
+<h4>Um único valor extremo</h4>
+<p>Incluir um registro errado de 150 h de estudo muda a média de 7,34 para 7,81 h; a mediana vai de 6,25 para 6,30 h. Na sorveteria, o dia do festival (1.150 sorvetes) eleva a média de 166,7 para 177,6 sorvetes, enquanto a mediana fica em torno de 174.</p></div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch8075"><h2 class="text-center pb-5">3. Medidas de dispersão</h2><p class="translationhash"><span data-translationhash="2a58b217818099ab8b80eb62e7c39bdd"></span></p>
+<p>Duas turmas podem ter a mesma média e ser muito diferentes. A dispersão mede <strong>o quanto os valores se espalham</strong>.</p>
+<table style="border-collapse: collapse;" border="1" cellpadding="4">
+<tbody>
+<tr>
+<th>Medida</th>
+<th>Ideia</th>
+<th>Pandas</th>
+</tr>
+<tr>
+<td>Amplitude</td>
+<td>máximo − mínimo (frágil: usa 2 valores)</td>
+<td><code>s.max() - s.min()</code></td>
+</tr>
+<tr>
+<td>Variância</td>
+<td>média dos quadrados dos desvios (unidade²)</td>
+<td><code>s.var()</code></td>
+</tr>
+<tr>
+<td>Desvio-padrão</td>
+<td>raiz da variância (mesma unidade)</td>
+<td><code>s.std()</code></td>
+</tr>
+<tr>
+<td>Coeficiente de variação</td>
+<td>desvio ÷ média × 100% (sem unidade)</td>
+<td><code>s.std() / s.mean() * 100</code></td>
+</tr>
+<tr>
+<td>Intervalo interquartil</td>
+<td>Q3 − Q1 (50% centrais; robusto)</td>
+<td><code>s.quantile(.75) - s.quantile(.25)</code></td>
+</tr>
+</tbody>
+</table>
+<p>O Pandas usa a versão <strong>amostral</strong> (divide por n − 1).</p>
+<h4>No laboratório</h4>
+<ul>
+<li>Sono: desvio 0,86 h e CV ≈ 12% — quase todos dormem entre 6 e 8 h.</li>
+<li>Estudo: desvio 5,04 h e CV ≈ 69% — muita variação entre estudantes.</li>
+<li>Nota: Q1 = 4,7, Q3 = 6,6 → IQR = 1,9.</li>
+</ul>
+<p><strong>Regra prática:</strong> distribuição aproximadamente simétrica → média e desvio-padrão; assimétrica ou com extremos → mediana e IQR. O <code>describe()</code> traz os cinco números de Tukey (mínimo, Q1, mediana, Q3, máximo), a média e o desvio.</p></div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch8076"><h2 class="text-center pb-5">4. Distribuições: forma, assimetria e boxplot</h2><p class="translationhash"><span data-translationhash="8a4781c324076cd5f6124bbfb7ab099a"></span></p>
+<p>A <strong>distribuição</strong> mostra como os valores se espalham na escala. Use <strong>histogramas</strong> e <strong>boxplots</strong>.</p>
+<ul>
+<li><strong>Simétrica</strong> — média ≈ mediana; assimetria (<code>skew</code>) ≈ 0. Ex.: horas de sono (0,20).</li>
+<li><strong>Assimétrica à direita</strong> — cauda para valores altos; média &gt; mediana; skew &gt; 0. Ex.: horas de estudo (1,51), chuva diária (2,3).</li>
+<li><strong>Assimétrica à esquerda</strong> — cauda para valores baixos; média &lt; mediana; skew &lt; 0.</li>
+</ul>
+<p>A <strong>curtose</strong> (<code>kurt</code>, excesso em relação à normal) indica caudas mais pesadas (&gt; 0) ou mais leves (&lt; 0).</p>
+<h4>Regra 68–95–99,7</h4>
+<p>Em uma distribuição aproximadamente <strong>normal</strong>, cerca de 68%, 95% e 99,7% dos valores ficam a 1, 2 e 3 desvios da média. Para o sono (média 7,06 h, desvio 0,86 h): 64,7% entre 6,21 e 7,92 h; 95,3% entre 5,35 e 8,78 h. A regra <strong>não</strong> vale bem para distribuições assimétricas.</p>
+<h4>Boxplot</h4>
+<p>A caixa vai de Q1 a Q3, a linha interna é a mediana, os bigodes vão até o último valor dentro de 1,5·IQR e os pontos além disso são <strong>candidatos a outlier</strong>. Boxplots lado a lado comparam grupos: quem trabalha tem nota mediana 5,10; quem não trabalha, 6,05.</p>
+<pre>df.groupby("trabalha")["nota_final"].agg(["mean", "median", "std"])</pre></div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch8077"><h2 class="text-center pb-5">5. Correlação, matriz de correlação e hipóteses</h2><p class="translationhash"><span data-translationhash="e708bed2652de6228563edfcf2e8bb80"></span></p>
+<p>O <strong>gráfico de dispersão</strong> vem primeiro. A <strong>correlação</strong> resume força e direção da associação entre −1 e +1.</p>
+<table style="border-collapse: collapse;" border="1" cellpadding="4">
+<tbody>
+<tr>
+<th>Coeficiente</th>
+<th>Mede</th>
+<th>Pandas</th>
+</tr>
+<tr>
+<td>Pearson (r)</td>
+<td>associação <strong>linear</strong></td>
+<td><code>x.corr(y)</code></td>
+</tr>
+<tr>
+<td>Spearman (ρ)</td>
+<td>associação <strong>monotônica</strong> (Pearson nos postos)</td>
+<td><code>x.corr(y, method="spearman")</code></td>
+</tr>
+</tbody>
+</table>
+<p>Leitura aproximada de |r|: &lt; 0,1 desprezível · 0,1–0,3 fraca · 0,3–0,5 moderada · 0,5–0,7 forte · &gt; 0,7 muito forte.</p>
+<ul>
+<li>Estudo × nota: r = 0,68 e ρ = 0,72 — relação crescente, mas curva (ganho decrescente).</li>
+<li>Faltas × nota: ρ = −0,40 (negativa moderada). Mês de nascimento × nota: ≈ 0.</li>
+<li>Sorveteria: temperatura × sorvetes deu r = 0,32 e ρ = 0,80 por causa de <strong>um</strong> dia de festival; sem ele, r = 0,85.</li>
+<li>r ≈ 0 indica ausência de relação <em>linear</em> — uma relação em U pode ter r ≈ 0.</li>
+</ul>
+<h4>Matriz de correlação</h4>
+<pre>df[numericas].corr(method="spearman")   # simétrica, diagonal = 1</pre>
+<h4>Correlação não é causalidade</h4>
+<p>O turno da noite tem notas menores, mas, separando quem trabalha, as diferenças entre turnos quase somem: <strong>trabalhar</strong> é uma variável de confusão.</p>
+<h4>Hipóteses exploratórias</h4>
+<p>A AED termina com hipóteses <strong>específicas, mensuráveis e verificáveis</strong>. Ex.: "Mais horas de estudo estão associadas a notas maiores, com ganho decrescente" (ρ = 0,72). São evidências exploratórias, não provas: serão investigadas nas próximas análises.</p></div>
+            </div>
+    </div>
+</div></div>
+    </section>
+</div>
+
+
+
+
+
+
+
+

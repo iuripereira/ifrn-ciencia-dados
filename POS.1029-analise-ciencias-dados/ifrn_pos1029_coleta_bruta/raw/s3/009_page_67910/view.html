@@ -1,0 +1,155 @@
+
+
+                        <span class="notifications" id="user-notifications"></span>
+                            <span id="maincontent"></span>
+                                <h2>Exemplo — Código do Ranking das Escolas (main.py)</h2>
+                            <div class="activity-header" data-for="page-activity-header">
+                                    <span class="sr-only">Condições de conclusão</span>
+                                    <div data-region="activity-information" data-activityname="Exemplo — Código do Ranking das Escolas (main.py)" class="activity-information">
+
+
+</div>
+</div>
+                        <div role="main"><div class="box py-3 generalbox center clearfix"><div class="no-overflow"><p class="translationhash"><span data-translationhash="2907231707eef2af68913fa9e3c3bd27"></span></p>
+<h3>Exemplo Prático — Ranking das Escolas do RN no ENEM 2025</h3>
+<p>Este exemplo percorre o ciclo completo visto no livro da aula: lê os microdados, calcula médias por aluno e por escola, junta os dados com o catálogo de nomes e gera uma página HTML interativa com o ranking.</p>
+<h4>Estrutura do projeto</h4>
+<pre>projeto/
+├── main.py                      ← script principal (anexo nesta seção)
+├── template_escolas.html        ← template da página final (anexo)
+└── microdados/
+    ├── RESULTADOS_2025_RN.csv   ← microdados ENEM 2025 RN (seção Microdados)
+    └── catalogo_escolas_rn.csv  ← catálogo de escolas (seção Microdados)</pre>
+<h4>Como executar</h4>
+<ol>
+<li>Baixe os quatro arquivos e organize-os como acima (crie a pasta <code>microdados/</code>);</li>
+<li>Execute <code>python main.py</code> (Python 3.10+, sem dependências externas);</li>
+<li>O script processa ~30 mil registros e abre <code>escolas_rn.html</code> no navegador.</li>
+</ol>
+<h4>Pontos de atenção no código</h4>
+<ul>
+<li><strong>Formatos heterogêneos:</strong> os resultados usam separador <code>;</code> e codificação <code>latin1</code>; o catálogo usa vírgula e <code>utf-8</code> — situação comum ao integrar fontes reais.</li>
+<li><strong>Valores ausentes:</strong> alunos faltosos têm notas vazias; o código converte para <code>None</code> e calcula a média apenas das notas válidas.</li>
+<li><strong>Junção por chave:</strong> <code>CO_ESCOLA</code> liga os dois arquivos — o mesmo papel de um <em>join</em> em SQL ou <code>merge</code> no Pandas.</li>
+<li><strong>Separação código/apresentação:</strong> os dados são injetados no template HTML via <code>json.dumps</code>, substituindo o marcador <code>__DADOS_ESCOLAS__</code>.</li>
+</ul>
+<h4>main.py</h4>
+<pre style="background-color: #f5f5f5; padding: 12px; overflow-x: auto;"><code>import csv
+import json
+import webbrowser
+from pathlib import Path
+from statistics import mean
+
+BASE_DIR = Path(__file__).parent
+RESULTADOS_CSV = BASE_DIR / "microdados" / "RESULTADOS_2025_RN.csv"
+CATALOGO_CSV = BASE_DIR / "microdados" / "catalogo_escolas_rn.csv"
+OUTPUT_HTML = BASE_DIR / "escolas_rn.html"
+
+TIPO_DEPENDENCIA = {
+    "1": "Federal",
+    "2": "Estadual",
+    "3": "Municipal",
+    "4": "Privada",
+}
+
+NOTA_COLUNAS = {
+    "NU_NOTA_CN": "cn",
+    "NU_NOTA_CH": "ch",
+    "NU_NOTA_LC": "lc",
+    "NU_NOTA_MT": "mt",
+    "NU_NOTA_REDACAO": "redacao",
+}
+
+
+def carregar_catalogo_nomes():
+    nomes = {}
+    with open(CATALOGO_CSV, encoding="utf-8") as f:
+        for row in csv.DictReader(f):
+            nomes[row["CO_ESCOLA"]] = row["NO_ESCOLA"]
+    return nomes
+
+
+def carregar_escolas():
+    nomes = carregar_catalogo_nomes()
+    escolas = {}
+
+    with open(RESULTADOS_CSV, encoding="latin1") as f:
+        for row in csv.DictReader(f, delimiter=";"):
+            codigo = row["CO_ESCOLA"]
+            if not codigo:
+                continue
+
+            escola = escolas.setdefault(codigo, {
+                "codigo": codigo,
+                "municipio": row["NO_MUNICIPIO_ESC"],
+                "tipo": TIPO_DEPENDENCIA.get(row["TP_DEPENDENCIA_ADM_ESC"], "-"),
+                "alunos": [],
+            })
+
+            notas_aluno = {}
+            for coluna, chave in NOTA_COLUNAS.items():
+                valor = row[coluna]
+                notas_aluno[chave] = round(float(valor), 1) if valor else None
+
+            validas = [v for v in notas_aluno.values() if v is not None]
+            notas_aluno["geral"] = round(mean(validas), 1) if validas else None
+            escola["alunos"].append(notas_aluno)
+
+    lista = []
+    for escola in escolas.values():
+        # aluno sem nenhuma nota valida vai para o final
+        alunos_ordenados = sorted(
+            escola["alunos"],
+            key=lambda a: a["geral"] if a["geral"] is not None else -1,
+            reverse=True,
+        )
+        lista.append({
+            "codigo": escola["codigo"],
+            "nome": nomes.get(escola["codigo"], ""),
+            "municipio": escola["municipio"],
+            "tipo": escola["tipo"],
+            "alunos": alunos_ordenados,
+        })
+
+    return lista
+
+
+def gerar_html(escolas):
+    template = (BASE_DIR / "template_escolas.html").read_text(encoding="utf-8")
+    html = template.replace("__DADOS_ESCOLAS__", json.dumps(escolas, ensure_ascii=False))
+    OUTPUT_HTML.write_text(html, encoding="utf-8")
+
+
+def main():
+    escolas = carregar_escolas()
+    gerar_html(escolas)
+    print(f"{'{'}len(escolas){'}'} escolas processadas.")
+    print(f"Arquivo gerado: {'{'}OUTPUT_HTML{'}'}")
+    webbrowser.open(OUTPUT_HTML.as_uri())
+
+
+if __name__ == "__main__":
+    main()</code></pre></div></div><div class="modified">Última atualização: quinta-feira, 6 ago. 2026, 20:52</div></div>
+                        <nav class="mt-5 mb-1 activity-navigation container-fluid" aria-label="Navegação de atividades">
+<div class="row">
+    <div class="col-md-4">        <div class="float-start">
+                <a href="https://presencial.ava.ifrn.edu.br/mod/resource/view.php?id=67919&amp;forceview=1" id="prev-activity-link" class="btn btn-link" aria-label="Atividade anterior: Microdados ENEM 2025 RN">◄ Microdados ENEM 2025 RN</a>
+
+        </div>
+</div>
+    <div class="col-md-4">        <div class="mdl-align">
+            <div class="urlselect">
+    
+</div>
+
+        </div>
+</div>
+    <div class="col-md-4">        <div class="float-end">
+                <a href="https://presencial.ava.ifrn.edu.br/mod/resource/view.php?id=67920&amp;forceview=1" id="next-activity-link" class="btn btn-link" aria-label="Próxima atividade: Exemplo — Páginas HTML Análise Escolas">Exemplo — Páginas HTML Análise Escolas ►</a>
+
+        </div>
+</div>
+</div>
+</nav>
+                        
+                    

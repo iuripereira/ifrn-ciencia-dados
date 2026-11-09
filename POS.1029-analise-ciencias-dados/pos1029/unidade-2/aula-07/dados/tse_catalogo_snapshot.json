@@ -1,0 +1,35 @@
+{
+  "_proveniencia": {
+    "fonte": "TSE — Portal de Dados Abertos (dadosabertos.tse.jus.br), API de Ações do CKAN",
+    "endpoint_busca": "https://dadosabertos.tse.jus.br/api/3/action/package_search",
+    "endpoint_detalhe": "https://dadosabertos.tse.jus.br/api/3/action/package_show?id=<nome-do-conjunto>",
+    "coletado_em": "2026-10-05",
+    "licenca": "Dados abertos governamentais (Lei 12.527/2011) — uso livre com citação da fonte",
+    "observacao": "Snapshot de uma coleta real feita em 2026-10-05: catálogo com 182 conjuntos de dados, 7 organizações, 12 grupos."
+  },
+  "catalogo_geral": {
+    "conjuntos_de_dados": 182,
+    "organizacoes": 7,
+    "grupos": 12
+  },
+  "paginacao_demo": {
+    "consulta": "package_search?q=eleições&rows=5&start=<pagina>",
+    "total_resultados": 9,
+    "pagina_0": ["resultados-eleicoes-suplementares-2024", "resultados-eleicoes-suplementares-2022", "resultados-2020-suplementares", "resultados-1998", "resultados-1996"],
+    "pagina_1": ["resultados-1994", "candidatos-1998", "candidatos-1996", "candidatos-1994"]
+  },
+  "conjunto_candidatos_2026": {
+    "id": "candidatos-2026",
+    "titulo": "Candidatos - 2026",
+    "total_recursos": 92,
+    "recursos_exemplo": [
+      {"nome": "Candidatos", "formato": "CSV", "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip"},
+      {"nome": "Candidatos - Informações complementares", "formato": "CSV", "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand_complementar/consulta_cand_complementar_2026.zip"},
+      {"nome": "Bens de candidatos", "formato": "CSV", "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip"},
+      {"nome": "Coligações", "formato": "CSV", "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_coligacao/consulta_coligacao_2026.zip"},
+      {"nome": "Vagas", "formato": "CSV", "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_vagas/consulta_vagas_2026.zip"},
+      {"nome": "Motivo da Cassação", "formato": "CSV", "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/motivo_cassacao/motivo_cassacao_2026.zip"}
+    ],
+    "observacao": "Arquivo nacional único por recurso (não há recorte por UF no portal) — por isso esta aula usa a API de busca (package_search) para a prática ao vivo, e cita o recurso CSV completo como 'para ir além' em Python local."
+  }
+}

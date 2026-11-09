@@ -1,0 +1,180 @@
+
+<div class="toast-wrapper mx-auto py-0 fixed-top" role="status" aria-live="polite"></div>
+
+<div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Ir para o conteúdo principal</a>
+</div>
+
+
+
+
+<div id="page">
+    <section class="embedded-main">
+            <span id="maincontent"></span>
+            <div class="activity-header" data-for="page-activity-header"></div>
+        <div role="main"><div class="book p-4">
+    <div class="text-end"><a onclick="window.print();return false;" class="hidden-print" href="#"><img class="icon icon" alt="Imprimir o livro todo" title="Imprimir o livro todo" src="https://presencial.ava.ifrn.edu.br/theme/image.php/suap/booktool_print/1793831080/book">Imprimir o livro todo</a></div>
+    <div class="text-center pb-3 book_title"><h1>Tópicos de Estudo — Aula 02: Introdução ao ML e KDD</h1></div>
+    <div class="book_info w-100 pt-6 d-inline-block">
+        <div class="w-50 float-start">
+            <table>
+                <tbody><tr>
+                    <td>
+                        Site:
+                    </td>
+                    <td class="ps-3">
+                        <a href="https://presencial.ava.ifrn.edu.br">AVA-Presencial</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Curso:
+                    </td>
+                    <td class="ps-3">
+                        Análise e Ciência de Dados
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Livro:
+                    </td>
+                    <td class="ps-3">
+                        Tópicos de Estudo — Aula 02: Introdução ao ML e KDD
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+        <div class="w-50 float-start">
+            <table class="float-end">
+                <tbody><tr>
+                    <td>
+                        Impresso por:
+                    </td>
+                    <td class="ps-3">
+                        Iuri Guerra de Freitas Pereira
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Data:
+                    </td>
+                    <td class="ps-3">
+                        segunda-feira, 9 nov. 2026, 16:39
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </div>
+    <div class="w-100 book_description">
+        <div class="py-5">
+            <h2 class="text-center pb-5">Descrição</h2>
+             <p class="book_summary"></p><p class="translationhash"><span data-translationhash="d87033dffe0a6f7dfe3e34e220b7c6d1"></span></p>
+<p>Conteúdo teórico da Aula 02, em formato de livro: paradigmas de Aprendizado de Máquina, o processo KDD, os conceitos de overfitting e underfitting, métricas de avaliação básicas e um exemplo prático de classificador construído do zero.</p><p></p>
+        </div>
+    </div>
+    <div class="w-100">
+        <div class="py-5"><div class="book_toc_numbered"><a name="toc"></a><h2 class="text-center pb-5">Índice</h2><ul><li><a title="1. Capítulo 1 — Paradigmas de Aprendizado de Máquina" class="font-weight-bold text-decoration-none" href="#ch6970">1. Capítulo 1 — Paradigmas de Aprendizado de Máquina</a></li><li><a title="2. Capítulo 2 — O Processo KDD" class="font-weight-bold text-decoration-none" href="#ch6971">2. Capítulo 2 — O Processo KDD</a></li><li><a title="3. Capítulo 3 — Overfitting e Underfitting" class="font-weight-bold text-decoration-none" href="#ch6972">3. Capítulo 3 — Overfitting e Underfitting</a></li><li><a title="4. Capítulo 4 — Métricas de Avaliação Básicas" class="font-weight-bold text-decoration-none" href="#ch6973">4. Capítulo 4 — Métricas de Avaliação Básicas</a></li><li><a title="5. Capítulo 5 — Estudo de Caso: KNN do Zero nos Dados do RN" class="font-weight-bold text-decoration-none" href="#ch6974">5. Capítulo 5 — Estudo de Caso: KNN do Zero nos Dados do RN</a></li></ul></div></div>
+    </div>
+    <div class="w-100">
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch6970"><h2 class="text-center pb-5">1. Capítulo 1 — Paradigmas de Aprendizado de Máquina</h2><p class="translationhash"><span data-translationhash="0f3395fa12f51956b44d9601ea54cf52"></span></p>
+<p>Aprendizado de Máquina (ML) é o subcampo da Ciência de Dados em que algoritmos aprendem padrões a partir de <strong>exemplos</strong>, em vez de seguirem regras explicitamente programadas. Os problemas de ML se organizam em três paradigmas principais.</p>
+<h4>Aprendizado Supervisionado</h4>
+<p>O algoritmo aprende a partir de exemplos <strong>rotulados</strong>: cada entrada vem acompanhada da resposta correta (o "rótulo" ou "target"). O objetivo é aprender uma função que generalize para exemplos novos, ainda não vistos.</p>
+<ul>
+<li><strong>Classificação:</strong> o rótulo é uma categoria (ex.: escola de desempenho "alto", "médio" ou "baixo").</li>
+<li><strong>Regressão:</strong> o rótulo é um valor numérico contínuo (ex.: prever a nota média de um aluno).</li>
+</ul>
+<h4>Aprendizado Não Supervisionado</h4>
+<p>Não há rótulos: o algoritmo busca <strong>estrutura</strong> nos dados por conta própria — grupos de exemplos semelhantes (clustering), redução de dimensionalidade ou padrões de associação. Ex.: agrupar escolas do RN por perfil de desempenho sem informar previamente categorias.</p>
+<h4>Aprendizado por Reforço</h4>
+<p>Um agente aprende por <strong>tentativa e erro</strong>, interagindo com um ambiente e recebendo recompensas ou penalidades por suas ações — usado em jogos, robótica e sistemas de recomendação adaptativos. Foge do escopo prático desta disciplina, mas é importante reconhecer o paradigma.</p>
+<h4>Onde estamos nesta disciplina?</h4>
+<p>Na Unidade 4 (Aprendizado de Máquina Aplicado) você praticará classificação, regressão e clustering com <code>scikit-learn</code>. Nesta aula, para entender os fundamentos, construiremos um classificador <strong>do zero</strong>, sem bibliotecas de ML — o KNN.</p></div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch6971"><h2 class="text-center pb-5">2. Capítulo 2 — O Processo KDD</h2><p class="translationhash"><span data-translationhash="0383a4fd925a7e1e8396ff6e6495a8f3"></span></p>
+<p><strong>KDD</strong> (Knowledge Discovery in Databases — Descoberta de Conhecimento em Bases de Dados) é o processo mais amplo do qual a Mineração de Dados é apenas uma etapa. Foi formalizado nos anos 1990 e continua sendo a base conceitual por trás de metodologias mais recentes, como o CRISP-DM (Capítulo 4 da Aula 01).</p>
+<h4>As cinco etapas do KDD</h4>
+<ol>
+<li><strong>Seleção:</strong> escolher, dentre todos os dados disponíveis, o subconjunto relevante para o problema. Ex.: dos microdados nacionais do ENEM, selecionar apenas os registros de escolas do RN.</li>
+<li><strong>Pré-processamento:</strong> tratar ruído, valores ausentes e inconsistências. Ex.: remover registros sem código de escola; tratar notas vazias de alunos faltosos.</li>
+<li><strong>Transformação:</strong> converter os dados para um formato adequado ao algoritmo — normalização, criação de atributos derivados. Ex.: calcular a média geral de cada aluno a partir das cinco notas.</li>
+<li><strong>Mineração de Dados:</strong> aplicar algoritmos (classificação, clustering, regras de associação) para extrair padrões. É aqui que entram os algoritmos de ML propriamente ditos.</li>
+<li><strong>Interpretação / Avaliação:</strong> validar se os padrões encontrados são úteis, novos e compreensíveis — e não artefatos do processo (ruído ou viés).</li>
+</ol>
+<h4>KDD × Mineração de Dados</h4>
+<p>É comum confundir os dois termos. A <strong>Mineração de Dados</strong> é a etapa 4 — a aplicação de algoritmos. O <strong>KDD</strong> é o processo completo, incluindo a preparação cuidadosa que antecede a mineração e a validação que a sucede. Sem essas etapas, um algoritmo sofisticado produz resultados enganosos a partir de dados mal preparados — o princípio conhecido como <em>garbage in, garbage out</em>.</p></div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch6972"><h2 class="text-center pb-5">3. Capítulo 3 — Overfitting e Underfitting</h2><p class="translationhash"><span data-translationhash="b136400e9f3ee404f21d613554336d1e"></span></p>
+<p>Um modelo de ML não deve apenas memorizar os dados de treino — ele precisa <strong>generalizar</strong> para dados novos. Dois problemas opostos ameaçam essa generalização.</p>
+<h4>Overfitting (sobreajuste)</h4>
+<p>O modelo aprende <strong>demais</strong> sobre os dados de treino, incluindo seu ruído e suas particularidades — e perde a capacidade de generalizar. Sintoma clássico: desempenho excelente no treino, ruim em dados novos.</p>
+<p><em>Analogia:</em> um aluno que decora as respostas de uma prova específica, mas não entende o conteúdo, vai bem naquela prova e mal em qualquer prova diferente.</p>
+<h4>Underfitting (subajuste)</h4>
+<p>O modelo é <strong>simples demais</strong> para capturar os padrões relevantes dos dados — desempenho ruim tanto no treino quanto em dados novos.</p>
+<p><em>Analogia:</em> um aluno que estudou tão pouco que erra tanto na prova de treino quanto em qualquer prova nova.</p>
+<h4>Por que separar treino e teste?</h4>
+<p>Avaliar um modelo apenas nos dados usados para treiná-lo é enganoso — ele pode estar apenas memorizando. Por isso, o procedimento padrão é dividir os dados:</p>
+<ul>
+<li><strong>Conjunto de treino:</strong> usado para o modelo aprender os padrões.</li>
+<li><strong>Conjunto de teste:</strong> dados nunca vistos pelo modelo durante o treino, usados apenas para medir sua capacidade de generalização.</li>
+</ul>
+<h4>O parâmetro certo</h4>
+<p>Muitos algoritmos têm um parâmetro que controla a complexidade do modelo — no KNN, por exemplo, o número de vizinhos <strong>k</strong> considerados. Poucos vizinhos (k pequeno) tendem a overfitting; muitos vizinhos (k grande) tendem a underfitting. Encontrar o equilíbrio é parte do trabalho do cientista de dados — você vai comprovar isso no exemplo prático desta aula.</p></div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch6973"><h2 class="text-center pb-5">4. Capítulo 4 — Métricas de Avaliação Básicas</h2><p class="translationhash"><span data-translationhash="109b53d28d94cc2aa147ea2f506e8e87"></span></p>
+<p>Depois de treinar um modelo, é preciso medir sua qualidade de forma objetiva. As métricas variam conforme o tipo de tarefa.</p>
+<h4>Classificação</h4>
+<ul>
+<li><strong>Acurácia:</strong> proporção de previsões corretas sobre o total. Simples, mas enganosa em bases desbalanceadas (ex.: se 90% das escolas são "médio desempenho", prever sempre "médio" já dá 90% de acurácia sem aprender nada útil).</li>
+<li><strong>Matriz de confusão:</strong> tabela que cruza classe prevista × classe real, revelando exatamente onde o modelo erra.</li>
+<li><strong>Precisão e Revocação (precision/recall):</strong> métricas mais robustas para classes desbalanceadas — vistas em detalhe na Unidade 4.</li>
+</ul>
+<h4>Regressão</h4>
+<ul>
+<li><strong>Erro Absoluto Médio (MAE):</strong> média das diferenças absolutas entre valor previsto e valor real.</li>
+<li><strong>Erro Quadrático Médio (RMSE):</strong> penaliza mais fortemente erros grandes, por elevar as diferenças ao quadrado.</li>
+<li><strong>R² (coeficiente de determinação):</strong> mede a proporção da variação dos dados explicada pelo modelo.</li>
+</ul>
+<h4>Neste capítulo, o essencial</h4>
+<p>No exemplo prático desta aula usaremos a <strong>acurácia</strong> — métrica suficiente para um primeiro contato, calculada como:</p>
+<pre class="language-python"><code>acurácia = (nº de previsões corretas) / (nº total de previsões no conjunto de teste)</code></pre>
+<p>Reforçando o Capítulo 3: sempre calcule a métrica no <strong>conjunto de teste</strong>, nunca apenas no treino — senão você mede memorização, não aprendizado.</p></div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch6974"><h2 class="text-center pb-5">5. Capítulo 5 — Estudo de Caso: KNN do Zero nos Dados do RN</h2><p class="translationhash"><span data-translationhash="db11aca551c37fefec4350f8b9746308"></span></p>
+<p>Para fixar os conceitos deste livro na prática, vamos construir um classificador <strong>KNN (K-Nearest Neighbors — K-vizinhos mais próximos)</strong> inteiramente do zero, em Python puro, sem bibliotecas de ML.</p>
+<h4>Como o KNN funciona</h4>
+<p>É um dos algoritmos de classificação mais intuitivos:</p>
+<ol>
+<li>Para classificar um exemplo novo, calcule sua <strong>distância</strong> até todos os exemplos do conjunto de treino;</li>
+<li>Selecione os <strong>k</strong> exemplos de treino mais próximos (os "vizinhos");</li>
+<li>Atribua ao novo exemplo a classe <strong>mais frequente</strong> entre esses k vizinhos (voto majoritário).</li>
+</ol>
+<p>Não há "treinamento" no sentido tradicional — o KNN apenas memoriza os dados de treino e faz todo o cálculo no momento da previsão (por isso é chamado de algoritmo <em>preguiçoso</em>, ou <em>lazy learner</em>).</p>
+<h4>O problema deste estudo de caso</h4>
+<p>Usando as médias das escolas do RN calculadas na Aula 01, vamos <strong>classificar cada escola em uma faixa de desempenho</strong> — "Alto", "Médio" ou "Baixo" — a partir de duas variáveis simples: a média geral da escola e o número de participantes. O objetivo não é obter o melhor modelo possível, e sim <strong>ver o KDD e o ML em ação</strong>: dados → preparação → algoritmo → avaliação → discussão crítica.</p>
+<h4>O que você vai observar no exemplo</h4>
+<ul>
+<li>Como <strong>separar treino e teste</strong> a partir de uma lista de escolas;</li>
+<li>Como calcular <strong>distância euclidiana</strong> entre exemplos (a essência do KNN);</li>
+<li>Como a <strong>acurácia</strong> muda ao variar o valor de <strong>k</strong> — e como isso ilustra overfitting (k=1) e underfitting (k muito grande);</li>
+<li>Por que <strong>normalizar</strong> as variáveis antes de calcular distâncias é importante quando elas têm escalas diferentes.</li>
+</ul>
+<p><strong>Vá agora para a seção "Exemplo Prático" desta aula</strong> e execute o código você mesmo.</p></div>
+            </div>
+    </div>
+</div></div>
+    </section>
+</div>
+
+
+
+
+
+
+
+

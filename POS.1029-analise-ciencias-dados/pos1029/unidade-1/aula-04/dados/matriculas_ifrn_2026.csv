@@ -1,0 +1,483 @@
+matricula;nome;campus;curso;modalidade;turno;ano_ingresso;semestre;idade;nota_final;frequencia;situacao
+20261000;Wagner Cavalcante Fernandes;Apodi;Análise e Desenvolvimento de Sistemas;Presencial;Noturno;2024;2;20;34,4;91,4;Reprovado por nota
+20261001;Zélia Santos Oliveira;Macau;Redes de Computadores;Presencial;Noturno;2025;1;24;70,9;79,3;Aprovado
+20261002;Zélia Barbosa Costa;Currais Novos;Ciência de Dados;Presencial;Vespertino;2024;1;23;87,8;84,0;Aprovado
+20261003;Beatriz Medeiros Fernandes;Santa Cruz;Análise e Desenvolvimento de Sistemas;Presencial;Matutino;2024;2;15;49,7;100,0;Reprovado por nota
+20261004;Ubiratan Bezerra Lima;Currais Novos;Edificações;Presencial;Matutino;2026;2;21;83,5;91,9;Aprovado
+20261005;Wagner Santos Maia;Apodi;Química;Presencial;Noturno;2026;2;18;83,6;88,5;Aprovado
+20261006;Daniela Oliveira Queiroz;Caicó;Informática para Internet;EaD;Matutino;2026;1;15;65,0;80,9;Aprovado
+20261007;Davi Oliveira Galvão;João Câmara;Eletrotécnica;Presencial;Noturno;2026;1;26;54,0;82,7;Reprovado por nota
+20261008;Ana Fernandes Lima;Mossoró;Eletrotécnica;Presencial;Vespertino;2023;2;15;83,0;93,3;Aprovado
+20261009;Felipe Medeiros Medeiros;Natal-Central;Agroecologia;Presencial;Noturno;2024;1;21;41,9;95,4;Reprovado por nota
+20261010;Emanuel Queiroz Lima;Mossoró;Administração;EaD;Noturno;2026;1;24;82,5;100,0;Aprovado
+20261011;Marina Cavalcante Almeida;Caicó;Redes de Computadores;Presencial;Matutino;2024;1;31;73,6;65,3;Reprovado por falta
+20261012;Karla Pereira Pereira;Parnamirim;Ciência de Dados;Presencial;Noturno;2026;1;27;58,1;92,4;Reprovado por nota
+20261013;Yasmin Santos Galvão;Parnamirim;Edificações;EaD;Matutino;2023;2;32;64,7;79,4;Aprovado
+20261014;Beatriz Medeiros Bezerra;Natal-Central;Agroecologia;Presencial;Vespertino;2023;1;30;;93,0;Trancado
+20261015;Carla Costa Costa;João Câmara;Eletrotécnica;EaD;Noturno;2025;1;27;72,6;85,4;Aprovado
+20261016;Davi Fonseca Cavalcante;Natal-Central;Administração;Presencial;Vespertino;2024;2;15;;95,6;Trancado
+20261017;Gabriela Bezerra Cavalcante;Natal-Central;Agroecologia;Presencial;Noturno;2026;1;15;71,5;72,8;Reprovado por falta
+20261018;Olívia Costa Pereira;Parnamirim;Eletrotécnica;Presencial;Noturno;2023;1;27;45,5;88,3;Reprovado por nota
+20261019;Yasmin Dantas Almeida;São Gonçalo do Amarante;Análise e Desenvolvimento de Sistemas;EaD;Noturno;2026;1;28;48,9;79,4;Reprovado por nota
+20261020;Hugo Bezerra Costa;Natal-Zona Norte;Agroecologia;Presencial;Noturno;2026;1;17;74,1;81,2;Aprovado
+20261021;Felipe Pereira Dantas;Mossoró;Edificações;Presencial;Vespertino;2024;2;25;55,1;79,2;Reprovado por nota
+20261022;Bruno Fonseca Galvão;São Gonçalo do Amarante;Análise e Desenvolvimento de Sistemas;Presencial;Noturno;2026;1;19;58,9;72,6;Reprovado por falta
+20261023;Sabrina Pereira Silva;Natal-Central;Análise e Desenvolvimento de Sistemas;Presencial;Noturno;2024;2;15;71,0;84,0;Aprovado
+20261024;Isabela Maia Costa;Parnamirim;Análise e Desenvolvimento de Sistemas;Presencial;Vespertino;2024;2;21;81,9;84,5;Aprovado
+20261025;Ubiratan Barbosa Santos;São Gonçalo do Amarante;Redes de Computadores;EaD;Matutino;2023;1;24;58,5;72,6;Reprovado por falta
+20261026;Thiago Queiroz Almeida;João Câmara;Administração;Presencial;Matutino;2023;1;20;96,8;90,7;Aprovado
+20261027;Zélia Maia Souza;Natal-Zona Norte;Eletrotécnica;Presencial;Noturno;2025;2;23;72,1;96,6;Aprovado
+20261028;Thiago Almeida Maia;São Gonçalo do Amarante;Informática para Internet;Presencial;Vespertino;2026;2;30;56,7;100,0;Reprovado por nota
+20261029;Pedro Queiroz Pereira;Pau dos Ferros;Administração;Presencial;Vespertino;2026;1;30;74,4;100,0;Aprovado
+20261030;Davi Costa Barbosa;Apodi;Química;EaD;Vespertino;2024;1;22;71,5;90,1;Aprovado
+20261031;Wagner Fernandes Cavalcante;João Câmara;Agroecologia;Presencial;Matutino;2025;2;22;59,9;80,7;Reprovado por nota
+20261032;Ubiratan Nogueira Silva;Natal-Central;Edificações;Presencial;Vespertino;2024;1;32;;86,6;Em curso
+20261033;Valéria Fernandes Rocha;Mossoró;Administração;EaD;Noturno;2023;1;15;59,6;90,9;Reprovado por nota
+20261034;Pedro Pereira Queiroz;Natal-Central;Mecânica;EaD;Vespertino;2024;2;24;;80,0;Em curso
+20261035;Daniela Fernandes Almeida;Natal-Zona Norte;Mecânica;EaD;Noturno;2026;2;21;68,0;99,6;Aprovado
+20261036;Fernanda Almeida Silva;Pau dos Ferros;Informática para Internet;Presencial;Noturno;2024;2;26;69,7;86,8;Aprovado
+20261037;Quésia Souza Fonseca;Natal-Central;Ciência de Dados;Presencial;Noturno;2025;1;15;65,0;94,2;Aprovado
+20261038;Isabela Medeiros Costa;Natal-Central;Redes de Computadores;Presencial;Noturno;2024;1;15;61,8;78,2;Aprovado
+20261039;Ubiratan Silva Barbosa;Natal-Central;Edificações;EaD;Noturno;2023;1;27;;81,8;Trancado
+20261040;Yasmin Silva Galvão;Pau dos Ferros;Eletrotécnica;Presencial;Vespertino;2026;1;28;77,1;78,4;Aprovado
+20261041;Lucas Pereira Costa;Mossoró;Química;EaD;Vespertino;2024;2;21;74,9;80,2;Aprovado
+20261042;Ubiratan Rocha Barbosa;Natal-Central;Ciência de Dados;Presencial;Matutino;2025;1;27;76,4;88,9;Aprovado
+20261043;Quésia Barbosa Costa;Natal-Central;Mecânica;Presencial;Noturno;2025;1;21;73,7;100,0;Aprovado
+20261044;João Fonseca Barbosa;Currais Novos;Informática para Internet;Presencial;Vespertino;2026;1;27;79,4;93,4;Aprovado
+20261045;Valéria Santos Galvão;Mossoró;Química;Presencial;Noturno;2026;2;22;73,4;92,9;Aprovado
+20261046;Carla Maia Souza;Mossoró;Análise e Desenvolvimento de Sistemas;Presencial;Matutino;2025;1;25;73,9;66,5;Reprovado por falta
+20261047;Carla Barbosa Maia;Mossoró;Agroecologia;Presencial;Vespertino;2025;1;31;64,1;100,0;Aprovado
+20261048;Elaine Santos Almeida;Mossoró;Eletrotécnica;Presencial;Matutino;2026;1;37;69,6;100,0;Aprovado
+20261049;Yasmin Rocha Lima;Natal-Zona Norte;Informática para Internet;EaD;Noturno;2025;1;35;63,3;72,6;Reprovado por falta
+20261050;Ubiratan Fonseca Medeiros;São Gonçalo do Amarante;Informática para Internet;EaD;Noturno;2023;2;18;82,4;70,2;Reprovado por falta
+20261051;Bruno Nogueira Santos;Apodi;Agroecologia;Presencial;Matutino;2026;2;22;;;Em curso
+20261052;Valéria Fonseca Almeida;Natal-Central;Redes de Computadores;Presencial;Matutino;2026;1;17;62,2;95,5;Aprovado
+20261053;Quésia Barbosa Fernandes;Apodi;Informática para Internet;Presencial;Vespertino;2026;2;21;74,4;100,0;Aprovado
+20261054;Davi Oliveira Oliveira;João Câmara;Administração;Presencial;Matutino;2026;2;30;62,4;90,9;Aprovado
+20261055;Karla Santos Fernandes;Pau dos Ferros;Ciência de Dados;Presencial;Vespertino;2025;2;26;90,4;72,1;Reprovado por falta
+20261056;Hugo Fernandes Fernandes;Currais Novos;Redes de Computadores;Presencial;Matutino;2026;2;25;91,5;81,7;Aprovado
+20261057;Elaine Fonseca Silva;Natal-Zona Norte;Informática para Internet;Presencial;Noturno;2025;1;24;53,1;95,4;Reprovado por nota
+20261058;Elaine Fonseca Bezerra;Natal-Central;Agroecologia;Presencial;Noturno;2025;2;15;66,9;79,2;Aprovado
+20261059;Yasmin Pereira Souza;Santa Cruz;Administração;Presencial;Matutino;2026;1;31;85,0;87,9;Aprovado
+20261060;Wagner Fonseca Costa;Currais Novos;Ciência de Dados;Presencial;Matutino;2025;1;29;82,0;73,4;Reprovado por falta
+20261061;Gabriela Rocha Dantas;Mossoró;Edificações;Presencial;Noturno;2023;1;26;43,0;100,0;Reprovado por nota
+20261062;Fernanda Fonseca Nogueira;Caicó;Mecânica;Presencial;Matutino;2025;2;28;54,9;82,8;Reprovado por nota
+20261063;Isabela Almeida Fonseca;Macau;Edificações;Presencial;Noturno;2023;2;22;75,2;93,7;Aprovado
+20261064;Valéria Cavalcante Fernandes; São Gonçalo do Amarante ;Redes de Computadores;EaD;Matutino;2025;2;27;68,3;80,2;Aprovado
+20261065;Nathan Souza Galvão;São Gonçalo do Amarante;Eletrotécnica;Presencial;Vespertino;2026;2;22;54,7;100,0;Reprovado por nota
+20261066;João Bezerra Pereira;Apodi;Edificações;Presencial;Matutino;2023;1;24;76,3;100,0;Aprovado
+20261067;Gabriela Almeida Pereira;Macau;Análise e Desenvolvimento de Sistemas;Presencial;Vespertino;2026;1;30;71,4;82,4;Aprovado
+20261068;Lucas Oliveira Bezerra;Pau dos Ferros;Química;EaD;Noturno;2025;1;25;60,5;80,4;Aprovado
+20261069;Nathan Lima Bezerra;Currais Novos;Informática para Internet;Presencial;Noturno;2025;1;19;81,9;80,6;Aprovado
+20261070;Ana Silva Fonseca;Natal-Central;Eletrotécnica;Presencial;Noturno;2025;2;24;62,6;100,0;Aprovado
+20261071;Karla Santos Rocha;Apodi;Redes de Computadores;Presencial;Matutino;2026;1;25;76,8;81,9;Aprovado
+20261072;Rafael Fonseca Rocha;Parnamirim;Eletrotécnica;EaD;Noturno;2025;2;28;64,8;88,5;Aprovado
+20261073;Yasmin Fernandes Almeida;Caicó;Redes de Computadores;Presencial;Noturno;2023;1;30;58,5;77,1;Reprovado por nota
+20261074;Yasmin Souza Rocha;Natal-Central;Informática para Internet;Presencial;Noturno;2026;2;22;66,7;100,0;Aprovado
+20261075;Carla Costa Fernandes;Pau dos Ferros;Agroecologia;Presencial;Noturno;2025;1;27;89,2;83,1;Aprovado
+20261076;Caio Oliveira Fonseca;Apodi;Informática para Internet;Presencial;Vespertino;2025;2;27;75,3;79,6;Aprovado
+20261077;Isabela Nogueira Fonseca;Natal-Zona Norte;Administração;EaD;Noturno;2024;1;26;87,8;84,1;Aprovado
+20261078;Karla Silva Pereira;Santa Cruz;Agroecologia;EaD;Vespertino;2023;2;15;85,5;72,6;Reprovado por falta
+20261079;Hugo Maia Rocha;São Gonçalo do Amarante;Edificações;Presencial;Noturno;2024;1;35;70,1;68,0;Reprovado por falta
+20261080;Marina Almeida Maia;Apodi;Agroecologia;Presencial;Matutino;2023;2;20;62,1;94,5;Aprovado
+20261081;Bruno Cavalcante Costa;Pau dos Ferros;Química;Presencial;Noturno;2025;2;31;87,6;100,0;Aprovado
+20261082;Sabrina Almeida Rocha;Currais Novos;Análise e Desenvolvimento de Sistemas;Presencial;Matutino;2024;1;24;86,3;80,7;Aprovado
+20261083;Davi Oliveira Costa;Macau;Redes de Computadores;EaD;Vespertino;2025;2;15;67,8;82,4;Aprovado
+20261084;Nathan Pereira Rocha;Caicó;Administração;Presencial;Noturno;2025;2;21;65,9;85,3;Aprovado
+20261085;Elaine Silva Galvão;Macau;Edificações;EaD;Vespertino;2025;1;25;63,9;94,7;Aprovado
+20261086;Elaine Bezerra Cavalcante;Currais Novos;Eletrotécnica;Presencial;Noturno;2023;1;15;68,4;93,4;Aprovado
+20261087;Davi Rocha Fernandes;Caicó;Ciência de Dados;Presencial;Vespertino;2023;1;18;65,3;95,5;Aprovado
+20261088;Marina Nogueira Pereira;São Gonçalo do Amarante;Mecânica;Presencial;Vespertino;2026;2;19;73,5;81,1;Aprovado
+20261089;Davi Dantas Almeida;Caicó;Informática para Internet;Presencial;Noturno;2024;2;22;84,5;75,2;Aprovado
+20261090;Pedro Bezerra Medeiros;Macau;Redes de Computadores;Presencial;Noturno;2025;2;22;69,1;70,5;Reprovado por falta
+20261091;Bruno Cavalcante Queiroz;Mossoró;Informática para Internet;Presencial;Matutino;2024;1;25;70,6;81,5;Aprovado
+20261092;Valéria Bezerra Oliveira;Macau;Eletrotécnica;Presencial;Matutino;2026;2;39;74,8;82,6;Aprovado
+20261093;Davi Queiroz Souza;Natal-Zona Norte;Informática para Internet;Presencial;Vespertino;2025;2;31;85,2;80,7;Aprovado
+20261094;Lucas Dantas Barbosa;Natal-Central;Agroecologia;Presencial;Noturno;2024;1;23;69,4;87,3;Aprovado
+20261095;Yasmin Souza Almeida;Natal-Zona Norte;Informática para Internet;Presencial;Vespertino;2025;2;23;51,8;78,3;Reprovado por nota
+20261096;Caio Dantas Nogueira;Macau;Mecânica;Presencial;Matutino;2024;1;23;47,2;98,6;Reprovado por nota
+20261097;Pedro Bezerra Lima;Mossoró;Ciência de Dados;Presencial;Noturno;2025;2;22;;86,8;Trancado
+20261098;Marina Rocha Almeida;Mossoró;Administração;Presencial;Matutino;2023;1;23;72,3;89,8;Aprovado
+20261099;Davi Oliveira Cavalcante;Apodi;Redes de Computadores;Presencial;Noturno;2024;2;16;100,0;92,0;Aprovado
+20261100;Thiago Oliveira Fonseca;Natal-Central;Mecânica;Presencial;Matutino;2026;1;28;50,1;100,0;Reprovado por nota
+20261101;Emanuel Costa Cavalcante; Currais Novos ;Mecânica;Presencial;Matutino;2024;2;25;46,5;81,3;Reprovado por nota
+20261102;Lucas Santos Maia;Caicó;Mecânica;Presencial;Noturno;2023;1;18;74,2;86,0;Aprovado
+20261103;Ubiratan Maia Souza;Mossoró;Ciência de Dados;Presencial;Noturno;2025;1;19;63,8;100,0;Aprovado
+20261104;Davi Fernandes Galvão;João Câmara;Mecânica;EaD;Matutino;2026;2;24;;69,6;Trancado
+20261105;Hugo Galvão Lima;Natal-Zona Norte;Análise e Desenvolvimento de Sistemas;Presencial;Vespertino;2026;1;16;80,0;84,4;Aprovado
+20261106;Marina Cavalcante Barbosa;São Gonçalo do Amarante;Análise e Desenvolvimento de Sistemas;EaD;Matutino;2023;2;15;68,7;100,0;Aprovado
+20261107;Gabriela Maia Nogueira;Santa Cruz;Administração;Presencial;Vespertino;2026;1;25;72,9;74,8;Reprovado por falta
+20261108;Emanuel Silva Pereira;Mossoró;Mecânica;EaD;Noturno;2023;1;32;54,1;74,8;Reprovado por falta
+20261109;Daniela Barbosa Maia;Natal-Central;Edificações;Presencial;Noturno;2023;1;20;71,1;94,7;Aprovado
+20261110;Isabela Fernandes Almeida;Currais Novos;Mecânica;Presencial;Noturno;2026;2;30;62,3;91,4;Aprovado
+20261111;Lucas Maia Fernandes;Caicó;Informática para Internet;Presencial;Vespertino;2025;1;20;;82,6;Em curso
+20261112;Elaine Rocha Fonseca;Natal-Central;Edificações;EaD;Noturno;2026;2;23;61,8;68,8;Reprovado por falta
+20261113;Elaine Almeida Lima;Macau;Agroecologia;Presencial;Noturno;2026;2;29;53,7;80,4;Reprovado por nota
+20261114;Pedro Oliveira Galvão;Mossoró;Agroecologia;EaD;Noturno;2025;2;20;;82,0;Trancado
+20261115;Emanuel Maia Dantas;Santa Cruz;Eletrotécnica;Presencial;Noturno;2026;2;21;76,4;83,5;Aprovado
+20261116;Bruno Barbosa Bezerra;Santa Cruz;Análise e Desenvolvimento de Sistemas;Presencial;Matutino;2024;1;27;;79,3;Trancado
+20261117;Emanuel Dantas Fonseca;Natal-Zona Norte;Redes de Computadores;Presencial;Matutino;2026;2;21;58,9;99,3;Reprovado por nota
+20261118;Valéria Medeiros Fonseca;Natal-Central;Agroecologia;Presencial;Matutino;2025;2;23;66,3;100,0;Aprovado
+20261119;Bruno Fonseca Silva;Natal-Central;Informática para Internet;EaD;Matutino;2026;1;18;63,0;86,1;Aprovado
+20261120;Caio Galvão Dantas;Mossoró;Mecânica;Presencial;Matutino;2023;1;26;88,2;85,0;Aprovado
+20261121;Thiago Maia Barbosa;Parnamirim;Eletrotécnica;Presencial;Matutino;2026;1;28;72,0;91,5;Aprovado
+20261122;Beatriz Costa Pereira;Natal-Zona Norte;Agroecologia;Presencial;Vespertino;2024;1;31;81,5;87,2;Aprovado
+20261123;Yasmin Rocha Galvão;Natal-Central;Administração;Presencial;Matutino;2026;2;31;74,4;;Reprovado por falta
+20261124;Fernanda Fonseca Silva;Caicó;Análise e Desenvolvimento de Sistemas;Presencial;Matutino;2023;1;25;67,6;93,0;Aprovado
+20261125;Sabrina Barbosa Pereira;Apodi;Química;Presencial;Matutino;2026;2;26;55,6;100,0;Reprovado por nota
+20261126;Gabriela Rocha Rocha;Natal-Central;Redes de Computadores;Presencial;Matutino;2025;2;32;;99,6;Trancado
+20261127;Karla Maia Maia;Apodi;Agroecologia;Presencial;Noturno;2023;1;26;77,8;100,0;Aprovado
+20261128;Thiago Pereira Cavalcante;Natal-Central;Edificações;Presencial;Matutino;2024;2;21;72,4;85,9;Aprovado
+20261129;Nathan Silva Fonseca;Macau;Informática para Internet;Presencial;Noturno;2026;2;22;69,6;95,8;Aprovado
+20261130;Bruno Oliveira Souza;Parnamirim;Agroecologia;Presencial;Noturno;2025;2;33;66,0;79,5;Aprovado
+20261131;Yasmin Costa Bezerra;Natal-Central;Agroecologia;Presencial;Matutino;2025;1;20;69,7;78,3;Aprovado
+20261132;Pedro Nogueira Santos;Pau dos Ferros;Agroecologia;Presencial;Vespertino;2023;1;27;70,1;80,4;Aprovado
+20261133;Beatriz Rocha Cavalcante;Macau;Eletrotécnica;Presencial;Vespertino;2026;2;16;90,1;98,9;Aprovado
+20261134;Daniela Costa Medeiros;Natal-Central;Agroecologia;Presencial;Noturno;2023;1;19;67,5;71,9;Reprovado por falta
+20261135;Felipe Almeida Souza;Natal-Central;Análise e Desenvolvimento de Sistemas;Presencial;Matutino;2024;1;27;66,8;64,0;Reprovado por falta
+20261136;Fernanda Lima Almeida;João Câmara;Informática para Internet;EaD;Matutino;2024;1;31;71,3;92,8;Aprovado
+20261137;Davi Santos Galvão;Santa Cruz;Informática para Internet;Presencial;Noturno;2023;2;22;82,4;78,5;Aprovado
+20261138;Elaine Medeiros Medeiros;Natal-Zona Norte;Informática para Internet;Presencial;Matutino;2026;1;17;64,2;74,1;Reprovado por falta
+20261139;Zélia Bezerra Nogueira;João Câmara;Agroecologia;Presencial;Noturno;2025;1;31;69,1;90,2;Aprovado
+20261140;João Lima Fonseca;Macau;Agroecologia;Presencial;Noturno;2024;2;21;87,2;89,5;Aprovado
+20261141;Bruno Pereira Barbosa;Caicó;Edificações;Presencial;Matutino;2025;2;20;79,7;87,6;Aprovado
+20261142;Nathan Barbosa Barbosa;Currais Novos;Ciência de Dados;EaD;Vespertino;2025;1;20;83,9;100,0;Aprovado
+20261143;Carla Lima Bezerra;Parnamirim;Ciência de Dados;EaD;Noturno;2025;2;26;79,4;91,6;Aprovado
+20261144;Fernanda Fonseca Maia;Pau dos Ferros;Química;Presencial;Noturno;2026;1;17;;86,7;Trancado
+20261145;Olívia Dantas Maia;Natal-Central;Redes de Computadores;Presencial;Matutino;2026;1;32;70,1;76,9;Aprovado
+20261146;Yasmin Rocha Galvão;Macau;Redes de Computadores;Presencial;Matutino;2025;1;22;82,4;98,3;Aprovado
+20261147;João Oliveira Fonseca;Macau;Química;Presencial;Noturno;2023;1;33;65,4;72,3;Reprovado por falta
+20261148;Marina Bezerra Souza;Parnamirim;Edificações;Presencial;Matutino;2026;2;22;48,8;80,8;Reprovado por nota
+20261149;Nathan Silva Queiroz;Pau dos Ferros;Química;Presencial;Noturno;2026;1;15;72,3;78,7;Aprovado
+20261150;Ana Souza Medeiros;João Câmara;Informática para Internet;Presencial;Vespertino;2026;1;28;61,4;81,1;Aprovado
+20261151;Caio Dantas Fonseca;Natal-Zona Norte;Informática para Internet;Presencial;Matutino;2025;1;27;79,9;88,8;Aprovado
+20261152;Emanuel Oliveira Queiroz;Natal-Central;Análise e Desenvolvimento de Sistemas;EaD;Matutino;2026;2;25;39,0;72,8;Reprovado por falta
+20261153;Carla Souza Fernandes; Natal-Central ;Administração;EaD;Noturno;2025;1;17;82,8;78,4;Aprovado
+20261154;Ana Bezerra Oliveira;Pau dos Ferros;Informática para Internet;Presencial;Vespertino;2024;1;25;88,6;99,6;Aprovado
+20261155;Felipe Lima Rocha;Natal-Central;Agroecologia;Presencial;Matutino;2025;1;32;71,3;87,8;Aprovado
+20261156;Olívia Barbosa Oliveira;São Gonçalo do Amarante;Administração;EaD;Noturno;2025;1;18;41,2;85,7;Reprovado por nota
+20261157;Karla Almeida Galvão;Pau dos Ferros;Administração;Presencial;Noturno;2023;1;27;38,9;61,8;Reprovado por falta
+20261158;Isabela Queiroz Bezerra;Currais Novos;Redes de Computadores;Presencial;Vespertino;2025;1;26;63,0;71,5;Reprovado por falta
+20261159;Elaine Costa Pereira;Macau;Ciência de Dados;EaD;Matutino;2026;2;19;;82,5;Trancado
+20261160;Quésia Bezerra Maia;Natal-Central;Administração;Presencial;Noturno;2025;1;15;73,1;97,1;Aprovado
+20261161;Rafael Barbosa Oliveira;Caicó;Redes de Computadores;Presencial;Noturno;2024;1;29;59,3;94,9;Reprovado por nota
+20261162;Gabriela Lima Fonseca;Parnamirim;Administração;EaD;Noturno;2026;2;20;56,4;80,2;Reprovado por nota
+20261163;Nathan Dantas Fernandes;Pau dos Ferros;Análise e Desenvolvimento de Sistemas;Presencial;Noturno;2026;1;27;57,4;88,7;Reprovado por nota
+20261164;Lucas Souza Silva;Parnamirim;Mecânica;Presencial;Matutino;2025;2;31;55,9;85,7;Reprovado por nota
+20261165;Valéria Silva Bezerra;Apodi;Mecânica;Presencial;Matutino;2023;2;17;59,6;95,8;Reprovado por nota
+20261166;Beatriz Pereira Almeida;Mossoró;Edificações;EaD;Matutino;2023;1;24;94,4;84,8;Aprovado
+20261167;Bruno Cavalcante Silva;Natal-Central;Química;Presencial;Noturno;2026;2;26;71,7;75,2;Aprovado
+20261168;Ana Dantas Cavalcante;Santa Cruz;Eletrotécnica;Presencial;Matutino;2023;1;15;80,2;80,9;Aprovado
+20261169;Bruno Queiroz Fonseca;Currais Novos;Análise e Desenvolvimento de Sistemas;Presencial;Matutino;2025;1;21;74,5;94,4;Aprovado
+20261170;Marina Barbosa Costa;Mossoró;Química;EaD;Matutino;2026;2;26;94,5;97,4;Aprovado
+20261171;Gabriela Fernandes Nogueira;Parnamirim;Administração;Presencial;Matutino;2026;2;24;63,0;92,1;Aprovado
+20261172;Lucas Cavalcante Queiroz;Natal-Central;Análise e Desenvolvimento de Sistemas;Presencial;Vespertino;2025;2;31;43,3;77,4;Reprovado por nota
+20261173;Yasmin Pereira Costa;João Câmara;Administração;Presencial;Noturno;2024;2;16;44,4;65,0;Reprovado por falta
+20261174;Nathan Almeida Cavalcante;Currais Novos;Mecânica;Presencial;Noturno;2026;1;22;80,1;100,0;Aprovado
+20261175;Caio Silva Fonseca;João Câmara;Ciência de Dados;Presencial;Noturno;2025;1;22;56,2;88,7;Reprovado por nota
+20261176;Nathan Almeida Barbosa;Currais Novos;Ciência de Dados;EaD;Matutino;2025;2;30;71,6;82,0;Aprovado
+20261177;Bruno Bezerra Dantas;Parnamirim;Informática para Internet;Presencial;Matutino;2024;1;17;98,3;87,1;Aprovado
+20261178;Lucas Lima Queiroz;João Câmara;Agroecologia;EaD;Noturno;2025;2;22;71,3;86,6;Aprovado
+20261179;Pedro Maia Pereira;Natal-Central;Informática para Internet;EaD;Matutino;2025;1;25;90,2;86,7;Aprovado
+20261180;Pedro Oliveira Fernandes;Pau dos Ferros;Análise e Desenvolvimento de Sistemas;Presencial;Noturno;2024;1;22;59,7;100,0;Reprovado por nota
+20261181;Ana Silva Santos;Macau;Análise e Desenvolvimento de Sistemas;EaD;Noturno;2023;1;24;69,0;89,1;Aprovado
+20261182;Gabriela Nogueira Costa;Mossoró;Informática para Internet;Presencial;Noturno;2024;1;15;56,1;75,2;Reprovado por nota
+20261183;Yasmin Queiroz Galvão;Macau;Redes de Computadores;Presencial;Noturno;2025;1;22;55,2;81,2;Reprovado por nota
+20261184;Zélia Fernandes Oliveira;Mossoró;Análise e Desenvolvimento de Sistemas;Presencial;Matutino;2023;2;22;57,2;79,4;Reprovado por nota
+20261185;Lucas Rocha Lima;Natal-Central;Química;Presencial;Noturno;2026;1;22;64,0;100,0;Aprovado
+20261186;Bruno Nogueira Rocha;Natal-Central;Ciência de Dados;Presencial;Vespertino;2025;2;19;62,1;85,2;Aprovado
+20261187;Lucas Nogueira Fernandes;Macau;Mecânica;EaD;Noturno;2026;2;26;50,2;57,8;Reprovado por falta
+20261188;Caio Rocha Cavalcante;Apodi;Informática para Internet;Presencial;Noturno;2025;1;24;87,1;96,6;Aprovado
+20261189;Pedro Almeida Nogueira;Natal-Central;Química;Presencial;Matutino;2025;1;15;81,0;81,8;Aprovado
+20261190;Hugo Dantas Lima;João Câmara;Redes de Computadores;Presencial;Noturno;2025;2;19;67,8;100,0;Aprovado
+20261191;Beatriz Almeida Oliveira;João Câmara;Ciência de Dados;Presencial;Noturno;2024;1;27;71,1;73,1;Reprovado por falta
+20261192;Ubiratan Fernandes Queiroz;Natal-Central;Agroecologia;Presencial;Noturno;2025;1;26;71,4;77,0;Aprovado
+20261193;Yasmin Oliveira Silva;Currais Novos;Agroecologia;Presencial;Matutino;2024;1;28;;76,3;Trancado
+20261194;Ubiratan Souza Oliveira;Natal-Zona Norte;Administração;EaD;Noturno;2023;1;15;59,3;100,0;Reprovado por nota
+20261195;Karla Pereira Oliveira;João Câmara;Redes de Computadores;Presencial;Noturno;2025;1;31;54,8;87,6;Reprovado por nota
+20261196;Quésia Almeida Nogueira;Currais Novos;Análise e Desenvolvimento de Sistemas;Presencial;Matutino;2024;1;25;54,8;85,4;Reprovado por nota
+20261197;Hugo Oliveira Rocha;Pau dos Ferros;Química;EaD;Noturno;2026;1;15;;92,6;Em curso
+20261198;Ana Medeiros Maia;Apodi;Química;Presencial;Matutino;2023;2;26;55,6;98,1;Reprovado por nota
+20261199;Carla Pereira Pereira;Natal-Central;Redes de Computadores;Presencial;Vespertino;2024;2;26;78,6;73,3;Reprovado por falta
+20261200;Quésia Souza Dantas;Natal-Central;Análise e Desenvolvimento de Sistemas;Presencial;Noturno;2025;2;16;84,7;88,2;Aprovado
+20261201;Ubiratan Galvão Costa;Natal-Zona Norte;Química;EaD;Noturno;2026;1;21;75,2;64,0;Reprovado por falta
+20261202;Karla Bezerra Costa;Natal-Central;Informática para Internet;Presencial;Noturno;2023;1;21;69,8;70,9;Reprovado por falta
+20261203;Caio Almeida Santos;Pau dos Ferros;Informática para Internet;Presencial;Noturno;2023;2;27;85,7;94,0;Aprovado
+20261204;Yasmin Galvão Bezerra;Santa Cruz;Química;Presencial;Noturno;2024;2;20;75,1;86,2;Aprovado
+20261205;Felipe Oliveira Santos;São Gonçalo do Amarante;Informática para Internet;EaD;Noturno;2024;2;23;71,2;81,8;Aprovado
+20261206;Emanuel Barbosa Santos;Natal-Zona Norte;Ciência de Dados;Presencial;Vespertino;2026;2;17;68,2;85,8;Aprovado
+20261207;Thiago Rocha Costa;Natal-Central;Redes de Computadores;Presencial;Noturno;2026;1;16;69,6;79,7;Aprovado
+20261208;Valéria Pereira Lima;Mossoró;Redes de Computadores;Presencial;Matutino;2023;2;23;83,2;95,5;Aprovado
+20261209;Ubiratan Costa Costa;Mossoró;Informática para Internet;EaD;Vespertino;2026;1;24;93,7;78,4;Aprovado
+20261210;Yasmin Nogueira Oliveira; Apodi ;Ciência de Dados;Presencial;Noturno;2025;2;23;84,0;74,1;Reprovado por falta
+20261211;Pedro Lima Barbosa;Macau;Redes de Computadores;Presencial;Matutino;2025;1;27;;95,6;Em curso
+20261212;Marina Barbosa Maia;Natal-Zona Norte;Administração;Presencial;Vespertino;2026;1;21;92,3;100,0;Aprovado
+20261213;Sabrina Barbosa Galvão;Caicó;Mecânica;Presencial;Vespertino;2024;1;28;64,9;70,1;Reprovado por falta
+20261214;Isabela Barbosa Oliveira;Pau dos Ferros;Eletrotécnica;Presencial;Noturno;2025;1;21;;85,1;Em curso
+20261215;Ubiratan Lima Fernandes;Parnamirim;Química;Presencial;Vespertino;2026;1;26;82,9;89,2;Aprovado
+20261216;Beatriz Nogueira Barbosa;Natal-Central;Eletrotécnica;Presencial;Vespertino;2025;2;15;82,5;72,2;Reprovado por falta
+20261217;Yasmin Santos Silva;Pau dos Ferros;Informática para Internet;Presencial;Noturno;2026;1;15;69,2;85,5;Aprovado
+20261218;Emanuel Nogueira Bezerra;Apodi;Agroecologia;EaD;Noturno;2024;2;23;70,4;85,0;Aprovado
+20261219;Daniela Bezerra Silva;Mossoró;Redes de Computadores;Presencial;Vespertino;2025;1;33;42,8;72,6;Reprovado por falta
+20261220;Carla Fonseca Medeiros;Natal-Central;Química;Presencial;Matutino;2026;2;23;72,5;93,7;Aprovado
+20261221;Valéria Oliveira Fernandes;São Gonçalo do Amarante;Informática para Internet;Presencial;Matutino;2023;1;32;67,8;86,6;Aprovado
+20261222;Caio Almeida Silva;Natal-Central;Informática para Internet;EaD;Vespertino;2026;2;15;78,7;63,1;Reprovado por falta
+20261223;Daniela Fonseca Cavalcante;Natal-Central;Administração;Presencial;Noturno;2024;1;15;83,8;87,4;Aprovado
+20261224;Yasmin Pereira Galvão;Apodi;Mecânica;EaD;Noturno;2023;2;28;57,0;70,0;Reprovado por falta
+20261225;Fernanda Lima Souza;João Câmara;Administração;Presencial;Matutino;2023;1;28;57,4;81,1;Reprovado por nota
+20261226;Ubiratan Silva Pereira;Mossoró;Administração;EaD;Matutino;2024;1;24;68,8;83,2;Aprovado
+20261227;Beatriz Fernandes Silva;São Gonçalo do Amarante;Edificações;EaD;Noturno;2026;2;15;52,6;76,1;Reprovado por nota
+20261228;João Souza Queiroz;João Câmara;Mecânica;Presencial;Vespertino;2024;2;20;44,0;75,3;Reprovado por nota
+20261229;Isabela Rocha Nogueira;Mossoró;Análise e Desenvolvimento de Sistemas;EaD;Matutino;2024;1;27;74,7;81,8;Aprovado
+20261230;Carla Fernandes Fernandes;João Câmara;Eletrotécnica;Presencial;Vespertino;2023;1;18;82,6;71,1;Reprovado por falta
+20261231;Marina Pereira Silva;São Gonçalo do Amarante;Análise e Desenvolvimento de Sistemas;Presencial;Matutino;2024;2;20;76,4;74,2;Reprovado por falta
+20261232;Davi Santos Maia;São Gonçalo do Amarante;Edificações;Presencial;Vespertino;2023;1;32;84,2;92,2;Aprovado
+20261233;Valéria Santos Bezerra;Mossoró;Informática para Internet;Presencial;Matutino;2026;1;25;73,9;88,0;Aprovado
+20261234;Rafael Pereira Maia;Mossoró;Administração;EaD;Noturno;2023;1;24;37,8;83,7;Reprovado por nota
+20261235;Wagner Dantas Souza;João Câmara;Edificações;Presencial;Vespertino;2023;1;31;59,9;82,2;Reprovado por nota
+20261236;Carla Medeiros Lima;Natal-Zona Norte;Informática para Internet;Presencial;Noturno;2025;2;20;51,8;100,0;Reprovado por nota
+20261237;Hugo Oliveira Fonseca;São Gonçalo do Amarante;Administração;Presencial;Noturno;2025;1;25;;76,0;Trancado
+20261238;Daniela Oliveira Medeiros;Natal-Zona Norte;Redes de Computadores;Presencial;Matutino;2025;1;26;77,8;82,2;Aprovado
+20261239;Quésia Souza Nogueira;São Gonçalo do Amarante;Informática para Internet;Presencial;Matutino;2026;1;35;74,9;86,5;Aprovado
+20261240;Marina Rocha Galvão;Natal-Central;Ciência de Dados;Presencial;Vespertino;2025;2;20;62,9;97,0;Aprovado
+20261241;Felipe Fernandes Almeida;Natal-Central;Edificações;EaD;Noturno;2025;2;18;71,3;71,8;Reprovado por falta
+20261242;Nathan Almeida Fernandes;São Gonçalo do Amarante;Ciência de Dados;Presencial;Matutino;2023;2;15;;88,1;Trancado
+20261243;Isabela Rocha Fernandes;Santa Cruz;Química;Presencial;Matutino;2023;1;19;72,8;100,0;Aprovado
+20261244;Nathan Fonseca Cavalcante;Pau dos Ferros;Administração;Presencial;Matutino;2026;1;34;62,9;82,3;Aprovado
+20261245;Felipe Dantas Queiroz;Mossoró;Análise e Desenvolvimento de Sistemas;EaD;Vespertino;2025;2;22;70,7;72,1;Reprovado por falta
+20261246;Yasmin Fernandes Dantas;Pau dos Ferros;Redes de Computadores;Presencial;Matutino;2025;2;15;73,8;89,5;Aprovado
+20261247;Daniela Rocha Rocha;Natal-Zona Norte;Agroecologia;EaD;Matutino;2023;1;15;74,1;97,8;Aprovado
+20261248;Bruno Medeiros Medeiros;Natal-Zona Norte;Química;Presencial;Matutino;2023;1;16;73,0;83,0;Aprovado
+20261249;Isabela Fernandes Bezerra;Mossoró;Redes de Computadores;Presencial;Matutino;2024;2;22;78,3;80,9;Aprovado
+20261250;Nathan Bezerra Pereira;Parnamirim;Química;EaD;Noturno;2024;1;25;77,8;76,1;Aprovado
+20261251;Sabrina Lima Bezerra;Natal-Central;Redes de Computadores;Presencial;Vespertino;2025;2;18;79,6;75,9;Aprovado
+20261252;Quésia Nogueira Pereira;Natal-Central;Análise e Desenvolvimento de Sistemas;Presencial;Noturno;2024;1;22;62,1;84,7;Aprovado
+20261253;Hugo Oliveira Nogueira;Natal-Zona Norte;Análise e Desenvolvimento de Sistemas;EaD;Noturno;2025;2;23;50,0;78,7;Reprovado por nota
+20261254;Marina Bezerra Galvão;Pau dos Ferros;Edificações;Presencial;Vespertino;2024;1;31;;84,1;Em curso
+20261255;Lucas Queiroz Pereira;João Câmara;Ciência de Dados;Presencial;Vespertino;2025;2;26;47,0;85,2;Reprovado por nota
+20261256;Pedro Almeida Souza;São Gonçalo do Amarante;Análise e Desenvolvimento de Sistemas;Presencial;Noturno;2023;1;25;68,7;79,5;Aprovado
+20261257;Emanuel Rocha Galvão;Currais Novos;Química;EaD;Noturno;2025;1;25;55,7;91,4;Reprovado por nota
+20261258;Olívia Rocha Galvão;Macau;Química;Presencial;Noturno;2023;1;24;49,7;91,8;Reprovado por nota
+20261259;Ubiratan Oliveira Costa;João Câmara;Redes de Computadores;Presencial;Vespertino;2025;1;32;74,6;;Reprovado por falta
+20261260;Rafael Nogueira Almeida;João Câmara;Mecânica;EaD;Vespertino;2025;1;28;57,3;84,4;Reprovado por nota
+20261261;Davi Cavalcante Oliveira;Currais Novos;Informática para Internet;Presencial;Matutino;2023;1;15;79,6;65,4;Reprovado por falta
+20261262;Wagner Rocha Cavalcante;Currais Novos;Mecânica;Presencial;Noturno;2024;1;24;54,1;85,6;Reprovado por nota
+20261263;Thiago Fonseca Fonseca; Parnamirim ;Eletrotécnica;Presencial;Matutino;2026;1;22;69,1;85,2;Aprovado
+20261264;Hugo Costa Cavalcante;Natal-Central;Química;Presencial;Matutino;2025;1;30;;89,1;Trancado
+20261265;Fernanda Lima Medeiros;Natal-Central;Administração;Presencial;Noturno;2024;2;18;52,4;88,6;Reprovado por nota
+20261266;Wagner Almeida Silva;Natal-Zona Norte;Análise e Desenvolvimento de Sistemas;EaD;Matutino;2024;2;39;86,1;99,0;Aprovado
+20261267;Ana Nogueira Lima;Parnamirim;Agroecologia;Presencial;Noturno;2026;2;35;55,5;88,2;Reprovado por nota
+20261268;João Almeida Costa;Apodi;Informática para Internet;EaD;Noturno;2026;2;24;53,1;100,0;Reprovado por nota
+20261269;Valéria Silva Nogueira;Mossoró;Eletrotécnica;Presencial;Noturno;2024;1;20;43,8;93,6;Reprovado por nota
+20261270;Davi Medeiros Fernandes;Mossoró;Eletrotécnica;EaD;Noturno;2025;1;15;72,3;80,1;Aprovado
+20261271;Pedro Fernandes Galvão;Mossoró;Agroecologia;Presencial;Matutino;2024;2;23;86,3;87,4;Aprovado
+20261272;Hugo Galvão Galvão;Mossoró;Eletrotécnica;Presencial;Vespertino;2023;1;23;74,7;64,6;Reprovado por falta
+20261273;Elaine Silva Bezerra;Natal-Central;Química;Presencial;Noturno;2024;1;27;;86,1;Trancado
+20261274;Gabriela Oliveira Nogueira;Natal-Zona Norte;Análise e Desenvolvimento de Sistemas;Presencial;Noturno;2023;2;15;62,5;89,1;Aprovado
+20261275;Elaine Maia Costa;Parnamirim;Ciência de Dados;Presencial;Matutino;2025;1;15;65,9;100,0;Aprovado
+20261276;Lucas Rocha Silva;Natal-Central;Edificações;Presencial;Matutino;2025;1;23;66,6;82,2;Aprovado
+20261277;Karla Cavalcante Barbosa;Pau dos Ferros;Administração;Presencial;Noturno;2026;1;30;63,0;89,8;Aprovado
+20261278;Quésia Almeida Costa;Apodi;Análise e Desenvolvimento de Sistemas;Presencial;Vespertino;2025;1;25;62,3;83,1;Aprovado
+20261279;Quésia Costa Dantas;Parnamirim;Análise e Desenvolvimento de Sistemas;Presencial;Matutino;2026;1;21;51,3;68,7;Reprovado por falta
+20261280;Daniela Fernandes Galvão;Santa Cruz;Análise e Desenvolvimento de Sistemas;EaD;Noturno;2025;1;30;66,8;86,0;Aprovado
+20261281;Elaine Fonseca Pereira;Parnamirim;Eletrotécnica;Presencial;Matutino;2023;2;25;100,0;90,1;Aprovado
+20261282;Valéria Santos Medeiros;Mossoró;Redes de Computadores;Presencial;Matutino;2026;2;29;76,6;86,7;Aprovado
+20261283;Marina Costa Lima;Currais Novos;Informática para Internet;Presencial;Matutino;2024;1;29;82,5;100,0;Aprovado
+20261284;João Nogueira Rocha;Pau dos Ferros;Redes de Computadores;Presencial;Noturno;2024;1;29;76,6;95,2;Aprovado
+20261285;Gabriela Souza Silva;Natal-Central;Redes de Computadores;EaD;Matutino;2025;2;27;68,9;87,3;Aprovado
+20261286;Beatriz Rocha Lima;Mossoró;Administração;Presencial;Matutino;2024;1;22;99,1;83,5;Aprovado
+20261287;Bruno Santos Barbosa;Mossoró;Mecânica;Presencial;Noturno;2024;1;15;;96,0;Trancado
+20261288;Emanuel Medeiros Cavalcante;Macau;Ciência de Dados;Presencial;Noturno;2025;2;24;86,0;96,3;Aprovado
+20261289;Gabriela Dantas Nogueira;Natal-Central;Administração;Presencial;Matutino;2023;1;36;74,0;100,0;Aprovado
+20261290;Olívia Galvão Souza;Macau;Agroecologia;EaD;Matutino;2026;2;25;74,2;75,0;Aprovado
+20261291;Olívia Fonseca Galvão;João Câmara;Análise e Desenvolvimento de Sistemas;EaD;Noturno;2025;1;25;66,1;94,1;Aprovado
+20261292;Emanuel Galvão Fonseca;Mossoró;Eletrotécnica;EaD;Noturno;2026;1;24;63,5;99,2;Aprovado
+20261293;Caio Queiroz Fonseca;Apodi;Informática para Internet;Presencial;Vespertino;2025;1;26;;82,6;Trancado
+20261294;Beatriz Medeiros Almeida;Natal-Zona Norte;Química;Presencial;Matutino;2023;2;30;83,6;83,4;Aprovado
+20261295;Rafael Cavalcante Galvão;Natal-Central;Administração;Presencial;Matutino;2025;1;24;62,1;77,7;Aprovado
+20261296;Yasmin Cavalcante Lima;Natal-Zona Norte;Química;Presencial;Matutino;2023;1;35;71,6;77,0;Aprovado
+20261297;Gabriela Medeiros Galvão;Natal-Central;Mecânica;Presencial;Noturno;2025;1;28;75,9;82,2;Aprovado
+20261298;Thiago Fernandes Nogueira;Caicó;Informática para Internet;Presencial;Noturno;2025;2;15;70,5;86,8;Aprovado
+20261299;Rafael Medeiros Fernandes;Santa Cruz;Eletrotécnica;Presencial;Vespertino;2026;1;22;62,8;78,2;Aprovado
+20261300;Zélia Bezerra Bezerra;Mossoró;Mecânica;Presencial;Vespertino;2025;2;26;76,4;88,0;Aprovado
+20261301;Ubiratan Cavalcante Lima;Caicó;Química;EaD;Vespertino;2025;1;28;69,2;76,6;Aprovado
+20261302;Karla Lima Cavalcante;Natal-Zona Norte;Informática para Internet;Presencial;Noturno;2025;1;31;67,1;82,9;Aprovado
+20261303;Felipe Maia Souza;João Câmara;Administração;Presencial;Matutino;2024;2;33;76,1;89,5;Aprovado
+20261304;Emanuel Dantas Lima;João Câmara;Eletrotécnica;Presencial;Matutino;2023;2;21;77,0;69,8;Reprovado por falta
+20261305;Yasmin Galvão Galvão;Santa Cruz;Redes de Computadores;Presencial;Noturno;2025;1;15;;76,2;Trancado
+20261306;Davi Pereira Nogueira;Natal-Central;Mecânica;Presencial;Matutino;2026;1;15;54,7;97,4;Reprovado por nota
+20261307;Carla Costa Fernandes;Pau dos Ferros;Ciência de Dados;Presencial;Noturno;2023;2;16;63,4;87,2;Aprovado
+20261308;Daniela Souza Nogueira;Natal-Central;Administração;Presencial;Noturno;2023;1;24;57,4;71,5;Reprovado por falta
+20261309;Fernanda Costa Nogueira;Caicó;Edificações;EaD;Noturno;2025;2;20;85,5;100,0;Aprovado
+20261310;Bruno Lima Cavalcante;João Câmara;Redes de Computadores;EaD;Noturno;2024;1;27;82,1;79,9;Aprovado
+20261311;Karla Galvão Cavalcante;Parnamirim;Mecânica;Presencial;Noturno;2025;2;25;61,4;80,3;Aprovado
+20261312;Sabrina Lima Oliveira;Natal-Central;Mecânica;Presencial;Vespertino;2026;2;30;53,0;74,1;Reprovado por falta
+20261313;Daniela Almeida Costa;Macau;Redes de Computadores;Presencial;Noturno;2026;2;26;67,1;94,5;Aprovado
+20261314;Elaine Costa Galvão;São Gonçalo do Amarante;Mecânica;EaD;Matutino;2025;1;15;84,5;65,6;Reprovado por falta
+20261315;Emanuel Silva Almeida;Natal-Central;Mecânica;EaD;Vespertino;2026;1;21;69,7;72,0;Reprovado por falta
+20261316;João Fernandes Fonseca;Parnamirim;Eletrotécnica;Presencial;Matutino;2026;2;30;65,8;99,8;Aprovado
+20261317;João Barbosa Almeida;Pau dos Ferros;Redes de Computadores;EaD;Vespertino;2024;1;28;83,4;69,8;Reprovado por falta
+20261318;Isabela Queiroz Dantas;Apodi;Agroecologia;Presencial;Vespertino;2024;1;20;91,4;64,9;Reprovado por falta
+20261319;Valéria Rocha Maia;Santa Cruz;Mecânica;Presencial;Vespertino;2026;1;20;51,7;79,9;Reprovado por nota
+20261320;Ubiratan Queiroz Lima;Natal-Zona Norte;Administração;Presencial;Noturno;2025;2;17;67,9;97,7;Aprovado
+20261321;Hugo Barbosa Medeiros;Mossoró;Química;EaD;Noturno;2025;1;22;68,3;99,7;Aprovado
+20261322;Zélia Nogueira Cavalcante;Natal-Central;Ciência de Dados;Presencial;Matutino;2023;2;29;82,6;63,8;Reprovado por falta
+20261323;Caio Barbosa Medeiros;Mossoró;Administração;Presencial;Vespertino;2025;1;26;64,8;90,9;Aprovado
+20261324;Davi Maia Medeiros;Mossoró;Edificações;EaD;Noturno;2026;2;21;56,2;90,8;Reprovado por nota
+20261325;Carla Rocha Dantas;Mossoró;Química;Presencial;Matutino;2025;2;26;55,4;94,9;Reprovado por nota
+20261326;Wagner Oliveira Fonseca;Macau;Química;EaD;Noturno;2026;1;27;60,1;69,5;Reprovado por falta
+20261327;Fernanda Fernandes Costa;Natal-Zona Norte;Análise e Desenvolvimento de Sistemas;EaD;Noturno;2024;2;21;;82,5;Trancado
+20261328;Valéria Galvão Queiroz;São Gonçalo do Amarante;Administração;Presencial;Matutino;2023;1;27;63,1;96,2;Aprovado
+20261329;Bruno Barbosa Cavalcante;Natal-Central;Ciência de Dados;Presencial;Vespertino;2023;2;15;79,6;71,6;Reprovado por falta
+20261330;Bruno Queiroz Maia;Currais Novos;Ciência de Dados;EaD;Noturno;2025;2;28;69,8;87,8;Aprovado
+20261331;Elaine Barbosa Maia;Caicó;Administração;Presencial;Vespertino;2025;2;31;64,3;91,4;Aprovado
+20261332;Daniela Almeida Nogueira;Caicó;Química;Presencial;Matutino;2026;1;33;66,9;72,2;Reprovado por falta
+20261333;João Queiroz Oliveira;João Câmara;Análise e Desenvolvimento de Sistemas;Presencial;Noturno;2025;1;27;53,7;71,0;Reprovado por falta
+20261334;Ana Souza Pereira;Natal-Central;Química;Presencial;Matutino;2026;1;18;72,7;99,5;Aprovado
+20261335;Ubiratan Fonseca Bezerra;Mossoró;Administração;Presencial;Vespertino;2025;2;31;85,0;85,8;Aprovado
+20261336;Elaine Galvão Costa;Natal-Zona Norte;Análise e Desenvolvimento de Sistemas;Presencial;Noturno;2023;1;29;64,5;95,1;Aprovado
+20261337;Beatriz Nogueira Lima;Mossoró;Edificações;Presencial;Noturno;2023;2;20;;96,5;Em curso
+20261338;Elaine Maia Pereira;São Gonçalo do Amarante;Agroecologia;Presencial;Vespertino;2024;1;17;44,9;74,6;Reprovado por falta
+20261339;Karla Medeiros Galvão;Natal-Central;Mecânica;Presencial;Noturno;2023;1;20;54,9;84,7;Reprovado por nota
+20261340;Davi Costa Cavalcante;Mossoró;Eletrotécnica;Presencial;Vespertino;2025;2;19;75,0;79,9;Aprovado
+20261341;Rafael Nogueira Queiroz;Currais Novos;Análise e Desenvolvimento de Sistemas;Presencial;Noturno;2024;1;19;69,4;62,7;Reprovado por falta
+20261342;Daniela Barbosa Oliveira;Natal-Central;Mecânica;Presencial;Matutino;2025;2;33;77,3;68,4;Reprovado por falta
+20261343;Wagner Lima Galvão;Apodi;Análise e Desenvolvimento de Sistemas;Presencial;Noturno;2024;1;23;73,3;76,3;Aprovado
+20261344;Hugo Dantas Medeiros;Natal-Central;Informática para Internet;EaD;Vespertino;2025;2;29;82,9;80,7;Aprovado
+20261345;Emanuel Silva Costa;Pau dos Ferros;Eletrotécnica;Presencial;Noturno;2024;2;31;48,7;86,1;Reprovado por nota
+20261346;Carla Pereira Silva;Santa Cruz;Edificações;Presencial;Vespertino;2026;2;21;82,1;100,0;Aprovado
+20261347;Davi Fonseca Nogueira;Mossoró;Redes de Computadores;Presencial;Noturno;2024;1;22;;100,0;Em curso
+20261348;Karla Dantas Santos;João Câmara;Análise e Desenvolvimento de Sistemas;Presencial;Matutino;2026;2;16;60,8;99,2;Aprovado
+20261349;Gabriela Rocha Fonseca;Macau;Química;EaD;Matutino;2025;2;21;73,5;94,7;Aprovado
+20261350;Daniela Souza Queiroz;Caicó;Informática para Internet;EaD;Noturno;2026;2;29;76,9;72,0;Reprovado por falta
+20261351;Karla Silva Maia;Natal-Zona Norte;Edificações;EaD;Noturno;2026;1;20;71,1;93,8;Aprovado
+20261352;Zélia Souza Bezerra;Natal-Central;Mecânica;Presencial;Vespertino;2026;2;32;73,1;73,2;Reprovado por falta
+20261353;João Santos Medeiros;Mossoró;Ciência de Dados;Presencial;Vespertino;2024;2;23;70,7;95,2;Aprovado
+20261354;Caio Dantas Santos;Santa Cruz;Informática para Internet;Presencial;Noturno;2024;2;18;78,2;87,8;Aprovado
+20261355;Beatriz Costa Fonseca;Pau dos Ferros;Informática para Internet;Presencial;Matutino;2023;1;25;;92,0;Em curso
+20261356;Caio Oliveira Costa;Santa Cruz;Informática para Internet;Presencial;Noturno;2024;2;33;98,6;73,2;Reprovado por falta
+20261357;Ana Queiroz Queiroz;Natal-Central;Redes de Computadores;Presencial;Matutino;2025;2;21;57,8;88,6;Reprovado por nota
+20261358;Sabrina Barbosa Fernandes;Currais Novos;Administração;Presencial;Noturno;2023;2;24;67,0;95,3;Aprovado
+20261359;Gabriela Almeida Galvão;São Gonçalo do Amarante;Administração;Presencial;Noturno;2024;1;28;74,4;98,9;Aprovado
+20261360;Pedro Silva Fonseca;Natal-Central;Eletrotécnica;Presencial;Vespertino;2025;1;15;60,3;83,4;Aprovado
+20261361;Marina Medeiros Dantas;Natal-Central;Redes de Computadores;Presencial;Matutino;2026;1;24;74,7;91,8;Aprovado
+20261362;Carla Souza Cavalcante;Santa Cruz;Química;Presencial;Noturno;2026;1;26;74,9;91,2;Aprovado
+20261363;Hugo Rocha Medeiros;Mossoró;Administração;Presencial;Noturno;2023;2;28;74,4;89,4;Aprovado
+20261364;Caio Lima Silva;Mossoró;Agroecologia;EaD;Vespertino;2025;2;33;81,5;78,2;Aprovado
+20261365;Carla Barbosa Costa;Natal-Zona Norte;Agroecologia;Presencial;Noturno;2023;2;15;65,1;75,9;Aprovado
+20261366;Rafael Rocha Almeida;São Gonçalo do Amarante;Administração;Presencial;Matutino;2023;1;23;57,3;97,3;Reprovado por nota
+20261367;Emanuel Galvão Costa;Natal-Central;Mecânica;Presencial;Noturno;2026;2;29;72,0;;Aprovado
+20261368;Felipe Cavalcante Oliveira;Pau dos Ferros;Química;Presencial;Noturno;2024;1;19;52,2;100,0;Reprovado por nota
+20261369;Hugo Lima Barbosa;Natal-Central;Química;EaD;Vespertino;2023;1;27;;100,0;Trancado
+20261370;Lucas Silva Pereira;Apodi;Análise e Desenvolvimento de Sistemas;Presencial;Matutino;2023;2;22;83,0;85,7;Aprovado
+20261371;Olívia Barbosa Pereira;Apodi;Eletrotécnica;Presencial;Matutino;2025;1;32;82,3;100,0;Aprovado
+20261372;Marina Medeiros Fernandes;Natal-Central;Ciência de Dados;Presencial;Vespertino;2025;1;32;68,8;;Aprovado
+20261373;Sabrina Almeida Fernandes;Parnamirim;Edificações;Presencial;Noturno;2026;2;20;81,7;76,2;Aprovado
+20261374;Ubiratan Dantas Cavalcante;Santa Cruz;Eletrotécnica;Presencial;Vespertino;2024;2;23;67,6;;Aprovado
+20261375;Emanuel Costa Oliveira;Apodi;Química;Presencial;Vespertino;2026;2;28;;100,0;Trancado
+20261376;Karla Maia Rocha;Parnamirim;Análise e Desenvolvimento de Sistemas;EaD;Vespertino;2025;1;22;67,5;100,0;Aprovado
+20261377;Carla Pereira Medeiros;Mossoró;Análise e Desenvolvimento de Sistemas;Presencial;Vespertino;2025;1;22;78,7;84,2;Aprovado
+20261378;Fernanda Fernandes Costa;Natal-Central;Mecânica;EaD;Noturno;2025;1;20;69,1;91,8;Aprovado
+20261379;João Fernandes Almeida;Natal-Central;Análise e Desenvolvimento de Sistemas;Presencial;Noturno;2025;1;24;51,3;89,5;Reprovado por nota
+20261380;Yasmin Silva Silva;Natal-Zona Norte;Informática para Internet;Presencial;Matutino;2025;1;26;65,6;89,3;Aprovado
+20261381;Daniela Galvão Almeida;Pau dos Ferros;Ciência de Dados;Presencial;Noturno;2026;1;24;63,0;89,3;Aprovado
+20261382;João Dantas Silva;Parnamirim;Análise e Desenvolvimento de Sistemas;Presencial;Noturno;2026;2;16;51,3;94,4;Reprovado por nota
+20261383;Caio Fonseca Maia;Natal-Central;Edificações;EaD;Vespertino;2024;2;21;60,8;87,9;Aprovado
+20261384;Bruno Santos Pereira;Mossoró;Edificações;Presencial;Vespertino;2023;1;24;72,0;97,6;Aprovado
+20261385;Marina Cavalcante Pereira; Natal-Zona Norte ;Redes de Computadores;Presencial;Matutino;2023;1;27;71,4;80,3;Aprovado
+20261386;Lucas Souza Nogueira;Mossoró;Ciência de Dados;Presencial;Matutino;2024;1;25;42,2;96,6;Reprovado por nota
+20261387;Elaine Bezerra Souza;Parnamirim;Mecânica;Presencial;Matutino;2024;1;24;61,4;76,8;Aprovado
+20261388;Zélia Medeiros Lima;João Câmara;Eletrotécnica;Presencial;Noturno;2023;1;22;43,5;73,6;Reprovado por falta
+20261389;Wagner Lima Fonseca;Natal-Zona Norte;Agroecologia;EaD;Noturno;2026;2;20;95,3;91,3;Aprovado
+20261390;Daniela Queiroz Pereira;Mossoró;Agroecologia;EaD;Matutino;2026;2;15;82,6;88,4;Aprovado
+20261391;Quésia Cavalcante Cavalcante;Natal-Central;Agroecologia;Presencial;Noturno;2026;2;26;77,1;84,2;Aprovado
+20261392;Isabela Cavalcante Costa;Pau dos Ferros;Mecânica;Presencial;Vespertino;2026;2;26;52,0;100,0;Reprovado por nota
+20261393;Wagner Oliveira Nogueira;Natal-Central;Informática para Internet;EaD;Noturno;2026;1;18;78,5;100,0;Aprovado
+20261394;Daniela Cavalcante Pereira;Mossoró;Administração;Presencial;Noturno;2026;1;39;80,5;97,3;Aprovado
+20261395;João Santos Bezerra;Mossoró;Química;Presencial;Matutino;2025;2;33;61,2;95,3;Aprovado
+20261396;Karla Oliveira Medeiros;São Gonçalo do Amarante;Redes de Computadores;Presencial;Matutino;2026;2;26;71,6;100,0;Aprovado
+20261397;Fernanda Maia Oliveira;São Gonçalo do Amarante;Ciência de Dados;Presencial;Vespertino;2024;1;38;59,3;100,0;Reprovado por nota
+20261398;Felipe Maia Barbosa; Parnamirim ;Ciência de Dados;Presencial;Noturno;2026;2;25;75,0;100,0;Aprovado
+20261399;Felipe Fernandes Souza;Macau;Agroecologia;EaD;Vespertino;2026;2;27;65,0;69,4;Reprovado por falta
+20261400;Yasmin Fonseca Fonseca;Natal-Central;Redes de Computadores;Presencial;Matutino;2023;1;26;72,8;85,8;Aprovado
+20261401;Fernanda Rocha Nogueira;Mossoró;Mecânica;Presencial;Matutino;2024;2;31;73,5;75,3;Aprovado
+20261402;Beatriz Costa Fernandes;Natal-Zona Norte;Redes de Computadores;Presencial;Matutino;2026;1;26;66,0;78,2;Aprovado
+20261403;Yasmin Barbosa Nogueira;Caicó;Análise e Desenvolvimento de Sistemas;Presencial;Vespertino;2023;2;29;;82,4;Trancado
+20261404;Sabrina Bezerra Nogueira;Mossoró;Administração;Presencial;Noturno;2026;2;17;81,1;91,6;Aprovado
+20261405;Lucas Costa Rocha;Natal-Central;Administração;Presencial;Noturno;2024;1;29;49,2;96,6;Reprovado por nota
+20261406;Nathan Queiroz Galvão;Currais Novos;Redes de Computadores;Presencial;Noturno;2026;1;26;59,2;77,3;Reprovado por nota
+20261407;Elaine Maia Queiroz;Santa Cruz;Mecânica;Presencial;Matutino;2024;1;19;63,4;98,2;Aprovado
+20261408;Wagner Queiroz Rocha;Mossoró;Administração;Presencial;Vespertino;2025;2;22;87,3;93,8;Aprovado
+20261409;Valéria Maia Maia;Mossoró;Redes de Computadores;Presencial;Matutino;2024;2;27;60,3;73,3;Reprovado por falta
+20261410;Rafael Fernandes Souza;Santa Cruz;Análise e Desenvolvimento de Sistemas;EaD;Noturno;2025;2;22;59,5;;Reprovado por nota
+20261411;Caio Cavalcante Bezerra;Parnamirim;Ciência de Dados;EaD;Vespertino;2024;2;24;67,3;99,9;Aprovado
+20261412;Ubiratan Pereira Galvão;João Câmara;Eletrotécnica;Presencial;Noturno;2024;1;21;56,0;100,0;Reprovado por nota
+20261413;Davi Medeiros Nogueira;Apodi;Ciência de Dados;Presencial;Matutino;2025;1;32;66,1;84,0;Aprovado
+20261414;Rafael Oliveira Fernandes;Natal-Central;Mecânica;Presencial;Matutino;2023;1;20;54,0;84,6;Reprovado por nota
+20261415;João Fonseca Galvão;Natal-Central;Informática para Internet;Presencial;Vespertino;2026;1;20;57,5;82,8;Reprovado por nota
+20261416;Valéria Rocha Medeiros;Apodi;Agroecologia;EaD;Noturno;2024;1;28;82,2;81,6;Aprovado
+20261417;Hugo Almeida Pereira;Macau;Análise e Desenvolvimento de Sistemas;Presencial;Noturno;2025;1;29;60,1;94,0;Aprovado
+20261418;Yasmin Santos Queiroz;Mossoró;Análise e Desenvolvimento de Sistemas;Presencial;Noturno;2026;1;17;82,2;100,0;Aprovado
+20261419;Felipe Fernandes Fernandes;Macau;Edificações;Presencial;Noturno;2025;1;18;51,1;85,2;Reprovado por nota
+20261420;Ubiratan Medeiros Pereira;Natal-Central;Mecânica;EaD;Noturno;2025;1;28;54,3;93,3;Reprovado por nota
+20261421;Yasmin Barbosa Galvão;Macau;Eletrotécnica;Presencial;Matutino;2024;2;27;72,0;67,9;Reprovado por falta
+20261422;Beatriz Oliveira Queiroz;Parnamirim;Administração;Presencial;Noturno;2023;1;32;64,5;78,2;Aprovado
+20261423;Daniela Barbosa Dantas;Mossoró;Informática para Internet;Presencial;Noturno;2026;1;29;;89,4;Trancado
+20261424;Olívia Queiroz Oliveira;Apodi;Ciência de Dados;Presencial;Vespertino;2026;2;22;69,8;80,9;Aprovado
+20261425;Gabriela Dantas Santos;Mossoró;Ciência de Dados;EaD;Vespertino;2025;1;15;77,2;69,6;Reprovado por falta
+20261426;Sabrina Silva Queiroz;Natal-Central;Eletrotécnica;Presencial;Vespertino;2026;1;18;76,3;80,1;Aprovado
+20261427;Sabrina Silva Dantas;Caicó;Mecânica;Presencial;Noturno;2025;1;23;78,1;90,6;Aprovado
+20261428;Quésia Maia Costa;Santa Cruz;Edificações;Presencial;Vespertino;2024;1;27;65,2;92,9;Aprovado
+20261429;Davi Bezerra Nogueira;Parnamirim;Mecânica;Presencial;Noturno;2023;2;15;58,2;72,7;Reprovado por falta
+20261430;Fernanda Rocha Maia;Natal-Central;Informática para Internet;Presencial;Matutino;2026;1;28;61,0;85,6;Aprovado
+20261431;Carla Barbosa Nogueira;Apodi;Administração;Presencial;Matutino;2025;2;19;60,8;92,3;Aprovado
+20261432;Ana Nogueira Fernandes;Pau dos Ferros;Agroecologia;Presencial;Noturno;2025;1;19;75,7;;Aprovado
+20261433;Valéria Galvão Galvão; Parnamirim ;Análise e Desenvolvimento de Sistemas;EaD;Vespertino;2025;1;19;73,1;91,8;Aprovado
+20261434;Hugo Barbosa Queiroz; Apodi ;Química;Presencial;Vespertino;2025;1;15;83,6;95,7;Aprovado
+20261435;Ana Dantas Fonseca;Natal-Central;Agroecologia;Presencial;Noturno;2026;1;15;60,0;72,8;Reprovado por falta
+20261436;Felipe Costa Fernandes;Pau dos Ferros;Eletrotécnica;Presencial;Noturno;2026;1;15;49,5;88,8;Reprovado por nota
+20261437;Beatriz Fernandes Medeiros;Natal-Zona Norte;Análise e Desenvolvimento de Sistemas;EaD;Noturno;2025;2;15;55,4;76,9;Reprovado por nota
+20261438;Hugo Fonseca Souza;Natal-Zona Norte;Administração;Presencial;Matutino;2024;1;32;57,6;97,0;Reprovado por nota
+20261439;Zélia Cavalcante Pereira;João Câmara;Agroecologia;Presencial;Noturno;2025;1;18;81,2;100,0;Aprovado
+20261440;João Galvão Barbosa;Natal-Zona Norte;Agroecologia;Presencial;Noturno;2026;2;25;74,7;96,6;Aprovado
+20261441;Lucas Barbosa Costa;Santa Cruz;Informática para Internet;Presencial;Matutino;2024;2;16;95,5;74,4;Reprovado por falta
+20261442;Felipe Cavalcante Santos;Macau;Eletrotécnica;EaD;Vespertino;2025;1;18;60,5;83,9;Aprovado
+20261443;Quésia Costa Queiroz;Macau;Redes de Computadores;Presencial;Noturno;2023;2;24;57,3;86,1;Reprovado por nota
+20261444;Nathan Galvão Almeida;Natal-Central;Química;Presencial;Noturno;2026;2;30;80,1;92,9;Aprovado
+20261445;Pedro Bezerra Dantas;Macau;Edificações;Presencial;Noturno;2024;2;15;80,3;79,8;Aprovado
+20261446;Isabela Almeida Costa;João Câmara;Edificações;Presencial;Noturno;2024;1;27;44,8;88,6;Reprovado por nota
+20261447;Isabela Silva Oliveira;Caicó;Eletrotécnica;Presencial;Noturno;2024;2;20;70,3;92,3;Aprovado
+20261448;Valéria Rocha Fonseca;Natal-Zona Norte;Administração;Presencial;Vespertino;2024;1;15;;100,0;Trancado
+20261449;Beatriz Souza Fonseca; Natal-Central ;Informática para Internet;Presencial;Matutino;2025;2;24;;64,4;Trancado
+20261450;Fernanda Queiroz Dantas;Mossoró;Administração;Presencial;Matutino;2025;1;28;60,6;87,3;Aprovado
+20261451;Bruno Fonseca Rocha;Apodi;Administração;Presencial;Vespertino;2024;1;21;61,6;80,9;Aprovado
+20261452;Beatriz Almeida Galvão;Natal-Zona Norte;Edificações;Presencial;Vespertino;2025;1;18;77,0;69,8;Reprovado por falta
+20261453;Fernanda Cavalcante Galvão;Macau;Administração;Presencial;Noturno;2023;2;26;66,3;91,6;Aprovado
+20261454;Pedro Santos Bezerra;Natal-Central;Análise e Desenvolvimento de Sistemas;Presencial;Vespertino;2025;1;25;72,3;100,0;Aprovado
+20261455;Ana Galvão Bezerra;São Gonçalo do Amarante;Redes de Computadores;EaD;Matutino;2026;1;28;85,2;90,1;Aprovado
+20261456;Ana Lima Maia;Santa Cruz;Eletrotécnica;Presencial;Vespertino;2025;2;15;81,6;91,5;Aprovado
+20261457;Davi Santos Rocha;Mossoró;Edificações;EaD;Matutino;2024;2;28;85,4;98,5;Aprovado
+20261458;Davi Fernandes Oliveira;São Gonçalo do Amarante;Agroecologia;Presencial;Vespertino;2025;1;19;97,9;;Aprovado
+20261459;Lucas Santos Galvão;Caicó;Mecânica;Presencial;Vespertino;2025;1;24;75,8;98,5;Aprovado
+20261460;Wagner Souza Medeiros;Natal-Central;Informática para Internet;Presencial;Vespertino;2023;2;18;;96,9;Em curso
+20261461;Ana Santos Silva;Parnamirim;Administração;Presencial;Noturno;2026;1;16;85,0;89,0;Aprovado
+20261462;Felipe Galvão Almeida;Apodi;Análise e Desenvolvimento de Sistemas;Presencial;Noturno;2024;1;27;60,8;84,7;Aprovado
+20261463;Davi Fonseca Bezerra; Mossoró ;Informática para Internet;Presencial;Vespertino;2023;1;19;74,2;72,7;Reprovado por falta
+20261464;Rafael Souza Fonseca;Santa Cruz;Ciência de Dados;Presencial;Vespertino;2025;2;27;86,8;90,2;Aprovado
+20261465;Zélia Maia Santos;Natal-Central;Ciência de Dados;EaD;Matutino;2025;1;28;74,1;86,5;Aprovado
+20261466;Rafael Barbosa Barbosa;Natal-Central;Análise e Desenvolvimento de Sistemas;EaD;Noturno;2025;2;26;58,0;88,5;Reprovado por nota
+20261467;Emanuel Fernandes Cavalcante;Mossoró;Agroecologia;Presencial;Noturno;2026;1;16;82,7;100,0;Aprovado
+20261468;Zélia Lima Fernandes;Natal-Central;Ciência de Dados;Presencial;Noturno;2025;1;28;84,1;81,2;Aprovado
+20261469;Thiago Dantas Galvão;Parnamirim;Eletrotécnica;Presencial;Noturno;2024;2;27;65,1;75,6;Aprovado
+20261470;Beatriz Bezerra Maia;Mossoró;Química;EaD;Noturno;2025;2;34;;98,0;Trancado
+20261471;Gabriela Cavalcante Almeida;São Gonçalo do Amarante;Informática para Internet;Presencial;Noturno;2024;2;17;50,9;100,0;Reprovado por nota
+20261472;Ubiratan Fonseca Fonseca;Macau;Análise e Desenvolvimento de Sistemas;Presencial;Noturno;2026;1;24;63,4;74,3;Reprovado por falta
+20261473;João Galvão Fonseca;Mossoró;Eletrotécnica;Presencial;Vespertino;2025;2;30;;68,0;Em curso
+20261474;Valéria Maia Oliveira;Natal-Zona Norte;Mecânica;Presencial;Noturno;2026;1;24;;80,5;Em curso
+20261475;Valéria Barbosa Fernandes;Mossoró;Análise e Desenvolvimento de Sistemas;Presencial;Noturno;2025;1;30;83,1;90,9;Aprovado
+20261476;Quésia Barbosa Fonseca;Parnamirim;Informática para Internet;Presencial;Noturno;2025;2;22;42,3;89,8;Reprovado por nota
+20261477;Emanuel Nogueira Pereira;Natal-Central;Ciência de Dados;Presencial;Matutino;2023;1;27;72,3;88,2;Aprovado
+20261478;Elaine Galvão Galvão;Pau dos Ferros;Análise e Desenvolvimento de Sistemas;Presencial;Vespertino;2026;2;23;;84,4;Trancado
+20261479;Daniela Oliveira Rocha;Apodi;Ciência de Dados;EaD;Matutino;2026;1;20;90,6;95,4;Aprovado
+20261007;Davi Oliveira Galvão;João Câmara;Eletrotécnica;Presencial;Noturno;2026;1;26;54,0;82,7;Reprovado por nota
+20261103;Ubiratan Maia Souza;Mossoró;Ciência de Dados;Presencial;Noturno;2025;1;19;63,8;100,0;Aprovado

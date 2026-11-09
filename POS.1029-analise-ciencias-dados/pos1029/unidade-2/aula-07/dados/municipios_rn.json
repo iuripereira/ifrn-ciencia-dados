@@ -1,0 +1,676 @@
+{
+  "fonte": "IBGE - API de Localidades",
+  "endpoint": "https://servicodados.ibge.gov.br/api/v1/localidades/estados/RN/municipios",
+  "coletado_em": "2026-10-05",
+  "total": 167,
+  "municipios": [
+    {
+      "codigo_ibge": 2400109,
+      "municipio": "Acari"
+    },
+    {
+      "codigo_ibge": 2400208,
+      "municipio": "Assú"
+    },
+    {
+      "codigo_ibge": 2400307,
+      "municipio": "Afonso Bezerra"
+    },
+    {
+      "codigo_ibge": 2400406,
+      "municipio": "Água Nova"
+    },
+    {
+      "codigo_ibge": 2400505,
+      "municipio": "Alexandria"
+    },
+    {
+      "codigo_ibge": 2400604,
+      "municipio": "Almino Afonso"
+    },
+    {
+      "codigo_ibge": 2400703,
+      "municipio": "Alto do Rodrigues"
+    },
+    {
+      "codigo_ibge": 2400802,
+      "municipio": "Angicos"
+    },
+    {
+      "codigo_ibge": 2400901,
+      "municipio": "Antônio Martins"
+    },
+    {
+      "codigo_ibge": 2401008,
+      "municipio": "Apodi"
+    },
+    {
+      "codigo_ibge": 2401107,
+      "municipio": "Areia Branca"
+    },
+    {
+      "codigo_ibge": 2401206,
+      "municipio": "Arez"
+    },
+    {
+      "codigo_ibge": 2401305,
+      "municipio": "Campo Grande"
+    },
+    {
+      "codigo_ibge": 2401404,
+      "municipio": "Baía Formosa"
+    },
+    {
+      "codigo_ibge": 2401453,
+      "municipio": "Baraúna"
+    },
+    {
+      "codigo_ibge": 2401503,
+      "municipio": "Barcelona"
+    },
+    {
+      "codigo_ibge": 2401602,
+      "municipio": "Bento Fernandes"
+    },
+    {
+      "codigo_ibge": 2401651,
+      "municipio": "Bodó"
+    },
+    {
+      "codigo_ibge": 2401701,
+      "municipio": "Bom Jesus"
+    },
+    {
+      "codigo_ibge": 2401800,
+      "municipio": "Brejinho"
+    },
+    {
+      "codigo_ibge": 2401859,
+      "municipio": "Caiçara do Norte"
+    },
+    {
+      "codigo_ibge": 2401909,
+      "municipio": "Caiçara do Rio do Vento"
+    },
+    {
+      "codigo_ibge": 2402006,
+      "municipio": "Caicó"
+    },
+    {
+      "codigo_ibge": 2402105,
+      "municipio": "Campo Redondo"
+    },
+    {
+      "codigo_ibge": 2402204,
+      "municipio": "Canguaretama"
+    },
+    {
+      "codigo_ibge": 2402303,
+      "municipio": "Caraúbas"
+    },
+    {
+      "codigo_ibge": 2402402,
+      "municipio": "Carnaúba dos Dantas"
+    },
+    {
+      "codigo_ibge": 2402501,
+      "municipio": "Carnaubais"
+    },
+    {
+      "codigo_ibge": 2402600,
+      "municipio": "Ceará-Mirim"
+    },
+    {
+      "codigo_ibge": 2402709,
+      "municipio": "Cerro Corá"
+    },
+    {
+      "codigo_ibge": 2402808,
+      "municipio": "Coronel Ezequiel"
+    },
+    {
+      "codigo_ibge": 2402907,
+      "municipio": "Coronel João Pessoa"
+    },
+    {
+      "codigo_ibge": 2403004,
+      "municipio": "Cruzeta"
+    },
+    {
+      "codigo_ibge": 2403103,
+      "municipio": "Currais Novos"
+    },
+    {
+      "codigo_ibge": 2403202,
+      "municipio": "Doutor Severiano"
+    },
+    {
+      "codigo_ibge": 2403251,
+      "municipio": "Parnamirim"
+    },
+    {
+      "codigo_ibge": 2403301,
+      "municipio": "Encanto"
+    },
+    {
+      "codigo_ibge": 2403400,
+      "municipio": "Equador"
+    },
+    {
+      "codigo_ibge": 2403509,
+      "municipio": "Espírito Santo"
+    },
+    {
+      "codigo_ibge": 2403608,
+      "municipio": "Extremoz"
+    },
+    {
+      "codigo_ibge": 2403707,
+      "municipio": "Felipe Guerra"
+    },
+    {
+      "codigo_ibge": 2403756,
+      "municipio": "Fernando Pedroza"
+    },
+    {
+      "codigo_ibge": 2403806,
+      "municipio": "Florânia"
+    },
+    {
+      "codigo_ibge": 2403905,
+      "municipio": "Francisco Dantas"
+    },
+    {
+      "codigo_ibge": 2404002,
+      "municipio": "Frutuoso Gomes"
+    },
+    {
+      "codigo_ibge": 2404101,
+      "municipio": "Galinhos"
+    },
+    {
+      "codigo_ibge": 2404200,
+      "municipio": "Goianinha"
+    },
+    {
+      "codigo_ibge": 2404309,
+      "municipio": "Governador Dix-Sept Rosado"
+    },
+    {
+      "codigo_ibge": 2404408,
+      "municipio": "Grossos"
+    },
+    {
+      "codigo_ibge": 2404507,
+      "municipio": "Guamaré"
+    },
+    {
+      "codigo_ibge": 2404606,
+      "municipio": "Ielmo Marinho"
+    },
+    {
+      "codigo_ibge": 2404705,
+      "municipio": "Ipanguaçu"
+    },
+    {
+      "codigo_ibge": 2404804,
+      "municipio": "Ipueira"
+    },
+    {
+      "codigo_ibge": 2404853,
+      "municipio": "Itajá"
+    },
+    {
+      "codigo_ibge": 2404903,
+      "municipio": "Itaú"
+    },
+    {
+      "codigo_ibge": 2405009,
+      "municipio": "Jaçanã"
+    },
+    {
+      "codigo_ibge": 2405108,
+      "municipio": "Jandaíra"
+    },
+    {
+      "codigo_ibge": 2405207,
+      "municipio": "Janduís"
+    },
+    {
+      "codigo_ibge": 2405306,
+      "municipio": "Januário Cicco"
+    },
+    {
+      "codigo_ibge": 2405405,
+      "municipio": "Japi"
+    },
+    {
+      "codigo_ibge": 2405504,
+      "municipio": "Jardim de Angicos"
+    },
+    {
+      "codigo_ibge": 2405603,
+      "municipio": "Jardim de Piranhas"
+    },
+    {
+      "codigo_ibge": 2405702,
+      "municipio": "Jardim do Seridó"
+    },
+    {
+      "codigo_ibge": 2405801,
+      "municipio": "João Câmara"
+    },
+    {
+      "codigo_ibge": 2405900,
+      "municipio": "João Dias"
+    },
+    {
+      "codigo_ibge": 2406007,
+      "municipio": "José da Penha"
+    },
+    {
+      "codigo_ibge": 2406106,
+      "municipio": "Jucurutu"
+    },
+    {
+      "codigo_ibge": 2406155,
+      "municipio": "Jundiá"
+    },
+    {
+      "codigo_ibge": 2406205,
+      "municipio": "Lagoa d'Anta"
+    },
+    {
+      "codigo_ibge": 2406304,
+      "municipio": "Lagoa de Pedras"
+    },
+    {
+      "codigo_ibge": 2406403,
+      "municipio": "Lagoa de Velhos"
+    },
+    {
+      "codigo_ibge": 2406502,
+      "municipio": "Lagoa Nova"
+    },
+    {
+      "codigo_ibge": 2406601,
+      "municipio": "Lagoa Salgada"
+    },
+    {
+      "codigo_ibge": 2406700,
+      "municipio": "Lajes"
+    },
+    {
+      "codigo_ibge": 2406809,
+      "municipio": "Lajes Pintadas"
+    },
+    {
+      "codigo_ibge": 2406908,
+      "municipio": "Lucrécia"
+    },
+    {
+      "codigo_ibge": 2407005,
+      "municipio": "Luís Gomes"
+    },
+    {
+      "codigo_ibge": 2407104,
+      "municipio": "Macaíba"
+    },
+    {
+      "codigo_ibge": 2407203,
+      "municipio": "Macau"
+    },
+    {
+      "codigo_ibge": 2407252,
+      "municipio": "Major Sales"
+    },
+    {
+      "codigo_ibge": 2407302,
+      "municipio": "Marcelino Vieira"
+    },
+    {
+      "codigo_ibge": 2407401,
+      "municipio": "Martins"
+    },
+    {
+      "codigo_ibge": 2407500,
+      "municipio": "Maxaranguape"
+    },
+    {
+      "codigo_ibge": 2407609,
+      "municipio": "Messias Targino"
+    },
+    {
+      "codigo_ibge": 2407708,
+      "municipio": "Montanhas"
+    },
+    {
+      "codigo_ibge": 2407807,
+      "municipio": "Monte Alegre"
+    },
+    {
+      "codigo_ibge": 2407906,
+      "municipio": "Monte das Gameleiras"
+    },
+    {
+      "codigo_ibge": 2408003,
+      "municipio": "Mossoró"
+    },
+    {
+      "codigo_ibge": 2408102,
+      "municipio": "Natal"
+    },
+    {
+      "codigo_ibge": 2408201,
+      "municipio": "Nísia Floresta"
+    },
+    {
+      "codigo_ibge": 2408300,
+      "municipio": "Nova Cruz"
+    },
+    {
+      "codigo_ibge": 2408409,
+      "municipio": "Olho d'Água do Borges"
+    },
+    {
+      "codigo_ibge": 2408508,
+      "municipio": "Ouro Branco"
+    },
+    {
+      "codigo_ibge": 2408607,
+      "municipio": "Paraná"
+    },
+    {
+      "codigo_ibge": 2408706,
+      "municipio": "Paraú"
+    },
+    {
+      "codigo_ibge": 2408805,
+      "municipio": "Parazinho"
+    },
+    {
+      "codigo_ibge": 2408904,
+      "municipio": "Parelhas"
+    },
+    {
+      "codigo_ibge": 2408953,
+      "municipio": "Rio do Fogo"
+    },
+    {
+      "codigo_ibge": 2409100,
+      "municipio": "Passa e Fica"
+    },
+    {
+      "codigo_ibge": 2409209,
+      "municipio": "Passagem"
+    },
+    {
+      "codigo_ibge": 2409308,
+      "municipio": "Patu"
+    },
+    {
+      "codigo_ibge": 2409332,
+      "municipio": "Santa Maria"
+    },
+    {
+      "codigo_ibge": 2409407,
+      "municipio": "Pau dos Ferros"
+    },
+    {
+      "codigo_ibge": 2409506,
+      "municipio": "Pedra Grande"
+    },
+    {
+      "codigo_ibge": 2409605,
+      "municipio": "Pedra Preta"
+    },
+    {
+      "codigo_ibge": 2409704,
+      "municipio": "Pedro Avelino"
+    },
+    {
+      "codigo_ibge": 2409803,
+      "municipio": "Pedro Velho"
+    },
+    {
+      "codigo_ibge": 2409902,
+      "municipio": "Pendências"
+    },
+    {
+      "codigo_ibge": 2410009,
+      "municipio": "Pilões"
+    },
+    {
+      "codigo_ibge": 2410108,
+      "municipio": "Poço Branco"
+    },
+    {
+      "codigo_ibge": 2410207,
+      "municipio": "Portalegre"
+    },
+    {
+      "codigo_ibge": 2410256,
+      "municipio": "Porto do Mangue"
+    },
+    {
+      "codigo_ibge": 2410306,
+      "municipio": "Serra Caiada"
+    },
+    {
+      "codigo_ibge": 2410405,
+      "municipio": "Pureza"
+    },
+    {
+      "codigo_ibge": 2410504,
+      "municipio": "Rafael Fernandes"
+    },
+    {
+      "codigo_ibge": 2410603,
+      "municipio": "Rafael Godeiro"
+    },
+    {
+      "codigo_ibge": 2410702,
+      "municipio": "Riacho da Cruz"
+    },
+    {
+      "codigo_ibge": 2410801,
+      "municipio": "Riacho de Santana"
+    },
+    {
+      "codigo_ibge": 2410900,
+      "municipio": "Riachuelo"
+    },
+    {
+      "codigo_ibge": 2411007,
+      "municipio": "Rodolfo Fernandes"
+    },
+    {
+      "codigo_ibge": 2411056,
+      "municipio": "Tibau"
+    },
+    {
+      "codigo_ibge": 2411106,
+      "municipio": "Ruy Barbosa"
+    },
+    {
+      "codigo_ibge": 2411205,
+      "municipio": "Santa Cruz"
+    },
+    {
+      "codigo_ibge": 2411403,
+      "municipio": "Santana do Matos"
+    },
+    {
+      "codigo_ibge": 2411429,
+      "municipio": "Santana do Seridó"
+    },
+    {
+      "codigo_ibge": 2411502,
+      "municipio": "Santo Antônio"
+    },
+    {
+      "codigo_ibge": 2411601,
+      "municipio": "São Bento do Norte"
+    },
+    {
+      "codigo_ibge": 2411700,
+      "municipio": "São Bento do Trairí"
+    },
+    {
+      "codigo_ibge": 2411809,
+      "municipio": "São Fernando"
+    },
+    {
+      "codigo_ibge": 2411908,
+      "municipio": "São Francisco do Oeste"
+    },
+    {
+      "codigo_ibge": 2412005,
+      "municipio": "São Gonçalo do Amarante"
+    },
+    {
+      "codigo_ibge": 2412104,
+      "municipio": "São João do Sabugi"
+    },
+    {
+      "codigo_ibge": 2412203,
+      "municipio": "São José de Mipibu"
+    },
+    {
+      "codigo_ibge": 2412302,
+      "municipio": "São José do Campestre"
+    },
+    {
+      "codigo_ibge": 2412401,
+      "municipio": "São José do Seridó"
+    },
+    {
+      "codigo_ibge": 2412500,
+      "municipio": "São Miguel"
+    },
+    {
+      "codigo_ibge": 2412559,
+      "municipio": "São Miguel do Gostoso"
+    },
+    {
+      "codigo_ibge": 2412609,
+      "municipio": "São Paulo do Potengi"
+    },
+    {
+      "codigo_ibge": 2412708,
+      "municipio": "São Pedro"
+    },
+    {
+      "codigo_ibge": 2412807,
+      "municipio": "São Rafael"
+    },
+    {
+      "codigo_ibge": 2412906,
+      "municipio": "São Tomé"
+    },
+    {
+      "codigo_ibge": 2413003,
+      "municipio": "São Vicente"
+    },
+    {
+      "codigo_ibge": 2413102,
+      "municipio": "Senador Elói de Souza"
+    },
+    {
+      "codigo_ibge": 2413201,
+      "municipio": "Senador Georgino Avelino"
+    },
+    {
+      "codigo_ibge": 2413300,
+      "municipio": "Serra de São Bento"
+    },
+    {
+      "codigo_ibge": 2413359,
+      "municipio": "Serra do Mel"
+    },
+    {
+      "codigo_ibge": 2413409,
+      "municipio": "Serra Negra do Norte"
+    },
+    {
+      "codigo_ibge": 2413508,
+      "municipio": "Serrinha"
+    },
+    {
+      "codigo_ibge": 2413557,
+      "municipio": "Serrinha dos Pintos"
+    },
+    {
+      "codigo_ibge": 2413607,
+      "municipio": "Severiano Melo"
+    },
+    {
+      "codigo_ibge": 2413706,
+      "municipio": "Sítio Novo"
+    },
+    {
+      "codigo_ibge": 2413805,
+      "municipio": "Taboleiro Grande"
+    },
+    {
+      "codigo_ibge": 2413904,
+      "municipio": "Taipu"
+    },
+    {
+      "codigo_ibge": 2414001,
+      "municipio": "Tangará"
+    },
+    {
+      "codigo_ibge": 2414100,
+      "municipio": "Tenente Ananias"
+    },
+    {
+      "codigo_ibge": 2414159,
+      "municipio": "Tenente Laurentino Cruz"
+    },
+    {
+      "codigo_ibge": 2414209,
+      "municipio": "Tibau do Sul"
+    },
+    {
+      "codigo_ibge": 2414308,
+      "municipio": "Timbaúba dos Batistas"
+    },
+    {
+      "codigo_ibge": 2414407,
+      "municipio": "Touros"
+    },
+    {
+      "codigo_ibge": 2414456,
+      "municipio": "Triunfo Potiguar"
+    },
+    {
+      "codigo_ibge": 2414506,
+      "municipio": "Umarizal"
+    },
+    {
+      "codigo_ibge": 2414605,
+      "municipio": "Upanema"
+    },
+    {
+      "codigo_ibge": 2414704,
+      "municipio": "Várzea"
+    },
+    {
+      "codigo_ibge": 2414753,
+      "municipio": "Venha-Ver"
+    },
+    {
+      "codigo_ibge": 2414803,
+      "municipio": "Vera Cruz"
+    },
+    {
+      "codigo_ibge": 2414902,
+      "municipio": "Viçosa"
+    },
+    {
+      "codigo_ibge": 2415008,
+      "municipio": "Vila Flor"
+    }
+  ]
+}

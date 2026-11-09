@@ -1,0 +1,134 @@
+{
+ "fonte": "IBGE — API de Malhas Territoriais",
+ "endpoint": "https://servicodados.ibge.gov.br/api/v3/malhas/estados/RN",
+ "parametros_exemplo": {
+  "formato": "application/vnd.geo+json",
+  "qualidade": "minima"
+ },
+ "data_coleta": "2026-09-28",
+ "observacao": "Contorno do RN simplificado (1 a cada 4 pontos, 3 casas decimais) para fins didáticos; a malha original do IBGE tem muito mais detalhe.",
+ "licenca": "Dados abertos do IBGE — domínio público / uso livre com citação da fonte",
+ "type": "Polygon",
+ "coordinates": [
+  [
+   -36.504,
+   -6.386
+  ],
+  [
+   -36.296,
+   -6.37
+  ],
+  [
+   -36.096,
+   -6.42
+  ],
+  [
+   -35.773,
+   -6.483
+  ],
+  [
+   -35.442,
+   -6.487
+  ],
+  [
+   -35.224,
+   -6.522
+  ],
+  [
+   -34.968,
+   -6.487
+  ],
+  [
+   -35.098,
+   -6.14
+  ],
+  [
+   -35.227,
+   -5.612
+  ],
+  [
+   -35.489,
+   -5.157
+  ],
+  [
+   -36.037,
+   -5.051
+  ],
+  [
+   -36.716,
+   -5.081
+  ],
+  [
+   -37.221,
+   -4.881
+  ],
+  [
+   -37.467,
+   -4.886
+  ],
+  [
+   -37.785,
+   -5.24
+  ],
+  [
+   -38.028,
+   -5.623
+  ],
+  [
+   -38.163,
+   -5.939
+  ],
+  [
+   -38.405,
+   -6.057
+  ],
+  [
+   -38.562,
+   -6.356
+  ],
+  [
+   -38.289,
+   -6.506
+  ],
+  [
+   -38.027,
+   -6.475
+  ],
+  [
+   -37.709,
+   -6.177
+  ],
+  [
+   -37.256,
+   -6.028
+  ],
+  [
+   -37.334,
+   -6.308
+  ],
+  [
+   -37.485,
+   -6.71
+  ],
+  [
+   -37.152,
+   -6.798
+  ],
+  [
+   -36.959,
+   -6.783
+  ],
+  [
+   -36.76,
+   -6.914
+  ],
+  [
+   -36.544,
+   -6.842
+  ],
+  [
+   -36.481,
+   -6.521
+  ]
+ ]
+}

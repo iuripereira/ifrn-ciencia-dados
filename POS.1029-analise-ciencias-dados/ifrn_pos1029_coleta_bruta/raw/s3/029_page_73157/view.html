@@ -1,0 +1,106 @@
+
+
+                        <span class="notifications" id="user-notifications"></span>
+                            <span id="maincontent"></span>
+                                <h2>Exemplo — Laboratório Pandas com as matrículas do IFRN (exemplo_pandas.py)</h2>
+                            <div class="activity-header" data-for="page-activity-header">
+                                    <span class="sr-only">Condições de conclusão</span>
+                                    <div data-region="activity-information" data-activityname="Exemplo — Laboratório Pandas com as matrículas do IFRN (exemplo_pandas.py)" class="activity-information">
+
+
+</div>
+</div>
+                        <div role="main"><div class="box py-3 generalbox center clearfix"><div class="no-overflow"><p class="translationhash"><span data-translationhash="4800bee114d8682b96d9aeb0866afed9"></span></p>
+<p>Este é o roteiro guiado da Aula 04. Ele usa os arquivos do pacote <strong>Laboratório — Notebook e conjuntos de dados (ZIP)</strong>. Salve o código como <code>exemplo_pandas.py</code> ao lado da pasta <code>dados/</code>, ou copie bloco a bloco para um notebook.</p>
+<p><strong>Lembrete:</strong> os dados são sintéticos. Os números abaixo servem para você conferir se o seu ambiente está produzindo o mesmo resultado — não para tirar conclusões sobre o IFRN.</p>
+<h4>Passo 1 — Ler corretamente</h4>
+<pre>import numpy as np
+import pandas as pd
+
+df = pd.read_csv("dados/matriculas_ifrn_2026.csv",
+                 sep=";", decimal=",", encoding="utf-8",
+                 dtype={"matricula": "string"})
+print(df.shape)        # (482, 12)</pre>
+<p>Sem <code>sep=";"</code> o arquivo inteiro vira uma única coluna; sem <code>decimal=","</code> as notas viram texto. Vale executar o erro uma vez para reconhecê-lo depois.</p>
+<pre>campi  = pd.read_excel("dados/campi_ifrn.xlsx", sheet_name="campi")
+cursos = pd.read_excel("dados/campi_ifrn.xlsx", sheet_name="cursos")</pre>
+<h4>Passo 2 — Inspecionar</h4>
+<pre>df.info()
+print(df.describe().round(2))
+print(df.isna().sum())
+print("duplicadas:", df.duplicated().sum())
+print("campi distintos:", df["campus"].nunique())</pre>
+<pre>nota_final  -&gt; 441 non-null de 482  (41 ausentes)
+frequencia  -&gt; 473 non-null de 482  ( 9 ausentes)
+duplicadas: 2
+campi distintos: 19   &lt;- o IFRN não tem 19 campi neste conjunto!</pre>
+<p>Média (69,15) e mediana (69,70) das notas praticamente coincidem: distribuição aproximadamente simétrica. Os 19 campi vêm de valores com <strong>espaços nas bordas</strong>: <code>" Mossoró "</code> é, para o Pandas, diferente de <code>"Mossoró"</code>.</p>
+<h4>Passo 3 — Limpeza mínima</h4>
+<pre>df["campus"] = df["campus"].str.strip()
+df = df.drop_duplicates().reset_index(drop=True)
+print(df.shape, df["campus"].nunique())   # (480, 12) 12</pre>
+<h4>Passo 4 — Selecionar</h4>
+<pre>df.iloc[0:3, 0:4]                              # 3 linhas, 4 colunas (por POSIÇÃO)
+df.loc[0:2, ["nome", "campus", "nota_final"]]  # atenção: 0:2 INCLUI o 2
+
+dfm = df.set_index("matricula")
+dfm.loc["20261042", ["nome", "campus", "nota_final"]]
+# nome          Ubiratan Rocha Barbosa
+# campus                 Natal-Central
+# nota_final                      76.4</pre>
+<h4>Passo 5 — Filtrar</h4>
+<pre>aprovados   = df[df["situacao"] == "Aprovado"]                                  # 281
+noturno_bom = df[(df["turno"] == "Noturno") &amp; (df["nota_final"] &gt;= 80)]         #  35
+metro       = df[df["campus"].isin(["Natal-Central","Natal-Zona Norte","Parnamirim"])]  # 174
+jovens      = df[df["idade"].between(18, 24)]                                   # 189
+ti          = df[df["curso"].str.contains("Sistemas|Redes", na=False)]          # 107</pre>
+<p>Parênteses em cada condição e <code>&amp;</code> no lugar de <code>and</code> — as duas regras que evitam o <code>ValueError: The truth value of a Series is ambiguous</code>.</p>
+<h4>Passo 6 — Atribuir com segurança</h4>
+<pre>df.loc[df["frequencia"].isna(), "frequencia"] = df["frequencia"].median()
+print(df["frequencia"].isna().sum())   # 0</pre>
+<p>Uma única operação <code>loc[linhas, coluna]</code>. A forma encadeada <code>df[mascara]["frequencia"] = ...</code> dispara <code>SettingWithCopyWarning</code> e pode não alterar nada.</p>
+<h4>Passo 7 — NumPy por baixo do Pandas</h4>
+<pre>mask = (df["nota_final"] &gt;= 60).to_numpy()
+print(type(mask), mask.dtype, mask.sum(), "de", mask.size)
+# &lt;class 'numpy.ndarray'&gt; bool 337 de 480
+
+df["faixa"] = np.where(df["nota_final"] &gt;= 80, "Alta",
+                np.where(df["nota_final"] &gt;= 60, "Média", "Baixa"))
+print(df["faixa"].value_counts(dropna=False))
+# Média 244 | Baixa 143 | Alta 93   &lt;- "Baixa" inclui, indevidamente, os 41 sem nota
+
+df["faixa"] = df["faixa"].mask(df["nota_final"].isna())
+print(df["faixa"].value_counts(dropna=False))
+# Média 244 | Baixa 102 | Alta 93 | NaN 41   &lt;- correto</pre>
+<p>Esta é a armadilha mais silenciosa da aula: <code>NaN &gt;= 80</code> é <code>False</code>, então quem não tem nota cai no ramo <code>else</code> sem que nada avise.</p>
+<h4>Passo 8 — Responder uma pergunta</h4>
+<pre>media_geral  = df["nota_final"].mean()                      # 69.20
+media_campus = (df.groupby("campus")["nota_final"]
+                  .mean().sort_values(ascending=False).round(2))
+print(media_campus[media_campus &gt; media_geral])
+# Santa Cruz 74.55 | Currais Novos 72.28 | Apodi 71.69
+# Mossoró 71.66 | Natal-Zona Norte 70.36 | Caicó 70.04</pre>
+<p><strong>Leia o resultado com ceticismo.</strong> As diferenças são de 1 a 5 pontos, os grupos têm tamanhos muito distintos (Natal-Central tem 98 estudantes; Caicó, 23 — e apenas 21 com nota), a média ignora curso, turno e ano de ingresso, e os dados são sintéticos. Reportar um <em>ranking</em> a partir daqui seria um erro técnico grave. O <code>groupby</code> usado aqui é o tema da Aula 05.</p></div></div><div class="modified">Última atualização: sábado, 12 set. 2026, 14:12</div></div>
+                        <nav class="mt-5 mb-1 activity-navigation container-fluid" aria-label="Navegação de atividades">
+<div class="row">
+    <div class="col-md-4">        <div class="float-start">
+                <a href="https://presencial.ava.ifrn.edu.br/mod/resource/view.php?id=73155&amp;forceview=1" id="prev-activity-link" class="btn btn-link" aria-label="Atividade anterior: 🗂️ Laboratório — Notebook e conjuntos de dados (ZIP)">◄ 🗂️ Laboratório — Notebook e conjuntos de dados (ZIP)</a>
+
+        </div>
+</div>
+    <div class="col-md-4">        <div class="mdl-align">
+            <div class="urlselect">
+    
+</div>
+
+        </div>
+</div>
+    <div class="col-md-4">        <div class="float-end">
+                <a href="https://presencial.ava.ifrn.edu.br/mod/assign/view.php?id=73158&amp;forceview=1" id="next-activity-link" class="btn btn-link" aria-label="Próxima atividade: Exercício Prático — Aula 04 (entrega do notebook)">Exercício Prático — Aula 04 (entrega do notebook) ►</a>
+
+        </div>
+</div>
+</div>
+</nav>
+                        
+                    

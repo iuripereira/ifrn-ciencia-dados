@@ -1,0 +1,84 @@
+id_consulta,data_consulta,idade,especialidade,tempo_espera,valor_consulta,satisfacao
+504,11/08/2026,1 anos,Pediatria,57 min,"R$ 150,00",Ruim
+546,10/08/2026,62 anos,Cardiologia,37 min,"R$ 200,00",Ruim
+543,29/08/2026,64 anos,Clínica geral,21 min,"R$ 120,00",Regular
+575,04/08/2026,62 anos,Cardiologia,69 min,"R$ 200,00",Ruim
+568,07/08/2026,42 anos,Clínica geral,18 min,"R$ 120,00",Boa
+515,04/09/2026,8 anos,Pediatria,43 min,"R$ 150,00",Boa
+522,24/08/2026,20 anos,Ortopedia,7 min,"R$ 200,00",Ótima
+548,11/09/2026,48 anos,Clínica geral,20 min,"R$ 120,00",Regular
+564,28/09/2026,7 anos,Pediatria,26 min,"R$ 150,00",Boa
+554,04/09/2026,3 anos,Pediatria,26 min,"R$ 150,00",Boa
+547,29/09/2026,1 anos,pediatria,23 min,"R$ 150,00",Boa
+520,03/08/2026,1 anos,Pediatria,46 min,"R$ 150,00",Boa
+507,09/08/2026,49 anos,Cardiologia,44 min,"R$ 200,00",Boa
+538,11/08/2026,23 anos,clínica geral,41 min,"R$ 120,00",Regular
+569,03/08/2026,74 anos,cardiologia,10 min,"R$ 200,00",boa
+549,15/08/2026,10 anos,PEDIATRIA,35 min,"R$ 150,00",ruim
+540,21/09/2026,63 anos,Clínica geral,66 min,"R$ 120,00",ruim
+578,27/08/2026,39 anos,Ortopedia,47 min,"R$ 200,00",Ruim
+503,30/08/2026,42 anos,Clínica geral,53 min,"R$ 120,00",Boa
+557,27/09/2026,79 anos,Cardiologia,16 min,"R$ 200,00",Ótima
+539,03/08/2026,89 anos,Cardiologia,12 min,"R$ 200,00",boa
+533,30/08/2026,55 anos,Ortopedia,13 min,"R$ 200,00",Ótima
+505,01/10/2026,29 anos,Clínica geral,34 min,"R$ 120,00",Boa
+506,27/09/2026,4 anos,Pediatria,25 min,"R$ 150,00",Boa
+556,20/09/2026,40 anos,Clínica geral,10 min,"R$ 120,00",Ótima
+536,31/08/2026,67 anos,Cardiologia,53 min,"R$ 200,00",Ruim
+576,28/09/2026,14 anos,Pediatria,23 min,"R$ 150,00",Regular
+527,14/09/2026,49 anos,CLÍNICA GERAL,49 min,"R$ 120,00",Regular
+521,26/08/2026,11 anos,Pediatria,64 min,"R$ 150,00",Ruim
+566,14/08/2026,50 anos,Cardiologia,83 min,"R$ 200,00",Ruim
+544,16/08/2026,59 anos,Clínica geral,14 min,"R$ 120,00",Ótima
+535,05/08/2026,72 anos,Clínica geral,40 min,"R$ 120,00",Regular
+553,23/09/2026,34 anos,Cardiologia,47 min,"R$ 200,00",Boa
+518,05/08/2026,59 anos,Ortopedia,37 min,"R$ 200,00",Ruim
+545,16/08/2026,88 anos,Clínica geral,46 min,"R$ 120,00",Boa
+542,15/08/2026,2 anos,Pediatria,64 min,"R$ 150,00",Regular
+508,15/09/2026,41 anos,Ortopedia,38 min,"R$ 200,00",Ruim
+573,20/08/2026,64 anos,Ortopedia,15 min,"R$ 200,00",Ótima
+551,08/09/2026,23 anos,Clínica geral,22 min,"R$ 120,00",Ótima
+580,24/09/2026,72 anos,Clínica geral,19 min,"R$ 120,00",ótima
+562,22/09/2026,46 anos,Cardiologia,27 min,"R$ 200,00",Regular
+525,09/09/2026,59 anos,Ortopedia,28 min,"R$ 200,00",Regular
+511,29/08/2026,56 anos,CLÍNICA GERAL,80 min,"R$ 120,00",Ruim
+561,27/09/2026,1 anos,Pediatria,18 min,"R$ 150,00",Boa
+572,02/09/2026,13 anos,PEDIATRIA,80 min,"R$ 150,00",ruim
+558,10/08/2026,54 anos,Cardiologia,29 min,"R$ 200,00",Boa
+524,09/08/2026,85 anos,Cardiologia,27 min,"R$ 200,00",Boa
+560,12/09/2026,79 anos,clínica geral,47 min,"R$ 120,00",boa
+562,22/09/2026,46 anos,Cardiologia,27 min,"R$ 200,00",Regular
+579,28/08/2026,49 anos,Clínica geral,12 min,"R$ 120,00",Ótima
+519,22/09/2026,59 anos,Ortopedia,34 min,"R$ 200,00",Ruim
+528,15/08/2026,82 anos,ortopedia,34 min,"R$ 200,00",Regular
+577,13/08/2026,41 anos,Ortopedia,28 min,"R$ 200,00",Boa
+532,16/08/2026,4 anos,Pediatria,32 min,"R$ 150,00",Ruim
+502,29/08/2026,77 anos,Cardiologia,5 min,"R$ 200,00",ótima
+513,22/09/2026,3 anos,pediatria,16 min,"R$ 150,00",Boa
+570,07/09/2026,65 anos,Clínica geral,57 min,"R$ 120,00",Ruim
+559,08/08/2026,77 anos,Cardiologia,56 min,"R$ 200,00",Regular
+531,11/09/2026,62 anos,clínica geral,38 min,"R$ 120,00",Boa
+523,16/09/2026,89 anos,cardiologia,14 min,"R$ 200,00",Ótima
+580,24/09/2026,72 anos,Clínica geral,19 min,"R$ 120,00",ótima
+552,05/08/2026,31 anos,Cardiologia,52 min,"R$ 200,00",Boa
+526,29/09/2026,52 anos,Clínica geral,29 min,"R$ 120,00",Boa
+567,08/09/2026,71 anos,Cardiologia,29 min,"R$ 200,00",Boa
+514,24/09/2026,13 anos,Pediatria,28 min,"R$ 150,00",Boa
+571,22/09/2026,1 anos,Pediatria,35 min,"R$ 150,00",Regular
+552,05/08/2026,31 anos,Cardiologia,52 min,"R$ 200,00",Boa
+550,23/08/2026,53 anos,Clínica geral,67 min,"R$ 120,00",Ruim
+534,16/08/2026,20 anos,Clínica geral,39 min,"R$ 120,00",Regular
+563,05/09/2026,86 anos,Clínica geral,55 min,"R$ 120,00",Ruim
+555,20/09/2026,83 anos,Cardiologia,14 min,"R$ 200,00",Ótima
+512,29/09/2026,47 anos,Ortopedia,17 min,"R$ 200,00",Regular
+517,27/08/2026,66 anos,Cardiologia,31 min,"R$ 200,00",Ruim
+537,15/09/2026,32 anos,Clínica geral,29 min,"R$ 120,00",Regular
+541,27/08/2026,88 anos,Cardiologia,53 min,"R$ 200,00",Regular
+501,03/09/2026,85 anos,Cardiologia,31 min,"R$ 200,00",Ruim
+574,22/08/2026,5 anos,Pediatria,38 min,"R$ 150,00",Regular
+509,04/09/2026,55 anos,Cardiologia,13 min,"R$ 200,00",Ótima
+530,28/09/2026,35 anos,Ortopedia,8 min,"R$ 200,00",ótima
+529,02/09/2026,65 anos,Ortopedia,36 min,"R$ 200,00",ruim
+565,27/08/2026,28 anos,Cardiologia,55 min,"R$ 200,00",Regular
+516,31/08/2026,23 anos,Clínica geral,18 min,"R$ 120,00",Ótima
+510,10/08/2026,84 anos,Cardiologia,43 min,"R$ 200,00",Regular

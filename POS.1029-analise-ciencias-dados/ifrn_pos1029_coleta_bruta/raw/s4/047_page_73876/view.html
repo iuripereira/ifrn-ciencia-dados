@@ -1,0 +1,136 @@
+
+
+                        <span class="notifications" id="user-notifications"></span>
+                            <span id="maincontent"></span>
+                                <h2>Exemplo — Fontes de Dados e APIs Públicas (exemplo_fontes_dados.py)</h2>
+                            <div class="activity-header" data-for="page-activity-header">
+                                    <span class="sr-only">Condições de conclusão</span>
+                                    <div data-region="activity-information" data-activityname="Exemplo — Fontes de Dados e APIs Públicas (exemplo_fontes_dados.py)" class="activity-information">
+
+
+</div>
+</div>
+                        <div role="main"><div class="box py-3 generalbox center clearfix"><div class="no-overflow"><p class="translationhash"><span data-translationhash="4089124b6f3536abbc231e349042abce"></span></p>
+<p>Este script percorre as quatro fontes de dados desta aula (arquivo, banco de dados, web scraping e — em comentário — API REST) e os principais formatos (JSON, CSV, Parquet, XML, GeoJSON), usando um caso real: <strong>estabelecimentos de saúde cadastrados no CNES</strong> (Cadastro Nacional de Estabelecimentos de Saúde, Ministério da Saúde) em oito municípios do Rio Grande do Norte, mais o contorno geográfico do estado (IBGE). Os dados foram coletados ao vivo em 2026-09-28 — não são sintéticos.</p>
+<p>O pacote completo (script + dados + resultados) está disponível no recurso <em>"Pacote — Exemplo de Fontes de Dados e APIs Públicas"</em> desta seção. Baixe e rode com <code>python3 exemplo_fontes_dados.py</code> (dependências: pandas, beautifulsoup4, pyarrow, matplotlib).</p>
+<h4>Passo 1 — Arquivo: carregando o snapshot da API já salvo em disco</h4>
+<p>Os 160 registros (20 por município × 8 municípios — o teto do servidor, ver Capítulo 4) foram salvos em <code>dados/cnes_rn_amostra.json</code> junto com metadados de proveniência. O comentário no topo do script mostra exatamente a chamada <code>requests.get(...)</code> que gerou esse arquivo — incluindo as duas armadilhas reais da API descobertas testando (parâmetros ignorados silenciosamente e paginação via <code>offset</code>).</p>
+<pre>print("Passo 1 — Carregando o snapshot salvo da API (fonte: arquivo)")
+with open(DADOS / "cnes_rn_amostra.json", encoding="utf-8") as f:
+    payload = json.load(f)
+
+df = pd.DataFrame(payload["registros"])
+print(df.groupby("municipio").size().sort_values(ascending=False))</pre>
+<p><strong>Saída real:</strong></p>
+<pre>Passo 1 — Carregando o snapshot salvo da API (fonte: arquivo)
+  fonte      : Ministério da Saúde — DEMAS API de Dados Abertos (CNES)
+  endpoint   : https://apidadosabertos.saude.gov.br/cnes/estabelecimentos
+  coletado em: 2026-09-28
+  licença    : Dados abertos governamentais (Lei 12.527/2011) — uso livre com citação da fonte
+  observação : Amostra: 20 primeiros estabelecimentos por município (limite fixo do servidor).
+
+  160 estabelecimentos, 8 municípios
+municipio
+Acu             20
+Caico           20
+CearaMirim      20
+CurraisNovos    20
+Mossoro         20
+Natal           20
+Parnamirim      20
+PauDosFerros    20</pre>
+<h4>Passo 2 — Banco de dados: o mesmo DataFrame agora como tabela SQLite</h4>
+<p><code>df.to_sql</code> grava o DataFrame como tabela; <code>pd.read_sql</code> traz de volta o resultado de uma consulta SQL — o mesmo tipo de <code>GROUP BY</code> que a Aula 05 fez em Pandas, agora escrito em SQL puro.</p>
+<pre>con = sqlite3.connect(":memory:")
+df.to_sql("estabelecimentos", con, index=False, if_exists="replace")
+
+consulta = """
+    SELECT municipio, descricao_tipo_unidade, COUNT(*) AS n
+    FROM estabelecimentos
+    WHERE descricao_tipo_unidade IN ('HOSPITAL GERAL', 'CENTRO DE SAUDE/UNIDADE BASICA')
+    GROUP BY municipio, descricao_tipo_unidade
+    ORDER BY n DESC
+"""
+resultado_sql = pd.read_sql(consulta, con)</pre>
+<p><strong>Saída real:</strong></p>
+<pre>   municipio         descricao_tipo_unidade  n
+  CearaMirim CENTRO DE SAUDE/UNIDADE BASICA  6
+  Parnamirim CENTRO DE SAUDE/UNIDADE BASICA  5
+CurraisNovos CENTRO DE SAUDE/UNIDADE BASICA  2
+         Acu CENTRO DE SAUDE/UNIDADE BASICA  1
+     Mossoro CENTRO DE SAUDE/UNIDADE BASICA  1
+PauDosFerros                 HOSPITAL GERAL  1</pre>
+<h4>Passo 3 — Web scraping: extraindo uma tabela da Wikipédia com BeautifulSoup</h4>
+<p>Usamos um trecho HTML real, salvo de uma coleta feita em 2026-09-28 (para manter o exemplo reprodutível sem depender de rede). A Wikipédia publica seu conteúdo sob licença CC BY-SA 4.0, que permite reuso — inclusive automatizado — exigindo atribuição.</p>
+<pre>from bs4 import BeautifulSoup
+
+with open(DADOS / "wikipedia_municipios_rn.html", encoding="utf-8") as f:
+    soup = BeautifulSoup(f.read(), "html.parser")
+
+tabela = soup.find("table")
+for tr in tabela.find_all("tr")[1:]:
+    cols = [td.get_text(strip=True) for td in tr.find_all("td")]</pre>
+<p><strong>Saída real:</strong></p>
+<pre>        municipio codigo_ibge
+            Acari     2400109
+   Afonso Bezerra     2400307
+        Água Nova     2400406
+       Alexandria     2400505
+    Almino Afonso     2400604
+Alto do Rodrigues     2400703
+  Licença da fonte: CC BY-SA 4.0 (Wikipédia) — uso permitido, exige atribuição
+  Antes de raspar um site: checar robots.txt e os termos de uso.</pre>
+<h4>Passo 4 — O mesmo conjunto de dados, quatro formatos diferentes</h4>
+<p>O script grava os mesmos 160 registros em CSV (padrão brasileiro: separador <code>;</code>, decimal <code>,</code>), Parquet e um XML ilustrativo com 3 linhas, e compara o tamanho de cada arquivo.</p>
+<pre>df.to_csv(DADOS / "cnes_rn_amostra.csv", index=False, sep=";", decimal=",", encoding="utf-8")
+df.to_parquet(DADOS / "cnes_rn_amostra.parquet", index=False)
+# ... XML manual com xml.etree.ElementTree (ver script completo) ...</pre>
+<p><strong>Saída real — comparação de tamanho dos mesmos 160 registros:</strong></p>
+<pre>    Parquet                             7868 bytes
+    CSV                                12451 bytes
+    JSON (bruto, com metadados)        36809 bytes</pre>
+<p>O Parquet é o menor por ser colunar e binário; o JSON é o maior porque carrega, além dos dados, os metadados de proveniência (fonte, endpoint, data da coleta, licença) — um custo em espaço que se paga em rastreabilidade (Capítulo 6).</p>
+<h4>Passo 5 — Mapa: contorno real do RN (IBGE) + estabelecimentos (CNES)</h4>
+<p>O contorno do Rio Grande do Norte vem da API de Malhas do IBGE (formato GeoJSON, simplificado para fins didáticos); os pontos são as coordenadas reais de latitude/longitude dos 160 estabelecimentos do CNES, coloridos por município. O resultado (<code>mapa_estabelecimentos_rn.png</code>) está reproduzido na apostila em PDF desta aula e é gerado novamente sempre que o script roda.</p>
+<pre>with open(DADOS / "rn_contorno.json", encoding="utf-8") as f:
+    contorno = json.load(f)
+xs = [c[0] for c in contorno["coordinates"]]
+ys = [c[1] for c in contorno["coordinates"]]
+
+fig, ax = plt.subplots(figsize=(7, 6.5))
+ax.plot(xs, ys, color="#00693e", linewidth=1.5)
+for municipio, grupo in df.groupby("municipio"):
+    ax.scatter(grupo["longitude"], grupo["latitude"], s=28, color=cores.get(municipio, "gray"),
+               label=f"{municipio} ({len(grupo)})")
+fig.savefig("mapa_estabelecimentos_rn.png", dpi=150)</pre>
+<p>Dois pontos da amostra de Mossoró ficam visivelmente fora do agrupamento principal no mapa gerado — um lembrete honesto de que dados reais têm ruído (coordenadas mal cadastradas, por exemplo), diferente dos dados sintéticos das Aulas 04 e 05, que não têm essas imperfeições porque foram gerados sem elas.</p>
+<h4>Para reproduzir</h4>
+<ol>
+<li>Baixe o pacote <em>"Pacote — Exemplo de Fontes de Dados e APIs Públicas"</em> (ZIP) desta seção.</li>
+<li>Extraia mantendo a subpasta <code>dados/</code> junto do script (o script espera esse caminho relativo).</li>
+<li>Instale as dependências: <code>pip install pandas requests beautifulsoup4 pyarrow matplotlib</code>.</li>
+<li>Rode: <code>python3 exemplo_fontes_dados.py</code>. Ele recria os arquivos CSV/Parquet/XML e o mapa.</li>
+</ol></div></div><div class="modified">Última atualização: segunda-feira, 28 set. 2026, 09:05</div></div>
+                        <nav class="mt-5 mb-1 activity-navigation container-fluid" aria-label="Navegação de atividades">
+<div class="row">
+    <div class="col-md-4">        <div class="float-start">
+                <a href="https://presencial.ava.ifrn.edu.br/mod/resource/view.php?id=73874&amp;forceview=1" id="prev-activity-link" class="btn btn-link" aria-label="Atividade anterior: Pacote — Exemplo de Fontes de Dados e APIs Públicas (Aula 06)">◄ Pacote — Exemplo de Fontes de Dados e APIs Públicas (Aula 06)</a>
+
+        </div>
+</div>
+    <div class="col-md-4">        <div class="mdl-align">
+            <div class="urlselect">
+    
+</div>
+
+        </div>
+</div>
+    <div class="col-md-4">        <div class="float-end">
+                <a href="https://presencial.ava.ifrn.edu.br/mod/quiz/view.php?id=73878&amp;forceview=1" id="next-activity-link" class="btn btn-link" aria-label="Próxima atividade: Formulário Avaliativo — Aula 06">Formulário Avaliativo — Aula 06 ►</a>
+
+        </div>
+</div>
+</div>
+</nav>
+                        
+                    

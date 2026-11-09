@@ -1,0 +1,20 @@
+Aula 11 — Fundamentos de AED e Estatística Descritiva
+Análise e Ciência de Dados — Especialização em Ciência de Dados — IFRN
+
+Conteúdo
+  Aula11_AED_Estatistica_Descritiva.ipynb  exemplo guiado (com todas as saídas e gráficos)
+  Aula11_Exercicio_Pratico.ipynb           exercício para treinar (TODOs + "Para conferir") — sem entrega
+  dados/desempenho_estudantes.csv          300 estudantes de um curso fictício (exemplo guiado)
+  dados/sorveteria.csv                     90 dias de vendas de uma sorveteria fictícia (exercício)
+  gerar_dados.py                           script que gera os dois arquivos (semente fixa)
+
+Como usar
+  1. Extraia o ZIP mantendo a pasta dados/ ao lado dos notebooks.
+  2. pip install pandas numpy matplotlib scipy
+  3. Abra os notebooks nesta pasta.
+
+IMPORTANTE: todos os dados são SINTÉTICOS (sorteados pelo gerar_dados.py).
+Nenhum registro corresponde a pessoa ou empresa real.
+
+O exercício prático é para treino e não precisa ser entregue.
+A avaliação da aula é o formulário avaliativo no Moodle (20 questões, prazo 10/11/2026).

@@ -1,0 +1,42 @@
+{
+  "termo_busca": "eleições",
+  "total": 9,
+  "conjuntos": [
+    {
+      "name": "resultados-eleicoes-suplementares-2024",
+      "title": "resultados-eleicoes-suplementares-2024"
+    },
+    {
+      "name": "resultados-eleicoes-suplementares-2022",
+      "title": "resultados-eleicoes-suplementares-2022"
+    },
+    {
+      "name": "resultados-2020-suplementares",
+      "title": "resultados-2020-suplementares"
+    },
+    {
+      "name": "resultados-1998",
+      "title": "resultados-1998"
+    },
+    {
+      "name": "resultados-1996",
+      "title": "resultados-1996"
+    },
+    {
+      "name": "resultados-1994",
+      "title": "resultados-1994"
+    },
+    {
+      "name": "candidatos-1998",
+      "title": "candidatos-1998"
+    },
+    {
+      "name": "candidatos-1996",
+      "title": "candidatos-1996"
+    },
+    {
+      "name": "candidatos-1994",
+      "title": "candidatos-1994"
+    }
+  ]
+}

@@ -1,0 +1,240 @@
+
+<div class="toast-wrapper mx-auto py-0 fixed-top" role="status" aria-live="polite"></div>
+
+<div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Ir para o conteúdo principal</a>
+</div>
+
+
+
+
+<div id="page">
+    <section class="embedded-main">
+            <span id="maincontent"></span>
+            <div class="activity-header" data-for="page-activity-header"></div>
+        <div role="main"><div class="book p-4">
+    <div class="text-end"><a onclick="window.print();return false;" class="hidden-print" href="#"><img class="icon icon" alt="Imprimir o livro todo" title="Imprimir o livro todo" src="https://presencial.ava.ifrn.edu.br/theme/image.php/suap/booktool_print/1793831080/book">Imprimir o livro todo</a></div>
+    <div class="text-center pb-3 book_title"><h1>Tópicos de Estudo — Aula 10</h1></div>
+    <div class="book_info w-100 pt-6 d-inline-block">
+        <div class="w-50 float-start">
+            <table>
+                <tbody><tr>
+                    <td>
+                        Site:
+                    </td>
+                    <td class="ps-3">
+                        <a href="https://presencial.ava.ifrn.edu.br">AVA-Presencial</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Curso:
+                    </td>
+                    <td class="ps-3">
+                        Análise e Ciência de Dados
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Livro:
+                    </td>
+                    <td class="ps-3">
+                        Tópicos de Estudo — Aula 10
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+        <div class="w-50 float-start">
+            <table class="float-end">
+                <tbody><tr>
+                    <td>
+                        Impresso por:
+                    </td>
+                    <td class="ps-3">
+                        Iuri Guerra de Freitas Pereira
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Data:
+                    </td>
+                    <td class="ps-3">
+                        segunda-feira, 9 nov. 2026, 16:40
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </div>
+    <div class="w-100">
+        <div class="py-5"><div class="book_toc_numbered"><a name="toc"></a><h2 class="text-center pb-5">Índice</h2><ul><li><a title="1. Pipeline ETL: dos dados brutos ao dataset limpo" class="font-weight-bold text-decoration-none" href="#ch8054">1. Pipeline ETL: dos dados brutos ao dataset limpo</a></li><li><a title="2. Transformação de tipos e padronização" class="font-weight-bold text-decoration-none" href="#ch8055">2. Transformação de tipos e padronização</a></li><li><a title="3. Juntando fontes e engenharia de atributos" class="font-weight-bold text-decoration-none" href="#ch8056">3. Juntando fontes e engenharia de atributos</a></li><li><a title="4. Codificação de variáveis categóricas" class="font-weight-bold text-decoration-none" href="#ch8057">4. Codificação de variáveis categóricas</a></li><li><a title="5. Pipeline do scikit-learn, exportação e documentação" class="font-weight-bold text-decoration-none" href="#ch8058">5. Pipeline do scikit-learn, exportação e documentação</a></li></ul></div></div>
+    </div>
+    <div class="w-100">
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch8054"><h2 class="text-center pb-5">1. Pipeline ETL: dos dados brutos ao dataset limpo</h2><p class="translationhash"><span data-translationhash="95c7bbfb6eaf2447b9dbcaacac103089"></span></p>
+<p>Na Aula 09 corrigimos problemas de qualidade um a um. Num projeto real, essas correções precisam ser <strong>repetíveis</strong>: no mês seguinte chegam novos arquivos e tudo deve rodar de novo. Para isso organizamos o trabalho num <strong>pipeline</strong> — uma sequência fixa de etapas.</p>
+<h4>ETL</h4>
+<ul>
+<li><strong>Extract</strong> — ler as fontes (CSV, JSON de uma API, planilhas, banco de dados) <em>sem alterá-las</em>;</li>
+<li><strong>Transform</strong> — corrigir tipos, padronizar categorias, remover duplicatas, juntar tabelas, criar atributos e codificar categorias;</li>
+<li><strong>Load</strong> — gravar o resultado no destino (arquivo CSV/Parquet, banco de dados), com documentação.</li>
+</ul>
+<h4>O cenário do laboratório (dados sintéticos)</h4>
+<p>Uma rede hospitalar fictícia do RN tem dois sistemas: o <strong>cadastro</strong> (<code>pacientes.csv</code>, 200 pacientes) e o <strong>sistema de internações</strong>, que entrega um JSON (<code>internacoes.json</code>, 304 registros). Nenhum registro é de paciente real.</p>
+<p>O primeiro diagnóstico com <code>dtypes</code> mostra que <strong>todas</strong> as colunas chegaram como texto — inclusive datas, custos e a coluna de UTI. Além disso há grafias diferentes (<code>F</code>, <code>f</code>, <code>Feminino</code>), 4 internações duplicadas e 3 internações de pacientes que não existem no cadastro.</p>
+<pre>pacientes = pd.read_csv(DADOS / "pacientes.csv")
+internacoes = pd.read_json(DADOS / "internacoes.json")
+internacoes.dtypes        # tudo texto (str/object)</pre>
+<p><strong>Boas práticas:</strong> trabalhar em cópias (<code>df.copy()</code>), organizar cada etapa em uma função e verificar regras com <code>assert</code> — se algo inesperado aparecer, o pipeline para em vez de gerar um dataset errado.</p></div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch8055"><h2 class="text-center pb-5">2. Transformação de tipos e padronização</h2><p class="translationhash"><span data-translationhash="5c4f668a74c3c5c3569ad87ef4138f34"></span></p>
+<h4>Datas</h4>
+<p>Datas em dois formatos (<code>1993-10-22</code> e <code>22/10/1993</code>) são convertidas com cada formato e combinadas:</p>
+<pre>iso = pd.to_datetime(txt, format="%Y-%m-%d", errors="coerce")
+br = pd.to_datetime(txt, format="%d/%m/%Y", errors="coerce")
+p["data_nascimento"] = iso.fillna(br)      # 185 + 15 = 200 datas</pre>
+<h4>Moeda brasileira → número</h4>
+<pre>(serie.str.replace("R$", "", regex=False).str.strip()
+      .str.replace(".", "", regex=False)     # tira o ponto de milhar
+      .str.replace(",", ".", regex=False)    # vírgula decimal vira ponto
+      .astype(float))                        # "R$ 15.764,91" vira 15764.91</pre>
+<p>A ordem importa: se a vírgula virar ponto antes de remover os pontos, o separador decimal também some.</p>
+<h4>Texto com número dentro</h4>
+<p><code>"62 anos"</code> ou <code>"37 min"</code>: <code>s.str.extract(r"(\d+)")[0].astype(int)</code> pega só os dígitos.</p>
+<h4>Categorias e booleanos</h4>
+<pre>p["sexo"] = p["sexo"].str.strip().str[0].str.upper()          # F, f, Feminino → F
+mapa = {"sim": True, "s": True, "não": False, "nao": False, "n": False}
+p["plano_saude"] = p["plano_saude"].str.strip().str.lower().map(mapa)
+i["gravidade"] = i["gravidade"].str.capitalize()               # leve → Leve</pre>
+<p>Com <code>map</code>, um valor fora do dicionário vira <code>NaN</code> — ótimo para descobrir grafias inesperadas na conferência. Colunas Sim/Não viram booleanas, que ocupam menos memória e deixam claro que só há duas respostas.</p></div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch8056"><h2 class="text-center pb-5">3. Juntando fontes e engenharia de atributos</h2><p class="translationhash"><span data-translationhash="0cb1a126d17c2666ff88896fe4522132"></span></p>
+<h4>Junção com verificação</h4>
+<pre>base = i.merge(p, on="id_paciente", how="left",
+               validate="many_to_one", indicator=True)
+base["_merge"].value_counts()     # both 297 · left_only 3</pre>
+<ul>
+<li><code>validate="many_to_one"</code> confere que cada paciente aparece uma única vez no cadastro;</li>
+<li><code>indicator=True</code> revela internações <em>órfãs</em> (paciente inexistente) — um problema de integridade referencial que deve ser registrado e tratado.</li>
+</ul>
+<h4>Atributos derivados</h4>
+<pre>base["tempo_internacao_dias"] = (base["data_alta"] - base["data_entrada"]).dt.days
+base["idade"] = ((base["data_entrada"] - base["data_nascimento"]).dt.days // 365.25).astype(int)</pre>
+<p>Os 5 custos ausentes foram imputados pela mediana do mesmo diagnóstico e gravidade.</p>
+<h4>Binning (discretização)</h4>
+<table style="border-collapse: collapse;" border="1" cellpadding="4">
+<tbody>
+<tr>
+<th>Função</th>
+<th>Como define as faixas</th>
+<th>Exemplo da aula</th>
+</tr>
+<tr>
+<td><code>pd.cut</code></td>
+<td>limites escolhidos por você → quantidades diferentes por faixa</td>
+<td>faixas etárias 0-17, 18-39, 40-59, 60-79, 80+</td>
+</tr>
+<tr>
+<td><code>pd.qcut</code></td>
+<td>quantis → mesma quantidade por faixa</td>
+<td>quartis de custo: Baixo, Médio, Alto, Muito alto (≈74 cada)</td>
+</tr>
+</tbody>
+</table>
+<p>Com os novos atributos, a análise fica direta: o tempo médio de internação é 4,8 dias nos casos leves e 10,9 dias nos graves; a proporção de UTI sobe de 2% para 45%.</p></div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch8057"><h2 class="text-center pb-5">4. Codificação de variáveis categóricas</h2><p class="translationhash"><span data-translationhash="bd455b2370762e6bd86415c8db2e9576"></span></p>
+<p>Modelos de machine learning trabalham com números. A forma de transformar categorias em números depende do tipo:</p>
+<table style="border-collapse: collapse;" border="1" cellpadding="4">
+<tbody>
+<tr>
+<th>Tipo</th>
+<th>Exemplo</th>
+<th>Técnica</th>
+</tr>
+<tr>
+<td>Nominal (sem ordem)</td>
+<td>diagnóstico, município, sexo</td>
+<td>one-hot: <code>pd.get_dummies</code> / <code>OneHotEncoder</code></td>
+</tr>
+<tr>
+<td>Ordinal (com ordem)</td>
+<td>gravidade: Leve &lt; Moderada &lt; Grave</td>
+<td>dicionário explícito ou <code>OrdinalEncoder(categories=[...])</code></td>
+</tr>
+<tr>
+<td>Alvo (o que se quer prever)</td>
+<td>UTI sim/não</td>
+<td><code>LabelEncoder</code></td>
+</tr>
+</tbody>
+</table>
+<h4>One-hot encoding</h4>
+<pre>pd.get_dummies(base["diagnostico_principal"], prefix="diag", dtype=int)</pre>
+<p>Cria uma coluna 0/1 por categoria, sem criar ordem. Numerar diagnósticos (0 a 4) faria um modelo "achar" que existe uma ordem — e até médias — entre eles.</p>
+<p><strong>Armadilha da variável dummy:</strong> as colunas sempre somam 1, então uma delas é redundante. Com <code>drop_first=True</code>, município gera 3 colunas e Caicó vira a referência (todas 0).</p>
+<h4>Label encoding × codificação ordinal</h4>
+<p>O <code>LabelEncoder</code> numera em <strong>ordem alfabética</strong>: Grave = 0, Leve = 1, Moderada = 2 — que não é a ordem clínica. Para atributos ordinais, informe a ordem:</p>
+<pre>ordem = {"Leve": 0, "Moderada": 1, "Grave": 2}
+base["gravidade_cod"] = base["gravidade"].map(ordem)
+# ou: OrdinalEncoder(categories=[["Leve", "Moderada", "Grave"]])</pre></div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch8058"><h2 class="text-center pb-5">5. Pipeline do scikit-learn, exportação e documentação</h2><p class="translationhash"><span data-translationhash="23554cad84f306730635897de582bf5c"></span></p>
+<h4>ColumnTransformer + Pipeline</h4>
+<pre>preprocessador = ColumnTransformer([
+    ("onehot", OneHotEncoder(handle_unknown="ignore", sparse_output=False), nominais),
+    ("ordinal", OrdinalEncoder(categories=[["Leve", "Moderada", "Grave"]]), ["gravidade"]),
+    ("escala", StandardScaler(), ["idade", "tempo_internacao_dias"]),
+])
+pipeline = Pipeline([("preprocessamento", preprocessador)])
+Xt_treino = pipeline.fit_transform(X_treino)   # aprende SÓ com o treino
+Xt_teste = pipeline.transform(X_teste)         # aplica ao teste</pre>
+<ul>
+<li><strong>Vazamento de dados (data leakage):</strong> médias, desvios e listas de categorias devem ser aprendidos apenas no treino; o teste só recebe <code>transform</code>.</li>
+<li><code>handle_unknown="ignore"</code>: uma categoria nova (ex.: município Assu) vira zeros em vez de erro.</li>
+</ul>
+<h4>Load: CSV × Parquet</h4>
+<table style="border-collapse: collapse;" border="1" cellpadding="4">
+<tbody>
+<tr>
+<th>&nbsp;</th>
+<th>CSV</th>
+<th>Parquet</th>
+</tr>
+<tr>
+<td>Formato</td>
+<td>texto, universal</td>
+<td>binário, colunar, compactado</td>
+</tr>
+<tr>
+<td>Tipos</td>
+<td>perdidos (datas e categorias voltam como texto)</td>
+<td>preservados</td>
+</tr>
+<tr>
+<td>Tamanho no laboratório</td>
+<td>42 KB</td>
+<td>27 KB</td>
+</tr>
+</tbody>
+</table>
+<h4>Dicionário de dados</h4>
+<p>Todo dataset limpo deve ir acompanhado de um dicionário: <strong>coluna, tipo, descrição e transformação aplicada</strong> (ex.: "custo_total — float — texto convertido; 5 ausentes imputados pela mediana do diagnóstico e gravidade").</p>
+<h4>Atividade de entrega</h4>
+<p>Aplique o pipeline completo ao arquivo <code>exames_laboratoriais.csv</code> e entregue o dataset limpo e o notebook documentado na Tarefa da aula (prazo 30/10/2026). Os requisitos e critérios estão na apostila e no notebook-modelo.</p></div>
+            </div>
+    </div>
+</div></div>
+    </section>
+</div>
+
+
+
+
+
+
+
+

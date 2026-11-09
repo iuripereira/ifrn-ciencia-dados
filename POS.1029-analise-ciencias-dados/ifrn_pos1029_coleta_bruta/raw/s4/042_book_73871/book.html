@@ -1,0 +1,229 @@
+
+<div class="toast-wrapper mx-auto py-0 fixed-top" role="status" aria-live="polite"></div>
+
+<div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Ir para o conteúdo principal</a>
+</div>
+
+
+
+
+<div id="page">
+    <section class="embedded-main">
+            <span id="maincontent"></span>
+            <div class="activity-header" data-for="page-activity-header"></div>
+        <div role="main"><div class="book p-4">
+    <div class="text-end"><a onclick="window.print();return false;" class="hidden-print" href="#"><img class="icon icon" alt="Imprimir o livro todo" title="Imprimir o livro todo" src="https://presencial.ava.ifrn.edu.br/theme/image.php/suap/booktool_print/1793831080/book">Imprimir o livro todo</a></div>
+    <div class="text-center pb-3 book_title"><h1>Tópicos de Estudo — Aula 06: Processos e Fontes de Dados</h1></div>
+    <div class="book_info w-100 pt-6 d-inline-block">
+        <div class="w-50 float-start">
+            <table>
+                <tbody><tr>
+                    <td>
+                        Site:
+                    </td>
+                    <td class="ps-3">
+                        <a href="https://presencial.ava.ifrn.edu.br">AVA-Presencial</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Curso:
+                    </td>
+                    <td class="ps-3">
+                        Análise e Ciência de Dados
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Livro:
+                    </td>
+                    <td class="ps-3">
+                        Tópicos de Estudo — Aula 06: Processos e Fontes de Dados
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+        <div class="w-50 float-start">
+            <table class="float-end">
+                <tbody><tr>
+                    <td>
+                        Impresso por:
+                    </td>
+                    <td class="ps-3">
+                        Iuri Guerra de Freitas Pereira
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Data:
+                    </td>
+                    <td class="ps-3">
+                        segunda-feira, 9 nov. 2026, 16:40
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </div>
+    <div class="w-100">
+        <div class="py-5"><div class="book_toc_numbered"><a name="toc"></a><h2 class="text-center pb-5">Índice</h2><ul><li><a title="1. Capítulo 1 — De onde vêm os dados: um panorama das fontes" class="font-weight-bold text-decoration-none" href="#ch7769">1. Capítulo 1 — De onde vêm os dados: um panorama das fontes</a></li><li><a title="2. Capítulo 2 — Arquivos: a fonte mais simples (e onde ela falha)" class="font-weight-bold text-decoration-none" href="#ch7770">2. Capítulo 2 — Arquivos: a fonte mais simples (e onde ela falha)</a></li><li><a title="3. Capítulo 3 — Bancos de dados: quando o dado mora em tabelas relacionadas" class="font-weight-bold text-decoration-none" href="#ch7771">3. Capítulo 3 — Bancos de dados: quando o dado mora em tabelas relacionadas</a></li><li><a title="4. Capítulo 4 — APIs REST: dados sob demanda, com regras do dono do serviço" class="font-weight-bold text-decoration-none" href="#ch7772">4. Capítulo 4 — APIs REST: dados sob demanda, com regras do dono do serviço</a></li><li><a title="5. Capítulo 5 — Web scraping: o último recurso, com responsabilidade" class="font-weight-bold text-decoration-none" href="#ch7773">5. Capítulo 5 — Web scraping: o último recurso, com responsabilidade</a></li><li><a title="6. Capítulo 6 — Formatos de dados, licença e proveniência" class="font-weight-bold text-decoration-none" href="#ch7774">6. Capítulo 6 — Formatos de dados, licença e proveniência</a></li></ul></div></div>
+    </div>
+    <div class="w-100">
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch7769"><h2 class="text-center pb-5">1. Capítulo 1 — De onde vêm os dados: um panorama das fontes</h2><p class="translationhash"><span data-translationhash="82a46fe8bcc8bfc3f0156ee9f5cd1d90"></span></p>
+<p>Toda análise de dados começa antes da primeira linha de código: alguém precisa decidir <strong>onde os dados moram</strong> e <strong>como trazê-los</strong> para dentro do ambiente de trabalho. Esta aula cobre as quatro famílias de fontes mais comuns e os formatos que elas costumam falar.</p>
+<h4>As quatro famílias de fontes</h4>
+<ul>
+<li><strong>Arquivos</strong> — CSV, Excel, JSON, Parquet, XML, texto simples. A fonte mais previsível: o dado já está "parado", você só precisa lê-lo.</li>
+<li><strong>Bancos de dados</strong> — sistemas como PostgreSQL, MySQL, SQL Server. O dado vive em tabelas relacionadas, e você conversa com ele por meio de SQL.</li>
+<li><strong>APIs REST</strong> — um servidor remoto expõe endpoints HTTP que devolvem dados (normalmente em JSON) sob demanda, muitas vezes em tempo real.</li>
+<li><strong>Web scraping</strong> — quando não existe arquivo, banco nem API, e a única forma de obter o dado é extraí-lo do HTML de uma página feita para humanos lerem, não para máquinas.</li>
+</ul>
+<h4>Por que a ordem acima não é aleatória</h4>
+<p>Ela reflete o quanto de <strong>trabalho e risco</strong> cada fonte exige. Um arquivo bem formado é a situação mais simples: leitura direta, sem rede, sem autenticação, sem terceiros. Um banco de dados exige uma conexão e permissões, mas ainda fala uma linguagem estruturada e estável (SQL). Uma API REST depende de um serviço de terceiros estar no ar, respeitar limites de uso e não mudar seu contrato sem aviso. Web scraping é o último recurso: você depende da estrutura visual de uma página, que pode mudar a qualquer redesign, e entra em território mais delicado do ponto de vista legal e ético (Capítulo 5).</p>
+<h4>Um exemplo real: o cadastro de estabelecimentos de saúde</h4>
+<p>Ao longo desta aula, o mesmo caso guia os quatro capítulos seguintes: o <strong>CNES</strong> (Cadastro Nacional de Estabelecimentos de Saúde), mantido pelo Ministério da Saúde. Os mesmos estabelecimentos de saúde do Rio Grande do Norte aparecem de quatro formas — como arquivo JSON salvo em disco, como tabela dentro de um banco SQLite, como resposta de uma API REST pública e ao lado de uma tabela raspada da Wikipédia — para que fique concreto o que muda (e o que não muda) de uma fonte para outra.</p>
+<h4>O ciclo de vida de um dado adquirido</h4>
+<p>Não basta "puxar" o dado uma vez. Um processo de aquisição saudável responde a quatro perguntas, sempre por escrito:</p>
+<ul>
+<li><strong>De onde veio?</strong> (endpoint, URL, nome do arquivo, banco e tabela — a <em>proveniência</em>, tema do Capítulo 6)</li>
+<li><strong>Quando foi coletado?</strong> (dados mudam; uma amostra de hoje pode não valer amanhã)</li>
+<li><strong>Sob que licença posso usá-lo?</strong> (Capítulo 6 — nem todo dado público é dado livre)</li>
+<li><strong>O que fazer se a fonte mudar ou cair?</strong> (arquivos de cache, versionamento, tratamento de erro)</li>
+</ul>
+<p>As próximas aulas da Unidade 2 (limpeza, tratamento de dados ausentes, validação) partem do princípio de que os dados já chegaram até você de forma íntegra e rastreável — esta aula é o que garante essa base.</p></div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch7770"><h2 class="text-center pb-5">2. Capítulo 2 — Arquivos: a fonte mais simples (e onde ela falha)</h2><p class="translationhash"><span data-translationhash="62182410cc30ba7eeac4471d3d7e56b7"></span></p>
+<p>Um arquivo bem-comportado é a fonte de dados mais fácil de usar: <code>pd.read_csv</code>, <code>pd.read_excel</code>, <code>pd.read_json</code> e pronto. Mas "bem-comportado" é a exceção, não a regra — a Aula 04 já mostrou isso com o CSV de matrículas do IFRN, cujo separador (<code>;</code>), decimal (<code>,</code>) e encoding (<code>utf-8</code>) precisaram ser declarados explicitamente.</p>
+<h4>As perguntas que todo arquivo exige</h4>
+<ul>
+<li><strong>Qual o encoding?</strong> <code>utf-8</code> é o padrão atual, mas arquivos exportados de sistemas legados brasileiros costumam vir em <code>latin-1</code> (também chamado <code>iso-8859-1</code>). Abrir com o encoding errado não gera erro imediato — gera acentos corrompidos ("informação" virando "informaÃ§Ã£o"), um bug silencioso e traiçoeiro.</li>
+<li><strong>Qual o separador e o decimal?</strong> Planilhas brasileiras costumam usar <code>;</code> como separador de coluna (porque a vírgula já é o separador decimal) — o oposto do padrão americano.</li>
+<li><strong>A primeira linha é cabeçalho?</strong> Nem sempre. Alguns exports incluem linhas de metadados ou títulos de relatório antes da tabela de fato (resolvido com <code>skiprows</code>).</li>
+<li><strong>O arquivo cabe na memória?</strong> Um CSV de 50 GB não pode simplesmente virar um DataFrame inteiro — entram em cena leitura em blocos (<code>chunksize</code>) ou formatos colunares como Parquet.</li>
+</ul>
+<h4>Arquivo como cache de outra fonte</h4>
+<p>Uma prática comum — e usada no exemplo desta aula — é salvar em arquivo o resultado de uma chamada de API ou de uma consulta a banco:</p>
+<pre>import json
+with open("dados/cnes_rn_amostra.json", "w", encoding="utf-8") as f:
+    json.dump(resposta_da_api, f, ensure_ascii=False, indent=1)</pre>
+<p>Isso transforma uma fonte instável e dependente de rede (API) em uma fonte estável e reproduzível (arquivo). O preço é que o arquivo é uma <strong>fotografia</strong>: se o cadastro do CNES mudar amanhã, o arquivo salvo hoje não vai refletir isso — por isso é essencial registrar a data da coleta junto com os dados (Capítulo 6).</p>
+<h4>Arquivos não são só "tabelas"</h4>
+<p>Um DataFrame é a abstração mais usada em ciência de dados, mas nem todo arquivo é tabular por natureza: um JSON aninhado (Capítulo 4), um XML com hierarquias profundas, ou um GeoJSON com polígonos de fronteiras territoriais (usado no mapa desta aula) exigem uma etapa de "achatamento" (<em>flattening</em>) antes de virarem linhas e colunas — por exemplo, com <code>pd.json_normalize</code>.</p></div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch7771"><h2 class="text-center pb-5">3. Capítulo 3 — Bancos de dados: quando o dado mora em tabelas relacionadas</h2><p class="translationhash"><span data-translationhash="0a6812faa2ec8d39ed9bfb2501251ac4"></span></p>
+<p>Um banco de dados relacional guarda os dados em tabelas conectadas por chaves, e a forma de "puxar" dados dele não é um método de leitura de arquivo — é uma <strong>consulta SQL</strong>. A diferença central para arquivos e APIs: o banco pode processar, filtrar e juntar os dados <em>antes</em> de entregá-los, o que muitas vezes é bem mais eficiente do que trazer tudo para o Python e filtrar depois.</p>
+<h4>Conectando o Python a um banco</h4>
+<p>Cada banco tem seu driver (<code>psycopg2</code>/<code>psycopg</code> para PostgreSQL, <code>pymysql</code> para MySQL, <code>pyodbc</code> para SQL Server, o módulo <code>sqlite3</code> — da biblioteca padrão — para SQLite). O Pandas abstrai boa parte disso com duas funções:</p>
+<pre>import sqlite3
+import pandas as pd
+
+conexao = sqlite3.connect("dados/exemplo.db")
+df = pd.read_sql("SELECT * FROM estabelecimentos WHERE municipio = 'Natal'", conexao)
+
+df.to_sql("estabelecimentos", conexao, index=False, if_exists="replace")</pre>
+<p><code>read_sql</code> traz o resultado de uma consulta como DataFrame; <code>to_sql</code> faz o caminho inverso, gravando um DataFrame como tabela. É assim que o exemplo prático desta aula cria uma mini base SQLite em memória a partir dos dados do CNES e roda uma consulta agrupando estabelecimentos por município e tipo — o mesmo <code>GROUP BY</code> que a Aula 05 fez em Pandas, agora escrito em SQL.</p>
+<h4>SQL ou Pandas — quem faz o quê?</h4>
+<ul>
+<li>Filtros, agregações e junções simples podem ser feitos em qualquer um dos dois — a régua é onde o dado já está e o volume envolvido.</li>
+<li>Se a tabela tem 200 milhões de linhas no banco, filtrar <em>dentro</em> do banco com <code>WHERE</code> antes de trazer o resultado para o Python evita transportar dados que serão descartados.</li>
+<li>Depois que o resultado já é pequeno e está em memória, Pandas costuma ser mais produtivo para exploração, limpeza e visualização.</li>
+</ul>
+<h4>Uma API também pode ser "um banco disfarçado"</h4>
+<p>Muitos serviços expõem, por trás de uma API REST, o mesmo tipo de filtro que um banco ofereceria (<code>WHERE codigo_municipio = ...</code> vira um parâmetro de URL). A diferença é que você não controla o schema, não pode fazer <code>JOIN</code> livremente entre tabelas do provedor, e está sujeito às regras de uso do serviço — o próximo capítulo detalha essa fonte.</p></div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch7772"><h2 class="text-center pb-5">4. Capítulo 4 — APIs REST: dados sob demanda, com regras do dono do serviço</h2><p class="translationhash"><span data-translationhash="ed66d860edd2705ae01cf41eaf3d46b3"></span></p>
+<p>Uma API REST é um contrato: o provedor define endereços (endpoints), parâmetros aceitos e o formato de resposta (quase sempre JSON); você faz requisições HTTP e recebe dados de volta. A biblioteca <code>requests</code> é o padrão em Python para isso.</p>
+<h4>Anatomia de uma requisição</h4>
+<pre>import requests
+
+url = "https://apidadosabertos.saude.gov.br/cnes/estabelecimentos"
+parametros = {"codigo_municipio": 240810, "limit": 20}
+resposta = requests.get(url, params=parametros, timeout=10)
+resposta.raise_for_status()
+dados = resposta.json()</pre>
+<p><code>params</code> vira a <em>query string</em> da URL (<code>?codigo_municipio=240810&amp;limit=20</code>); <code>resposta.json()</code> converte o corpo da resposta (texto) em listas e dicionários Python; <code>raise_for_status()</code> levanta uma exceção se o servidor devolveu um código de erro (4xx ou 5xx) em vez/de sucesso (2xx).</p>
+<h4>Duas armadilhas reais, descobertas testando a API do CNES</h4>
+<ul>
+<li><strong>Parâmetros aceitos silenciosamente, mas ignorados.</strong> Tentar filtrar por <code>uf=RN</code> ou <code>codigo_uf=24</code> não gera erro — a API simplesmente devolve dados de qualquer estado, como se o filtro não existisse. Só o parâmetro correto (<code>codigo_municipio</code>, com o código IBGE de 6 dígitos) filtra de verdade. A lição: <strong>sempre inspecionar o retorno</strong>, nunca supor que um parâmetro "razoável" funcionou só porque não deu erro.</li>
+<li><strong>Limite de página fixo pelo servidor.</strong> Pedir <code>limit=1000</code> devolve no máximo 20 registros — o servidor ignora limites maiores que o seu teto interno. Para reunir mais dados é preciso <strong>paginar</strong>, repetindo a chamada com <code>offset=20</code>, <code>offset=40</code>, e assim por diante, até a resposta vir vazia.</li>
+</ul>
+<h4>Autenticação e limites de uso (rate limiting)</h4>
+<p>A API usada nesta aula é pública e não exige chave de acesso — mas a maioria das APIs comerciais exige uma <em>API key</em> ou token OAuth, enviado em um cabeçalho HTTP (<code>headers={"Authorization": "Bearer ..."}</code>). Praticamente toda API pública impõe algum limite de requisições por minuto/hora (<em>rate limit</em>); ultrapassá-lo costuma devolver o código HTTP <code>429 Too Many Requests</code>. Um bom cliente de API trata isso com espera (<em>backoff</em>) e nova tentativa, em vez de martelar o servidor.</p>
+<h4>JSON aninhado precisa de "achatamento"</h4>
+<p>A resposta de uma API raramente já é uma tabela: é comum vir como uma lista de dicionários, às vezes com dicionários dentro de dicionários. <code>pd.json_normalize(dados["estabelecimentos"])</code> resolve o caso simples; estruturas mais profundas (como a API de municípios do IBGE, que aninha microrregião dentro de mesorregião dentro de UF) exigem escolher manualmente quais níveis "puxar" para colunas.</p></div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch7773"><h2 class="text-center pb-5">5. Capítulo 5 — Web scraping: o último recurso, com responsabilidade</h2><p class="translationhash"><span data-translationhash="5e07a395cb022d065f03ee292bbbca56"></span></p>
+<p>Web scraping é extrair dados do HTML de uma página feita para ser lida por humanos, não consumida por máquinas. É a fonte mais frágil (qualquer redesign visual quebra o código) e a mais delicada do ponto de vista legal — por isso vem por último na lista, e só deve ser considerada quando não existe arquivo, banco ou API disponíveis.</p>
+<h4>Antes de escrever uma linha de código</h4>
+<ul>
+<li><strong>Existe uma API para os mesmos dados?</strong> Muitos sites que parecem exigir scraping têm uma API não documentada (visível na aba "Network" do navegador) ou uma API oficial — sempre vale procurar antes.</li>
+<li><strong>O que diz o <code>robots.txt</code>?</strong> Todo site pode publicar em <code>/robots.txt</code> quais partes permite ou proíbe que robôs acessem. Não é uma barreira técnica, mas ignorá-lo é uma falta ética e, em alguns contextos, uma evidência de má-fé.</li>
+<li><strong>O que dizem os Termos de Uso?</strong> Muitos sites proíbem explicitamente coleta automatizada, mesmo de páginas tecnicamente acessíveis. Termos de uso são um contrato — violá-los pode ter consequências, independentemente do robots.txt.</li>
+<li><strong>Sob que licença está o conteúdo?</strong> Dado acessível não é dado livre para reuso (Capítulo 6).</li>
+</ul>
+<h4>Extraindo uma tabela com BeautifulSoup</h4>
+<pre>from bs4 import BeautifulSoup
+import requests
+
+html = requests.get("https://pt.wikipedia.org/wiki/...").text
+sopa = BeautifulSoup(html, "html.parser")
+
+tabela = sopa.find("table", {"class": "wikitable"})
+linhas = []
+for tr in tabela.find_all("tr")[1:]:
+    colunas = [td.get_text(strip=True) for td in tr.find_all("td")]
+    if colunas:
+        linhas.append(colunas)</pre>
+<p><code>find</code> localiza o primeiro elemento que casa com o seletor (aqui, uma tabela com a classe <code>wikitable</code>); <code>find_all</code> devolve todos os elementos que casam — aqui, todas as linhas (<code>tr</code>). <code>get_text(strip=True)</code> extrai o texto visível de cada célula, descartando as tags HTML.</p>
+<h4>Por que a Wikipédia é um bom laboratório para praticar</h4>
+<p>A Wikipédia publica seu conteúdo sob licença Creative Commons Atribuição-CompartilhaIgual (CC BY-SA), permite expressamente reuso — inclusive automatizado, dentro de limites razoáveis — e documenta isso claramente. É um dos poucos casos em que scraping educacional está sobre uma base legal e ética confortável. Ainda assim, boas práticas seguem valendo: identificar o seu programa no cabeçalho HTTP (<em>User-Agent</em>), espaçar as requisições no tempo e nunca sobrecarregar o servidor.</p>
+<h4>Fragilidade estrutural</h4>
+<p>Diferente de uma API, cujo contrato de dados é (em teoria) estável, uma página HTML pode ser redesenhada sem aviso — uma classe CSS renomeada quebra o scraper inteiro. Por isso scraping deve ser tratado como uma fonte de <strong>último recurso</strong> e, quando usado, isolado em um módulo próprio, fácil de consertar quando (não se) a página mudar.</p></div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch7774"><h2 class="text-center pb-5">6. Capítulo 6 — Formatos de dados, licença e proveniência</h2><p class="translationhash"><span data-translationhash="6bfec7d406503581ed266e5e067b7126"></span></p>
+<p>Depois de decidir a fonte, resta decidir (ou descobrir) o formato — e entender sob quais regras aquele dado pode ser usado. Os dois assuntos parecem distantes, mas aparecem juntos na prática: o formato afeta o quão fácil é registrar a proveniência de um dado, e a licença determina o que você tem permissão de fazer com ele depois de convertê-lo.</p>
+<h4>CSV — simples, universal, sem metadados</h4>
+<p>Texto puro, uma linha por registro, colunas separadas por um caractere (vírgula, ponto e vírgula, tabulação). Vantagem: qualquer ferramenta lê. Desvantagem: não guarda tipos (tudo é texto até alguém decidir o contrário), nem estrutura hierárquica, nem metadados sobre a fonte.</p>
+<h4>JSON — estrutura e aninhamento, sem tipagem de colunas</h4>
+<p>O formato padrão das APIs REST modernas: objetos (<code>{}</code>), listas (<code>[]</code>), pares chave-valor, aninhamento arbitrário. Permite representar estruturas que um CSV não representa bem (um estabelecimento com uma lista de serviços especializados, por exemplo) — mas exige "achatamento" para virar uma tabela (Capítulo 4). É comum — e recomendável — usar um JSON para guardar não só os dados, mas também metadados de proveniência (fonte, endpoint, data da coleta, licença), como neste exemplo:</p>
+<pre>{
+  "fonte": "Ministério da Saúde — API de Dados Abertos (CNES)",
+  "endpoint": "https://apidadosabertos.saude.gov.br/cnes/estabelecimentos",
+  "data_coleta": "2026-09-28",
+  "licenca": "Dados abertos governamentais (Lei 12.527/2011)",
+  "registros": [ ... ]
+}</pre>
+<h4>XML — a estrutura mais verbosa</h4>
+<p>Antecessor do JSON como formato de troca de dados na web, ainda comum em sistemas legados, notas fiscais eletrônicas e alguns webservices governamentais brasileiros. Usa tags abrindo e fechando (<code>&lt;municipio&gt;Natal&lt;/municipio&gt;</code>), o que o torna bem mais verboso que JSON para representar o mesmo dado — no exemplo desta aula, os mesmos 3 registros em XML ocupam proporcionalmente mais espaço do que em JSON.</p>
+<h4>Parquet — formato colunar, feito para grandes volumes</h4>
+<p>Diferente de CSV e JSON (orientados a linha), o Parquet guarda os dados por coluna e de forma binária comprimida. Resultado: arquivos bem menores (no exemplo desta aula, o mesmo conjunto de 160 estabelecimentos ocupa menos espaço em Parquet do que em CSV, e uma fração do tamanho do JSON com metadados) e leitura seletiva de colunas sem precisar ler o arquivo inteiro. É o formato preferido para grandes volumes de dados tabulares no ecossistema de ciência de dados (Spark, pandas com PyArrow, data lakes).</p>
+<h4>GeoJSON — um caso especial de JSON para dados geográficos</h4>
+<p>Usado no mapa desta aula (contorno do Rio Grande do Norte, obtido da API de Malhas do IBGE): um JSON com uma estrutura padronizada para representar pontos, linhas e polígonos geográficos, com coordenadas de longitude e latitude. É o formato de troca padrão entre ferramentas de mapas (QGIS, Leaflet, geopandas).</p>
+<h4>Licença: o que você pode fazer com o dado</h4>
+<ul>
+<li><strong>Dados públicos governamentais brasileiros</strong> (como o CNES e o IBGE, usados nesta aula) são regidos pela <strong>Lei de Acesso à Informação</strong> (Lei 12.527/2011) e por políticas de dados abertos — via de regra, uso livre, inclusive comercial, com boa prática de citar a fonte.</li>
+<li><strong>Creative Commons (CC)</strong> — família de licenças usada por Wikipédia (CC BY-SA, usada nesta aula), bancos de imagens e alguns datasets acadêmicos. As variações importam: <code>BY</code> exige atribuição, <code>SA</code> (<em>share-alike</em>) exige que derivados usem a mesma licença, <code>NC</code> proíbe uso comercial, <code>ND</code> proíbe modificações.</li>
+<li><strong>Termos de uso proprietários</strong> — comuns em APIs comerciais e redes sociais: podem proibir redistribuição, uso comercial, ou exigir que os dados sejam apagados após um prazo.</li>
+<li><strong>Ausência de licença explícita</strong> não significa domínio público — na dúvida, o dado deve ser tratado como protegido por padrão.</li>
+</ul>
+<h4>Proveniência: a rastreabilidade que sustenta a confiança</h4>
+<p>Um dado sem proveniência registrada é, na prática, inutilizável para qualquer decisão séria: ninguém pode auditar, reproduzir ou saber se ainda é válido. Registrar proveniência custa poucas linhas (como no JSON acima) e paga dividendo toda vez que alguém — inclusive você, seis meses depois — precisar responder "de onde veio esse número?".</p></div>
+            </div>
+    </div>
+</div></div>
+    </section>
+</div>
+
+
+
+
+
+
+
+

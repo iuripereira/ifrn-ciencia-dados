@@ -1,0 +1,445 @@
+<title>Escolas do Rio Grande do Norte — ENEM 2025</title>
+<style>
+  .viz-root {
+    --surface-1:      #fcfcfb;
+    --page:           #f9f9f7;
+    --text-primary:   #0b0b0b;
+    --text-secondary: #52514e;
+    --text-muted:     #898781;
+    --gridline:       #e1e0d9;
+    --baseline:       #c3c2b7;
+    --border:         rgba(11,11,11,0.10);
+    --series-federal:  #2a78d6;
+    --series-estadual: #1baf7a;
+    --series-municipal:#eda100;
+    --series-privada:  #008300;
+  }
+  @media (prefers-color-scheme: dark) {
+    .viz-root {
+      --surface-1:      #1a1a19;
+      --page:           #0d0d0d;
+      --text-primary:   #ffffff;
+      --text-secondary: #c3c2b7;
+      --text-muted:     #898781;
+      --gridline:       #2c2c2a;
+      --baseline:       #383835;
+      --border:         rgba(255,255,255,0.10);
+      --series-federal:  #3987e5;
+      --series-estadual: #199e70;
+      --series-municipal:#c98500;
+      --series-privada:  #008300;
+    }
+  }
+  :root[data-theme="dark"] .viz-root {
+    --surface-1:      #1a1a19;
+    --page:           #0d0d0d;
+    --text-primary:   #ffffff;
+    --text-secondary: #c3c2b7;
+    --text-muted:     #898781;
+    --gridline:       #2c2c2a;
+    --baseline:       #383835;
+    --border:         rgba(255,255,255,0.10);
+    --series-federal:  #3987e5;
+    --series-estadual: #199e70;
+    --series-municipal:#c98500;
+    --series-privada:  #008300;
+  }
+  :root[data-theme="light"] .viz-root {
+    --surface-1:      #fcfcfb;
+    --page:           #f9f9f7;
+    --text-primary:   #0b0b0b;
+    --text-secondary: #52514e;
+    --text-muted:     #898781;
+    --gridline:       #e1e0d9;
+    --baseline:       #c3c2b7;
+    --border:         rgba(11,11,11,0.10);
+    --series-federal:  #2a78d6;
+    --series-estadual: #1baf7a;
+    --series-municipal:#eda100;
+    --series-privada:  #008300;
+  }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+  .viz-root {
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    background: var(--page);
+    color: var(--text-primary);
+    padding: 24px;
+    min-height: 100vh;
+  }
+  .viz-header h1 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 4px;
+  }
+  .viz-header p {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin: 0 0 20px;
+  }
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  .search-box {
+    flex: 1 1 240px;
+    max-width: 320px;
+    padding: 8px 12px;
+    font-size: 13px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--surface-1);
+    color: var(--text-primary);
+  }
+  .search-box::placeholder { color: var(--text-muted); }
+
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .legend button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    color: var(--text-secondary);
+    background: var(--surface-1);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 4px 10px 4px 8px;
+    cursor: pointer;
+  }
+  .legend button.off { opacity: 0.4; }
+  .swatch {
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    display: inline-block;
+    flex: none;
+  }
+
+  .table-wrap {
+    background: var(--surface-1);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow-x: auto;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 1080px;
+    font-size: 13px;
+  }
+  thead th {
+    position: sticky;
+    top: 0;
+    background: var(--surface-1);
+    text-align: left;
+    font-weight: 600;
+    color: var(--text-secondary);
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--gridline);
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+  }
+  thead th .arrow {
+    color: var(--text-muted);
+    font-size: 10px;
+    margin-left: 4px;
+  }
+  tbody td {
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--gridline);
+    color: var(--text-primary);
+    white-space: nowrap;
+  }
+  tbody tr:hover td { background: color-mix(in srgb, var(--text-primary) 4%, transparent); }
+  tbody tr:last-child td { border-bottom: none; }
+  .num { font-variant-numeric: tabular-nums; text-align: right; }
+  .muted { color: var(--text-muted); }
+  .nome-escola { max-width: 320px; overflow: hidden; text-overflow: ellipsis; }
+
+  .bar-cell {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 160px;
+  }
+  .bar-track { flex: 1; }
+  .bar-fill {
+    height: 16px;
+    border-radius: 0 4px 4px 0;
+    max-width: 24px;
+  }
+  .bar-value {
+    font-variant-numeric: tabular-nums;
+    width: 40px;
+    text-align: right;
+    flex: none;
+  }
+
+  .footnote {
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 12px;
+  }
+  .count { font-size: 12px; color: var(--text-muted); margin-left: auto; }
+
+  .recorte-bar {
+    background: var(--surface-1);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 13px;
+  }
+  .recorte-label {
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-right: 4px;
+  }
+  .recorte-bar label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--text-primary);
+    cursor: pointer;
+  }
+  .recorte-bar input[type="number"] {
+    width: 52px;
+    padding: 3px 6px;
+    font-size: 13px;
+    font-variant-numeric: tabular-nums;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--page);
+    color: var(--text-primary);
+  }
+  .recorte-bar label.disabled { color: var(--text-muted); }
+  .recorte-note {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin: 8px 0 0;
+  }
+</style>
+
+<div class="viz-root">
+  <div class="viz-header">
+    <h1>Escolas do Rio Grande do Norte — ENEM 2025</h1>
+    <p>Lista de escolas com participantes no ENEM 2025, ordenada por média geral. Clique em um cabeçalho para reordenar.</p>
+  </div>
+
+  <div class="controls">
+    <input class="search-box" id="search" type="text" placeholder="Buscar por nome ou município…">
+    <div class="legend" id="legend"></div>
+    <div class="count" id="count"></div>
+  </div>
+
+  <div class="controls recorte-bar">
+    <span class="recorte-label">Alunos considerados por escola (ranking por média do aluno):</span>
+    <label><input type="radio" name="recorte" value="todos" checked> Todos</label>
+    <label><input type="radio" name="recorte" value="top"> Melhores <input type="number" id="topN" value="10" min="1"> alunos</label>
+    <label><input type="radio" name="recorte" value="intervalo"> Posições <input type="number" id="rangeFrom" value="1" min="1"> a <input type="number" id="rangeTo" value="10" min="1"></label>
+  </div>
+  <p class="recorte-note" id="recorteNote"></p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th data-key="codigo">Código</th>
+          <th data-key="nome">Nome da escola</th>
+          <th data-key="municipio">Município</th>
+          <th data-key="tipo">Tipo</th>
+          <th data-key="considerados" class="num">Alunos</th>
+          <th data-key="media_cn" class="num">C. Natureza</th>
+          <th data-key="media_ch" class="num">C. Humanas</th>
+          <th data-key="media_lc" class="num">Linguagens</th>
+          <th data-key="media_mt" class="num">Matemática</th>
+          <th data-key="media_redacao" class="num">Redação</th>
+          <th data-key="media_geral">Média geral</th>
+        </tr>
+      </thead>
+      <tbody id="rows"></tbody>
+    </table>
+  </div>
+
+  <p class="footnote">
+    Fonte: microdados do ENEM 2025 (INEP), filtrados para escolas do RN. Nomes de escolas obtidos por
+    código INEP via catálogo público (SIMCAQ/UFPR, ano-base 2024); escolas sem nome localizado aparecem
+    com o código apenas. Média geral = média simples das médias de Ciências da Natureza, Ciências Humanas,
+    Linguagens, Matemática e Redação (considerando apenas provas efetivamente realizadas).
+  </p>
+</div>
+
+<script>
+const DATA = __DADOS_ESCOLAS__;
+
+const TIPO_COLOR = {
+  "Federal":   "var(--series-federal)",
+  "Estadual":  "var(--series-estadual)",
+  "Municipal": "var(--series-municipal)",
+  "Privada":   "var(--series-privada)",
+  "-":         "var(--text-muted)",
+};
+
+const SUBJECTS = ["cn", "ch", "lc", "mt", "redacao"];
+
+let sortKey = "media_geral";
+let sortDir = -1;
+let activeTipos = new Set(Object.keys(TIPO_COLOR).filter(t => t !== "-"));
+
+function fmt(v) { return v === null || v === undefined ? "—" : v.toFixed(1); }
+
+function mean(arr) { return arr.length ? arr.reduce((s, v) => s + v, 0) / arr.length : null; }
+
+// alunos[] já vem ordenado (Python) do melhor para o pior por média geral do aluno.
+function recorteAtual() {
+  const modo = document.querySelector('input[name="recorte"]:checked').value;
+  const topN = Math.max(1, Number.parseInt(document.getElementById("topN").value, 10) || 1);
+  let from = Math.max(1, Number.parseInt(document.getElementById("rangeFrom").value, 10) || 1);
+  let to = Math.max(from, Number.parseInt(document.getElementById("rangeTo").value, 10) || from);
+  return { modo, topN, from, to };
+}
+
+function aplicarRecorte(alunos, recorte) {
+  if (recorte.modo === "top") return alunos.slice(0, recorte.topN);
+  if (recorte.modo === "intervalo") return alunos.slice(recorte.from - 1, recorte.to);
+  return alunos;
+}
+
+function agregarEscola(escola, recorte) {
+  const selecionados = aplicarRecorte(escola.alunos, recorte);
+  const medias = {};
+  for (const s of SUBJECTS) {
+    medias["media_" + s] = mean(selecionados.map(a => a[s]).filter(v => v !== null));
+  }
+  const validas = Object.values(medias).filter(v => v !== null);
+  const media_geral = validas.length ? mean(validas) : null;
+  return {
+    codigo: escola.codigo,
+    nome: escola.nome,
+    municipio: escola.municipio,
+    tipo: escola.tipo,
+    total_alunos: escola.alunos.length,
+    considerados: selecionados.length,
+    ...medias,
+    media_geral: media_geral === null ? null : Math.round(media_geral * 10) / 10,
+  };
+}
+
+function renderNota() {
+  const { modo, topN, from, to } = recorteAtual();
+  const el = document.getElementById("recorteNote");
+  if (modo === "todos") {
+    el.textContent = "Médias calculadas sobre todos os alunos participantes de cada escola.";
+  } else if (modo === "top") {
+    el.textContent = `Médias calculadas apenas sobre os ${topN} alunos de melhor desempenho de cada escola (escolas com menos alunos usam todos os que houver).`;
+  } else {
+    el.textContent = `Médias calculadas sobre os alunos classificados entre a posição ${from}ª e ${to}ª do ranking interno de cada escola.`;
+  }
+}
+
+function renderLegend() {
+  const el = document.getElementById("legend");
+  el.innerHTML = "";
+  for (const tipo of Object.keys(TIPO_COLOR)) {
+    if (tipo === "-") continue;
+    const btn = document.createElement("button");
+    btn.className = activeTipos.has(tipo) ? "" : "off";
+    btn.innerHTML = `<span class="swatch" style="background:${TIPO_COLOR[tipo]}"></span>${tipo}`;
+    btn.onclick = () => {
+      if (activeTipos.has(tipo)) activeTipos.delete(tipo); else activeTipos.add(tipo);
+      renderLegend();
+      renderRows();
+    };
+    el.appendChild(btn);
+  }
+}
+
+function renderRows() {
+  renderNota();
+  const recorte = recorteAtual();
+  const agregados = DATA.map(e => agregarEscola(e, recorte));
+  const maxGeral = Math.max(...agregados.map(e => e.media_geral || 0), 1);
+
+  const q = document.getElementById("search").value.trim().toLowerCase();
+  let rows = agregados.filter(e => activeTipos.has(e.tipo));
+  if (q) {
+    rows = rows.filter(e =>
+      e.nome.toLowerCase().includes(q) ||
+      e.municipio.toLowerCase().includes(q) ||
+      e.codigo.includes(q)
+    );
+  }
+  rows = rows.slice().sort((a, b) => {
+    let av = a[sortKey], bv = b[sortKey];
+    if (av === null || av === undefined) av = -Infinity;
+    if (bv === null || bv === undefined) bv = -Infinity;
+    if (typeof av === "string") return sortDir * av.localeCompare(bv);
+    return sortDir * (av - bv);
+  });
+
+  document.getElementById("count").textContent = `${rows.length} de ${agregados.length} escolas`;
+
+  const tbody = document.getElementById("rows");
+  tbody.innerHTML = rows.map(e => {
+    const geral = e.media_geral;
+    const width = geral ? Math.max(4, (geral / maxGeral) * 100) : 0;
+    const color = TIPO_COLOR[e.tipo] || TIPO_COLOR["-"];
+    return `<tr>
+      <td class="muted">${e.codigo}</td>
+      <td class="nome-escola" title="${e.nome || "nome não localizado"}">${e.nome || '<span class="muted">nome não localizado</span>'}</td>
+      <td>${e.municipio}</td>
+      <td>${e.tipo}</td>
+      <td class="num" title="${e.considerados} considerados de ${e.total_alunos} participantes">${e.considerados}/${e.total_alunos}</td>
+      <td class="num">${fmt(e.media_cn)}</td>
+      <td class="num">${fmt(e.media_ch)}</td>
+      <td class="num">${fmt(e.media_lc)}</td>
+      <td class="num">${fmt(e.media_mt)}</td>
+      <td class="num">${fmt(e.media_redacao)}</td>
+      <td>
+        <div class="bar-cell">
+          <div class="bar-track"><div class="bar-fill" style="width:${width}%; background:${color}"></div></div>
+          <span class="bar-value">${fmt(geral)}</span>
+        </div>
+      </td>
+    </tr>`;
+  }).join("");
+}
+
+document.querySelectorAll("thead th").forEach(th => {
+  th.addEventListener("click", () => {
+    const key = th.dataset.key;
+    if (sortKey === key) sortDir *= -1; else { sortKey = key; sortDir = -1; }
+    document.querySelectorAll("thead th .arrow").forEach(a => a.remove());
+    th.querySelector(".arrow")?.remove();
+    const arrow = document.createElement("span");
+    arrow.className = "arrow";
+    arrow.textContent = sortDir === -1 ? "▼" : "▲";
+    th.appendChild(arrow);
+    renderRows();
+  });
+});
+
+document.getElementById("search").addEventListener("input", renderRows);
+document.querySelectorAll('input[name="recorte"]').forEach(r => r.addEventListener("change", renderRows));
+document.getElementById("topN").addEventListener("input", () => {
+  document.querySelector('input[name="recorte"][value="top"]').checked = true;
+  renderRows();
+});
+["rangeFrom", "rangeTo"].forEach(id => {
+  document.getElementById(id).addEventListener("input", () => {
+    document.querySelector('input[name="recorte"][value="intervalo"]').checked = true;
+    renderRows();
+  });
+});
+
+renderLegend();
+renderRows();
+</script>

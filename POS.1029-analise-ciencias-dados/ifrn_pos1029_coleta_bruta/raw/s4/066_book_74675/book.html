@@ -1,0 +1,188 @@
+
+<div class="toast-wrapper mx-auto py-0 fixed-top" role="status" aria-live="polite"></div>
+
+<div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Ir para o conteúdo principal</a>
+</div>
+
+
+
+
+<div id="page">
+    <section class="embedded-main">
+            <span id="maincontent"></span>
+            <div class="activity-header" data-for="page-activity-header"></div>
+        <div role="main"><div class="book p-4">
+    <div class="text-end"><a onclick="window.print();return false;" class="hidden-print" href="#"><img class="icon icon" alt="Imprimir o livro todo" title="Imprimir o livro todo" src="https://presencial.ava.ifrn.edu.br/theme/image.php/suap/booktool_print/1793831080/book">Imprimir o livro todo</a></div>
+    <div class="text-center pb-3 book_title"><h1>Tópicos de Estudo — Aula 09: Qualidade de Dados e Limpeza</h1></div>
+    <div class="book_info w-100 pt-6 d-inline-block">
+        <div class="w-50 float-start">
+            <table>
+                <tbody><tr>
+                    <td>
+                        Site:
+                    </td>
+                    <td class="ps-3">
+                        <a href="https://presencial.ava.ifrn.edu.br">AVA-Presencial</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Curso:
+                    </td>
+                    <td class="ps-3">
+                        Análise e Ciência de Dados
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Livro:
+                    </td>
+                    <td class="ps-3">
+                        Tópicos de Estudo — Aula 09: Qualidade de Dados e Limpeza
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+        <div class="w-50 float-start">
+            <table class="float-end">
+                <tbody><tr>
+                    <td>
+                        Impresso por:
+                    </td>
+                    <td class="ps-3">
+                        Iuri Guerra de Freitas Pereira
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Data:
+                    </td>
+                    <td class="ps-3">
+                        segunda-feira, 9 nov. 2026, 16:40
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </div>
+    <div class="w-100">
+        <div class="py-5"><div class="book_toc_numbered"><a name="toc"></a><h2 class="text-center pb-5">Índice</h2><ul><li><a title="1. Qualidade de dados e o processo de limpeza" class="font-weight-bold text-decoration-none" href="#ch8049">1. Qualidade de dados e o processo de limpeza</a></li><li><a title="2. Valores ausentes: isna, dropna e fillna" class="font-weight-bold text-decoration-none" href="#ch8050">2. Valores ausentes: isna, dropna e fillna</a></li><li><a title="3. Duplicatas e inconsistências" class="font-weight-bold text-decoration-none" href="#ch8051">3. Duplicatas e inconsistências</a></li><li><a title="4. Outliers: IQR e z-score" class="font-weight-bold text-decoration-none" href="#ch8052">4. Outliers: IQR e z-score</a></li><li><a title="5. Normalização, padronização e tidy data" class="font-weight-bold text-decoration-none" href="#ch8053">5. Normalização, padronização e tidy data</a></li></ul></div></div>
+    </div>
+    <div class="w-100">
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch8049"><h2 class="text-center pb-5">1. Qualidade de dados e o processo de limpeza</h2><p class="translationhash"><span data-translationhash="53c32b03218b5877ced0f3ab11cb3d65"></span></p>
+<p>Dados obtidos de arquivos, APIs ou web scraping (Aulas 06 a 08) quase nunca chegam prontos para análise. <strong>Limpeza de dados</strong> é o conjunto de etapas que transforma um conjunto "sujo" em um conjunto confiável — e costuma consumir boa parte do tempo de um projeto de ciência de dados.</p>
+<h4>Dimensões de qualidade</h4>
+<ul>
+<li><strong>Completude</strong> — os valores estão presentes? (ausentes)</li>
+<li><strong>Unicidade</strong> — cada fato aparece uma única vez? (duplicatas)</li>
+<li><strong>Consistência</strong> — o mesmo valor é escrito sempre do mesmo jeito? ("Natal", "natal", " NATAL")</li>
+<li><strong>Validade</strong> — o valor respeita regras do domínio? (idade de −3 anos, pressão de 1.300 mmHg)</li>
+<li><strong>Acurácia</strong> — o valor corresponde à realidade? (altura digitada em metros numa coluna em cm)</li>
+</ul>
+<h4>Primeiro meça, depois corrija</h4>
+<pre>df.isna().sum()          # ausentes por coluna
+df.duplicated().sum()    # linhas repetidas
+df.describe()            # mínimo e máximo denunciam erros
+df["municipio"].value_counts()   # variações de escrita</pre>
+<p>No dataset sintético da aula (250 atendimentos em UBS do RN), esse diagnóstico revela em poucos segundos: 10 duplicatas, 24 glicemias ausentes, idade máxima de 205 anos, peso máximo de 90.900 kg e "Natal" escrito de quatro formas.</p>
+<p><strong>Regra de ouro:</strong> nunca altere o arquivo original. Leia, limpe numa cópia e salve um novo arquivo — junto com um pequeno relatório do que foi feito.</p></div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch8050"><h2 class="text-center pb-5">2. Valores ausentes: isna, dropna e fillna</h2><p class="translationhash"><span data-translationhash="294b5cdc1aa9e322d08230d3024d9d39"></span></p>
+<p>Um valor ausente aparece no Pandas como <code>NaN</code> (números/texto) ou <code>NaT</code> (datas).</p>
+<ul>
+<li><code>isna()</code> / <code>notna()</code> — identificam os ausentes; <code>df.isna().sum()</code> conta por coluna;</li>
+<li><code>dropna()</code> — remove linhas (padrão) ou colunas (<code>axis=1</code>) com ausentes; <code>subset=[...]</code> limita a verificação a algumas colunas e <code>thresh=n</code> exige um mínimo de valores presentes;</li>
+<li><code>fillna(valor)</code> — preenche (imputa).</li>
+</ul>
+<h4>Remover ou preencher?</h4>
+<p>No laboratório, 50 das 240 linhas tinham algum ausente — quase sempre em uma só coluna. Um <code>dropna()</code> jogaria fora 21% dos atendimentos. Preferimos imputar:</p>
+<pre>df["idade"] = df["idade"].fillna(df["idade"].median())
+df["glicemia_mg_dl"] = df["glicemia_mg_dl"].fillna(
+    df.groupby("diagnostico")["glicemia_mg_dl"].transform("median"))</pre>
+<ul>
+<li>A <strong>mediana</strong> é mais resistente a valores extremos que a média.</li>
+<li>Imputar <strong>por grupo</strong> respeita diferenças reais: a glicemia mediana de quem tem diabetes (≈169 mg/dL) é muito maior que a dos demais (≈97 mg/dL).</li>
+<li>Para variáveis categóricas, prefira uma categoria explícita ("Não informado") a inventar um valor.</li>
+</ul>
+<h4>Ausentes disfarçados: códigos sentinela</h4>
+<p>Sistemas costumam gravar "não medido" como 999, −1 ou 0. Esses números não são medidas: troque-os por ausente com <code>replace(999, np.nan)</code>. No laboratório, isso fez a média da glicemia cair de 129,5 para 109,1 mg/dL.</p></div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch8051"><h2 class="text-center pb-5">3. Duplicatas e inconsistências</h2><p class="translationhash"><span data-translationhash="d8ee7005d39d6d69cbdbce97a8a0a99d"></span></p>
+<h4>Duplicatas</h4>
+<pre>df.duplicated().sum()                    # quantas linhas repetem uma anterior
+df[df.duplicated(keep=False)]            # mostra todas as cópias
+df = df.drop_duplicates().reset_index(drop=True)
+df["id_atendimento"].is_unique          # o identificador ficou único?</pre>
+<p>Por padrão a comparação usa todas as colunas e mantém a primeira ocorrência (<code>keep="first"</code>). Com <code>subset=["id_atendimento"]</code> a comparação usa apenas o identificador.</p>
+<h4>Texto inconsistente</h4>
+<p>Para o computador, "Natal", "natal", " NATAL" e "Natal " são quatro valores diferentes. A receita: tirar espaços, uniformizar maiúsculas e mapear o que sobrar.</p>
+<pre>df["municipio"] = (df["municipio"].str.strip().str.title()
+    .replace({"Mossoro": "Mossoró", "Caico": "Caicó", "Pau Dos Ferros": "Pau dos Ferros"}))</pre>
+<h4>Datas e unidades</h4>
+<ul>
+<li>Datas em formatos misturados: converta cada formato com <code>pd.to_datetime(..., format="%d/%m/%Y", errors="coerce")</code> e combine os resultados com <code>fillna</code>.</li>
+<li>Unidades trocadas: alturas abaixo de 3 estavam em metros (multiplique por 100); pesos acima de 1.000 estavam em gramas (divida por 1.000). Use <code>df.loc[condição, coluna]</code> para corrigir só as linhas afetadas.</li>
+</ul></div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch8052"><h2 class="text-center pb-5">4. Outliers: IQR e z-score</h2><p class="translationhash"><span data-translationhash="0f8457f288935d1a9c9036534784b888"></span></p>
+<p>Um <strong>outlier</strong> é um valor muito distante dos demais. Pode ser um <strong>erro</strong> (pressão de 1.300 mmHg) ou um <strong>caso raro real</strong> (crise hipertensiva de 205 mmHg). Métodos estatísticos apontam candidatos; quem decide é o conhecimento do domínio.</p>
+<h4>Método do IQR</h4>
+<pre>q1, q3 = s.quantile([0.25, 0.75])
+iqr = q3 - q1
+suspeitos = s[(s &lt; q1 - 1.5*iqr) | (s &gt; q3 + 1.5*iqr)]</pre>
+<p>Na pressão sistólica: Q1 = 119, Q3 = 141, IQR = 22 → limites 86 e 174 mmHg. Foram sinalizados 12, 83, 179, 205, 410 e 1.300. Destes, só 12, 410 e 1.300 são impossíveis (viram NaN); os demais são valores reais de pacientes.</p>
+<h4>Método do z-score</h4>
+<p>z = (x − média) / desvio-padrão; costuma-se marcar |z| &gt; 3. É simples, mas os próprios outliers inflam a média e o desvio: na idade, 150 e 205 anos foram marcados, mas −3 anos (z ≈ −2,4) passou despercebido.</p>
+<h4>Na prática</h4>
+<ol>
+<li>Use IQR, z-score e boxplot para <strong>encontrar</strong> candidatos;</li>
+<li>Aplique <strong>regras de domínio</strong> (idade entre 0 e 110; pressão entre 60 e 260) para decidir;</li>
+<li>Erro corrigível (vírgula esquecida: 375 → 37,5) → corrija; erro sem correção → NaN e depois impute; caso real → mantenha.</li>
+</ol></div>
+            </div>
+            <div class="pb-5">
+            <div class="book_chapter pt-3" id="ch8053"><h2 class="text-center pb-5">5. Normalização, padronização e tidy data</h2><p class="translationhash"><span data-translationhash="85c558e5c6b262dec13d10f7263c09ba"></span></p>
+<h4>Normalização e padronização</h4>
+<table style="border-collapse: collapse;" border="1" cellpadding="4">
+<tbody>
+<tr>
+<th>Técnica</th>
+<th>Fórmula</th>
+<th>Resultado</th>
+</tr>
+<tr>
+<td>Normalização (min-max)</td>
+<td>(x − mín) / (máx − mín)</td>
+<td>valores entre 0 e 1</td>
+</tr>
+<tr>
+<td>Padronização (z-score)</td>
+<td>(x − média) / desvio</td>
+<td>média 0, desvio 1</td>
+</tr>
+</tbody>
+</table>
+<p>Elas mudam a <strong>escala</strong>, não a forma da distribuição, e são importantes para algoritmos baseados em distância (k-NN, k-means) — tema da Unidade 4. Aplique <strong>depois</strong> de tratar os outliers: um único 1.300 mmHg esmagaria todos os outros valores perto de zero no min-max. Na Aula 10 usaremos <code>MinMaxScaler</code> e <code>StandardScaler</code> do scikit-learn.</p>
+<h4>Tidy data</h4>
+<p>Um conjunto é <strong>tidy</strong> (Wickham) quando: cada variável é uma coluna; cada observação é uma linha; cada tipo de unidade observacional é uma tabela.</p>
+<p>A planilha de vacinação <code>municipio, mar, abr, mai, jun</code> não é tidy: a variável "mês" está nos nomes das colunas.</p>
+<pre>longa = larga.melt(id_vars="municipio", var_name="mes", value_name="doses")   # largo → longo
+larga2 = longa.pivot(index="municipio", columns="mes", values="doses")          # longo → largo</pre>
+<p>No formato longo, perguntas como "total de doses por mês" ou "mês de pico em cada município" viram uma linha de <code>groupby</code>.</p></div>
+            </div>
+    </div>
+</div></div>
+    </section>
+</div>
+
+
+
+
+
+
+
+

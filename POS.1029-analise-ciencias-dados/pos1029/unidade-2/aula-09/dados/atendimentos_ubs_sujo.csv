@@ -1,0 +1,251 @@
+id_atendimento,data_atendimento,municipio,sexo,idade,peso_kg,altura_cm,pressao_sistolica,glicemia_mg_dl,diagnostico
+1149,2026-06-07,Natal,Masculino,86.0,85.2,171.0,133.0,,Hipertensão
+1220,2026-03-23,Parnamirim,M,41.0,90.5,171.0,131.0,89.0,Consulta de rotina
+1095,08/05/2026,parnamirim,F,63.0,65.6,159.0,128.0,105.0,Hipertensão
+1085,2026-06-08,Natal,M,23.0,80.8,1.59,124.0,105.0,Consulta de rotina
+1004,2026-03-24,Natal,F,64.0,65.8,157.0,130.0,174.0,Diabetes
+1122,2026-06-03,Natal,M,55.0,86.3,175.0,136.0,202.0,Diabetes
+1098,2026-04-23,Caico,M,70.0,102.8,185.0,112.0,178.0,Diabetes
+1237,2026-04-28,Natal,F,48.0,74.8,159.0,125.0,106.0,Consulta de rotina
+1139,2026-06-11,pau dos ferros,Masculino,71.0,69.5,162.0,148.0,91.0,Hipertensão
+1123,2026-05-22,Caicó,M,72.0,71.1,168.0,159.0,88.0,Consulta de rotina
+1213,2026-04-14,Mossoró,FEMININO,38.0,55.2,154.0,127.0,103.0,Infecção respiratória
+1154,2026-04-24,Mossoró,M,29.0,82800.0,176.0,130.0,105.0,Infecção respiratória
+1140,19/05/2026,Mossoró,F,40.0,69.3,159.0,113.0,,Diabetes
+1087,2026-04-28,Natal,F,25.0,65.3,162.0,129.0,175.0,Diabetes
+1081,2026-03-23,Mossoró,M,47.0,77.1,173.0,130.0,116.0,Hipertensão
+1053,2026-05-15,Pau dos Ferros,M,29.0,,173.0,124.0,91.0,Consulta de rotina
+1023,2026-03-08,Caicó,Feminino,70.0,80.5,164.0,179.0,81.0,Hipertensão
+1167,2026-05-27,Natal,,24.0,55.8,164.0,102.0,,Diabetes
+1102,2026-05-13,MOSSORÓ,F,62.0,72.1,157.0,120.0,155.0,Diabetes
+1230,2026-03-19,Natal,M,38.0,83.9,170.0,103.0,87.0,Consulta de rotina
+1166,2026-03-23,Natal,M,53.0,108.6,172.0,,,Hipertensão
+1217,2026-05-24,Natal,M,43.0,,168.0,121.0,,Consulta de rotina
+1134,2026-06-02,Mossoró,M,22.0,90.3,172.0,146.0,96.0,Hipertensão
+1075,2026-04-03,Natal,M,60.0,62.0,161.0,114.0,161.0,Diabetes
+1206,2026-04-07,Caicó,Masculino,62.0,90900.0,170.0,115.0,100.0,Infecção respiratória
+1051,2026-06-23,Natal,F,89.0,42.5,148.0,131.0,82.0,Consulta de rotina
+1089,2026-03-13,Parnamirim,M,48.0,,180.0,126.0,96.0,Consulta de rotina
+1012,2026-04-26,Natal,M,74.0,62.7,166.0,136.0,93.0,Infeccao respiratoria
+1163,2026-06-01,Caicó,F,25.0,43.5,152.0,113.0,91.0,consulta de rotina
+1003,2026-04-30,Natal,F,19.0,64.1,156.0,1300.0,110.0,Consulta de rotina
+1025,2026-05-23,Pau dos Ferros,M,38.0,101.7,171.0,119.0,87.0,Hipertensão
+1058,2026-04-02,parnamirim,F,49.0,55.0,152.0,158.0,100.0,hipertensao
+1115,2026-04-11,Pau dos Ferros,F,85.0,52.5,154.0,163.0,94.0,Hipertensão
+1099,2026-04-18,Natal,m,88.0,50.9,1.7,133.0,106.0,hipertensao
+1067,12/06/2026,Parnamirim,M,56.0,86.6,161.0,120.0,90.0,Infecção respiratória
+1135,24/04/2026,Mossoró,M,36.0,80.1,181.0,138.0,81.0,Consulta de rotina
+1083,2026-05-22,Natal,F,47.0,73.1,161.0,115.0,100.0,Consulta de rotina
+1008,2026-04-28,Parnamirim,M,44.0,74.7,166.0,126.0,188.0,Diabetes
+1061,2026-05-01,natal,M,87.0,87.9,164.0,141.0,153.0,Diabetes
+1157,2026-04-22,Caicó,F,37.0,76.1,162.0,127.0,88.0,Consulta de rotina
+1164,2026-06-17,Natal ,M,66.0,63.8,173.0,157.0,94.0,Hipertensão
+1133,17/03/2026,Mossoró,F,43.0,83.2,166.0,410.0,115.0,Infecção respiratória
+1009,2026-04-24,Pau dos Ferros,f,64.0,66.6,152.0,142.0,89.0,Hipertensão
+1079,2026-04-03,parnamirim,f,18.0,78.7,154.0,121.0,110.0,Consulta de rotina
+1028,2026-06-06,Natal,F,72.0,,153.0,116.0,163.0,Diabetes
+1188,2026-04-30,Natal ,F,74.0,61.9,158.0,141.0,77.0,Consulta de rotina
+1063,2026-03-04,Mossoró,M,85.0,100.0,167.0,133.0,122.0,hipertensao
+1225,2026-06-19,Parnamirim,m,58.0,65.8,166.0,126.0,119.0,Consulta de rotina
+1066,2026-06-25,Parnamirim,M,75.0,73.1,170.0,143.0,114.0,Hipertensão
+1174,2026-04-09,Caicó,F,53.0,70.2,155.0,149.0,123.0,Hipertensão
+1124,2026-04-17,Mossoró,F,41.0,74.7,167.0,121.0,,Consulta de rotina
+1110,2026-05-14,Natal,M,51.0,61.7,155.0,135.0,101.0,Hipertensão
+1047,15/06/2026,Natal,M,77.0,58.2,175.0,133.0,88.0,Consulta de rotina
+1121,2026-03-24,Natal,M,80.0,68.2,167.0,154.0,115.0,Hipertensão
+1217,2026-05-24,Natal,M,43.0,,168.0,121.0,,Consulta de rotina
+1207,2026-04-30,Natal,F,27.0,49.0,150.0,142.0,96.0,Infecção respiratória
+1078,2026-06-28,Natal,F,82.0,,163.0,153.0,97.0,Consulta de rotina
+1071,2026-06-10,Parnamirim,F,51.0,85.3,170.0,152.0,104.0,Consulta de rotina
+1032,2026-03-05,Pau dos Ferros,F,77.0,70.5,169.0,150.0,105.0,Infecção respiratória
+1198,2026-03-07,Natal,F,34.0,62.1,159.0,151.0,67.0,Hipertensão
+1082,2026-03-12,Parnamirim,M,68.0,93.7,179.0,141.0,93.0,Hipertensão
+1195,2026-04-09,Natal,M,74.0,44.1,161.0,125.0,999.0,Hipertensão
+1014,2026-05-11,Mossoró,M,83.0,44.6,162.0,129.0,162.0,Diabetes
+1130,2026-03-20,Natal,F,83.0,59.5,1.59,162.0,114.0,Consulta de rotina
+1010,2026-04-27,Parnamirim,F,43.0,71.5,166.0,98.0,88.0,Consulta de rotina
+1019,2026-05-17,Parnamirim,F,25.0,75.5,1.7,118.0,152.0,Diabetes
+1091,2026-06-25,Natal,F,56.0,72.5,153.0,139.0,89.0,Hipertensão
+1126,2026-06-04,Mossoró,F,53.0,35.3,144.0,132.0,104.0,consulta de rotina
+1235,2026-04-20,Mossoró,F,84.0,69.0,156.0,123.0,108.0,consulta de rotina
+1201,2026-06-10,Natal,M,70.0,90.9,170.0,113.0,77.0,Infecção respiratória
+1015,2026-06-26,Natal,F,,50.2,151.0,119.0,110.0,Consulta de rotina
+1041,2026-04-29,Mossoró,F,79.0,55.4,144.0,153.0,999.0,Hipertensão
+1046,09/03/2026,Natal,F,65.0,85.3,157.0,116.0,86.0,Consulta de rotina
+1218,2026-04-24,Natal,Feminino,63.0,59.1,158.0,139.0,999.0,Hipertensão
+1033,2026-04-01,Pau dos Ferros,M,65.0,62.2,1.68,129.0,99.0,Infecção respiratória
+1146,2026-05-14,Natal,F,73.0,62.3,167.0,145.0,99.0,Infecção respiratória
+1116,2026-06-07,Parnamirim,F,47.0,65.3,157.0,134.0,,Hipertensão
+1232,2026-03-18,Natal,M,20.0,84.9,165.0,124.0,114.0,Infecção respiratória
+1029,2026-05-25,pau dos ferros,F,26.0,52.7,153.0,144.0,112.0,Infecção respiratória
+1064,2026-03-10,Natal,M,,47.3,161.0,141.0,83.0,Hipertensão
+1151,2026-04-29,Natal,FEMININO,87.0,58.0,150.0,125.0,112.0,consulta de rotina
+1141,2026-03-14,parnamirim,M,45.0,90.1,166.0,122.0,102.0,Consulta de rotina
+1016,2026-04-12,Natal,M,30.0,75.3,177.0,120.0,92.0,Consulta de rotina
+1042,2026-05-09,Mossoró,F,205.0,69.6,158.0,156.0,116.0,Hipertensão
+1059,2026-05-18,Natal,M,65.0,,171.0,124.0,87.0,Consulta de rotina
+1096,2026-05-30,Mossoró,,31.0,67.7,148.0,128.0,,Hipertensão
+1211,2026-03-26,Mossoró,F,42.0,75.3,156.0,145.0,129.0,Hipertensão
+1037,2026-04-08,Natal,M,29.0,55.6,161.0,125.0,105.0,Hipertensão
+1100,2026-03-02,Mossoró,F,57.0,84.3,161.0,122.0,96.0,Hipertensão
+1129,2026-03-09,Mossoró,F,30.0,70.7,164.0,134.0,101.0,Hipertensão
+1223,2026-04-21,Natal,F,61.0,94.1,173.0,108.0,72.0,Infecção respiratória
+1052,2026-06-06,Pau dos Ferros,F,44.0,105.8,167.0,129.0,148.0,Diabetes
+1208,2026-04-25,Parnamirim,F,47.0,48.9,147.0,121.0,183.0,Diabetes
+1109,2026-05-23,Parnamirim,F,79.0,69.2,157.0,143.0,107.0,Consulta de rotina
+1171,2026-04-16,Caicó,F,79.0,81.5,161.0,121.0,,Hipertensão
+1097,2026-05-13,Caicó,FEMININO,29.0,60.0,153.0,114.0,,Consulta de rotina
+1086,2026-04-25,Parnamirim,M,36.0,89.5,177.0,108.0,89.0,Consulta de rotina
+1169,2026-05-12,Natal,F,,58.8,160.0,,148.0,Diabetes
+1224,2026-05-31,mossoró,M,42.0,81.8,166.0,117.0,112.0,Hipertensão
+1112,2026-03-31,Parnamirim,F,66.0,67.4,158.0,138.0,92.0,Infecção respiratória
+1092,2026-06-18,Natal,F,53.0,73.5,160.0,124.0,160.0,Diabetes
+1148,2026-05-26,Natal,F,87.0,46.6,151.0,142.0,172.0,Diabetes
+1180,2026-05-10,Pau dos Ferros,,82.0,88.9,170.0,161.0,91.0,Hipertensão
+1203,2026-06-22,Mossoró,F,52.0,95.4,168.0,135.0,101.0,Infecção respiratória
+1170,2026-03-31,Natal,M,18.0,75.8,173.0,105.0,91.0,Consulta de rotina
+1038,2026-05-31,Natal,F,38.0,82.3,163.0,124.0,,Consulta de rotina
+1161,2026-06-02,PARNAMIRIM,M,88.0,78.8,176.0,147.0,85.0,Consulta de rotina
+1196,2026-04-09,pau dos ferros,F,84.0,59.6,158.0,134.0,103.0,Consulta de rotina
+1183,2026-05-24,caicó,F,30.0,56.3,161.0,130.0,85.0,Consulta de rotina
+1127,2026-06-01,Pau dos Ferros,F,39.0,59.5,150.0,131.0,82.0,Consulta de rotina
+1106,2026-03-18,Natal,F,150.0,55.6,152.0,154.0,94.0,Hipertensão
+1155,2026-05-06,Parnamirim,F,25.0,62.0,152.0,122.0,89.0,Consulta de rotina
+1185,2026-04-04,Mossoró,F,36.0,59.6,150.0,117.0,169.0,Diabetes
+1050,2026-05-01,Pau dos Ferros,F,50.0,63.6,145.0,144.0,173.0,Diabetes
+1165,2026-06-19,Natal,M,22.0,85.3,184.0,115.0,155.0,Diabetes
+1006,2026-03-17,Parnamirim,F,51.0,55.0,157.0,116.0,,Consulta de rotina
+1018,2026-04-18,Mossoró,M,65.0,91.7,181.0,172.0,102.0,Hipertensão
+1172,2026-03-05,Parnamirim,F,61.0,70.9,158.0,152.0,87.0,Consulta de rotina
+1103,2026-03-21,Natal,M,20.0,76.9,170.0,119.0,187.0,Diabetes
+1158,2026-04-17,Parnamirim,F,19.0,55.8,167.0,95.0,100.0,Consulta de rotina
+1114,07/03/2026,Natal,M,59.0,88.2,1.78,91.0,88.0,consulta de rotina
+1117,15/06/2026,Natal,F,75.0,63.4,157.0,141.0,91.0,Hipertensão
+1215,2026-05-16,Natal,M,60.0,90.2,170.0,144.0,,hipertensao
+1107,2026-05-19,Mossoró,M,71.0,78.9,184.0,140.0,112.0,Consulta de rotina
+1165,2026-06-19,Natal,M,22.0,85.3,184.0,115.0,155.0,Diabetes
+1209,2026-03-08,Mossoró,M,28.0,100.5,175.0,120.0,98.0,Hipertensão
+1105,2026-06-05,Parnamirim,F,43.0,71.5,154.0,,,Consulta de rotina
+1222,2026-03-29,Parnamirim,Masculino,65.0,70.9,175.0,,,Diabetes
+1159,2026-04-03,Parnamirim,F,20.0,76.1,170.0,107.0,175.0,Diabetes
+1065,11/04/2026,Natal,F,86.0,73.4,161.0,142.0,87.0,Hipertensão
+1027,2026-04-07,Parnamirim,F,61.0,46.0,149.0,129.0,108.0,Hipertensão
+1233,2026-04-09,Natal,F,48.0,50.0,161.0,128.0,106.0,Consulta de rotina
+1181,2026-04-24,Mossoró,M,39.0,78.6,165.0,114.0,102.0,Consulta de rotina
+1234,2026-06-11,Mossoró,F,24.0,60.9,150.0,104.0,86.0,Infeccao respiratoria
+1118,2026-05-24,Natal,M,18.0,58.5,174.0,129.0,92.0,Hipertensão
+1142,2026-06-24,Mossoró,F,58.0,67.6,163.0,138.0,100.0,Consulta de rotina
+1030,2026-04-14,Natal,F,55.0,85.0,155.0,121.0,97.0,Consulta de rotina
+1080,2026-05-31,Natal,F,40.0,50.8,167.0,127.0,107.0,hipertensao
+1132,2026-04-28,Natal,Feminino,89.0,72.1,164.0,121.0,,Consulta de rotina
+1040,2026-03-18,Natal,M,34.0,93.8,170.0,131.0,111.0,Consulta de rotina
+1214,2026-06-04,Caico,Masculino,61.0,70.9,179.0,140.0,91.0,Consulta de rotina
+1055,2026-03-20,Mossoró,M,52.0,64.7,169.0,131.0,98.0,Infeccao respiratoria
+1044,2026-04-17,Parnamirim,M,49.0,87.0,167.0,130.0,85.0,Infecção respiratória
+1175,2026-03-10,Natal,M,58.0,86.5,171.0,114.0,168.0,Diabetes
+1049,30/03/2026,mossoró,F,51.0,57.7,166.0,125.0,163.0,Diabetes
+1187,2026-05-25,Mossoró,M,35.0,93.8,1.69,107.0,188.0,Diabetes
+1060,2026-04-29,Parnamirim,F,39.0,77.5,151.0,150.0,80.0,Hipertensão
+1144,2026-03-17,Pau dos Ferros,M,47.0,89.1,171.0,114.0,102.0,Infecção respiratória
+1054,2026-04-13,Caicó,M,32.0,89.6,166.0,122.0,106.0,Consulta de rotina
+1021,2026-05-04,Natal,M,29.0,101.0,176.0,123.0,98.0,Consulta de rotina
+1125,2026-04-23,Mossoró,F,70.0,63.6,159.0,114.0,172.0,Diabetes
+1240,2026-06-18,Pau dos Ferros,F,55.0,71.6,157.0,142.0,92.0,hipertensao
+1236,2026-05-19,Pau dos Ferros,Masculino,-3.0,84.3,172.0,150.0,85.0,Hipertensão
+1162,2026-05-26,Natal,F,38.0,59300.0,151.0,106.0,94.0,Infecção respiratória
+1077,2026-05-03,Parnamirim,m,48.0,86.3,161.0,129.0,106.0,Hipertensão
+1204,2026-05-10,natal,M,27.0,81.9,165.0,129.0,75.0,Infecção respiratória
+1108,23/05/2026,Pau dos Ferros,M,53.0,53.3,175.0,121.0,86.0,Hipertensão
+1037,2026-04-08,Natal,M,29.0,55.6,161.0,125.0,105.0,Hipertensão
+1013,23/03/2026,Natal,M,68.0,80.3,1.69,128.0,77.0,Infecção respiratória
+1017,2026-03-09,natal,m,79.0,69.7,168.0,139.0,177.0,Diabetes
+1048,2026-05-17,Caicó,F,18.0,60.2,162.0,117.0,175.0,DIABETES
+1179,2026-03-19,Pau dos Ferros,F,59.0,77.4,164.0,155.0,97.0,Hipertensão
+1120,2026-03-17,Natal,Feminino,75.0,62.3,160.0,148.0,96.0,Infecção respiratória
+1022,2026-05-15,Parnamirim,FEMININO,87.0,84.9,160.0,150.0,91.0,Consulta de rotina
+1147,2026-04-17,Mossoró,F,55.0,,154.0,113.0,96.0,Infecção respiratória
+1200,2026-04-15,Natal,,61.0,57.0,150.0,139.0,120.0,Consulta de rotina
+1131,2026-04-11,Natal,M,49.0,84.5,1.68,138.0,115.0,Hipertensão
+1194,2026-05-10,Caicó,M,57.0,88.1,177.0,116.0,137.0,Diabetes
+1228,2026-05-24,Natal ,F,27.0,57.1,164.0,151.0,92.0,hipertensao
+1074,2026-04-16,Natal,M,58.0,63.7,167.0,126.0,98.0,Consulta de rotina
+1031,2026-03-18,Natal,M,64.0,95.8,166.0,118.0,168.0,Diabetes
+1178,2026-06-10,Natal,F,58.0,65.6,157.0,140.0,92.0,Hipertensão
+1034,2026-05-25,Natal,F,,59.7,158.0,109.0,99.0,Consulta de rotina
+1199,2026-04-30,Mossoró,F,73.0,51.9,155.0,129.0,101.0,Consulta de rotina
+1205,2026-03-03,Pau Dos Ferros,FEMININO,74.0,76.0,163.0,127.0,110.0,Infecção respiratória
+1156,2026-03-10,Mossoro,M,86.0,84.2,174.0,116.0,106.0,Hipertensão
+1221,2026-04-15,Natal,M,20.0,73.6,170.0,119.0,109.0,Infecção respiratória
+1124,2026-04-17,Mossoró,F,41.0,74.7,167.0,121.0,,Consulta de rotina
+1041,2026-04-29,Mossoró,F,79.0,55.4,144.0,153.0,999.0,Hipertensão
+1164,2026-06-17,Natal ,M,66.0,63.8,173.0,157.0,94.0,Hipertensão
+1101,2026-04-02,parnamirim,F,50.0,99.7,162.0,142.0,127.0,Hipertensão
+1150,2026-04-17,Mossoró,,81.0,77.8,153.0,102.0,147.0,Diabetes
+1191,2026-06-18,Parnamirim,F,23.0,55.5,147.0,131.0,,hipertensao
+1108,23/05/2026,Pau dos Ferros,M,53.0,53.3,175.0,121.0,86.0,Hipertensão
+1227,2026-04-12,Mossoró,F,76.0,87.1,165.0,137.0,114.0,Consulta de rotina
+1062,2026-04-28,Natal,M,33.0,85.6,170.0,96.0,88.0,Hipertensão
+1036,17/05/2026,Natal,F,42.0,87.1,163.0,103.0,87.0,Infecção respiratória
+1011,2026-06-16,Natal,Masculino,,82.4,179.0,130.0,113.0,Hipertensão
+1239,2026-05-04,Mossoró,F,85.0,89.0,163.0,122.0,91.0,Consulta de rotina
+1072,2026-04-29,Natal,F,86.0,77.5,156.0,153.0,78.0,consulta de rotina
+1065,11/04/2026,Natal,F,86.0,73.4,161.0,142.0,87.0,Hipertensão
+1226,2026-04-05,Caicó,F,66.0,65.4,165.0,128.0,,Infecção respiratória
+1094,2026-04-29,Mossoró,F,59.0,64.8,157.0,159.0,91.0,Consulta de rotina
+1160,2026-03-02,Mossoró,F,39.0,51.1,162.0,146.0,89.0,Consulta de rotina
+1119,2026-06-26,Natal,F,20.0,62.3,170.0,149.0,83.0,Hipertensão
+1145,10/05/2026,Natal,M,,51.1,171.0,105.0,181.0,Diabetes
+1210,2026-04-10,Natal,M,73.0,94.5,175.0,127.0,113.0,Infecção respiratória
+1002,2026-04-29,Mossoró,M,30.0,,162.0,123.0,111.0,Consulta de rotina
+1229,2026-06-18,Parnamirim,F,51.0,65.7,160.0,104.0,86.0,Infecção respiratória
+1084,2026-06-06,Natal,M,40.0,52.8,169.0,102.0,155.0,Diabetes
+1238,2026-03-19,Parnamirim,F,34.0,52.9,156.0,135.0,91.0,Consulta de rotina
+1196,2026-04-09,pau dos ferros,F,84.0,59.6,158.0,134.0,103.0,Consulta de rotina
+1088,2026-03-03,Mossoro,F,68.0,100.3,176.0,127.0,95.0,Infecção respiratória
+1138,2026-05-20,Mossoró,M,70.0,58.4,162.0,124.0,99.0,Consulta de rotina
+1005,2026-03-07,natal,F,44.0,60.4,163.0,134.0,109.0,Infecção respiratória
+1039,2026-03-12,Parnamirim,F,28.0,48.7,166.0,83.0,79.0,Consulta de rotina
+1202,2026-05-12,natal,M,76.0,106.8,178.0,136.0,107.0,Infecção respiratória
+1216,2026-05-17,natal,F,79.0,75.6,154.0,146.0,83.0,consulta de rotina
+1035,2026-05-17,Pau dos Ferros,M,51.0,86.5,180.0,126.0,111.0,Consulta de rotina
+1193,04/03/2026,Caicó,F,23.0,44.5,151.0,127.0,78.0,Hipertensão
+1190,2026-05-13,Natal,F,64.0,56.0,163.0,109.0,119.0,Consulta de rotina
+1113,2026-05-07,Parnamirim,M,75.0,72.9,175.0,143.0,103.0,Infecção respiratória
+1182,2026-03-12,Mossoró,F,84.0,76.1,159.0,137.0,77.0,Infecção respiratória
+1184,2026-03-27,Mossoró,F,31.0,77.1,163.0,,114.0,Consulta de rotina
+1153,2026-05-15, NATAL,M,39.0,90.8,166.0,154.0,98.0,Hipertensão
+1057,2026-04-04,Mossoró,M,41.0,92.3,176.0,133.0,95.0,Hipertensão
+1070,2026-06-11,Natal,F,42.0,59.9,157.0,113.0,86.0,Hipertensão
+1192,2026-03-19,Mossoró,M,65.0,89.8,168.0,126.0,169.0,Diabetes
+1045,2026-03-17,Mossoró,F,37.0,68.0,154.0,126.0,135.0,Hipertensão
+1189,2026-05-13,natal,F,59.0,66.1,166.0,146.0,62.0,Hipertensão
+1020,2026-04-10,Mossoró,M,39.0,80.1,170.0,119.0,103.0,Consulta de rotina
+1007,2026-03-26,Natal,M,23.0,57.8,177.0,122.0,115.0,Consulta de rotina
+1056,2026-04-20,Parnamirim,F,60.0,67.0,155.0,103.0,,Consulta de rotina
+1076,2026-05-27,Caicó,FEMININO,49.0,73.8,162.0,159.0,95.0,Consulta de rotina
+1001,2026-03-16,Caicó,M,79.0,88.2,168.0,152.0,86.0,Hipertensão
+1173,2026-06-09,Mossoró,M,85.0,95.8,182.0,141.0,,Hipertensão
+1136,2026-06-24,Parnamirim,M,43.0,84.5,166.0,105.0,,Diabetes
+1128,12/06/2026,Natal,F,24.0,58.7,159.0,115.0,70.0,Consulta de rotina
+1177,17/05/2026,Natal,F,51.0,78.2,165.0,138.0,87.0,Consulta de rotina
+1069,2026-06-24,Caicó,M,32.0,93.2,170.0,111.0,71.0,Infecção respiratória
+1231,2026-04-28,Natal,f,,,156.0,128.0,118.0,Hipertensão
+1168,2026-06-16,Pau dos Ferros,M,24.0,75.0,165.0,125.0,103.0,Consulta de rotina
+1137,2026-06-21,Natal,F,68.0,64.8,152.0,12.0,110.0,Hipertensão
+1219,2026-04-11,Natal,M,86.0,84.1,178.0,205.0,96.0,Hipertensão
+1043,2026-05-21,Natal,,24.0,66.2,158.0,113.0,,Infecção respiratória
+1111,2026-06-14,Caicó,F,20.0,59.9,152.0,101.0,109.0,Consulta de rotina
+1090,2026-04-01,Natal,M,34.0,63.2,160.0,122.0,101.0,consulta de rotina
+1073,2026-03-21,Parnamirim,F,75.0,90.5,166.0,143.0,999.0,Consulta de rotina
+1024,2026-03-06,Caicó,F,84.0,77.4,154.0,141.0,999.0,Infecção respiratória
+1143,2026-05-21,Natal,F,61.0,77.7,151.0,119.0,102.0,Consulta de rotina
+1186,2026-05-28,Natal,F,85.0,65.6,157.0,133.0,104.0,Consulta de rotina
+1093,2026-06-21,Mossoró,F,52.0,,165.0,,160.0,Diabetes
+1104,2026-04-04,Natal,F,44.0,62.2,159.0,103.0,101.0,Infecção respiratória
+1152,2026-05-11,Caicó,M,62.0,79.1,154.0,130.0,118.0,Consulta de rotina
+1212,2026-04-27,Natal,M,22.0,87.7,177.0,108.0,100.0,Infecção respiratória
+1068,2026-06-08,Caicó,F,61.0,73.9,152.0,116.0,175.0,Diabetes
+1016,2026-04-12,Natal,M,30.0,75.3,177.0,120.0,92.0,Consulta de rotina
+1026,2026-05-25,Caicó,F,63.0,,161.0,146.0,74.0,Hipertensão
+1197,2026-05-24,Caico,F,89.0,72.3,158.0,128.0,88.0,Consulta de rotina
+1176,2026-04-24,Parnamirim,F,61.0,44.8,161.0,116.0,116.0,Infecção respiratória
