@@ -2,3 +2,7 @@
 # Transcrições de material do AVA/Moodle (texto do professor, não autoral).
 fundamentos-e-panorama-da-ciencia-de-dados.md
 *.ava.md
+# POS.1029: coleta bruta do Moodle e a conversão dela em notebooks (pos1029/montar.py).
+**/ifrn_pos1029_coleta_bruta/**
+**/pos1029/**
+**/notebooklm/**
